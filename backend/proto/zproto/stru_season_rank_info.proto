@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message SeasonRankInfo {
+  uint32 cur_ran_k_star = 1;
+  repeated uint32 received_rank_star = 2;
+}
+

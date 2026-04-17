@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message CommonTargetActivityInfo {
+  uint32 finish_num = 1;
+  bool has_received = 2;
+}
+

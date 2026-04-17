@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_dungeon_target_progress.proto";
+
+message DungeonWeekTargetList {
+  map<int32, zproto.DungeonTargetProgress> week_target = 1;
+  uint32 refresh_time = 2;
+}
+

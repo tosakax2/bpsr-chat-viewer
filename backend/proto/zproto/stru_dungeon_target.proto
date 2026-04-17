@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_dungeon_target_data.proto";
+
+message DungeonTarget {
+  map<int32, zproto.DungeonTargetData> target_data = 1;
+}
+

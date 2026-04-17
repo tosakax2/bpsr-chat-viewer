@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_dungeon_enter_count.proto";
+
+message DungeonEnterLimit {
+  map<int32, zproto.DungeonEnterCount> enter_count = 1;
+}
+

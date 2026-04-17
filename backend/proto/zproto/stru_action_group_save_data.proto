@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_action_group_save_info.proto";
+
+message ActionGroupSaveData {
+  map<int32, zproto.ActionGroupSaveInfo> action_group_save_infos = 1;
+  bool is_init = 2;
+}
+

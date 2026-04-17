@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_boss_progress.proto";
+
+message RaidRecord {
+  map<int32, zproto.BossProgress> boss_progress = 2;
+}
+

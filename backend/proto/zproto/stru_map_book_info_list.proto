@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_map_book_info.proto";
+
+message MapBookInfoList {
+  map<uint32, zproto.MapBookInfo> map_book_map = 1;
+}
+

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_trial_road_target_progress.proto";
+
+message TrialRoadRoomTargetAward {
+  map<int32, zproto.TrialRoadTargetProgress> target_progress = 1;
+}
+

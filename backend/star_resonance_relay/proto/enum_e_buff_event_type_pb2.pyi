@@ -1,0 +1,194 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class EBuffEventType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    BuffEventUnknown: _ClassVar[EBuffEventType]
+    BuffEventAddTo: _ClassVar[EBuffEventType]
+    BuffEventRemove: _ClassVar[EBuffEventType]
+    BuffEventReplace: _ClassVar[EBuffEventType]
+    BuffEventTimer: _ClassVar[EBuffEventType]
+    BuffEventStackLayer: _ClassVar[EBuffEventType]
+    BuffEventRemoveLayer: _ClassVar[EBuffEventType]
+    BuffEventOnHitTargetBefore: _ClassVar[EBuffEventType]
+    BuffEventOnHitTargetAfter: _ClassVar[EBuffEventType]
+    BuffEventOnHittedBefore: _ClassVar[EBuffEventType]
+    BuffEventOnHittedAfter: _ClassVar[EBuffEventType]
+    BuffEventOnReachMaxLayer: _ClassVar[EBuffEventType]
+    BuffEventHostDeath: _ClassVar[EBuffEventType]
+    BuffEventOnSkillHitAfter: _ClassVar[EBuffEventType]
+    BuffEventTrigTimingAura: _ClassVar[EBuffEventType]
+    BuffEventBodyPartDead: _ClassVar[EBuffEventType]
+    BuffEventBodyPartHit: _ClassVar[EBuffEventType]
+    BuffEventBodyPartStateChange: _ClassVar[EBuffEventType]
+    BuffEventOnPartHittedBefore: _ClassVar[EBuffEventType]
+    BuffEventOnPartHittedAfter: _ClassVar[EBuffEventType]
+    BuffEventGravitational: _ClassVar[EBuffEventType]
+    BuffEventFightResChange: _ClassVar[EBuffEventType]
+    BuffEventOnKillActor: _ClassVar[EBuffEventType]
+    BuffEventAttrWatcher: _ClassVar[EBuffEventType]
+    BuffEventOnHittedLHBefore: _ClassVar[EBuffEventType]
+    BuffEventOnBeHittedLHBefore: _ClassVar[EBuffEventType]
+    BuffEventAddByTarget: _ClassVar[EBuffEventType]
+    BuffEventRemoveByTarget: _ClassVar[EBuffEventType]
+    BuffEventInCombatState: _ClassVar[EBuffEventType]
+    BuffEventOutCombatState: _ClassVar[EBuffEventType]
+    BuffEventSkillBegin: _ClassVar[EBuffEventType]
+    BuffEventSkillEnd: _ClassVar[EBuffEventType]
+    BuffEventSingingEnd: _ClassVar[EBuffEventType]
+    BuffEventSummonBuffAdd: _ClassVar[EBuffEventType]
+    BuffEventSummonEntity: _ClassVar[EBuffEventType]
+    BuffEventGuideEnd: _ClassVar[EBuffEventType]
+    BuffEventOnDelayHit: _ClassVar[EBuffEventType]
+    BuffEventTeamBuffAdd: _ClassVar[EBuffEventType]
+    BuffEventChangeProfession: _ClassVar[EBuffEventType]
+    BuffEventDodgeSuccess: _ClassVar[EBuffEventType]
+    BuffEventHealBefore: _ClassVar[EBuffEventType]
+    BuffEventHealAfter: _ClassVar[EBuffEventType]
+    BuffEventProduceHealBefore: _ClassVar[EBuffEventType]
+    BuffEventProduceHealAfter: _ClassVar[EBuffEventType]
+    BuffEventShieldBroken: _ClassVar[EBuffEventType]
+    BuffEventLinkingStart: _ClassVar[EBuffEventType]
+    BuffEventLinkingEnd: _ClassVar[EBuffEventType]
+    BuffEventLinkingWatcher: _ClassVar[EBuffEventType]
+    BuffEventSuperArmorBroken: _ClassVar[EBuffEventType]
+    BuffEventAddedByTargetTag: _ClassVar[EBuffEventType]
+    BuffEventAddToTargetTag: _ClassVar[EBuffEventType]
+    BuffEventOnBeHitLessenHp: _ClassVar[EBuffEventType]
+    BuffEventEnterBreaking: _ClassVar[EBuffEventType]
+    BuffEventTeleportBelt: _ClassVar[EBuffEventType]
+    BuffEventOnBeHitAfterOnly: _ClassVar[EBuffEventType]
+    BuffEventOnHitAfterOnly: _ClassVar[EBuffEventType]
+    BuffEventOnBeHealAfterOnly: _ClassVar[EBuffEventType]
+    BuffEventOnHealAfterOnly: _ClassVar[EBuffEventType]
+    BuffEventHealCalcAttrBefore: _ClassVar[EBuffEventType]
+    BuffEventProduceHealCalcAttrBefore: _ClassVar[EBuffEventType]
+    BuffEventReviveSuccessEnd: _ClassVar[EBuffEventType]
+    BuffEventAfterReviveFirstMove: _ClassVar[EBuffEventType]
+    BuffEventMonsterIntoAlert: _ClassVar[EBuffEventType]
+    BuffEventMonsterOutAlert: _ClassVar[EBuffEventType]
+    BuffEventOnAddShieldCalcBefore: _ClassVar[EBuffEventType]
+    BuffEventOnAddShieldBefore: _ClassVar[EBuffEventType]
+    BuffEventOnAddShieldAfter: _ClassVar[EBuffEventType]
+    BuffEventOnBeAddedShieldCalcBefore: _ClassVar[EBuffEventType]
+    BuffEventOnBeAddedShieldBefore: _ClassVar[EBuffEventType]
+    BuffEventOnBeAddedShieldAfter: _ClassVar[EBuffEventType]
+    BuffEventProgressWatcher: _ClassVar[EBuffEventType]
+    BuffEventOnLuckyDamage: _ClassVar[EBuffEventType]
+    BuffEventSkillCDEnd: _ClassVar[EBuffEventType]
+    BuffEventMotionless: _ClassVar[EBuffEventType]
+    BuffEventParticipateKill: _ClassVar[EBuffEventType]
+    BuffEventProfessionBDTypeChange: _ClassVar[EBuffEventType]
+    BuffEventSingingBegin: _ClassVar[EBuffEventType]
+    BuffEventGuideBegin: _ClassVar[EBuffEventType]
+    BuffEventRandTimer: _ClassVar[EBuffEventType]
+    BuffEventIntoFractureState: _ClassVar[EBuffEventType]
+    BuffEventTakeOnRide: _ClassVar[EBuffEventType]
+    BuffEventTakeOffRide: _ClassVar[EBuffEventType]
+    BuffEventStartJump: _ClassVar[EBuffEventType]
+    BuffEventPlayAction: _ClassVar[EBuffEventType]
+    BuffEventPlayEmote: _ClassVar[EBuffEventType]
+    BuffEventZeroHpStopShapeshift: _ClassVar[EBuffEventType]
+    BuffEventPositionChange: _ClassVar[EBuffEventType]
+    BuffEventCheck: _ClassVar[EBuffEventType]
+    BuffEventCustomize: _ClassVar[EBuffEventType]
+    BuffEventShapeshiftEndEvent: _ClassVar[EBuffEventType]
+    BuffEventAttrRefresh: _ClassVar[EBuffEventType]
+    BuffEventMonitorTeamKillActor: _ClassVar[EBuffEventType]
+    BuffEventSpecialEffects: _ClassVar[EBuffEventType]
+BuffEventUnknown: EBuffEventType
+BuffEventAddTo: EBuffEventType
+BuffEventRemove: EBuffEventType
+BuffEventReplace: EBuffEventType
+BuffEventTimer: EBuffEventType
+BuffEventStackLayer: EBuffEventType
+BuffEventRemoveLayer: EBuffEventType
+BuffEventOnHitTargetBefore: EBuffEventType
+BuffEventOnHitTargetAfter: EBuffEventType
+BuffEventOnHittedBefore: EBuffEventType
+BuffEventOnHittedAfter: EBuffEventType
+BuffEventOnReachMaxLayer: EBuffEventType
+BuffEventHostDeath: EBuffEventType
+BuffEventOnSkillHitAfter: EBuffEventType
+BuffEventTrigTimingAura: EBuffEventType
+BuffEventBodyPartDead: EBuffEventType
+BuffEventBodyPartHit: EBuffEventType
+BuffEventBodyPartStateChange: EBuffEventType
+BuffEventOnPartHittedBefore: EBuffEventType
+BuffEventOnPartHittedAfter: EBuffEventType
+BuffEventGravitational: EBuffEventType
+BuffEventFightResChange: EBuffEventType
+BuffEventOnKillActor: EBuffEventType
+BuffEventAttrWatcher: EBuffEventType
+BuffEventOnHittedLHBefore: EBuffEventType
+BuffEventOnBeHittedLHBefore: EBuffEventType
+BuffEventAddByTarget: EBuffEventType
+BuffEventRemoveByTarget: EBuffEventType
+BuffEventInCombatState: EBuffEventType
+BuffEventOutCombatState: EBuffEventType
+BuffEventSkillBegin: EBuffEventType
+BuffEventSkillEnd: EBuffEventType
+BuffEventSingingEnd: EBuffEventType
+BuffEventSummonBuffAdd: EBuffEventType
+BuffEventSummonEntity: EBuffEventType
+BuffEventGuideEnd: EBuffEventType
+BuffEventOnDelayHit: EBuffEventType
+BuffEventTeamBuffAdd: EBuffEventType
+BuffEventChangeProfession: EBuffEventType
+BuffEventDodgeSuccess: EBuffEventType
+BuffEventHealBefore: EBuffEventType
+BuffEventHealAfter: EBuffEventType
+BuffEventProduceHealBefore: EBuffEventType
+BuffEventProduceHealAfter: EBuffEventType
+BuffEventShieldBroken: EBuffEventType
+BuffEventLinkingStart: EBuffEventType
+BuffEventLinkingEnd: EBuffEventType
+BuffEventLinkingWatcher: EBuffEventType
+BuffEventSuperArmorBroken: EBuffEventType
+BuffEventAddedByTargetTag: EBuffEventType
+BuffEventAddToTargetTag: EBuffEventType
+BuffEventOnBeHitLessenHp: EBuffEventType
+BuffEventEnterBreaking: EBuffEventType
+BuffEventTeleportBelt: EBuffEventType
+BuffEventOnBeHitAfterOnly: EBuffEventType
+BuffEventOnHitAfterOnly: EBuffEventType
+BuffEventOnBeHealAfterOnly: EBuffEventType
+BuffEventOnHealAfterOnly: EBuffEventType
+BuffEventHealCalcAttrBefore: EBuffEventType
+BuffEventProduceHealCalcAttrBefore: EBuffEventType
+BuffEventReviveSuccessEnd: EBuffEventType
+BuffEventAfterReviveFirstMove: EBuffEventType
+BuffEventMonsterIntoAlert: EBuffEventType
+BuffEventMonsterOutAlert: EBuffEventType
+BuffEventOnAddShieldCalcBefore: EBuffEventType
+BuffEventOnAddShieldBefore: EBuffEventType
+BuffEventOnAddShieldAfter: EBuffEventType
+BuffEventOnBeAddedShieldCalcBefore: EBuffEventType
+BuffEventOnBeAddedShieldBefore: EBuffEventType
+BuffEventOnBeAddedShieldAfter: EBuffEventType
+BuffEventProgressWatcher: EBuffEventType
+BuffEventOnLuckyDamage: EBuffEventType
+BuffEventSkillCDEnd: EBuffEventType
+BuffEventMotionless: EBuffEventType
+BuffEventParticipateKill: EBuffEventType
+BuffEventProfessionBDTypeChange: EBuffEventType
+BuffEventSingingBegin: EBuffEventType
+BuffEventGuideBegin: EBuffEventType
+BuffEventRandTimer: EBuffEventType
+BuffEventIntoFractureState: EBuffEventType
+BuffEventTakeOnRide: EBuffEventType
+BuffEventTakeOffRide: EBuffEventType
+BuffEventStartJump: EBuffEventType
+BuffEventPlayAction: EBuffEventType
+BuffEventPlayEmote: EBuffEventType
+BuffEventZeroHpStopShapeshift: EBuffEventType
+BuffEventPositionChange: EBuffEventType
+BuffEventCheck: EBuffEventType
+BuffEventCustomize: EBuffEventType
+BuffEventShapeshiftEndEvent: EBuffEventType
+BuffEventAttrRefresh: EBuffEventType
+BuffEventMonitorTeamKillActor: EBuffEventType
+BuffEventSpecialEffects: EBuffEventType

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message ProfessionData {
+  int32 profession_id = 1;
+  int32 weapon_skin = 2;
+}
+

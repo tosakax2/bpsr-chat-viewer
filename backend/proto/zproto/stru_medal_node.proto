@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message MedalNode {
+  uint32 node_id = 1;
+  uint32 node_level = 2;
+  bool choose = 3;
+  int32 slot = 4;
+}
+

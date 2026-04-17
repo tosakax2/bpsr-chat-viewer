@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message worldQuestList {
+  repeated int32 quest_list = 1;
+}
+

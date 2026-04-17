@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_fashion_color_info.proto";
+
+message FashionInfo {
+  int32 slot = 1;
+  int32 fashion_id = 2;
+  zproto.FashionColorInfo colors = 3;
+}
+

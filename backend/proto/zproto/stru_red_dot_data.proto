@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message RedDotData {
+  map<int32, bool> permanent_closed_red_dot = 1;
+  map<int32, int32> red_dot_count = 2;
+}
+

@@ -1,0 +1,38 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class ECommunityAuthorityActionType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    CommunityAuthorityActionType: _ClassVar[ECommunityAuthorityActionType]
+    CommunityAuthorityActionTypeWareHouse: _ClassVar[ECommunityAuthorityActionType]
+    CommunityAuthorityActionTypeFurnitureEdit: _ClassVar[ECommunityAuthorityActionType]
+    CommunityAuthorityActionTypeFurnitureMake: _ClassVar[ECommunityAuthorityActionType]
+    CommunityAuthorityActionTypeEnterHome: _ClassVar[ECommunityAuthorityActionType]
+    CommunityAuthorityActionTypeHarvest: _ClassVar[ECommunityAuthorityActionType]
+    CommunityAuthorityActionTypeInviteCohabitant: _ClassVar[ECommunityAuthorityActionType]
+    CommunityAuthorityActionTypeUpgradeHome: _ClassVar[ECommunityAuthorityActionType]
+    CommunityAuthorityActionTypeCollectFurniture: _ClassVar[ECommunityAuthorityActionType]
+    CommunityAuthorityActionTypePlant: _ClassVar[ECommunityAuthorityActionType]
+    CommunityAuthorityActionTypeWater: _ClassVar[ECommunityAuthorityActionType]
+    CommunityAuthorityActionTypeFertilize: _ClassVar[ECommunityAuthorityActionType]
+    CommunityAuthorityActionTypePollinate: _ClassVar[ECommunityAuthorityActionType]
+    CommunityAuthorityActionTypeFarmlandEdit: _ClassVar[ECommunityAuthorityActionType]
+    CommunityAuthorityActionTypePollen: _ClassVar[ECommunityAuthorityActionType]
+CommunityAuthorityActionType: ECommunityAuthorityActionType
+CommunityAuthorityActionTypeWareHouse: ECommunityAuthorityActionType
+CommunityAuthorityActionTypeFurnitureEdit: ECommunityAuthorityActionType
+CommunityAuthorityActionTypeFurnitureMake: ECommunityAuthorityActionType
+CommunityAuthorityActionTypeEnterHome: ECommunityAuthorityActionType
+CommunityAuthorityActionTypeHarvest: ECommunityAuthorityActionType
+CommunityAuthorityActionTypeInviteCohabitant: ECommunityAuthorityActionType
+CommunityAuthorityActionTypeUpgradeHome: ECommunityAuthorityActionType
+CommunityAuthorityActionTypeCollectFurniture: ECommunityAuthorityActionType
+CommunityAuthorityActionTypePlant: ECommunityAuthorityActionType
+CommunityAuthorityActionTypeWater: ECommunityAuthorityActionType
+CommunityAuthorityActionTypeFertilize: ECommunityAuthorityActionType
+CommunityAuthorityActionTypePollinate: ECommunityAuthorityActionType
+CommunityAuthorityActionTypeFarmlandEdit: ECommunityAuthorityActionType
+CommunityAuthorityActionTypePollen: ECommunityAuthorityActionType

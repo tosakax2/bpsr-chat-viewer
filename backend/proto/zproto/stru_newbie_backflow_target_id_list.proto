@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message NewbieBackflowTargetIdList {
+  repeated uint32 target_id_list = 1;
+}
+

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message UnionData {
+  int64 unionid = 1;
+  string name = 2;
+  int32 union_hunt_rank = 3;
+}
+

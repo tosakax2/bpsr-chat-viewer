@@ -1,0 +1,2540 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class EAttrType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    AttrUnknown: _ClassVar[EAttrType]
+    AttrName: _ClassVar[EAttrType]
+    AttrAimDir: _ClassVar[EAttrType]
+    AttrScale: _ClassVar[EAttrType]
+    AttrScaleAddRatio: _ClassVar[EAttrType]
+    AttrId: _ClassVar[EAttrType]
+    AttrState: _ClassVar[EAttrType]
+    AttrCamp: _ClassVar[EAttrType]
+    AttrLayer: _ClassVar[EAttrType]
+    AttrIsBodySeparate: _ClassVar[EAttrType]
+    AttrConfigUid: _ClassVar[EAttrType]
+    AttrTableUid: _ClassVar[EAttrType]
+    AttrVisualLayers: _ClassVar[EAttrType]
+    AttrVisualLayer: _ClassVar[EAttrType]
+    AttrVisualLayerUid: _ClassVar[EAttrType]
+    AttrSummonFlag: _ClassVar[EAttrType]
+    AttrTargetId: _ClassVar[EAttrType]
+    AttrTargetPartId: _ClassVar[EAttrType]
+    AttrIsBot: _ClassVar[EAttrType]
+    AttrBasicFleshyType: _ClassVar[EAttrType]
+    AttrDir: _ClassVar[EAttrType]
+    AttrTargetDir: _ClassVar[EAttrType]
+    AttrPos: _ClassVar[EAttrType]
+    AttrTargetPos: _ClassVar[EAttrType]
+    AttrSummonerPos: _ClassVar[EAttrType]
+    AttrVelocity: _ClassVar[EAttrType]
+    AttrMoveType: _ClassVar[EAttrType]
+    AttrTurnVelocity: _ClassVar[EAttrType]
+    AttrReviveCurProgressValue: _ClassVar[EAttrType]
+    AttrReviveMaxProgressValue: _ClassVar[EAttrType]
+    AttrUnbreakableLevel: _ClassVar[EAttrType]
+    AttrStateTime: _ClassVar[EAttrType]
+    AttrDeadType: _ClassVar[EAttrType]
+    AttrMoveForce: _ClassVar[EAttrType]
+    AttrSummonerId: _ClassVar[EAttrType]
+    AttrTopSummonerId: _ClassVar[EAttrType]
+    AttrIsUnderGround: _ClassVar[EAttrType]
+    AttrOffset: _ClassVar[EAttrType]
+    AttrInheritingType: _ClassVar[EAttrType]
+    AttrFightSourceInfo: _ClassVar[EAttrType]
+    AttrSkillId: _ClassVar[EAttrType]
+    AttrSkillStage: _ClassVar[EAttrType]
+    AttrInAccumulate: _ClassVar[EAttrType]
+    AttrSkillLevel: _ClassVar[EAttrType]
+    AttrCombatState: _ClassVar[EAttrType]
+    AttrSkillStageBeginTime: _ClassVar[EAttrType]
+    AttrSkillBeginTime: _ClassVar[EAttrType]
+    AttrSkillSpeed: _ClassVar[EAttrType]
+    AttrSkillStageNum: _ClassVar[EAttrType]
+    AttrReplaceSkillList: _ClassVar[EAttrType]
+    AttrFinalTargetDir: _ClassVar[EAttrType]
+    AttrSkillUuid: _ClassVar[EAttrType]
+    AttrIsCurStageNeedStopMove: _ClassVar[EAttrType]
+    AttrSkillShowState: _ClassVar[EAttrType]
+    AttrCombatStateTime: _ClassVar[EAttrType]
+    AttrSwitchSkill: _ClassVar[EAttrType]
+    AttrSkillLevelIdList: _ClassVar[EAttrType]
+    AttrCantSilence: _ClassVar[EAttrType]
+    AttrFinalTargetPos: _ClassVar[EAttrType]
+    AttrTargetPartPos: _ClassVar[EAttrType]
+    AttrDmgTargetPos: _ClassVar[EAttrType]
+    AttrSkillRemodelLevel: _ClassVar[EAttrType]
+    AttrIsInteractionActive: _ClassVar[EAttrType]
+    AttrInteractionId: _ClassVar[EAttrType]
+    AttrInteractionUuid: _ClassVar[EAttrType]
+    AttrInteractionStage: _ClassVar[EAttrType]
+    AttrInteractionSeat: _ClassVar[EAttrType]
+    AttrInteractionInfo: _ClassVar[EAttrType]
+    AttrActionTime: _ClassVar[EAttrType]
+    AttrActionId: _ClassVar[EAttrType]
+    AttrActionUpperTime: _ClassVar[EAttrType]
+    AttrActionUpperId: _ClassVar[EAttrType]
+    AttrActionSource: _ClassVar[EAttrType]
+    AttrActionLongName: _ClassVar[EAttrType]
+    AttrMountId: _ClassVar[EAttrType]
+    AttrMountSize: _ClassVar[EAttrType]
+    AttrActionGroupInfo: _ClassVar[EAttrType]
+    AttrAiming: _ClassVar[EAttrType]
+    AttrGender: _ClassVar[EAttrType]
+    AttrInBattleShow: _ClassVar[EAttrType]
+    AttrFaceData: _ClassVar[EAttrType]
+    AttrProfile: _ClassVar[EAttrType]
+    AttrBodySize: _ClassVar[EAttrType]
+    AttrRoleLevel: _ClassVar[EAttrType]
+    AttrOfflineTime: _ClassVar[EAttrType]
+    AttrClimbType: _ClassVar[EAttrType]
+    AttrClimbNormal: _ClassVar[EAttrType]
+    AttrClimbDir: _ClassVar[EAttrType]
+    AttrClimbTime: _ClassVar[EAttrType]
+    AttrPlaneId: _ClassVar[EAttrType]
+    AttrCanSwitchLayer: _ClassVar[EAttrType]
+    AttrTeamId: _ClassVar[EAttrType]
+    AttrTeamMemberNums: _ClassVar[EAttrType]
+    AttrSeasonLv: _ClassVar[EAttrType]
+    AttrUseItemState: _ClassVar[EAttrType]
+    AttrProfessionSwitchTime: _ClassVar[EAttrType]
+    AttrProfessionHitType: _ClassVar[EAttrType]
+    AttrEquipData: _ClassVar[EAttrType]
+    AttrFashionData: _ClassVar[EAttrType]
+    AttrAppearanceData: _ClassVar[EAttrType]
+    AttrWeaponVisibility: _ClassVar[EAttrType]
+    AttrCommonSkillList: _ClassVar[EAttrType]
+    AttrDeadTime: _ClassVar[EAttrType]
+    AttrResourceLeft: _ClassVar[EAttrType]
+    AttrResourceRight: _ClassVar[EAttrType]
+    AttrShowPieceAttrList: _ClassVar[EAttrType]
+    AttrSceneInteractionInfo: _ClassVar[EAttrType]
+    AttrWeather: _ClassVar[EAttrType]
+    AttrDayNightSwitch: _ClassVar[EAttrType]
+    AttrRankId: _ClassVar[EAttrType]
+    AttrEmoteTime: _ClassVar[EAttrType]
+    AttrEmoteId: _ClassVar[EAttrType]
+    AttrProfessionId: _ClassVar[EAttrType]
+    AttrSwitchProfessionCD: _ClassVar[EAttrType]
+    AttrProfessionSkinId: _ClassVar[EAttrType]
+    AttrShowId: _ClassVar[EAttrType]
+    AttrSlot: _ClassVar[EAttrType]
+    AttrShowRankStar: _ClassVar[EAttrType]
+    AttrFishingData: _ClassVar[EAttrType]
+    AttrPersonalTitle: _ClassVar[EAttrType]
+    AttrReviveCount: _ClassVar[EAttrType]
+    AttrSceneAreaId: _ClassVar[EAttrType]
+    AttrSkillSkinIds: _ClassVar[EAttrType]
+    AttrToy: _ClassVar[EAttrType]
+    AttrIsNewbie: _ClassVar[EAttrType]
+    AttrMoveVersion: _ClassVar[EAttrType]
+    AttrPersonalObjData: _ClassVar[EAttrType]
+    AttrTerrainIndex: _ClassVar[EAttrType]
+    AttrIsBackflow: _ClassVar[EAttrType]
+    AttrParkourStep: _ClassVar[EAttrType]
+    AttrParkourFallenJump: _ClassVar[EAttrType]
+    AttrParkourShimmyJump: _ClassVar[EAttrType]
+    AttrParkourFiveJump: _ClassVar[EAttrType]
+    AttrParkourKickWallJump: _ClassVar[EAttrType]
+    AttrParkourPedalWall: _ClassVar[EAttrType]
+    AttrParkourRun: _ClassVar[EAttrType]
+    AttrParkourLazyJump: _ClassVar[EAttrType]
+    AttrParkourLevitation: _ClassVar[EAttrType]
+    AttrShimmyJumpPac: _ClassVar[EAttrType]
+    AttrMaxShimmyJumpPac: _ClassVar[EAttrType]
+    AttrJumpStep: _ClassVar[EAttrType]
+    AttrJumpDir: _ClassVar[EAttrType]
+    AttrVerVelocity: _ClassVar[EAttrType]
+    AttrHorVelocity: _ClassVar[EAttrType]
+    AttrJumpType: _ClassVar[EAttrType]
+    AttrGravity: _ClassVar[EAttrType]
+    AttrBounceJumpId: _ClassVar[EAttrType]
+    AttrJumpExCount: _ClassVar[EAttrType]
+    AttrRushDirection: _ClassVar[EAttrType]
+    AttrBattleRushChargeBegin: _ClassVar[EAttrType]
+    AttrRushMaxCount: _ClassVar[EAttrType]
+    AttrRushCountClearInterval: _ClassVar[EAttrType]
+    AttrRushCD: _ClassVar[EAttrType]
+    AttrGlideVelocityH: _ClassVar[EAttrType]
+    AttrGlideVelocityV: _ClassVar[EAttrType]
+    AttrGlideRotAngle: _ClassVar[EAttrType]
+    AttrWallNormal: _ClassVar[EAttrType]
+    AttrPedalWallDir: _ClassVar[EAttrType]
+    AttrPedalWallStage: _ClassVar[EAttrType]
+    AttrInsightFlag: _ClassVar[EAttrType]
+    AttrAttachVelocity: _ClassVar[EAttrType]
+    AttrAttachVelocityDirX: _ClassVar[EAttrType]
+    AttrAttachVelocityDirY: _ClassVar[EAttrType]
+    AttrAttachVelocityDirZ: _ClassVar[EAttrType]
+    AttrAttachVelocitySource: _ClassVar[EAttrType]
+    AttrAttachSourceEntUuid: _ClassVar[EAttrType]
+    AttrTunnelMoveStage: _ClassVar[EAttrType]
+    AttrTunnelId: _ClassVar[EAttrType]
+    AttrTunnelPointIndex: _ClassVar[EAttrType]
+    AttrTunnelPointT: _ClassVar[EAttrType]
+    AttrSwimStage: _ClassVar[EAttrType]
+    AttrSceneName: _ClassVar[EAttrType]
+    AttrSceneBasicId: _ClassVar[EAttrType]
+    AttrSceneUuid: _ClassVar[EAttrType]
+    AttrSceneChannel: _ClassVar[EAttrType]
+    AttrSceneWeather: _ClassVar[EAttrType]
+    AttrSceneLevelId: _ClassVar[EAttrType]
+    AttrSceneDayNightSwitch: _ClassVar[EAttrType]
+    AttrFireworkStartTimeSeconds: _ClassVar[EAttrType]
+    AttrDeathCount: _ClassVar[EAttrType]
+    AttrDeathSubTimeSecond: _ClassVar[EAttrType]
+    AttrFireworkType: _ClassVar[EAttrType]
+    AttrSceneLineKickUserEndTime: _ClassVar[EAttrType]
+    AttrObjState: _ClassVar[EAttrType]
+    AttrObjCounter: _ClassVar[EAttrType]
+    AttrOwner: _ClassVar[EAttrType]
+    AttrToyState: _ClassVar[EAttrType]
+    AttrDynamicInteractionId: _ClassVar[EAttrType]
+    AttrZoneParam: _ClassVar[EAttrType]
+    AttrDataType: _ClassVar[EAttrType]
+    AttrRotation: _ClassVar[EAttrType]
+    AttrShape: _ClassVar[EAttrType]
+    AttrGMGod: _ClassVar[EAttrType]
+    AttrShapeshiftType: _ClassVar[EAttrType]
+    AttrShapeshiftConfigId: _ClassVar[EAttrType]
+    AttrShapeshiftProfessionId: _ClassVar[EAttrType]
+    AttrShapeshiftSkillIds: _ClassVar[EAttrType]
+    AttrShapeshiftReplaceAttr: _ClassVar[EAttrType]
+    AttrNpcTest: _ClassVar[EAttrType]
+    AttrHostId: _ClassVar[EAttrType]
+    AttrEventId: _ClassVar[EAttrType]
+    AttrEffectType: _ClassVar[EAttrType]
+    AttrBulletTargetPos: _ClassVar[EAttrType]
+    AttrRayCount: _ClassVar[EAttrType]
+    AttrRotate: _ClassVar[EAttrType]
+    AttrSummonGroup: _ClassVar[EAttrType]
+    AttrSummonIndex: _ClassVar[EAttrType]
+    AttrSummonGroupCount: _ClassVar[EAttrType]
+    AttrBulletStage: _ClassVar[EAttrType]
+    AttrBulletCanMove: _ClassVar[EAttrType]
+    AttrBulletCantHit: _ClassVar[EAttrType]
+    AttrBulletZoomType: _ClassVar[EAttrType]
+    AttrBulletOrientationType: _ClassVar[EAttrType]
+    AttrBanDestroyShow: _ClassVar[EAttrType]
+    AttrBulletSpeedChangePCT: _ClassVar[EAttrType]
+    AttrDirX: _ClassVar[EAttrType]
+    AttrDirZ: _ClassVar[EAttrType]
+    AttrTargetDirX: _ClassVar[EAttrType]
+    AttrTargetDirZ: _ClassVar[EAttrType]
+    AttrMaxExtinction: _ClassVar[EAttrType]
+    AttrExtinction: _ClassVar[EAttrType]
+    AttrMaxStunned: _ClassVar[EAttrType]
+    AttrStunned: _ClassVar[EAttrType]
+    AttrInOverdrive: _ClassVar[EAttrType]
+    AttrIsLockStunned: _ClassVar[EAttrType]
+    AttrTargetUuid: _ClassVar[EAttrType]
+    AttrAlertIncreaseSpeed: _ClassVar[EAttrType]
+    AttrAlertValue: _ClassVar[EAttrType]
+    AttrStopBreakingBarTickingFlag: _ClassVar[EAttrType]
+    AttrIsStopBehvTree: _ClassVar[EAttrType]
+    AttrBreakingStage: _ClassVar[EAttrType]
+    AttrFirstAttack: _ClassVar[EAttrType]
+    AttrDungeonScoreExtraMultiple: _ClassVar[EAttrType]
+    AttrDungeonScoreExtraAddValue: _ClassVar[EAttrType]
+    AttrIsMonsterRankEnable: _ClassVar[EAttrType]
+    AttrMonsterRank: _ClassVar[EAttrType]
+    SupplementaryRewardIndex: _ClassVar[EAttrType]
+    AttrMonsterSeasonLevel: _ClassVar[EAttrType]
+    AttrHatedCharId: _ClassVar[EAttrType]
+    AttrHatedJob: _ClassVar[EAttrType]
+    AttrHatedName: _ClassVar[EAttrType]
+    AttrHateList: _ClassVar[EAttrType]
+    AttrDropType: _ClassVar[EAttrType]
+    AttrItemId: _ClassVar[EAttrType]
+    AttrAwardId: _ClassVar[EAttrType]
+    AttrAni: _ClassVar[EAttrType]
+    AttrItemData: _ClassVar[EAttrType]
+    AttrInteractionActor: _ClassVar[EAttrType]
+    AttrCollectCounter: _ClassVar[EAttrType]
+    AttrTransferType: _ClassVar[EAttrType]
+    AttrRogueEntryList: _ClassVar[EAttrType]
+    AttrRogueLockedEntry: _ClassVar[EAttrType]
+    AttrStiffType: _ClassVar[EAttrType]
+    AttrStiffStage: _ClassVar[EAttrType]
+    AttrStiffStageTime: _ClassVar[EAttrType]
+    AttrStiffDir: _ClassVar[EAttrType]
+    AttrStiffTime: _ClassVar[EAttrType]
+    AttrStiffDownTime: _ClassVar[EAttrType]
+    AttrStiffHangTime: _ClassVar[EAttrType]
+    AttrStiffTarget: _ClassVar[EAttrType]
+    AttrStiffFlowSpeed: _ClassVar[EAttrType]
+    AttrStiffFlowOffset: _ClassVar[EAttrType]
+    AttrStiffFlowRadius: _ClassVar[EAttrType]
+    AttrStiffHorSpeed: _ClassVar[EAttrType]
+    AttrStiffHorAccSpeed: _ClassVar[EAttrType]
+    AttrStiffVerSpeedUp: _ClassVar[EAttrType]
+    AttrStiffVerAccSpeedUp: _ClassVar[EAttrType]
+    AttrStiffVerSpeedDown: _ClassVar[EAttrType]
+    AttrStiffVerAccSpeedDown: _ClassVar[EAttrType]
+    AttrStiffHorSpeedMinimum: _ClassVar[EAttrType]
+    AttrStiffDamageWeight: _ClassVar[EAttrType]
+    AttrTargetPosIsEnd: _ClassVar[EAttrType]
+    AttrStiffThrowMoveInfo: _ClassVar[EAttrType]
+    AttrStiffDamageStrength: _ClassVar[EAttrType]
+    AttrRideId: _ClassVar[EAttrType]
+    AttrIsCantRide: _ClassVar[EAttrType]
+    AttrRideIndex: _ClassVar[EAttrType]
+    AttrRideStage: _ClassVar[EAttrType]
+    AttrRideType: _ClassVar[EAttrType]
+    AttrRideUuid: _ClassVar[EAttrType]
+    AttrRideAttachEnable: _ClassVar[EAttrType]
+    AttrRideMagneticEnable: _ClassVar[EAttrType]
+    AttrRideMagneticQueueId: _ClassVar[EAttrType]
+    AttrIsForceRide: _ClassVar[EAttrType]
+    AttrControllerUuid: _ClassVar[EAttrType]
+    AttrPassengerList: _ClassVar[EAttrType]
+    AttrIsSilence: _ClassVar[EAttrType]
+    AttrIsConfine: _ClassVar[EAttrType]
+    AttrRideSeatCantTransfer: _ClassVar[EAttrType]
+    AttrCantSwim: _ClassVar[EAttrType]
+    AttrGMCantHit: _ClassVar[EAttrType]
+    AttrCantStiff: _ClassVar[EAttrType]
+    AttrCantStiffBack: _ClassVar[EAttrType]
+    AttrCantStiffDown: _ClassVar[EAttrType]
+    AttrCantStiffAir: _ClassVar[EAttrType]
+    AttrCantNormalAttack: _ClassVar[EAttrType]
+    AttrCantSkill: _ClassVar[EAttrType]
+    AttrCantMove: _ClassVar[EAttrType]
+    AttrCantTurn: _ClassVar[EAttrType]
+    AttrCantJump: _ClassVar[EAttrType]
+    AttrCantRush: _ClassVar[EAttrType]
+    AttrCantGravitational: _ClassVar[EAttrType]
+    AttrCantStiffFlow: _ClassVar[EAttrType]
+    AttrCantChangeProfession: _ClassVar[EAttrType]
+    AttrCantInteraction: _ClassVar[EAttrType]
+    AttrCantFallDamage: _ClassVar[EAttrType]
+    AttrCanFlow: _ClassVar[EAttrType]
+    AttrCanGlide: _ClassVar[EAttrType]
+    AttrCanBeHit: _ClassVar[EAttrType]
+    AttrCanLessenHP: _ClassVar[EAttrType]
+    AttrCanIntoCombat: _ClassVar[EAttrType]
+    AttrCantHit: _ClassVar[EAttrType]
+    AttrCanBeHatredTarget: _ClassVar[EAttrType]
+    AttrCanHitNum: _ClassVar[EAttrType]
+    AttrCanHitObj: _ClassVar[EAttrType]
+    AttrCanPathFinding: _ClassVar[EAttrType]
+    AttrCantNormalAttackInput: _ClassVar[EAttrType]
+    AttrCantSkillInput: _ClassVar[EAttrType]
+    AttrCantMoveInput: _ClassVar[EAttrType]
+    AttrCantJumpInput: _ClassVar[EAttrType]
+    AttrCantRushInput: _ClassVar[EAttrType]
+    AttrCantUseToy: _ClassVar[EAttrType]
+    AttrCantRideDown: _ClassVar[EAttrType]
+    AttrCantMultAction: _ClassVar[EAttrType]
+    AttrBlockSkill: _ClassVar[EAttrType]
+    AttrBlockSkillWhiteTags: _ClassVar[EAttrType]
+    AttrTopSummonerSkillSkin: _ClassVar[EAttrType]
+    AttrSummonSkillId: _ClassVar[EAttrType]
+    AttrSceneServStateObjData: _ClassVar[EAttrType]
+    AttrParadeId: _ClassVar[EAttrType]
+    AttrParadeQueueId: _ClassVar[EAttrType]
+    AttrParadeQueueIndex: _ClassVar[EAttrType]
+    AttrBubbleId: _ClassVar[EAttrType]
+    AttrCommunityDataMap: _ClassVar[EAttrType]
+    AttrOwnership: _ClassVar[EAttrType]
+    AttrHomeId: _ClassVar[EAttrType]
+    DecorationInfo: _ClassVar[EAttrType]
+    AttrSubSceneCommunityId: _ClassVar[EAttrType]
+    AttrSubSceneHomeId: _ClassVar[EAttrType]
+    AttrVisitedCharIds: _ClassVar[EAttrType]
+    AttrCohabitant: _ClassVar[EAttrType]
+    AttrAuthorityInfo: _ClassVar[EAttrType]
+    AttrOuterDecorationInfo: _ClassVar[EAttrType]
+    AttrInnerDecorationInfo: _ClassVar[EAttrType]
+    AttrUnlockedAreas: _ClassVar[EAttrType]
+    AttrHousingType: _ClassVar[EAttrType]
+    AttrHouseOwnerCharId: _ClassVar[EAttrType]
+    AttrIsHomelandFriend: _ClassVar[EAttrType]
+    AttrLevel: _ClassVar[EAttrType]
+    AttrGS: _ClassVar[EAttrType]
+    AttrLastMaxGS: _ClassVar[EAttrType]
+    AttrFightPoint: _ClassVar[EAttrType]
+    AttrFightPointTotal: _ClassVar[EAttrType]
+    AttrFightPointAdd: _ClassVar[EAttrType]
+    AttrFightPointExAdd: _ClassVar[EAttrType]
+    AttrFightPointPer: _ClassVar[EAttrType]
+    AttrFightPointExPer: _ClassVar[EAttrType]
+    AttrFightCapability: _ClassVar[EAttrType]
+    AttrFightCapabilityTotal: _ClassVar[EAttrType]
+    AttrFightCapabilityAdd: _ClassVar[EAttrType]
+    AttrFightCapabilityExAdd: _ClassVar[EAttrType]
+    AttrFightCapabilityPer: _ClassVar[EAttrType]
+    AttrFightCapabilityExPer: _ClassVar[EAttrType]
+    AttrSurvivalCapability: _ClassVar[EAttrType]
+    AttrSurvivalCapabilityTotal: _ClassVar[EAttrType]
+    AttrSurvivalCapabilityAdd: _ClassVar[EAttrType]
+    AttrSurvivalCapabilityExAdd: _ClassVar[EAttrType]
+    AttrSurvivalCapabilityPer: _ClassVar[EAttrType]
+    AttrSurvivalCapabilityExPer: _ClassVar[EAttrType]
+    AttrRankLevel: _ClassVar[EAttrType]
+    AttrSeasonLevel: _ClassVar[EAttrType]
+    AttrWalkVelocity: _ClassVar[EAttrType]
+    AttrWalkVelocityTotal: _ClassVar[EAttrType]
+    AttrWalkVelocityAdd: _ClassVar[EAttrType]
+    AttrWalkVelocityExAdd: _ClassVar[EAttrType]
+    AttrWalkVelocityPer: _ClassVar[EAttrType]
+    AttrWalkVelocityExPer: _ClassVar[EAttrType]
+    AttrRunVelocity: _ClassVar[EAttrType]
+    AttrRunVelocityTotal: _ClassVar[EAttrType]
+    AttrRunVelocityAdd: _ClassVar[EAttrType]
+    AttrRunVelocityExAdd: _ClassVar[EAttrType]
+    AttrRunVelocityPer: _ClassVar[EAttrType]
+    AttrRunVelocityExPer: _ClassVar[EAttrType]
+    AttrDashVelocity: _ClassVar[EAttrType]
+    AttrDashVelocityTotal: _ClassVar[EAttrType]
+    AttrDashVelocityAdd: _ClassVar[EAttrType]
+    AttrDashVelocityExAdd: _ClassVar[EAttrType]
+    AttrDashVelocityPer: _ClassVar[EAttrType]
+    AttrDashVelocityExPer: _ClassVar[EAttrType]
+    AttrReviveTimeConsumePCT: _ClassVar[EAttrType]
+    AttrReviveTimeConsumePCTTotal: _ClassVar[EAttrType]
+    AttrReviveTimeConsumePCTAdd: _ClassVar[EAttrType]
+    AttrReviveTimeConsumePCTExAdd: _ClassVar[EAttrType]
+    AttrReviveTimeConsumePCTPer: _ClassVar[EAttrType]
+    AttrReviveTimeConsumePCTExPer: _ClassVar[EAttrType]
+    AttrRideWalkVelocity: _ClassVar[EAttrType]
+    AttrRideWalkVelocityTotal: _ClassVar[EAttrType]
+    AttrRideWalkVelocityAdd: _ClassVar[EAttrType]
+    AttrRideWalkVelocityExAdd: _ClassVar[EAttrType]
+    AttrRideWalkVelocityPer: _ClassVar[EAttrType]
+    AttrRideWalkVelocityExPer: _ClassVar[EAttrType]
+    AttrRideRunVelocity: _ClassVar[EAttrType]
+    AttrRideRunVelocityTotal: _ClassVar[EAttrType]
+    AttrRideRunVelocityAdd: _ClassVar[EAttrType]
+    AttrRideRunVelocityExAdd: _ClassVar[EAttrType]
+    AttrRideRunVelocityPer: _ClassVar[EAttrType]
+    AttrRideRunVelocityExPer: _ClassVar[EAttrType]
+    AttrRideDashVelocity: _ClassVar[EAttrType]
+    AttrRideDashVelocityTotal: _ClassVar[EAttrType]
+    AttrRideDashVelocityAdd: _ClassVar[EAttrType]
+    AttrRideDashVelocityExAdd: _ClassVar[EAttrType]
+    AttrRideDashVelocityPer: _ClassVar[EAttrType]
+    AttrRideDashVelocityExPer: _ClassVar[EAttrType]
+    AttrReviveInterTimeConsumePCT: _ClassVar[EAttrType]
+    AttrReviveInterTimeConsumePCTTotal: _ClassVar[EAttrType]
+    AttrReviveInterTimeConsumePCTAdd: _ClassVar[EAttrType]
+    AttrReviveInterTimeConsumePCTExAdd: _ClassVar[EAttrType]
+    AttrReviveInterTimeConsumePCTPer: _ClassVar[EAttrType]
+    AttrReviveInterTimeConsumePCTExPer: _ClassVar[EAttrType]
+    AttrStrength: _ClassVar[EAttrType]
+    AttrStrengthTotal: _ClassVar[EAttrType]
+    AttrStrengthAdd: _ClassVar[EAttrType]
+    AttrStrengthExAdd: _ClassVar[EAttrType]
+    AttrStrengthPer: _ClassVar[EAttrType]
+    AttrStrengthExPer: _ClassVar[EAttrType]
+    AttrIntelligence: _ClassVar[EAttrType]
+    AttrIntelligenceTotal: _ClassVar[EAttrType]
+    AttrIntelligenceAdd: _ClassVar[EAttrType]
+    AttrIntelligenceExAdd: _ClassVar[EAttrType]
+    AttrIntelligencePer: _ClassVar[EAttrType]
+    AttrIntelligenceExPer: _ClassVar[EAttrType]
+    AttrDexterity: _ClassVar[EAttrType]
+    AttrDexterityTotal: _ClassVar[EAttrType]
+    AttrDexterityAdd: _ClassVar[EAttrType]
+    AttrDexterityExAdd: _ClassVar[EAttrType]
+    AttrDexterityPer: _ClassVar[EAttrType]
+    AttrDexterityExPer: _ClassVar[EAttrType]
+    AttrVitality: _ClassVar[EAttrType]
+    AttrVitalityTotal: _ClassVar[EAttrType]
+    AttrVitalityAdd: _ClassVar[EAttrType]
+    AttrVitalityExAdd: _ClassVar[EAttrType]
+    AttrVitalityPer: _ClassVar[EAttrType]
+    AttrVitalityExPer: _ClassVar[EAttrType]
+    AttrCri: _ClassVar[EAttrType]
+    AttrCriTotal: _ClassVar[EAttrType]
+    AttrCriAdd: _ClassVar[EAttrType]
+    AttrCriExAdd: _ClassVar[EAttrType]
+    AttrCriPer: _ClassVar[EAttrType]
+    AttrCriExPer: _ClassVar[EAttrType]
+    AttrHaste: _ClassVar[EAttrType]
+    AttrHasteTotal: _ClassVar[EAttrType]
+    AttrHasteAdd: _ClassVar[EAttrType]
+    AttrHasteExAdd: _ClassVar[EAttrType]
+    AttrHastePer: _ClassVar[EAttrType]
+    AttrHasteExPer: _ClassVar[EAttrType]
+    AttrLuck: _ClassVar[EAttrType]
+    AttrLuckTotal: _ClassVar[EAttrType]
+    AttrLuckAdd: _ClassVar[EAttrType]
+    AttrLuckExAdd: _ClassVar[EAttrType]
+    AttrLuckPer: _ClassVar[EAttrType]
+    AttrLuckExPer: _ClassVar[EAttrType]
+    AttrMastery: _ClassVar[EAttrType]
+    AttrMasteryTotal: _ClassVar[EAttrType]
+    AttrMasteryAdd: _ClassVar[EAttrType]
+    AttrMasteryExAdd: _ClassVar[EAttrType]
+    AttrMasteryPer: _ClassVar[EAttrType]
+    AttrMasteryExPer: _ClassVar[EAttrType]
+    AttrVersatility: _ClassVar[EAttrType]
+    AttrVersatilityTotal: _ClassVar[EAttrType]
+    AttrVersatilityAdd: _ClassVar[EAttrType]
+    AttrVersatilityExAdd: _ClassVar[EAttrType]
+    AttrVersatilityPer: _ClassVar[EAttrType]
+    AttrVersatilityExPer: _ClassVar[EAttrType]
+    AttrHit: _ClassVar[EAttrType]
+    AttrHitTotal: _ClassVar[EAttrType]
+    AttrHitAdd: _ClassVar[EAttrType]
+    AttrHitExAdd: _ClassVar[EAttrType]
+    AttrHitPer: _ClassVar[EAttrType]
+    AttrHitExPer: _ClassVar[EAttrType]
+    AttrBlock: _ClassVar[EAttrType]
+    AttrBlockTotal: _ClassVar[EAttrType]
+    AttrBlockAdd: _ClassVar[EAttrType]
+    AttrBlockExAdd: _ClassVar[EAttrType]
+    AttrBlockPer: _ClassVar[EAttrType]
+    AttrBlockExPer: _ClassVar[EAttrType]
+    AttrHp: _ClassVar[EAttrType]
+    AttrMaxHp: _ClassVar[EAttrType]
+    AttrMaxHpTotal: _ClassVar[EAttrType]
+    AttrMaxHpAdd: _ClassVar[EAttrType]
+    AttrMaxHpExAdd: _ClassVar[EAttrType]
+    AttrMaxHpPer: _ClassVar[EAttrType]
+    AttrMaxHpExPer: _ClassVar[EAttrType]
+    AttrAttack: _ClassVar[EAttrType]
+    AttrAttackTotal: _ClassVar[EAttrType]
+    AttrAttackAdd: _ClassVar[EAttrType]
+    AttrAttackExAdd: _ClassVar[EAttrType]
+    AttrAttackPer: _ClassVar[EAttrType]
+    AttrAttackExPer: _ClassVar[EAttrType]
+    AttrMAttack: _ClassVar[EAttrType]
+    AttrMAttackTotal: _ClassVar[EAttrType]
+    AttrMAttackAdd: _ClassVar[EAttrType]
+    AttrMAttackExAdd: _ClassVar[EAttrType]
+    AttrMAttackPer: _ClassVar[EAttrType]
+    AttrMAttackExPer: _ClassVar[EAttrType]
+    AttrDefense: _ClassVar[EAttrType]
+    AttrDefenseTotal: _ClassVar[EAttrType]
+    AttrDefenseAdd: _ClassVar[EAttrType]
+    AttrDefenseExAdd: _ClassVar[EAttrType]
+    AttrDefensePer: _ClassVar[EAttrType]
+    AttrDefenseExPer: _ClassVar[EAttrType]
+    AttrMDefense: _ClassVar[EAttrType]
+    AttrMDefenseTotal: _ClassVar[EAttrType]
+    AttrMDefenseAdd: _ClassVar[EAttrType]
+    AttrMDefenseExAdd: _ClassVar[EAttrType]
+    AttrMDefensePer: _ClassVar[EAttrType]
+    AttrMDefenseExPer: _ClassVar[EAttrType]
+    AttrIgnoreDefense: _ClassVar[EAttrType]
+    AttrIgnoreDefenseTotal: _ClassVar[EAttrType]
+    AttrIgnoreDefenseAdd: _ClassVar[EAttrType]
+    AttrIgnoreDefenseExAdd: _ClassVar[EAttrType]
+    AttrIgnoreDefensePer: _ClassVar[EAttrType]
+    AttrIgnoreDefenseExPer: _ClassVar[EAttrType]
+    AttrIgnoreMDefense: _ClassVar[EAttrType]
+    AttrIgnoreMDefenseTotal: _ClassVar[EAttrType]
+    AttrIgnoreMDefenseAdd: _ClassVar[EAttrType]
+    AttrIgnoreMDefenseExAdd: _ClassVar[EAttrType]
+    AttrIgnoreMDefensePer: _ClassVar[EAttrType]
+    AttrIgnoreMDefenseExPer: _ClassVar[EAttrType]
+    AttrIgnoreDefensePCT: _ClassVar[EAttrType]
+    AttrIgnoreDefensePCTTotal: _ClassVar[EAttrType]
+    AttrIgnoreDefensePCTAdd: _ClassVar[EAttrType]
+    AttrIgnoreDefensePCTExAdd: _ClassVar[EAttrType]
+    AttrIgnoreDefensePCTPer: _ClassVar[EAttrType]
+    AttrIgnoreDefensePCTExPer: _ClassVar[EAttrType]
+    AttrIgnoreMDefensePCT: _ClassVar[EAttrType]
+    AttrIgnoreMDefensePCTTotal: _ClassVar[EAttrType]
+    AttrIgnoreMDefensePCTAdd: _ClassVar[EAttrType]
+    AttrIgnoreMDefensePCTExAdd: _ClassVar[EAttrType]
+    AttrIgnoreMDefensePCTPer: _ClassVar[EAttrType]
+    AttrIgnoreMDefensePCTExPer: _ClassVar[EAttrType]
+    AttrRefineAttack: _ClassVar[EAttrType]
+    AttrRefineAttackTotal: _ClassVar[EAttrType]
+    AttrRefineAttackAdd: _ClassVar[EAttrType]
+    AttrRefineAttackExAdd: _ClassVar[EAttrType]
+    AttrRefineAttackPer: _ClassVar[EAttrType]
+    AttrRefineAttackExPer: _ClassVar[EAttrType]
+    AttrRefineDefense: _ClassVar[EAttrType]
+    AttrRefineDefenseTotal: _ClassVar[EAttrType]
+    AttrRefineDefenseAdd: _ClassVar[EAttrType]
+    AttrRefineDefenseExAdd: _ClassVar[EAttrType]
+    AttrRefineDefensePer: _ClassVar[EAttrType]
+    AttrRefineDefenseExPer: _ClassVar[EAttrType]
+    AttrRefineMAttack: _ClassVar[EAttrType]
+    AttrRefineMAttackTotal: _ClassVar[EAttrType]
+    AttrRefineMAttackAdd: _ClassVar[EAttrType]
+    AttrRefineMAttackExAdd: _ClassVar[EAttrType]
+    AttrRefineMAttackPer: _ClassVar[EAttrType]
+    AttrRefineMAttackExPer: _ClassVar[EAttrType]
+    AttrSeasonStrength: _ClassVar[EAttrType]
+    AttrSeasonStrengthTotal: _ClassVar[EAttrType]
+    AttrSeasonStrengthAdd: _ClassVar[EAttrType]
+    AttrSeasonStrengthExAdd: _ClassVar[EAttrType]
+    AttrSeasonStrengthPer: _ClassVar[EAttrType]
+    AttrSeasonStrengthExPer: _ClassVar[EAttrType]
+    AttrSeasonWeakness: _ClassVar[EAttrType]
+    AttrSeasonWeaknessTotal: _ClassVar[EAttrType]
+    AttrSeasonWeaknessAdd: _ClassVar[EAttrType]
+    AttrSeasonWeaknessExAdd: _ClassVar[EAttrType]
+    AttrSeasonWeaknessPer: _ClassVar[EAttrType]
+    AttrSeasonWeaknessExPer: _ClassVar[EAttrType]
+    AttrElementAtk: _ClassVar[EAttrType]
+    AttrElementAtkTotal: _ClassVar[EAttrType]
+    AttrElementAtkAdd: _ClassVar[EAttrType]
+    AttrElementAtkExAdd: _ClassVar[EAttrType]
+    AttrElementAtkPer: _ClassVar[EAttrType]
+    AttrElementAtkExPer: _ClassVar[EAttrType]
+    AttrFireAtk: _ClassVar[EAttrType]
+    AttrFireAtkTotal: _ClassVar[EAttrType]
+    AttrFireAtkAdd: _ClassVar[EAttrType]
+    AttrFireAtkExAdd: _ClassVar[EAttrType]
+    AttrFireAtkPer: _ClassVar[EAttrType]
+    AttrFireAtkExPer: _ClassVar[EAttrType]
+    AttrWaterAtk: _ClassVar[EAttrType]
+    AttrWaterAtkTotal: _ClassVar[EAttrType]
+    AttrWaterAtkAdd: _ClassVar[EAttrType]
+    AttrWaterAtkExAdd: _ClassVar[EAttrType]
+    AttrWaterAtkPer: _ClassVar[EAttrType]
+    AttrWaterAtkExPer: _ClassVar[EAttrType]
+    AttrWoodAtk: _ClassVar[EAttrType]
+    AttrWoodAtkTotal: _ClassVar[EAttrType]
+    AttrWoodAtkAdd: _ClassVar[EAttrType]
+    AttrWoodAtkExAdd: _ClassVar[EAttrType]
+    AttrWoodAtkPer: _ClassVar[EAttrType]
+    AttrWoodAtkExPer: _ClassVar[EAttrType]
+    AttrElectricityAtk: _ClassVar[EAttrType]
+    AttrElectricityAtkTotal: _ClassVar[EAttrType]
+    AttrElectricityAtkAdd: _ClassVar[EAttrType]
+    AttrElectricityAtkExAdd: _ClassVar[EAttrType]
+    AttrElectricityAtkPer: _ClassVar[EAttrType]
+    AttrElectricityAtkExPer: _ClassVar[EAttrType]
+    AttrWindAtk: _ClassVar[EAttrType]
+    AttrWindAtkTotal: _ClassVar[EAttrType]
+    AttrWindAtkAdd: _ClassVar[EAttrType]
+    AttrWindAtkExAdd: _ClassVar[EAttrType]
+    AttrWindAtkPer: _ClassVar[EAttrType]
+    AttrWindAtkExPer: _ClassVar[EAttrType]
+    AttrRockAtk: _ClassVar[EAttrType]
+    AttrRockAtkTotal: _ClassVar[EAttrType]
+    AttrRockAtkAdd: _ClassVar[EAttrType]
+    AttrRockAtkExAdd: _ClassVar[EAttrType]
+    AttrRockAtkPer: _ClassVar[EAttrType]
+    AttrRockAtkExPer: _ClassVar[EAttrType]
+    AttrLightAtk: _ClassVar[EAttrType]
+    AttrLightAtkTotal: _ClassVar[EAttrType]
+    AttrLightAtkAdd: _ClassVar[EAttrType]
+    AttrLightAtkExAdd: _ClassVar[EAttrType]
+    AttrLightAtkPer: _ClassVar[EAttrType]
+    AttrLightAtkExPer: _ClassVar[EAttrType]
+    AttrDarkAtk: _ClassVar[EAttrType]
+    AttrDarkAtkTotal: _ClassVar[EAttrType]
+    AttrDarkAtkAdd: _ClassVar[EAttrType]
+    AttrDarkAtkExAdd: _ClassVar[EAttrType]
+    AttrDarkAtkPer: _ClassVar[EAttrType]
+    AttrDarkAtkExPer: _ClassVar[EAttrType]
+    AttrCrit: _ClassVar[EAttrType]
+    AttrCritTotal: _ClassVar[EAttrType]
+    AttrCritAdd: _ClassVar[EAttrType]
+    AttrCritExAdd: _ClassVar[EAttrType]
+    AttrCritPer: _ClassVar[EAttrType]
+    AttrCritExPer: _ClassVar[EAttrType]
+    AttrAttackSpeedPCT: _ClassVar[EAttrType]
+    AttrAttackSpeedPCTTotal: _ClassVar[EAttrType]
+    AttrAttackSpeedPCTAdd: _ClassVar[EAttrType]
+    AttrAttackSpeedPCTExAdd: _ClassVar[EAttrType]
+    AttrAttackSpeedPCTPer: _ClassVar[EAttrType]
+    AttrAttackSpeedPCTExPer: _ClassVar[EAttrType]
+    AttrCastSpeedPCT: _ClassVar[EAttrType]
+    AttrCastSpeedPCTTotal: _ClassVar[EAttrType]
+    AttrCastSpeedPCTAdd: _ClassVar[EAttrType]
+    AttrCastSpeedPCTExAdd: _ClassVar[EAttrType]
+    AttrCastSpeedPCTPer: _ClassVar[EAttrType]
+    AttrCastSpeedPCTExPer: _ClassVar[EAttrType]
+    AttrChargeSpeedPCT: _ClassVar[EAttrType]
+    AttrChargeSpeedPCTTotal: _ClassVar[EAttrType]
+    AttrChargeSpeedPCTAdd: _ClassVar[EAttrType]
+    AttrChargeSpeedPCTExAdd: _ClassVar[EAttrType]
+    AttrChargeSpeedPCTPer: _ClassVar[EAttrType]
+    AttrChargeSpeedPCTExPer: _ClassVar[EAttrType]
+    AttrSkillCD: _ClassVar[EAttrType]
+    AttrSkillCDTotal: _ClassVar[EAttrType]
+    AttrSkillCDAdd: _ClassVar[EAttrType]
+    AttrSkillCDExAdd: _ClassVar[EAttrType]
+    AttrSkillCDPer: _ClassVar[EAttrType]
+    AttrSkillCDExPer: _ClassVar[EAttrType]
+    AttrSkillCDPCT: _ClassVar[EAttrType]
+    AttrSkillCDPCTTotal: _ClassVar[EAttrType]
+    AttrSkillCDPCTAdd: _ClassVar[EAttrType]
+    AttrSkillCDPCTExAdd: _ClassVar[EAttrType]
+    AttrSkillCDPCTPer: _ClassVar[EAttrType]
+    AttrSkillCDPCTExPer: _ClassVar[EAttrType]
+    AttrDotTime: _ClassVar[EAttrType]
+    AttrDotTimeTotal: _ClassVar[EAttrType]
+    AttrDotTimeAdd: _ClassVar[EAttrType]
+    AttrDotTimeExAdd: _ClassVar[EAttrType]
+    AttrDotTimePer: _ClassVar[EAttrType]
+    AttrDotTimeExPer: _ClassVar[EAttrType]
+    AttrLuckyStrikeProb: _ClassVar[EAttrType]
+    AttrLuckyStrikeProbTotal: _ClassVar[EAttrType]
+    AttrLuckyStrikeProbAdd: _ClassVar[EAttrType]
+    AttrLuckyStrikeProbExAdd: _ClassVar[EAttrType]
+    AttrLuckyStrikeProbPer: _ClassVar[EAttrType]
+    AttrLuckyStrikeProbExPer: _ClassVar[EAttrType]
+    AttrHeal: _ClassVar[EAttrType]
+    AttrHealTotal: _ClassVar[EAttrType]
+    AttrHealAdd: _ClassVar[EAttrType]
+    AttrHealExAdd: _ClassVar[EAttrType]
+    AttrHealPer: _ClassVar[EAttrType]
+    AttrHealExPer: _ClassVar[EAttrType]
+    AttrHealed: _ClassVar[EAttrType]
+    AttrHealedTotal: _ClassVar[EAttrType]
+    AttrHealedAdd: _ClassVar[EAttrType]
+    AttrHealedExAdd: _ClassVar[EAttrType]
+    AttrHealedPer: _ClassVar[EAttrType]
+    AttrHealedExPer: _ClassVar[EAttrType]
+    AttrShieldAddPCT: _ClassVar[EAttrType]
+    AttrShieldAddPCTTotal: _ClassVar[EAttrType]
+    AttrShieldAddPCTAdd: _ClassVar[EAttrType]
+    AttrShieldAddPCTExAdd: _ClassVar[EAttrType]
+    AttrShieldAddPCTPer: _ClassVar[EAttrType]
+    AttrShieldAddPCTExPer: _ClassVar[EAttrType]
+    AttrShieldGainPCT: _ClassVar[EAttrType]
+    AttrShieldGainPCTTotal: _ClassVar[EAttrType]
+    AttrShieldGainPCTAdd: _ClassVar[EAttrType]
+    AttrShieldGainPCTExAdd: _ClassVar[EAttrType]
+    AttrShieldGainPCTPer: _ClassVar[EAttrType]
+    AttrShieldGainPCTExPer: _ClassVar[EAttrType]
+    AttrStunnedDamagePCT: _ClassVar[EAttrType]
+    AttrStunnedDamagePCTTotal: _ClassVar[EAttrType]
+    AttrStunnedDamagePCTAdd: _ClassVar[EAttrType]
+    AttrStunnedDamagePCTExAdd: _ClassVar[EAttrType]
+    AttrStunnedDamagePCTPer: _ClassVar[EAttrType]
+    AttrStunnedDamagePCTExPer: _ClassVar[EAttrType]
+    AttrExtDamInc: _ClassVar[EAttrType]
+    AttrExtDamIncTotal: _ClassVar[EAttrType]
+    AttrExtDamIncAdd: _ClassVar[EAttrType]
+    AttrExtDamIncExAdd: _ClassVar[EAttrType]
+    AttrExtDamIncPer: _ClassVar[EAttrType]
+    AttrExtDamIncExPer: _ClassVar[EAttrType]
+    AttrExtDamRes: _ClassVar[EAttrType]
+    AttrExtDamResTotal: _ClassVar[EAttrType]
+    AttrExtDamResAdd: _ClassVar[EAttrType]
+    AttrExtDamResExAdd: _ClassVar[EAttrType]
+    AttrExtDamResPer: _ClassVar[EAttrType]
+    AttrExtDamResExPer: _ClassVar[EAttrType]
+    AttrDpsOwnEffectStr: _ClassVar[EAttrType]
+    AttrDpsOwnEffectStrTotal: _ClassVar[EAttrType]
+    AttrDpsOwnEffectStrAdd: _ClassVar[EAttrType]
+    AttrDpsOwnEffectStrExAdd: _ClassVar[EAttrType]
+    AttrDpsOwnEffectStrPer: _ClassVar[EAttrType]
+    AttrDpsOwnEffectStrExPer: _ClassVar[EAttrType]
+    AttrRainbowDamage: _ClassVar[EAttrType]
+    AttrRainbowDamageTotal: _ClassVar[EAttrType]
+    AttrRainbowDamageAdd: _ClassVar[EAttrType]
+    AttrRainbowDamageExAdd: _ClassVar[EAttrType]
+    AttrRainbowDamagePer: _ClassVar[EAttrType]
+    AttrRainbowDamageExPer: _ClassVar[EAttrType]
+    AttrSuppressDamInc: _ClassVar[EAttrType]
+    AttrSuppressDamIncTotal: _ClassVar[EAttrType]
+    AttrSuppressDamIncAdd: _ClassVar[EAttrType]
+    AttrSuppressDamIncExAdd: _ClassVar[EAttrType]
+    AttrSuppressDamIncPer: _ClassVar[EAttrType]
+    AttrSuppressDamIncExPer: _ClassVar[EAttrType]
+    AttrSuppressDamRes: _ClassVar[EAttrType]
+    AttrSuppressDamResTotal: _ClassVar[EAttrType]
+    AttrSuppressDamResAdd: _ClassVar[EAttrType]
+    AttrSuppressDamResExAdd: _ClassVar[EAttrType]
+    AttrSuppressDamResPer: _ClassVar[EAttrType]
+    AttrSuppressDamResExPer: _ClassVar[EAttrType]
+    AttrInspirePct: _ClassVar[EAttrType]
+    AttrInspirePctTotal: _ClassVar[EAttrType]
+    AttrInspirePctAdd: _ClassVar[EAttrType]
+    AttrInspirePctExAdd: _ClassVar[EAttrType]
+    AttrInspirePctPer: _ClassVar[EAttrType]
+    AttrInspirePctExPer: _ClassVar[EAttrType]
+    AttrHateRatePTC: _ClassVar[EAttrType]
+    AttrHateRatePTCTotal: _ClassVar[EAttrType]
+    AttrHateRatePTCAdd: _ClassVar[EAttrType]
+    AttrHateRatePTCExAdd: _ClassVar[EAttrType]
+    AttrHateRatePTCPer: _ClassVar[EAttrType]
+    AttrHateRatePTCExPer: _ClassVar[EAttrType]
+    AttrHastePct: _ClassVar[EAttrType]
+    AttrHastePctTotal: _ClassVar[EAttrType]
+    AttrHastePctAdd: _ClassVar[EAttrType]
+    AttrHastePctExAdd: _ClassVar[EAttrType]
+    AttrHastePctPer: _ClassVar[EAttrType]
+    AttrHastePctExPer: _ClassVar[EAttrType]
+    AttrMasteryPct: _ClassVar[EAttrType]
+    AttrMasteryPctTotal: _ClassVar[EAttrType]
+    AttrMasteryPctAdd: _ClassVar[EAttrType]
+    AttrMasteryPctExAdd: _ClassVar[EAttrType]
+    AttrMasteryPctPer: _ClassVar[EAttrType]
+    AttrMasteryPctExPer: _ClassVar[EAttrType]
+    AttrVersatilityPct: _ClassVar[EAttrType]
+    AttrVersatilityPctTotal: _ClassVar[EAttrType]
+    AttrVersatilityPctAdd: _ClassVar[EAttrType]
+    AttrVersatilityPctExAdd: _ClassVar[EAttrType]
+    AttrVersatilityPctPer: _ClassVar[EAttrType]
+    AttrVersatilityPctExPer: _ClassVar[EAttrType]
+    AttrCdAcceleratePct: _ClassVar[EAttrType]
+    AttrCdAcceleratePctTotal: _ClassVar[EAttrType]
+    AttrCdAcceleratePctAdd: _ClassVar[EAttrType]
+    AttrCdAcceleratePctExAdd: _ClassVar[EAttrType]
+    AttrCdAcceleratePctPer: _ClassVar[EAttrType]
+    AttrCdAcceleratePctExPer: _ClassVar[EAttrType]
+    AttrBlockPct: _ClassVar[EAttrType]
+    AttrBlockPctTotal: _ClassVar[EAttrType]
+    AttrBlockPctAdd: _ClassVar[EAttrType]
+    AttrBlockPctExAdd: _ClassVar[EAttrType]
+    AttrBlockPctPer: _ClassVar[EAttrType]
+    AttrBlockPctExPer: _ClassVar[EAttrType]
+    AttrFightResCdSpeedPct: _ClassVar[EAttrType]
+    AttrFightResCdSpeedPctTotal: _ClassVar[EAttrType]
+    AttrFightResCdSpeedPctAdd: _ClassVar[EAttrType]
+    AttrFightResCdSpeedPctExAdd: _ClassVar[EAttrType]
+    AttrFightResCdSpeedPctPer: _ClassVar[EAttrType]
+    AttrFightResCdSpeedPctExPer: _ClassVar[EAttrType]
+    AttrPetAttackSpeedPCT: _ClassVar[EAttrType]
+    AttrPetAttackSpeedPCTTotal: _ClassVar[EAttrType]
+    AttrPetAttackSpeedPCTAdd: _ClassVar[EAttrType]
+    AttrPetAttackSpeedPCTExAdd: _ClassVar[EAttrType]
+    AttrPetAttackSpeedPCTPer: _ClassVar[EAttrType]
+    AttrPetAttackSpeedPCTExPer: _ClassVar[EAttrType]
+    AttrCritDamage: _ClassVar[EAttrType]
+    AttrCritDamageTotal: _ClassVar[EAttrType]
+    AttrCritDamageAdd: _ClassVar[EAttrType]
+    AttrCritDamageExAdd: _ClassVar[EAttrType]
+    AttrCritDamagePer: _ClassVar[EAttrType]
+    AttrCritDamageExPer: _ClassVar[EAttrType]
+    AttrCritDamageRes: _ClassVar[EAttrType]
+    AttrCritDamageResTotal: _ClassVar[EAttrType]
+    AttrCritDamageResAdd: _ClassVar[EAttrType]
+    AttrCritDamageResExAdd: _ClassVar[EAttrType]
+    AttrCritDamageResPer: _ClassVar[EAttrType]
+    AttrCritDamageResExPer: _ClassVar[EAttrType]
+    AttrLuckDamInc: _ClassVar[EAttrType]
+    AttrLuckDamIncTotal: _ClassVar[EAttrType]
+    AttrLuckDamIncAdd: _ClassVar[EAttrType]
+    AttrLuckDamIncExAdd: _ClassVar[EAttrType]
+    AttrLuckDamIncPer: _ClassVar[EAttrType]
+    AttrLuckDamIncExPer: _ClassVar[EAttrType]
+    AttrBlockDamRes: _ClassVar[EAttrType]
+    AttrBlockDamResTotal: _ClassVar[EAttrType]
+    AttrBlockDamResAdd: _ClassVar[EAttrType]
+    AttrBlockDamResExAdd: _ClassVar[EAttrType]
+    AttrBlockDamResPer: _ClassVar[EAttrType]
+    AttrBlockDamResExPer: _ClassVar[EAttrType]
+    AttrDamInc: _ClassVar[EAttrType]
+    AttrDamIncTotal: _ClassVar[EAttrType]
+    AttrDamIncAdd: _ClassVar[EAttrType]
+    AttrDamIncExAdd: _ClassVar[EAttrType]
+    AttrDamIncPer: _ClassVar[EAttrType]
+    AttrDamIncExPer: _ClassVar[EAttrType]
+    AttrDamRes: _ClassVar[EAttrType]
+    AttrDamResTotal: _ClassVar[EAttrType]
+    AttrDamResAdd: _ClassVar[EAttrType]
+    AttrDamResExAdd: _ClassVar[EAttrType]
+    AttrDamResPer: _ClassVar[EAttrType]
+    AttrDamResExPer: _ClassVar[EAttrType]
+    AttrMdamInc: _ClassVar[EAttrType]
+    AttrMdamIncTotal: _ClassVar[EAttrType]
+    AttrMdamIncAdd: _ClassVar[EAttrType]
+    AttrMdamIncExAdd: _ClassVar[EAttrType]
+    AttrMdamIncPer: _ClassVar[EAttrType]
+    AttrMdamIncExPer: _ClassVar[EAttrType]
+    AttrMdamRes: _ClassVar[EAttrType]
+    AttrMdamResTotal: _ClassVar[EAttrType]
+    AttrMdamResAdd: _ClassVar[EAttrType]
+    AttrMdamResExAdd: _ClassVar[EAttrType]
+    AttrMdamResPer: _ClassVar[EAttrType]
+    AttrMdamResExPer: _ClassVar[EAttrType]
+    AttrNearDamage: _ClassVar[EAttrType]
+    AttrNearDamageTotal: _ClassVar[EAttrType]
+    AttrNearDamageAdd: _ClassVar[EAttrType]
+    AttrNearDamageExAdd: _ClassVar[EAttrType]
+    AttrNearDamagePer: _ClassVar[EAttrType]
+    AttrNearDamageExPer: _ClassVar[EAttrType]
+    AttrNearDamageReduction: _ClassVar[EAttrType]
+    AttrNearDamageReductionTotal: _ClassVar[EAttrType]
+    AttrNearDamageReductionAdd: _ClassVar[EAttrType]
+    AttrNearDamageReductionExAdd: _ClassVar[EAttrType]
+    AttrNearDamageReductionPer: _ClassVar[EAttrType]
+    AttrNearDamageReductionExPer: _ClassVar[EAttrType]
+    AttrFarDamage: _ClassVar[EAttrType]
+    AttrFarDamageTotal: _ClassVar[EAttrType]
+    AttrFarDamageAdd: _ClassVar[EAttrType]
+    AttrFarDamageExAdd: _ClassVar[EAttrType]
+    AttrFarDamagePer: _ClassVar[EAttrType]
+    AttrFarDamageExPer: _ClassVar[EAttrType]
+    AttrFarDamageReduction: _ClassVar[EAttrType]
+    AttrFarDamageReductionTotal: _ClassVar[EAttrType]
+    AttrFarDamageReductionAdd: _ClassVar[EAttrType]
+    AttrFarDamageReductionExAdd: _ClassVar[EAttrType]
+    AttrFarDamageReductionPer: _ClassVar[EAttrType]
+    AttrFarDamageReductionExPer: _ClassVar[EAttrType]
+    AttrBossDamInc: _ClassVar[EAttrType]
+    AttrBossDamIncTotal: _ClassVar[EAttrType]
+    AttrBossDamIncAdd: _ClassVar[EAttrType]
+    AttrBossDamIncExAdd: _ClassVar[EAttrType]
+    AttrBossDamIncPer: _ClassVar[EAttrType]
+    AttrBossDamIncExPer: _ClassVar[EAttrType]
+    AttrBossDamRes: _ClassVar[EAttrType]
+    AttrBossDamResTotal: _ClassVar[EAttrType]
+    AttrBossDamResAdd: _ClassVar[EAttrType]
+    AttrBossDamResExAdd: _ClassVar[EAttrType]
+    AttrBossDamResPer: _ClassVar[EAttrType]
+    AttrBossDamResExPer: _ClassVar[EAttrType]
+    AttrShieldDamagePCT: _ClassVar[EAttrType]
+    AttrShieldDamagePCTTotal: _ClassVar[EAttrType]
+    AttrShieldDamagePCTAdd: _ClassVar[EAttrType]
+    AttrShieldDamagePCTExAdd: _ClassVar[EAttrType]
+    AttrShieldDamagePCTPer: _ClassVar[EAttrType]
+    AttrShieldDamagePCTExPer: _ClassVar[EAttrType]
+    AttrShieldDamageReductionPCT: _ClassVar[EAttrType]
+    AttrShieldDamageReductionPCTTotal: _ClassVar[EAttrType]
+    AttrShieldDamageReductionPCTAdd: _ClassVar[EAttrType]
+    AttrShieldDamageReductionPCTExAdd: _ClassVar[EAttrType]
+    AttrShieldDamageReductionPCTPer: _ClassVar[EAttrType]
+    AttrShieldDamageReductionPCTExPer: _ClassVar[EAttrType]
+    AttrOtherDamInc: _ClassVar[EAttrType]
+    AttrOtherDamIncTotal: _ClassVar[EAttrType]
+    AttrOtherDamIncAdd: _ClassVar[EAttrType]
+    AttrOtherDamIncExAdd: _ClassVar[EAttrType]
+    AttrOtherDamIncTPer: _ClassVar[EAttrType]
+    AttrOtherDamIncExPer: _ClassVar[EAttrType]
+    AttrOtherDamRes: _ClassVar[EAttrType]
+    AttrOtherDamResTotal: _ClassVar[EAttrType]
+    AttrOtherDamResAdd: _ClassVar[EAttrType]
+    AttrOtherDamResExAdd: _ClassVar[EAttrType]
+    AttrOtherDamResTPer: _ClassVar[EAttrType]
+    AttrOtherDamResExPer: _ClassVar[EAttrType]
+    AttrSeasonDamInc: _ClassVar[EAttrType]
+    AttrSeasonDamIncTotal: _ClassVar[EAttrType]
+    AttrSeasonDamIncAdd: _ClassVar[EAttrType]
+    AttrSeasonDamIncExAdd: _ClassVar[EAttrType]
+    AttrSeasonDamIncTPer: _ClassVar[EAttrType]
+    AttrSeasonDamIncExPer: _ClassVar[EAttrType]
+    AttrSeasonDamRes: _ClassVar[EAttrType]
+    AttrSeasonDamResTotal: _ClassVar[EAttrType]
+    AttrSeasonDamResAdd: _ClassVar[EAttrType]
+    AttrSeasonDamResExAdd: _ClassVar[EAttrType]
+    AttrSeasonDamResTPer: _ClassVar[EAttrType]
+    AttrSeasonDamResExPer: _ClassVar[EAttrType]
+    AttrMultipliesDamPct: _ClassVar[EAttrType]
+    AttrMultipliesDamPctTotal: _ClassVar[EAttrType]
+    AttrMultipliesDamPctAdd: _ClassVar[EAttrType]
+    AttrMultipliesDamPctExAdd: _ClassVar[EAttrType]
+    AttrMultipliesDamPctTPer: _ClassVar[EAttrType]
+    AttrMultipliesDamPctExPer: _ClassVar[EAttrType]
+    AttrLuckHealInc: _ClassVar[EAttrType]
+    AttrLuckHealIncTotal: _ClassVar[EAttrType]
+    AttrLuckHealIncAdd: _ClassVar[EAttrType]
+    AttrLuckHealIncExAdd: _ClassVar[EAttrType]
+    AttrLuckHealIncPer: _ClassVar[EAttrType]
+    AttrLuckHealIncExPer: _ClassVar[EAttrType]
+    AttrPetDamInc: _ClassVar[EAttrType]
+    AttrPetDamIncTotal: _ClassVar[EAttrType]
+    AttrPetDamIncAdd: _ClassVar[EAttrType]
+    AttrPetDamIncExAdd: _ClassVar[EAttrType]
+    AttrPetDamIncPer: _ClassVar[EAttrType]
+    AttrPetDamIncExPer: _ClassVar[EAttrType]
+    AttrCritHeal: _ClassVar[EAttrType]
+    AttrCritHealTotal: _ClassVar[EAttrType]
+    AttrCritHealAdd: _ClassVar[EAttrType]
+    AttrCritHealExAdd: _ClassVar[EAttrType]
+    AttrCritHealPer: _ClassVar[EAttrType]
+    AttrCritHealExPer: _ClassVar[EAttrType]
+    AttrSpDamInc: _ClassVar[EAttrType]
+    AttrSpDamIncTotal: _ClassVar[EAttrType]
+    AttrSpDamIncAdd: _ClassVar[EAttrType]
+    AttrSpDamIncExAdd: _ClassVar[EAttrType]
+    AttrSpDamIncPer: _ClassVar[EAttrType]
+    AttrSpDamIncExPer: _ClassVar[EAttrType]
+    AttrSpDamRes: _ClassVar[EAttrType]
+    AttrSpDamResTotal: _ClassVar[EAttrType]
+    AttrSpDamResAdd: _ClassVar[EAttrType]
+    AttrSpDamResExAdd: _ClassVar[EAttrType]
+    AttrSpDamResPer: _ClassVar[EAttrType]
+    AttrSpDamResExPer: _ClassVar[EAttrType]
+    AttrHealBanPct: _ClassVar[EAttrType]
+    AttrHealBanPctTotal: _ClassVar[EAttrType]
+    AttrHealBanPctAdd: _ClassVar[EAttrType]
+    AttrHealBanPctExAdd: _ClassVar[EAttrType]
+    AttrHealBanPctPer: _ClassVar[EAttrType]
+    AttrHealBanPctExPer: _ClassVar[EAttrType]
+    AttrHealedBanPct: _ClassVar[EAttrType]
+    AttrHealedBanPctTotal: _ClassVar[EAttrType]
+    AttrHealedBanPctAdd: _ClassVar[EAttrType]
+    AttrHealedBanPctExAdd: _ClassVar[EAttrType]
+    AttrHealedBanPctPer: _ClassVar[EAttrType]
+    AttrHealedBanPctExPer: _ClassVar[EAttrType]
+    AttrPhyPowerToDam: _ClassVar[EAttrType]
+    AttrPhyPowerToDamTotal: _ClassVar[EAttrType]
+    AttrPhyPowerToDamAdd: _ClassVar[EAttrType]
+    AttrPhyPowerToDamExAdd: _ClassVar[EAttrType]
+    AttrPhyPowerToDamPer: _ClassVar[EAttrType]
+    AttrPhyPowerToDamExPer: _ClassVar[EAttrType]
+    AttrMagPowerToDam: _ClassVar[EAttrType]
+    AttrMagPowerToDamTotal: _ClassVar[EAttrType]
+    AttrMagPowerToDamAdd: _ClassVar[EAttrType]
+    AttrMagPowerToDamExAdd: _ClassVar[EAttrType]
+    AttrMagPowerToDamPer: _ClassVar[EAttrType]
+    AttrMagPowerToDamExPer: _ClassVar[EAttrType]
+    AttrElementPower: _ClassVar[EAttrType]
+    AttrElementPowerTotal: _ClassVar[EAttrType]
+    AttrElementPowerAdd: _ClassVar[EAttrType]
+    AttrElementPowerExAdd: _ClassVar[EAttrType]
+    AttrElementPowerPer: _ClassVar[EAttrType]
+    AttrElementPowerExPer: _ClassVar[EAttrType]
+    AttrFirePower: _ClassVar[EAttrType]
+    AttrFirePowerTotal: _ClassVar[EAttrType]
+    AttrFirePowerAdd: _ClassVar[EAttrType]
+    AttrFirePowerExAdd: _ClassVar[EAttrType]
+    AttrFirePowerPer: _ClassVar[EAttrType]
+    AttrFirePowerExPer: _ClassVar[EAttrType]
+    AttrWaterPower: _ClassVar[EAttrType]
+    AttrWaterPowerTotal: _ClassVar[EAttrType]
+    AttrWaterPowerAdd: _ClassVar[EAttrType]
+    AttrWaterPowerExAdd: _ClassVar[EAttrType]
+    AttrWaterPowerPer: _ClassVar[EAttrType]
+    AttrWaterPowerExPer: _ClassVar[EAttrType]
+    AttrWoodPower: _ClassVar[EAttrType]
+    AttrWoodPowerTotal: _ClassVar[EAttrType]
+    AttrWoodPowerAdd: _ClassVar[EAttrType]
+    AttrWoodPowerExAdd: _ClassVar[EAttrType]
+    AttrWoodPowerPer: _ClassVar[EAttrType]
+    AttrWoodPowerExPer: _ClassVar[EAttrType]
+    AttrElectricityPower: _ClassVar[EAttrType]
+    AttrElectricityPowerTotal: _ClassVar[EAttrType]
+    AttrElectricityPowerAdd: _ClassVar[EAttrType]
+    AttrElectricityPowerExAdd: _ClassVar[EAttrType]
+    AttrElectricityPowerPer: _ClassVar[EAttrType]
+    AttrElectricityPowerExPer: _ClassVar[EAttrType]
+    AttrWindPower: _ClassVar[EAttrType]
+    AttrWindPowerTotal: _ClassVar[EAttrType]
+    AttrWindPowerAdd: _ClassVar[EAttrType]
+    AttrWindPowerExAdd: _ClassVar[EAttrType]
+    AttrWindPowerPer: _ClassVar[EAttrType]
+    AttrWindPowerExPer: _ClassVar[EAttrType]
+    AttrRockPower: _ClassVar[EAttrType]
+    AttrRockPowerTotal: _ClassVar[EAttrType]
+    AttrRockPowerAdd: _ClassVar[EAttrType]
+    AttrRockPowerExAdd: _ClassVar[EAttrType]
+    AttrRockPowerPer: _ClassVar[EAttrType]
+    AttrRockPowerExPer: _ClassVar[EAttrType]
+    AttrLightPower: _ClassVar[EAttrType]
+    AttrLightPowerTotal: _ClassVar[EAttrType]
+    AttrLightPowerAdd: _ClassVar[EAttrType]
+    AttrLightPowerExAdd: _ClassVar[EAttrType]
+    AttrLightPowerPer: _ClassVar[EAttrType]
+    AttrLightPowerExPer: _ClassVar[EAttrType]
+    AttrDarkPower: _ClassVar[EAttrType]
+    AttrDarkPowerTotal: _ClassVar[EAttrType]
+    AttrDarkPowerAdd: _ClassVar[EAttrType]
+    AttrDarkPowerExAdd: _ClassVar[EAttrType]
+    AttrDarkPowerPer: _ClassVar[EAttrType]
+    AttrDarkPowerExPer: _ClassVar[EAttrType]
+    AttrElementDamage: _ClassVar[EAttrType]
+    AttrElementDamageTotal: _ClassVar[EAttrType]
+    AttrElementDamageAdd: _ClassVar[EAttrType]
+    AttrElementDamageExAdd: _ClassVar[EAttrType]
+    AttrElementDamagePer: _ClassVar[EAttrType]
+    AttrElementDamageExPer: _ClassVar[EAttrType]
+    AttrFireDamage: _ClassVar[EAttrType]
+    AttrFireDamageTotal: _ClassVar[EAttrType]
+    AttrFireDamageAdd: _ClassVar[EAttrType]
+    AttrFireDamageExAdd: _ClassVar[EAttrType]
+    AttrFireDamagePer: _ClassVar[EAttrType]
+    AttrFireDamageExPer: _ClassVar[EAttrType]
+    AttrWaterDamage: _ClassVar[EAttrType]
+    AttrWaterDamageTotal: _ClassVar[EAttrType]
+    AttrWaterDamageAdd: _ClassVar[EAttrType]
+    AttrWaterDamageExAdd: _ClassVar[EAttrType]
+    AttrWaterDamagePer: _ClassVar[EAttrType]
+    AttrWaterDamageExPer: _ClassVar[EAttrType]
+    AttrWoodDamage: _ClassVar[EAttrType]
+    AttrWoodDamageTotal: _ClassVar[EAttrType]
+    AttrWoodDamageAdd: _ClassVar[EAttrType]
+    AttrWoodDamageExAdd: _ClassVar[EAttrType]
+    AttrWoodDamagePer: _ClassVar[EAttrType]
+    AttrWoodDamageExPer: _ClassVar[EAttrType]
+    AttrElectricityDamage: _ClassVar[EAttrType]
+    AttrElectricityDamageTotal: _ClassVar[EAttrType]
+    AttrElectricityDamageAdd: _ClassVar[EAttrType]
+    AttrElectricityDamageExAdd: _ClassVar[EAttrType]
+    AttrElectricityDamagePer: _ClassVar[EAttrType]
+    AttrElectricityDamageExPer: _ClassVar[EAttrType]
+    AttrWindDamage: _ClassVar[EAttrType]
+    AttrWindDamageTotal: _ClassVar[EAttrType]
+    AttrWindDamageAdd: _ClassVar[EAttrType]
+    AttrWindDamageExAdd: _ClassVar[EAttrType]
+    AttrWindDamagePer: _ClassVar[EAttrType]
+    AttrWindDamageExPer: _ClassVar[EAttrType]
+    AttrRockDamage: _ClassVar[EAttrType]
+    AttrRockDamageTotal: _ClassVar[EAttrType]
+    AttrRockDamageAdd: _ClassVar[EAttrType]
+    AttrRockDamageExAdd: _ClassVar[EAttrType]
+    AttrRockDamagePer: _ClassVar[EAttrType]
+    AttrRockDamageExPer: _ClassVar[EAttrType]
+    AttrLightDamage: _ClassVar[EAttrType]
+    AttrLightDamageTotal: _ClassVar[EAttrType]
+    AttrLightDamageAdd: _ClassVar[EAttrType]
+    AttrLightDamageExAdd: _ClassVar[EAttrType]
+    AttrLightDamagePer: _ClassVar[EAttrType]
+    AttrLightDamageExPer: _ClassVar[EAttrType]
+    AttrDarkDamage: _ClassVar[EAttrType]
+    AttrDarkDamageTotal: _ClassVar[EAttrType]
+    AttrDarkDamageAdd: _ClassVar[EAttrType]
+    AttrDarkDamageExAdd: _ClassVar[EAttrType]
+    AttrDarkDamagePer: _ClassVar[EAttrType]
+    AttrDarkDamageExPer: _ClassVar[EAttrType]
+    AttrElementDefense: _ClassVar[EAttrType]
+    AttrElementDefenseTotal: _ClassVar[EAttrType]
+    AttrElementDefenseAdd: _ClassVar[EAttrType]
+    AttrElementDefenseExAdd: _ClassVar[EAttrType]
+    AttrElementDefensePer: _ClassVar[EAttrType]
+    AttrElementDefenseExPer: _ClassVar[EAttrType]
+    AttrFireDefense: _ClassVar[EAttrType]
+    AttrFireDefenseTotal: _ClassVar[EAttrType]
+    AttrFireDefenseAdd: _ClassVar[EAttrType]
+    AttrFireDefenseExAdd: _ClassVar[EAttrType]
+    AttrFireDefensePer: _ClassVar[EAttrType]
+    AttrFireDefenseExPer: _ClassVar[EAttrType]
+    AttrWaterDefense: _ClassVar[EAttrType]
+    AttrWaterDefenseTotal: _ClassVar[EAttrType]
+    AttrWaterDefenseAdd: _ClassVar[EAttrType]
+    AttrWaterDefenseExAdd: _ClassVar[EAttrType]
+    AttrWaterDefensePer: _ClassVar[EAttrType]
+    AttrWaterDefenseExPer: _ClassVar[EAttrType]
+    AttrWoodDefense: _ClassVar[EAttrType]
+    AttrWoodDefenseTotal: _ClassVar[EAttrType]
+    AttrWoodDefenseAdd: _ClassVar[EAttrType]
+    AttrWoodDefenseExAdd: _ClassVar[EAttrType]
+    AttrWoodDefensePer: _ClassVar[EAttrType]
+    AttrWoodDefenseExPer: _ClassVar[EAttrType]
+    AttrElectricityDefense: _ClassVar[EAttrType]
+    AttrElectricityDefenseTotal: _ClassVar[EAttrType]
+    AttrElectricityDefenseAdd: _ClassVar[EAttrType]
+    AttrElectricityDefenseExAdd: _ClassVar[EAttrType]
+    AttrElectricityDefensePer: _ClassVar[EAttrType]
+    AttrElectricityDefenseExPer: _ClassVar[EAttrType]
+    AttrWindDefense: _ClassVar[EAttrType]
+    AttrWindDefenseTotal: _ClassVar[EAttrType]
+    AttrWindDefenseAdd: _ClassVar[EAttrType]
+    AttrWindDefenseExAdd: _ClassVar[EAttrType]
+    AttrWindDefensePer: _ClassVar[EAttrType]
+    AttrWindDefenseExPer: _ClassVar[EAttrType]
+    AttrRockDefense: _ClassVar[EAttrType]
+    AttrRockDefenseTotal: _ClassVar[EAttrType]
+    AttrRockDefenseAdd: _ClassVar[EAttrType]
+    AttrRockDefenseExAdd: _ClassVar[EAttrType]
+    AttrRockDefensePer: _ClassVar[EAttrType]
+    AttrRockDefenseExPer: _ClassVar[EAttrType]
+    AttrLightDefense: _ClassVar[EAttrType]
+    AttrLightDefenseTotal: _ClassVar[EAttrType]
+    AttrLightDefenseAdd: _ClassVar[EAttrType]
+    AttrLightDefenseExAdd: _ClassVar[EAttrType]
+    AttrLightDefensePer: _ClassVar[EAttrType]
+    AttrLightDefenseExPer: _ClassVar[EAttrType]
+    AttrDarkDefense: _ClassVar[EAttrType]
+    AttrDarkDefenseTotal: _ClassVar[EAttrType]
+    AttrDarkDefenseAdd: _ClassVar[EAttrType]
+    AttrDarkDefenseExAdd: _ClassVar[EAttrType]
+    AttrDarkDefensePer: _ClassVar[EAttrType]
+    AttrDarkDefenseExPer: _ClassVar[EAttrType]
+    AttrElementDamRes: _ClassVar[EAttrType]
+    AttrElementDamResTotal: _ClassVar[EAttrType]
+    AttrElementDamResAdd: _ClassVar[EAttrType]
+    AttrElementDamResExAdd: _ClassVar[EAttrType]
+    AttrElementDamResPer: _ClassVar[EAttrType]
+    AttrElementDamResExPer: _ClassVar[EAttrType]
+    AttrFireDamageReduction: _ClassVar[EAttrType]
+    AttrFireDamageReductionTotal: _ClassVar[EAttrType]
+    AttrFireDamageReductionAdd: _ClassVar[EAttrType]
+    AttrFireDamageReductionExAdd: _ClassVar[EAttrType]
+    AttrFireDamageReductionPer: _ClassVar[EAttrType]
+    AttrFireDamageReductionExPer: _ClassVar[EAttrType]
+    AttrWaterDamageReduction: _ClassVar[EAttrType]
+    AttrWaterDamageReductionTotal: _ClassVar[EAttrType]
+    AttrWaterDamageReductionAdd: _ClassVar[EAttrType]
+    AttrWaterDamageReductionExAdd: _ClassVar[EAttrType]
+    AttrWaterDamageReductionPer: _ClassVar[EAttrType]
+    AttrWaterDamageReductionExPer: _ClassVar[EAttrType]
+    AttrWoodDamageReduction: _ClassVar[EAttrType]
+    AttrWoodDamageReductionTotal: _ClassVar[EAttrType]
+    AttrWoodDamageReductionAdd: _ClassVar[EAttrType]
+    AttrWoodDamageReductionExAdd: _ClassVar[EAttrType]
+    AttrWoodDamageReductionPer: _ClassVar[EAttrType]
+    AttrWoodDamageReductionExPer: _ClassVar[EAttrType]
+    AttrElectricityDamageReduction: _ClassVar[EAttrType]
+    AttrElectricityDamageReductionTotal: _ClassVar[EAttrType]
+    AttrElectricityDamageReductionAdd: _ClassVar[EAttrType]
+    AttrElectricityDamageReductionExAdd: _ClassVar[EAttrType]
+    AttrElectricityDamageReductionPer: _ClassVar[EAttrType]
+    AttrElectricityDamageReductionExPer: _ClassVar[EAttrType]
+    AttrWindDamageReduction: _ClassVar[EAttrType]
+    AttrWindDamageReductionTotal: _ClassVar[EAttrType]
+    AttrWindDamageReductionAdd: _ClassVar[EAttrType]
+    AttrWindDamageReductionExAdd: _ClassVar[EAttrType]
+    AttrWindDamageReductionPer: _ClassVar[EAttrType]
+    AttrWindDamageReductionExPer: _ClassVar[EAttrType]
+    AttrRockDamageReduction: _ClassVar[EAttrType]
+    AttrRockDamageReductionTotal: _ClassVar[EAttrType]
+    AttrRockDamageReductionAdd: _ClassVar[EAttrType]
+    AttrRockDamageReductionExAdd: _ClassVar[EAttrType]
+    AttrRockDamageReductionPer: _ClassVar[EAttrType]
+    AttrRockDamageReductionExPer: _ClassVar[EAttrType]
+    AttrLightDamageReduction: _ClassVar[EAttrType]
+    AttrLightDamageReductionTotal: _ClassVar[EAttrType]
+    AttrLightDamageReductionAdd: _ClassVar[EAttrType]
+    AttrLightDamageReductionExAdd: _ClassVar[EAttrType]
+    AttrLightDamageReductionPer: _ClassVar[EAttrType]
+    AttrLightDamageReductionExPer: _ClassVar[EAttrType]
+    AttrDarkDamageReduction: _ClassVar[EAttrType]
+    AttrDarkDamageReductionTotal: _ClassVar[EAttrType]
+    AttrDarkDamageReductionAdd: _ClassVar[EAttrType]
+    AttrDarkDamageReductionExAdd: _ClassVar[EAttrType]
+    AttrDarkDamageReductionPer: _ClassVar[EAttrType]
+    AttrDarkDamageReductionExPer: _ClassVar[EAttrType]
+    AttrOriginEnergy: _ClassVar[EAttrType]
+    AttrMaxOriginEnergy: _ClassVar[EAttrType]
+    AttrMaxOriginEnergyTotal: _ClassVar[EAttrType]
+    AttrMaxOriginEnergyAdd: _ClassVar[EAttrType]
+    AttrMaxOriginEnergyExAdd: _ClassVar[EAttrType]
+    AttrMaxOriginEnergyPer: _ClassVar[EAttrType]
+    AttrMaxOriginEnergyExPer: _ClassVar[EAttrType]
+    AttrOriginEnergyConsumeRate: _ClassVar[EAttrType]
+    AttrParkourStandbyOriginEnergyRecovery: _ClassVar[EAttrType]
+    AttrParkourStandbyOriginEnergyRecoveryTotal: _ClassVar[EAttrType]
+    AttrParkourStandbyOriginEnergyRecoveryAdd: _ClassVar[EAttrType]
+    AttrParkourStandbyOriginEnergyRecoveryExAdd: _ClassVar[EAttrType]
+    AttrParkourStandbyOriginEnergyRecoveryPer: _ClassVar[EAttrType]
+    AttrParkourStandbyOriginEnergyRecoveryExPer: _ClassVar[EAttrType]
+    AttrParkourOriginEnergyRecovery: _ClassVar[EAttrType]
+    AttrParkourOriginEnergyRecoveryTotal: _ClassVar[EAttrType]
+    AttrParkourOriginEnergyRecoveryAdd: _ClassVar[EAttrType]
+    AttrParkourOriginEnergyRecoveryExAdd: _ClassVar[EAttrType]
+    AttrParkourOriginEnergyRecoveryPer: _ClassVar[EAttrType]
+    AttrParkourOriginEnergyRecoveryExPer: _ClassVar[EAttrType]
+    AttrParkourRunPhaseOneAcceleration: _ClassVar[EAttrType]
+    AttrParkourRunPhaseOneAccelerationTotal: _ClassVar[EAttrType]
+    AttrParkourRunPhaseOneAccelerationAdd: _ClassVar[EAttrType]
+    AttrParkourRunPhaseOneAccelerationExAdd: _ClassVar[EAttrType]
+    AttrParkourRunPhaseOneAccelerationPer: _ClassVar[EAttrType]
+    AttrParkourRunPhaseOneAccelerationExPer: _ClassVar[EAttrType]
+    AttrParkourRunPhaseOneSpeedLimit: _ClassVar[EAttrType]
+    AttrParkourRunPhaseOneSpeedLimitTotal: _ClassVar[EAttrType]
+    AttrParkourRunPhaseOneSpeedLimitAdd: _ClassVar[EAttrType]
+    AttrParkourRunPhaseOneSpeedLimitExAdd: _ClassVar[EAttrType]
+    AttrParkourRunPhaseOneSpeedLimitPer: _ClassVar[EAttrType]
+    AttrParkourRunPhaseOneSpeedLimitExPer: _ClassVar[EAttrType]
+    AttrParkourRunPhaseTwoAcceleration: _ClassVar[EAttrType]
+    AttrParkourRunPhaseTwoAccelerationTotal: _ClassVar[EAttrType]
+    AttrParkourRunPhaseTwoAccelerationAdd: _ClassVar[EAttrType]
+    AttrParkourRunPhaseTwoAccelerationExAdd: _ClassVar[EAttrType]
+    AttrParkourRunPhaseTwoAccelerationPer: _ClassVar[EAttrType]
+    AttrParkourRunPhaseTwoAccelerationExPer: _ClassVar[EAttrType]
+    AttrParkourRunPhaseTwoSpeedLimit: _ClassVar[EAttrType]
+    AttrParkourRunPhaseTwoSpeedLimitTotal: _ClassVar[EAttrType]
+    AttrParkourRunPhaseTwoSpeedLimitAdd: _ClassVar[EAttrType]
+    AttrParkourRunPhaseTwoSpeedLimitExAdd: _ClassVar[EAttrType]
+    AttrParkourRunPhaseTwoSpeedLimitPer: _ClassVar[EAttrType]
+    AttrParkourRunPhaseTwoSpeedLimitExPer: _ClassVar[EAttrType]
+    AttrParkourRunPhaseThreeAcceleration: _ClassVar[EAttrType]
+    AttrParkourRunPhaseThreeAccelerationTotal: _ClassVar[EAttrType]
+    AttrParkourRunPhaseThreeAccelerationAdd: _ClassVar[EAttrType]
+    AttrParkourRunPhaseThreeAccelerationExAdd: _ClassVar[EAttrType]
+    AttrParkourRunPhaseThreeAccelerationPer: _ClassVar[EAttrType]
+    AttrParkourRunPhaseThreeAccelerationExPer: _ClassVar[EAttrType]
+    AttrParkourRunPhaseThreeSpeedLimit: _ClassVar[EAttrType]
+    AttrParkourRunPhaseThreeSpeedLimitTotal: _ClassVar[EAttrType]
+    AttrParkourRunPhaseThreeSpeedLimitAdd: _ClassVar[EAttrType]
+    AttrParkourRunPhaseThreeSpeedLimitExAdd: _ClassVar[EAttrType]
+    AttrParkourRunPhaseThreeSpeedLimitPer: _ClassVar[EAttrType]
+    AttrParkourRunPhaseThreeSpeedLimitExPer: _ClassVar[EAttrType]
+    AttrInBattleParkourStandbyOriginEnergyRecovery: _ClassVar[EAttrType]
+    AttrInBattleParkourStandbyOriginEnergyRecoveryTotal: _ClassVar[EAttrType]
+    AttrInBattleParkourStandbyOriginEnergyRecoveryAdd: _ClassVar[EAttrType]
+    AttrInBattleParkourStandbyOriginEnergyRecoveryExAdd: _ClassVar[EAttrType]
+    AttrInBattleParkourStandbyOriginEnergyRecoveryPer: _ClassVar[EAttrType]
+    AttrInBattleParkourStandbyOriginEnergyRecoveryExPer: _ClassVar[EAttrType]
+    AttrInBattleParkourOriginEnergyRecovery: _ClassVar[EAttrType]
+    AttrInBattleParkourOriginEnergyRecoveryTotal: _ClassVar[EAttrType]
+    AttrInBattleParkourOriginEnergyRecoveryAdd: _ClassVar[EAttrType]
+    AttrInBattleParkourOriginEnergyRecoveryExAdd: _ClassVar[EAttrType]
+    AttrInBattleParkourOriginEnergyRecoveryPer: _ClassVar[EAttrType]
+    AttrInBattleParkourOriginEnergyRecoveryExPer: _ClassVar[EAttrType]
+    AttrFallDamageReduction: _ClassVar[EAttrType]
+    AttrDelayDie: _ClassVar[EAttrType]
+    AttrFightResourceIds: _ClassVar[EAttrType]
+    AttrFightResources: _ClassVar[EAttrType]
+    AttrFightResNoUp: _ClassVar[EAttrType]
+    AttrFightResNoDown: _ClassVar[EAttrType]
+    AttrFreezeFrame: _ClassVar[EAttrType]
+    AttrShieldList: _ClassVar[EAttrType]
+    AttrPressingOpen: _ClassVar[EAttrType]
+    AttrUpLift: _ClassVar[EAttrType]
+AttrUnknown: EAttrType
+AttrName: EAttrType
+AttrAimDir: EAttrType
+AttrScale: EAttrType
+AttrScaleAddRatio: EAttrType
+AttrId: EAttrType
+AttrState: EAttrType
+AttrCamp: EAttrType
+AttrLayer: EAttrType
+AttrIsBodySeparate: EAttrType
+AttrConfigUid: EAttrType
+AttrTableUid: EAttrType
+AttrVisualLayers: EAttrType
+AttrVisualLayer: EAttrType
+AttrVisualLayerUid: EAttrType
+AttrSummonFlag: EAttrType
+AttrTargetId: EAttrType
+AttrTargetPartId: EAttrType
+AttrIsBot: EAttrType
+AttrBasicFleshyType: EAttrType
+AttrDir: EAttrType
+AttrTargetDir: EAttrType
+AttrPos: EAttrType
+AttrTargetPos: EAttrType
+AttrSummonerPos: EAttrType
+AttrVelocity: EAttrType
+AttrMoveType: EAttrType
+AttrTurnVelocity: EAttrType
+AttrReviveCurProgressValue: EAttrType
+AttrReviveMaxProgressValue: EAttrType
+AttrUnbreakableLevel: EAttrType
+AttrStateTime: EAttrType
+AttrDeadType: EAttrType
+AttrMoveForce: EAttrType
+AttrSummonerId: EAttrType
+AttrTopSummonerId: EAttrType
+AttrIsUnderGround: EAttrType
+AttrOffset: EAttrType
+AttrInheritingType: EAttrType
+AttrFightSourceInfo: EAttrType
+AttrSkillId: EAttrType
+AttrSkillStage: EAttrType
+AttrInAccumulate: EAttrType
+AttrSkillLevel: EAttrType
+AttrCombatState: EAttrType
+AttrSkillStageBeginTime: EAttrType
+AttrSkillBeginTime: EAttrType
+AttrSkillSpeed: EAttrType
+AttrSkillStageNum: EAttrType
+AttrReplaceSkillList: EAttrType
+AttrFinalTargetDir: EAttrType
+AttrSkillUuid: EAttrType
+AttrIsCurStageNeedStopMove: EAttrType
+AttrSkillShowState: EAttrType
+AttrCombatStateTime: EAttrType
+AttrSwitchSkill: EAttrType
+AttrSkillLevelIdList: EAttrType
+AttrCantSilence: EAttrType
+AttrFinalTargetPos: EAttrType
+AttrTargetPartPos: EAttrType
+AttrDmgTargetPos: EAttrType
+AttrSkillRemodelLevel: EAttrType
+AttrIsInteractionActive: EAttrType
+AttrInteractionId: EAttrType
+AttrInteractionUuid: EAttrType
+AttrInteractionStage: EAttrType
+AttrInteractionSeat: EAttrType
+AttrInteractionInfo: EAttrType
+AttrActionTime: EAttrType
+AttrActionId: EAttrType
+AttrActionUpperTime: EAttrType
+AttrActionUpperId: EAttrType
+AttrActionSource: EAttrType
+AttrActionLongName: EAttrType
+AttrMountId: EAttrType
+AttrMountSize: EAttrType
+AttrActionGroupInfo: EAttrType
+AttrAiming: EAttrType
+AttrGender: EAttrType
+AttrInBattleShow: EAttrType
+AttrFaceData: EAttrType
+AttrProfile: EAttrType
+AttrBodySize: EAttrType
+AttrRoleLevel: EAttrType
+AttrOfflineTime: EAttrType
+AttrClimbType: EAttrType
+AttrClimbNormal: EAttrType
+AttrClimbDir: EAttrType
+AttrClimbTime: EAttrType
+AttrPlaneId: EAttrType
+AttrCanSwitchLayer: EAttrType
+AttrTeamId: EAttrType
+AttrTeamMemberNums: EAttrType
+AttrSeasonLv: EAttrType
+AttrUseItemState: EAttrType
+AttrProfessionSwitchTime: EAttrType
+AttrProfessionHitType: EAttrType
+AttrEquipData: EAttrType
+AttrFashionData: EAttrType
+AttrAppearanceData: EAttrType
+AttrWeaponVisibility: EAttrType
+AttrCommonSkillList: EAttrType
+AttrDeadTime: EAttrType
+AttrResourceLeft: EAttrType
+AttrResourceRight: EAttrType
+AttrShowPieceAttrList: EAttrType
+AttrSceneInteractionInfo: EAttrType
+AttrWeather: EAttrType
+AttrDayNightSwitch: EAttrType
+AttrRankId: EAttrType
+AttrEmoteTime: EAttrType
+AttrEmoteId: EAttrType
+AttrProfessionId: EAttrType
+AttrSwitchProfessionCD: EAttrType
+AttrProfessionSkinId: EAttrType
+AttrShowId: EAttrType
+AttrSlot: EAttrType
+AttrShowRankStar: EAttrType
+AttrFishingData: EAttrType
+AttrPersonalTitle: EAttrType
+AttrReviveCount: EAttrType
+AttrSceneAreaId: EAttrType
+AttrSkillSkinIds: EAttrType
+AttrToy: EAttrType
+AttrIsNewbie: EAttrType
+AttrMoveVersion: EAttrType
+AttrPersonalObjData: EAttrType
+AttrTerrainIndex: EAttrType
+AttrIsBackflow: EAttrType
+AttrParkourStep: EAttrType
+AttrParkourFallenJump: EAttrType
+AttrParkourShimmyJump: EAttrType
+AttrParkourFiveJump: EAttrType
+AttrParkourKickWallJump: EAttrType
+AttrParkourPedalWall: EAttrType
+AttrParkourRun: EAttrType
+AttrParkourLazyJump: EAttrType
+AttrParkourLevitation: EAttrType
+AttrShimmyJumpPac: EAttrType
+AttrMaxShimmyJumpPac: EAttrType
+AttrJumpStep: EAttrType
+AttrJumpDir: EAttrType
+AttrVerVelocity: EAttrType
+AttrHorVelocity: EAttrType
+AttrJumpType: EAttrType
+AttrGravity: EAttrType
+AttrBounceJumpId: EAttrType
+AttrJumpExCount: EAttrType
+AttrRushDirection: EAttrType
+AttrBattleRushChargeBegin: EAttrType
+AttrRushMaxCount: EAttrType
+AttrRushCountClearInterval: EAttrType
+AttrRushCD: EAttrType
+AttrGlideVelocityH: EAttrType
+AttrGlideVelocityV: EAttrType
+AttrGlideRotAngle: EAttrType
+AttrWallNormal: EAttrType
+AttrPedalWallDir: EAttrType
+AttrPedalWallStage: EAttrType
+AttrInsightFlag: EAttrType
+AttrAttachVelocity: EAttrType
+AttrAttachVelocityDirX: EAttrType
+AttrAttachVelocityDirY: EAttrType
+AttrAttachVelocityDirZ: EAttrType
+AttrAttachVelocitySource: EAttrType
+AttrAttachSourceEntUuid: EAttrType
+AttrTunnelMoveStage: EAttrType
+AttrTunnelId: EAttrType
+AttrTunnelPointIndex: EAttrType
+AttrTunnelPointT: EAttrType
+AttrSwimStage: EAttrType
+AttrSceneName: EAttrType
+AttrSceneBasicId: EAttrType
+AttrSceneUuid: EAttrType
+AttrSceneChannel: EAttrType
+AttrSceneWeather: EAttrType
+AttrSceneLevelId: EAttrType
+AttrSceneDayNightSwitch: EAttrType
+AttrFireworkStartTimeSeconds: EAttrType
+AttrDeathCount: EAttrType
+AttrDeathSubTimeSecond: EAttrType
+AttrFireworkType: EAttrType
+AttrSceneLineKickUserEndTime: EAttrType
+AttrObjState: EAttrType
+AttrObjCounter: EAttrType
+AttrOwner: EAttrType
+AttrToyState: EAttrType
+AttrDynamicInteractionId: EAttrType
+AttrZoneParam: EAttrType
+AttrDataType: EAttrType
+AttrRotation: EAttrType
+AttrShape: EAttrType
+AttrGMGod: EAttrType
+AttrShapeshiftType: EAttrType
+AttrShapeshiftConfigId: EAttrType
+AttrShapeshiftProfessionId: EAttrType
+AttrShapeshiftSkillIds: EAttrType
+AttrShapeshiftReplaceAttr: EAttrType
+AttrNpcTest: EAttrType
+AttrHostId: EAttrType
+AttrEventId: EAttrType
+AttrEffectType: EAttrType
+AttrBulletTargetPos: EAttrType
+AttrRayCount: EAttrType
+AttrRotate: EAttrType
+AttrSummonGroup: EAttrType
+AttrSummonIndex: EAttrType
+AttrSummonGroupCount: EAttrType
+AttrBulletStage: EAttrType
+AttrBulletCanMove: EAttrType
+AttrBulletCantHit: EAttrType
+AttrBulletZoomType: EAttrType
+AttrBulletOrientationType: EAttrType
+AttrBanDestroyShow: EAttrType
+AttrBulletSpeedChangePCT: EAttrType
+AttrDirX: EAttrType
+AttrDirZ: EAttrType
+AttrTargetDirX: EAttrType
+AttrTargetDirZ: EAttrType
+AttrMaxExtinction: EAttrType
+AttrExtinction: EAttrType
+AttrMaxStunned: EAttrType
+AttrStunned: EAttrType
+AttrInOverdrive: EAttrType
+AttrIsLockStunned: EAttrType
+AttrTargetUuid: EAttrType
+AttrAlertIncreaseSpeed: EAttrType
+AttrAlertValue: EAttrType
+AttrStopBreakingBarTickingFlag: EAttrType
+AttrIsStopBehvTree: EAttrType
+AttrBreakingStage: EAttrType
+AttrFirstAttack: EAttrType
+AttrDungeonScoreExtraMultiple: EAttrType
+AttrDungeonScoreExtraAddValue: EAttrType
+AttrIsMonsterRankEnable: EAttrType
+AttrMonsterRank: EAttrType
+SupplementaryRewardIndex: EAttrType
+AttrMonsterSeasonLevel: EAttrType
+AttrHatedCharId: EAttrType
+AttrHatedJob: EAttrType
+AttrHatedName: EAttrType
+AttrHateList: EAttrType
+AttrDropType: EAttrType
+AttrItemId: EAttrType
+AttrAwardId: EAttrType
+AttrAni: EAttrType
+AttrItemData: EAttrType
+AttrInteractionActor: EAttrType
+AttrCollectCounter: EAttrType
+AttrTransferType: EAttrType
+AttrRogueEntryList: EAttrType
+AttrRogueLockedEntry: EAttrType
+AttrStiffType: EAttrType
+AttrStiffStage: EAttrType
+AttrStiffStageTime: EAttrType
+AttrStiffDir: EAttrType
+AttrStiffTime: EAttrType
+AttrStiffDownTime: EAttrType
+AttrStiffHangTime: EAttrType
+AttrStiffTarget: EAttrType
+AttrStiffFlowSpeed: EAttrType
+AttrStiffFlowOffset: EAttrType
+AttrStiffFlowRadius: EAttrType
+AttrStiffHorSpeed: EAttrType
+AttrStiffHorAccSpeed: EAttrType
+AttrStiffVerSpeedUp: EAttrType
+AttrStiffVerAccSpeedUp: EAttrType
+AttrStiffVerSpeedDown: EAttrType
+AttrStiffVerAccSpeedDown: EAttrType
+AttrStiffHorSpeedMinimum: EAttrType
+AttrStiffDamageWeight: EAttrType
+AttrTargetPosIsEnd: EAttrType
+AttrStiffThrowMoveInfo: EAttrType
+AttrStiffDamageStrength: EAttrType
+AttrRideId: EAttrType
+AttrIsCantRide: EAttrType
+AttrRideIndex: EAttrType
+AttrRideStage: EAttrType
+AttrRideType: EAttrType
+AttrRideUuid: EAttrType
+AttrRideAttachEnable: EAttrType
+AttrRideMagneticEnable: EAttrType
+AttrRideMagneticQueueId: EAttrType
+AttrIsForceRide: EAttrType
+AttrControllerUuid: EAttrType
+AttrPassengerList: EAttrType
+AttrIsSilence: EAttrType
+AttrIsConfine: EAttrType
+AttrRideSeatCantTransfer: EAttrType
+AttrCantSwim: EAttrType
+AttrGMCantHit: EAttrType
+AttrCantStiff: EAttrType
+AttrCantStiffBack: EAttrType
+AttrCantStiffDown: EAttrType
+AttrCantStiffAir: EAttrType
+AttrCantNormalAttack: EAttrType
+AttrCantSkill: EAttrType
+AttrCantMove: EAttrType
+AttrCantTurn: EAttrType
+AttrCantJump: EAttrType
+AttrCantRush: EAttrType
+AttrCantGravitational: EAttrType
+AttrCantStiffFlow: EAttrType
+AttrCantChangeProfession: EAttrType
+AttrCantInteraction: EAttrType
+AttrCantFallDamage: EAttrType
+AttrCanFlow: EAttrType
+AttrCanGlide: EAttrType
+AttrCanBeHit: EAttrType
+AttrCanLessenHP: EAttrType
+AttrCanIntoCombat: EAttrType
+AttrCantHit: EAttrType
+AttrCanBeHatredTarget: EAttrType
+AttrCanHitNum: EAttrType
+AttrCanHitObj: EAttrType
+AttrCanPathFinding: EAttrType
+AttrCantNormalAttackInput: EAttrType
+AttrCantSkillInput: EAttrType
+AttrCantMoveInput: EAttrType
+AttrCantJumpInput: EAttrType
+AttrCantRushInput: EAttrType
+AttrCantUseToy: EAttrType
+AttrCantRideDown: EAttrType
+AttrCantMultAction: EAttrType
+AttrBlockSkill: EAttrType
+AttrBlockSkillWhiteTags: EAttrType
+AttrTopSummonerSkillSkin: EAttrType
+AttrSummonSkillId: EAttrType
+AttrSceneServStateObjData: EAttrType
+AttrParadeId: EAttrType
+AttrParadeQueueId: EAttrType
+AttrParadeQueueIndex: EAttrType
+AttrBubbleId: EAttrType
+AttrCommunityDataMap: EAttrType
+AttrOwnership: EAttrType
+AttrHomeId: EAttrType
+DecorationInfo: EAttrType
+AttrSubSceneCommunityId: EAttrType
+AttrSubSceneHomeId: EAttrType
+AttrVisitedCharIds: EAttrType
+AttrCohabitant: EAttrType
+AttrAuthorityInfo: EAttrType
+AttrOuterDecorationInfo: EAttrType
+AttrInnerDecorationInfo: EAttrType
+AttrUnlockedAreas: EAttrType
+AttrHousingType: EAttrType
+AttrHouseOwnerCharId: EAttrType
+AttrIsHomelandFriend: EAttrType
+AttrLevel: EAttrType
+AttrGS: EAttrType
+AttrLastMaxGS: EAttrType
+AttrFightPoint: EAttrType
+AttrFightPointTotal: EAttrType
+AttrFightPointAdd: EAttrType
+AttrFightPointExAdd: EAttrType
+AttrFightPointPer: EAttrType
+AttrFightPointExPer: EAttrType
+AttrFightCapability: EAttrType
+AttrFightCapabilityTotal: EAttrType
+AttrFightCapabilityAdd: EAttrType
+AttrFightCapabilityExAdd: EAttrType
+AttrFightCapabilityPer: EAttrType
+AttrFightCapabilityExPer: EAttrType
+AttrSurvivalCapability: EAttrType
+AttrSurvivalCapabilityTotal: EAttrType
+AttrSurvivalCapabilityAdd: EAttrType
+AttrSurvivalCapabilityExAdd: EAttrType
+AttrSurvivalCapabilityPer: EAttrType
+AttrSurvivalCapabilityExPer: EAttrType
+AttrRankLevel: EAttrType
+AttrSeasonLevel: EAttrType
+AttrWalkVelocity: EAttrType
+AttrWalkVelocityTotal: EAttrType
+AttrWalkVelocityAdd: EAttrType
+AttrWalkVelocityExAdd: EAttrType
+AttrWalkVelocityPer: EAttrType
+AttrWalkVelocityExPer: EAttrType
+AttrRunVelocity: EAttrType
+AttrRunVelocityTotal: EAttrType
+AttrRunVelocityAdd: EAttrType
+AttrRunVelocityExAdd: EAttrType
+AttrRunVelocityPer: EAttrType
+AttrRunVelocityExPer: EAttrType
+AttrDashVelocity: EAttrType
+AttrDashVelocityTotal: EAttrType
+AttrDashVelocityAdd: EAttrType
+AttrDashVelocityExAdd: EAttrType
+AttrDashVelocityPer: EAttrType
+AttrDashVelocityExPer: EAttrType
+AttrReviveTimeConsumePCT: EAttrType
+AttrReviveTimeConsumePCTTotal: EAttrType
+AttrReviveTimeConsumePCTAdd: EAttrType
+AttrReviveTimeConsumePCTExAdd: EAttrType
+AttrReviveTimeConsumePCTPer: EAttrType
+AttrReviveTimeConsumePCTExPer: EAttrType
+AttrRideWalkVelocity: EAttrType
+AttrRideWalkVelocityTotal: EAttrType
+AttrRideWalkVelocityAdd: EAttrType
+AttrRideWalkVelocityExAdd: EAttrType
+AttrRideWalkVelocityPer: EAttrType
+AttrRideWalkVelocityExPer: EAttrType
+AttrRideRunVelocity: EAttrType
+AttrRideRunVelocityTotal: EAttrType
+AttrRideRunVelocityAdd: EAttrType
+AttrRideRunVelocityExAdd: EAttrType
+AttrRideRunVelocityPer: EAttrType
+AttrRideRunVelocityExPer: EAttrType
+AttrRideDashVelocity: EAttrType
+AttrRideDashVelocityTotal: EAttrType
+AttrRideDashVelocityAdd: EAttrType
+AttrRideDashVelocityExAdd: EAttrType
+AttrRideDashVelocityPer: EAttrType
+AttrRideDashVelocityExPer: EAttrType
+AttrReviveInterTimeConsumePCT: EAttrType
+AttrReviveInterTimeConsumePCTTotal: EAttrType
+AttrReviveInterTimeConsumePCTAdd: EAttrType
+AttrReviveInterTimeConsumePCTExAdd: EAttrType
+AttrReviveInterTimeConsumePCTPer: EAttrType
+AttrReviveInterTimeConsumePCTExPer: EAttrType
+AttrStrength: EAttrType
+AttrStrengthTotal: EAttrType
+AttrStrengthAdd: EAttrType
+AttrStrengthExAdd: EAttrType
+AttrStrengthPer: EAttrType
+AttrStrengthExPer: EAttrType
+AttrIntelligence: EAttrType
+AttrIntelligenceTotal: EAttrType
+AttrIntelligenceAdd: EAttrType
+AttrIntelligenceExAdd: EAttrType
+AttrIntelligencePer: EAttrType
+AttrIntelligenceExPer: EAttrType
+AttrDexterity: EAttrType
+AttrDexterityTotal: EAttrType
+AttrDexterityAdd: EAttrType
+AttrDexterityExAdd: EAttrType
+AttrDexterityPer: EAttrType
+AttrDexterityExPer: EAttrType
+AttrVitality: EAttrType
+AttrVitalityTotal: EAttrType
+AttrVitalityAdd: EAttrType
+AttrVitalityExAdd: EAttrType
+AttrVitalityPer: EAttrType
+AttrVitalityExPer: EAttrType
+AttrCri: EAttrType
+AttrCriTotal: EAttrType
+AttrCriAdd: EAttrType
+AttrCriExAdd: EAttrType
+AttrCriPer: EAttrType
+AttrCriExPer: EAttrType
+AttrHaste: EAttrType
+AttrHasteTotal: EAttrType
+AttrHasteAdd: EAttrType
+AttrHasteExAdd: EAttrType
+AttrHastePer: EAttrType
+AttrHasteExPer: EAttrType
+AttrLuck: EAttrType
+AttrLuckTotal: EAttrType
+AttrLuckAdd: EAttrType
+AttrLuckExAdd: EAttrType
+AttrLuckPer: EAttrType
+AttrLuckExPer: EAttrType
+AttrMastery: EAttrType
+AttrMasteryTotal: EAttrType
+AttrMasteryAdd: EAttrType
+AttrMasteryExAdd: EAttrType
+AttrMasteryPer: EAttrType
+AttrMasteryExPer: EAttrType
+AttrVersatility: EAttrType
+AttrVersatilityTotal: EAttrType
+AttrVersatilityAdd: EAttrType
+AttrVersatilityExAdd: EAttrType
+AttrVersatilityPer: EAttrType
+AttrVersatilityExPer: EAttrType
+AttrHit: EAttrType
+AttrHitTotal: EAttrType
+AttrHitAdd: EAttrType
+AttrHitExAdd: EAttrType
+AttrHitPer: EAttrType
+AttrHitExPer: EAttrType
+AttrBlock: EAttrType
+AttrBlockTotal: EAttrType
+AttrBlockAdd: EAttrType
+AttrBlockExAdd: EAttrType
+AttrBlockPer: EAttrType
+AttrBlockExPer: EAttrType
+AttrHp: EAttrType
+AttrMaxHp: EAttrType
+AttrMaxHpTotal: EAttrType
+AttrMaxHpAdd: EAttrType
+AttrMaxHpExAdd: EAttrType
+AttrMaxHpPer: EAttrType
+AttrMaxHpExPer: EAttrType
+AttrAttack: EAttrType
+AttrAttackTotal: EAttrType
+AttrAttackAdd: EAttrType
+AttrAttackExAdd: EAttrType
+AttrAttackPer: EAttrType
+AttrAttackExPer: EAttrType
+AttrMAttack: EAttrType
+AttrMAttackTotal: EAttrType
+AttrMAttackAdd: EAttrType
+AttrMAttackExAdd: EAttrType
+AttrMAttackPer: EAttrType
+AttrMAttackExPer: EAttrType
+AttrDefense: EAttrType
+AttrDefenseTotal: EAttrType
+AttrDefenseAdd: EAttrType
+AttrDefenseExAdd: EAttrType
+AttrDefensePer: EAttrType
+AttrDefenseExPer: EAttrType
+AttrMDefense: EAttrType
+AttrMDefenseTotal: EAttrType
+AttrMDefenseAdd: EAttrType
+AttrMDefenseExAdd: EAttrType
+AttrMDefensePer: EAttrType
+AttrMDefenseExPer: EAttrType
+AttrIgnoreDefense: EAttrType
+AttrIgnoreDefenseTotal: EAttrType
+AttrIgnoreDefenseAdd: EAttrType
+AttrIgnoreDefenseExAdd: EAttrType
+AttrIgnoreDefensePer: EAttrType
+AttrIgnoreDefenseExPer: EAttrType
+AttrIgnoreMDefense: EAttrType
+AttrIgnoreMDefenseTotal: EAttrType
+AttrIgnoreMDefenseAdd: EAttrType
+AttrIgnoreMDefenseExAdd: EAttrType
+AttrIgnoreMDefensePer: EAttrType
+AttrIgnoreMDefenseExPer: EAttrType
+AttrIgnoreDefensePCT: EAttrType
+AttrIgnoreDefensePCTTotal: EAttrType
+AttrIgnoreDefensePCTAdd: EAttrType
+AttrIgnoreDefensePCTExAdd: EAttrType
+AttrIgnoreDefensePCTPer: EAttrType
+AttrIgnoreDefensePCTExPer: EAttrType
+AttrIgnoreMDefensePCT: EAttrType
+AttrIgnoreMDefensePCTTotal: EAttrType
+AttrIgnoreMDefensePCTAdd: EAttrType
+AttrIgnoreMDefensePCTExAdd: EAttrType
+AttrIgnoreMDefensePCTPer: EAttrType
+AttrIgnoreMDefensePCTExPer: EAttrType
+AttrRefineAttack: EAttrType
+AttrRefineAttackTotal: EAttrType
+AttrRefineAttackAdd: EAttrType
+AttrRefineAttackExAdd: EAttrType
+AttrRefineAttackPer: EAttrType
+AttrRefineAttackExPer: EAttrType
+AttrRefineDefense: EAttrType
+AttrRefineDefenseTotal: EAttrType
+AttrRefineDefenseAdd: EAttrType
+AttrRefineDefenseExAdd: EAttrType
+AttrRefineDefensePer: EAttrType
+AttrRefineDefenseExPer: EAttrType
+AttrRefineMAttack: EAttrType
+AttrRefineMAttackTotal: EAttrType
+AttrRefineMAttackAdd: EAttrType
+AttrRefineMAttackExAdd: EAttrType
+AttrRefineMAttackPer: EAttrType
+AttrRefineMAttackExPer: EAttrType
+AttrSeasonStrength: EAttrType
+AttrSeasonStrengthTotal: EAttrType
+AttrSeasonStrengthAdd: EAttrType
+AttrSeasonStrengthExAdd: EAttrType
+AttrSeasonStrengthPer: EAttrType
+AttrSeasonStrengthExPer: EAttrType
+AttrSeasonWeakness: EAttrType
+AttrSeasonWeaknessTotal: EAttrType
+AttrSeasonWeaknessAdd: EAttrType
+AttrSeasonWeaknessExAdd: EAttrType
+AttrSeasonWeaknessPer: EAttrType
+AttrSeasonWeaknessExPer: EAttrType
+AttrElementAtk: EAttrType
+AttrElementAtkTotal: EAttrType
+AttrElementAtkAdd: EAttrType
+AttrElementAtkExAdd: EAttrType
+AttrElementAtkPer: EAttrType
+AttrElementAtkExPer: EAttrType
+AttrFireAtk: EAttrType
+AttrFireAtkTotal: EAttrType
+AttrFireAtkAdd: EAttrType
+AttrFireAtkExAdd: EAttrType
+AttrFireAtkPer: EAttrType
+AttrFireAtkExPer: EAttrType
+AttrWaterAtk: EAttrType
+AttrWaterAtkTotal: EAttrType
+AttrWaterAtkAdd: EAttrType
+AttrWaterAtkExAdd: EAttrType
+AttrWaterAtkPer: EAttrType
+AttrWaterAtkExPer: EAttrType
+AttrWoodAtk: EAttrType
+AttrWoodAtkTotal: EAttrType
+AttrWoodAtkAdd: EAttrType
+AttrWoodAtkExAdd: EAttrType
+AttrWoodAtkPer: EAttrType
+AttrWoodAtkExPer: EAttrType
+AttrElectricityAtk: EAttrType
+AttrElectricityAtkTotal: EAttrType
+AttrElectricityAtkAdd: EAttrType
+AttrElectricityAtkExAdd: EAttrType
+AttrElectricityAtkPer: EAttrType
+AttrElectricityAtkExPer: EAttrType
+AttrWindAtk: EAttrType
+AttrWindAtkTotal: EAttrType
+AttrWindAtkAdd: EAttrType
+AttrWindAtkExAdd: EAttrType
+AttrWindAtkPer: EAttrType
+AttrWindAtkExPer: EAttrType
+AttrRockAtk: EAttrType
+AttrRockAtkTotal: EAttrType
+AttrRockAtkAdd: EAttrType
+AttrRockAtkExAdd: EAttrType
+AttrRockAtkPer: EAttrType
+AttrRockAtkExPer: EAttrType
+AttrLightAtk: EAttrType
+AttrLightAtkTotal: EAttrType
+AttrLightAtkAdd: EAttrType
+AttrLightAtkExAdd: EAttrType
+AttrLightAtkPer: EAttrType
+AttrLightAtkExPer: EAttrType
+AttrDarkAtk: EAttrType
+AttrDarkAtkTotal: EAttrType
+AttrDarkAtkAdd: EAttrType
+AttrDarkAtkExAdd: EAttrType
+AttrDarkAtkPer: EAttrType
+AttrDarkAtkExPer: EAttrType
+AttrCrit: EAttrType
+AttrCritTotal: EAttrType
+AttrCritAdd: EAttrType
+AttrCritExAdd: EAttrType
+AttrCritPer: EAttrType
+AttrCritExPer: EAttrType
+AttrAttackSpeedPCT: EAttrType
+AttrAttackSpeedPCTTotal: EAttrType
+AttrAttackSpeedPCTAdd: EAttrType
+AttrAttackSpeedPCTExAdd: EAttrType
+AttrAttackSpeedPCTPer: EAttrType
+AttrAttackSpeedPCTExPer: EAttrType
+AttrCastSpeedPCT: EAttrType
+AttrCastSpeedPCTTotal: EAttrType
+AttrCastSpeedPCTAdd: EAttrType
+AttrCastSpeedPCTExAdd: EAttrType
+AttrCastSpeedPCTPer: EAttrType
+AttrCastSpeedPCTExPer: EAttrType
+AttrChargeSpeedPCT: EAttrType
+AttrChargeSpeedPCTTotal: EAttrType
+AttrChargeSpeedPCTAdd: EAttrType
+AttrChargeSpeedPCTExAdd: EAttrType
+AttrChargeSpeedPCTPer: EAttrType
+AttrChargeSpeedPCTExPer: EAttrType
+AttrSkillCD: EAttrType
+AttrSkillCDTotal: EAttrType
+AttrSkillCDAdd: EAttrType
+AttrSkillCDExAdd: EAttrType
+AttrSkillCDPer: EAttrType
+AttrSkillCDExPer: EAttrType
+AttrSkillCDPCT: EAttrType
+AttrSkillCDPCTTotal: EAttrType
+AttrSkillCDPCTAdd: EAttrType
+AttrSkillCDPCTExAdd: EAttrType
+AttrSkillCDPCTPer: EAttrType
+AttrSkillCDPCTExPer: EAttrType
+AttrDotTime: EAttrType
+AttrDotTimeTotal: EAttrType
+AttrDotTimeAdd: EAttrType
+AttrDotTimeExAdd: EAttrType
+AttrDotTimePer: EAttrType
+AttrDotTimeExPer: EAttrType
+AttrLuckyStrikeProb: EAttrType
+AttrLuckyStrikeProbTotal: EAttrType
+AttrLuckyStrikeProbAdd: EAttrType
+AttrLuckyStrikeProbExAdd: EAttrType
+AttrLuckyStrikeProbPer: EAttrType
+AttrLuckyStrikeProbExPer: EAttrType
+AttrHeal: EAttrType
+AttrHealTotal: EAttrType
+AttrHealAdd: EAttrType
+AttrHealExAdd: EAttrType
+AttrHealPer: EAttrType
+AttrHealExPer: EAttrType
+AttrHealed: EAttrType
+AttrHealedTotal: EAttrType
+AttrHealedAdd: EAttrType
+AttrHealedExAdd: EAttrType
+AttrHealedPer: EAttrType
+AttrHealedExPer: EAttrType
+AttrShieldAddPCT: EAttrType
+AttrShieldAddPCTTotal: EAttrType
+AttrShieldAddPCTAdd: EAttrType
+AttrShieldAddPCTExAdd: EAttrType
+AttrShieldAddPCTPer: EAttrType
+AttrShieldAddPCTExPer: EAttrType
+AttrShieldGainPCT: EAttrType
+AttrShieldGainPCTTotal: EAttrType
+AttrShieldGainPCTAdd: EAttrType
+AttrShieldGainPCTExAdd: EAttrType
+AttrShieldGainPCTPer: EAttrType
+AttrShieldGainPCTExPer: EAttrType
+AttrStunnedDamagePCT: EAttrType
+AttrStunnedDamagePCTTotal: EAttrType
+AttrStunnedDamagePCTAdd: EAttrType
+AttrStunnedDamagePCTExAdd: EAttrType
+AttrStunnedDamagePCTPer: EAttrType
+AttrStunnedDamagePCTExPer: EAttrType
+AttrExtDamInc: EAttrType
+AttrExtDamIncTotal: EAttrType
+AttrExtDamIncAdd: EAttrType
+AttrExtDamIncExAdd: EAttrType
+AttrExtDamIncPer: EAttrType
+AttrExtDamIncExPer: EAttrType
+AttrExtDamRes: EAttrType
+AttrExtDamResTotal: EAttrType
+AttrExtDamResAdd: EAttrType
+AttrExtDamResExAdd: EAttrType
+AttrExtDamResPer: EAttrType
+AttrExtDamResExPer: EAttrType
+AttrDpsOwnEffectStr: EAttrType
+AttrDpsOwnEffectStrTotal: EAttrType
+AttrDpsOwnEffectStrAdd: EAttrType
+AttrDpsOwnEffectStrExAdd: EAttrType
+AttrDpsOwnEffectStrPer: EAttrType
+AttrDpsOwnEffectStrExPer: EAttrType
+AttrRainbowDamage: EAttrType
+AttrRainbowDamageTotal: EAttrType
+AttrRainbowDamageAdd: EAttrType
+AttrRainbowDamageExAdd: EAttrType
+AttrRainbowDamagePer: EAttrType
+AttrRainbowDamageExPer: EAttrType
+AttrSuppressDamInc: EAttrType
+AttrSuppressDamIncTotal: EAttrType
+AttrSuppressDamIncAdd: EAttrType
+AttrSuppressDamIncExAdd: EAttrType
+AttrSuppressDamIncPer: EAttrType
+AttrSuppressDamIncExPer: EAttrType
+AttrSuppressDamRes: EAttrType
+AttrSuppressDamResTotal: EAttrType
+AttrSuppressDamResAdd: EAttrType
+AttrSuppressDamResExAdd: EAttrType
+AttrSuppressDamResPer: EAttrType
+AttrSuppressDamResExPer: EAttrType
+AttrInspirePct: EAttrType
+AttrInspirePctTotal: EAttrType
+AttrInspirePctAdd: EAttrType
+AttrInspirePctExAdd: EAttrType
+AttrInspirePctPer: EAttrType
+AttrInspirePctExPer: EAttrType
+AttrHateRatePTC: EAttrType
+AttrHateRatePTCTotal: EAttrType
+AttrHateRatePTCAdd: EAttrType
+AttrHateRatePTCExAdd: EAttrType
+AttrHateRatePTCPer: EAttrType
+AttrHateRatePTCExPer: EAttrType
+AttrHastePct: EAttrType
+AttrHastePctTotal: EAttrType
+AttrHastePctAdd: EAttrType
+AttrHastePctExAdd: EAttrType
+AttrHastePctPer: EAttrType
+AttrHastePctExPer: EAttrType
+AttrMasteryPct: EAttrType
+AttrMasteryPctTotal: EAttrType
+AttrMasteryPctAdd: EAttrType
+AttrMasteryPctExAdd: EAttrType
+AttrMasteryPctPer: EAttrType
+AttrMasteryPctExPer: EAttrType
+AttrVersatilityPct: EAttrType
+AttrVersatilityPctTotal: EAttrType
+AttrVersatilityPctAdd: EAttrType
+AttrVersatilityPctExAdd: EAttrType
+AttrVersatilityPctPer: EAttrType
+AttrVersatilityPctExPer: EAttrType
+AttrCdAcceleratePct: EAttrType
+AttrCdAcceleratePctTotal: EAttrType
+AttrCdAcceleratePctAdd: EAttrType
+AttrCdAcceleratePctExAdd: EAttrType
+AttrCdAcceleratePctPer: EAttrType
+AttrCdAcceleratePctExPer: EAttrType
+AttrBlockPct: EAttrType
+AttrBlockPctTotal: EAttrType
+AttrBlockPctAdd: EAttrType
+AttrBlockPctExAdd: EAttrType
+AttrBlockPctPer: EAttrType
+AttrBlockPctExPer: EAttrType
+AttrFightResCdSpeedPct: EAttrType
+AttrFightResCdSpeedPctTotal: EAttrType
+AttrFightResCdSpeedPctAdd: EAttrType
+AttrFightResCdSpeedPctExAdd: EAttrType
+AttrFightResCdSpeedPctPer: EAttrType
+AttrFightResCdSpeedPctExPer: EAttrType
+AttrPetAttackSpeedPCT: EAttrType
+AttrPetAttackSpeedPCTTotal: EAttrType
+AttrPetAttackSpeedPCTAdd: EAttrType
+AttrPetAttackSpeedPCTExAdd: EAttrType
+AttrPetAttackSpeedPCTPer: EAttrType
+AttrPetAttackSpeedPCTExPer: EAttrType
+AttrCritDamage: EAttrType
+AttrCritDamageTotal: EAttrType
+AttrCritDamageAdd: EAttrType
+AttrCritDamageExAdd: EAttrType
+AttrCritDamagePer: EAttrType
+AttrCritDamageExPer: EAttrType
+AttrCritDamageRes: EAttrType
+AttrCritDamageResTotal: EAttrType
+AttrCritDamageResAdd: EAttrType
+AttrCritDamageResExAdd: EAttrType
+AttrCritDamageResPer: EAttrType
+AttrCritDamageResExPer: EAttrType
+AttrLuckDamInc: EAttrType
+AttrLuckDamIncTotal: EAttrType
+AttrLuckDamIncAdd: EAttrType
+AttrLuckDamIncExAdd: EAttrType
+AttrLuckDamIncPer: EAttrType
+AttrLuckDamIncExPer: EAttrType
+AttrBlockDamRes: EAttrType
+AttrBlockDamResTotal: EAttrType
+AttrBlockDamResAdd: EAttrType
+AttrBlockDamResExAdd: EAttrType
+AttrBlockDamResPer: EAttrType
+AttrBlockDamResExPer: EAttrType
+AttrDamInc: EAttrType
+AttrDamIncTotal: EAttrType
+AttrDamIncAdd: EAttrType
+AttrDamIncExAdd: EAttrType
+AttrDamIncPer: EAttrType
+AttrDamIncExPer: EAttrType
+AttrDamRes: EAttrType
+AttrDamResTotal: EAttrType
+AttrDamResAdd: EAttrType
+AttrDamResExAdd: EAttrType
+AttrDamResPer: EAttrType
+AttrDamResExPer: EAttrType
+AttrMdamInc: EAttrType
+AttrMdamIncTotal: EAttrType
+AttrMdamIncAdd: EAttrType
+AttrMdamIncExAdd: EAttrType
+AttrMdamIncPer: EAttrType
+AttrMdamIncExPer: EAttrType
+AttrMdamRes: EAttrType
+AttrMdamResTotal: EAttrType
+AttrMdamResAdd: EAttrType
+AttrMdamResExAdd: EAttrType
+AttrMdamResPer: EAttrType
+AttrMdamResExPer: EAttrType
+AttrNearDamage: EAttrType
+AttrNearDamageTotal: EAttrType
+AttrNearDamageAdd: EAttrType
+AttrNearDamageExAdd: EAttrType
+AttrNearDamagePer: EAttrType
+AttrNearDamageExPer: EAttrType
+AttrNearDamageReduction: EAttrType
+AttrNearDamageReductionTotal: EAttrType
+AttrNearDamageReductionAdd: EAttrType
+AttrNearDamageReductionExAdd: EAttrType
+AttrNearDamageReductionPer: EAttrType
+AttrNearDamageReductionExPer: EAttrType
+AttrFarDamage: EAttrType
+AttrFarDamageTotal: EAttrType
+AttrFarDamageAdd: EAttrType
+AttrFarDamageExAdd: EAttrType
+AttrFarDamagePer: EAttrType
+AttrFarDamageExPer: EAttrType
+AttrFarDamageReduction: EAttrType
+AttrFarDamageReductionTotal: EAttrType
+AttrFarDamageReductionAdd: EAttrType
+AttrFarDamageReductionExAdd: EAttrType
+AttrFarDamageReductionPer: EAttrType
+AttrFarDamageReductionExPer: EAttrType
+AttrBossDamInc: EAttrType
+AttrBossDamIncTotal: EAttrType
+AttrBossDamIncAdd: EAttrType
+AttrBossDamIncExAdd: EAttrType
+AttrBossDamIncPer: EAttrType
+AttrBossDamIncExPer: EAttrType
+AttrBossDamRes: EAttrType
+AttrBossDamResTotal: EAttrType
+AttrBossDamResAdd: EAttrType
+AttrBossDamResExAdd: EAttrType
+AttrBossDamResPer: EAttrType
+AttrBossDamResExPer: EAttrType
+AttrShieldDamagePCT: EAttrType
+AttrShieldDamagePCTTotal: EAttrType
+AttrShieldDamagePCTAdd: EAttrType
+AttrShieldDamagePCTExAdd: EAttrType
+AttrShieldDamagePCTPer: EAttrType
+AttrShieldDamagePCTExPer: EAttrType
+AttrShieldDamageReductionPCT: EAttrType
+AttrShieldDamageReductionPCTTotal: EAttrType
+AttrShieldDamageReductionPCTAdd: EAttrType
+AttrShieldDamageReductionPCTExAdd: EAttrType
+AttrShieldDamageReductionPCTPer: EAttrType
+AttrShieldDamageReductionPCTExPer: EAttrType
+AttrOtherDamInc: EAttrType
+AttrOtherDamIncTotal: EAttrType
+AttrOtherDamIncAdd: EAttrType
+AttrOtherDamIncExAdd: EAttrType
+AttrOtherDamIncTPer: EAttrType
+AttrOtherDamIncExPer: EAttrType
+AttrOtherDamRes: EAttrType
+AttrOtherDamResTotal: EAttrType
+AttrOtherDamResAdd: EAttrType
+AttrOtherDamResExAdd: EAttrType
+AttrOtherDamResTPer: EAttrType
+AttrOtherDamResExPer: EAttrType
+AttrSeasonDamInc: EAttrType
+AttrSeasonDamIncTotal: EAttrType
+AttrSeasonDamIncAdd: EAttrType
+AttrSeasonDamIncExAdd: EAttrType
+AttrSeasonDamIncTPer: EAttrType
+AttrSeasonDamIncExPer: EAttrType
+AttrSeasonDamRes: EAttrType
+AttrSeasonDamResTotal: EAttrType
+AttrSeasonDamResAdd: EAttrType
+AttrSeasonDamResExAdd: EAttrType
+AttrSeasonDamResTPer: EAttrType
+AttrSeasonDamResExPer: EAttrType
+AttrMultipliesDamPct: EAttrType
+AttrMultipliesDamPctTotal: EAttrType
+AttrMultipliesDamPctAdd: EAttrType
+AttrMultipliesDamPctExAdd: EAttrType
+AttrMultipliesDamPctTPer: EAttrType
+AttrMultipliesDamPctExPer: EAttrType
+AttrLuckHealInc: EAttrType
+AttrLuckHealIncTotal: EAttrType
+AttrLuckHealIncAdd: EAttrType
+AttrLuckHealIncExAdd: EAttrType
+AttrLuckHealIncPer: EAttrType
+AttrLuckHealIncExPer: EAttrType
+AttrPetDamInc: EAttrType
+AttrPetDamIncTotal: EAttrType
+AttrPetDamIncAdd: EAttrType
+AttrPetDamIncExAdd: EAttrType
+AttrPetDamIncPer: EAttrType
+AttrPetDamIncExPer: EAttrType
+AttrCritHeal: EAttrType
+AttrCritHealTotal: EAttrType
+AttrCritHealAdd: EAttrType
+AttrCritHealExAdd: EAttrType
+AttrCritHealPer: EAttrType
+AttrCritHealExPer: EAttrType
+AttrSpDamInc: EAttrType
+AttrSpDamIncTotal: EAttrType
+AttrSpDamIncAdd: EAttrType
+AttrSpDamIncExAdd: EAttrType
+AttrSpDamIncPer: EAttrType
+AttrSpDamIncExPer: EAttrType
+AttrSpDamRes: EAttrType
+AttrSpDamResTotal: EAttrType
+AttrSpDamResAdd: EAttrType
+AttrSpDamResExAdd: EAttrType
+AttrSpDamResPer: EAttrType
+AttrSpDamResExPer: EAttrType
+AttrHealBanPct: EAttrType
+AttrHealBanPctTotal: EAttrType
+AttrHealBanPctAdd: EAttrType
+AttrHealBanPctExAdd: EAttrType
+AttrHealBanPctPer: EAttrType
+AttrHealBanPctExPer: EAttrType
+AttrHealedBanPct: EAttrType
+AttrHealedBanPctTotal: EAttrType
+AttrHealedBanPctAdd: EAttrType
+AttrHealedBanPctExAdd: EAttrType
+AttrHealedBanPctPer: EAttrType
+AttrHealedBanPctExPer: EAttrType
+AttrPhyPowerToDam: EAttrType
+AttrPhyPowerToDamTotal: EAttrType
+AttrPhyPowerToDamAdd: EAttrType
+AttrPhyPowerToDamExAdd: EAttrType
+AttrPhyPowerToDamPer: EAttrType
+AttrPhyPowerToDamExPer: EAttrType
+AttrMagPowerToDam: EAttrType
+AttrMagPowerToDamTotal: EAttrType
+AttrMagPowerToDamAdd: EAttrType
+AttrMagPowerToDamExAdd: EAttrType
+AttrMagPowerToDamPer: EAttrType
+AttrMagPowerToDamExPer: EAttrType
+AttrElementPower: EAttrType
+AttrElementPowerTotal: EAttrType
+AttrElementPowerAdd: EAttrType
+AttrElementPowerExAdd: EAttrType
+AttrElementPowerPer: EAttrType
+AttrElementPowerExPer: EAttrType
+AttrFirePower: EAttrType
+AttrFirePowerTotal: EAttrType
+AttrFirePowerAdd: EAttrType
+AttrFirePowerExAdd: EAttrType
+AttrFirePowerPer: EAttrType
+AttrFirePowerExPer: EAttrType
+AttrWaterPower: EAttrType
+AttrWaterPowerTotal: EAttrType
+AttrWaterPowerAdd: EAttrType
+AttrWaterPowerExAdd: EAttrType
+AttrWaterPowerPer: EAttrType
+AttrWaterPowerExPer: EAttrType
+AttrWoodPower: EAttrType
+AttrWoodPowerTotal: EAttrType
+AttrWoodPowerAdd: EAttrType
+AttrWoodPowerExAdd: EAttrType
+AttrWoodPowerPer: EAttrType
+AttrWoodPowerExPer: EAttrType
+AttrElectricityPower: EAttrType
+AttrElectricityPowerTotal: EAttrType
+AttrElectricityPowerAdd: EAttrType
+AttrElectricityPowerExAdd: EAttrType
+AttrElectricityPowerPer: EAttrType
+AttrElectricityPowerExPer: EAttrType
+AttrWindPower: EAttrType
+AttrWindPowerTotal: EAttrType
+AttrWindPowerAdd: EAttrType
+AttrWindPowerExAdd: EAttrType
+AttrWindPowerPer: EAttrType
+AttrWindPowerExPer: EAttrType
+AttrRockPower: EAttrType
+AttrRockPowerTotal: EAttrType
+AttrRockPowerAdd: EAttrType
+AttrRockPowerExAdd: EAttrType
+AttrRockPowerPer: EAttrType
+AttrRockPowerExPer: EAttrType
+AttrLightPower: EAttrType
+AttrLightPowerTotal: EAttrType
+AttrLightPowerAdd: EAttrType
+AttrLightPowerExAdd: EAttrType
+AttrLightPowerPer: EAttrType
+AttrLightPowerExPer: EAttrType
+AttrDarkPower: EAttrType
+AttrDarkPowerTotal: EAttrType
+AttrDarkPowerAdd: EAttrType
+AttrDarkPowerExAdd: EAttrType
+AttrDarkPowerPer: EAttrType
+AttrDarkPowerExPer: EAttrType
+AttrElementDamage: EAttrType
+AttrElementDamageTotal: EAttrType
+AttrElementDamageAdd: EAttrType
+AttrElementDamageExAdd: EAttrType
+AttrElementDamagePer: EAttrType
+AttrElementDamageExPer: EAttrType
+AttrFireDamage: EAttrType
+AttrFireDamageTotal: EAttrType
+AttrFireDamageAdd: EAttrType
+AttrFireDamageExAdd: EAttrType
+AttrFireDamagePer: EAttrType
+AttrFireDamageExPer: EAttrType
+AttrWaterDamage: EAttrType
+AttrWaterDamageTotal: EAttrType
+AttrWaterDamageAdd: EAttrType
+AttrWaterDamageExAdd: EAttrType
+AttrWaterDamagePer: EAttrType
+AttrWaterDamageExPer: EAttrType
+AttrWoodDamage: EAttrType
+AttrWoodDamageTotal: EAttrType
+AttrWoodDamageAdd: EAttrType
+AttrWoodDamageExAdd: EAttrType
+AttrWoodDamagePer: EAttrType
+AttrWoodDamageExPer: EAttrType
+AttrElectricityDamage: EAttrType
+AttrElectricityDamageTotal: EAttrType
+AttrElectricityDamageAdd: EAttrType
+AttrElectricityDamageExAdd: EAttrType
+AttrElectricityDamagePer: EAttrType
+AttrElectricityDamageExPer: EAttrType
+AttrWindDamage: EAttrType
+AttrWindDamageTotal: EAttrType
+AttrWindDamageAdd: EAttrType
+AttrWindDamageExAdd: EAttrType
+AttrWindDamagePer: EAttrType
+AttrWindDamageExPer: EAttrType
+AttrRockDamage: EAttrType
+AttrRockDamageTotal: EAttrType
+AttrRockDamageAdd: EAttrType
+AttrRockDamageExAdd: EAttrType
+AttrRockDamagePer: EAttrType
+AttrRockDamageExPer: EAttrType
+AttrLightDamage: EAttrType
+AttrLightDamageTotal: EAttrType
+AttrLightDamageAdd: EAttrType
+AttrLightDamageExAdd: EAttrType
+AttrLightDamagePer: EAttrType
+AttrLightDamageExPer: EAttrType
+AttrDarkDamage: EAttrType
+AttrDarkDamageTotal: EAttrType
+AttrDarkDamageAdd: EAttrType
+AttrDarkDamageExAdd: EAttrType
+AttrDarkDamagePer: EAttrType
+AttrDarkDamageExPer: EAttrType
+AttrElementDefense: EAttrType
+AttrElementDefenseTotal: EAttrType
+AttrElementDefenseAdd: EAttrType
+AttrElementDefenseExAdd: EAttrType
+AttrElementDefensePer: EAttrType
+AttrElementDefenseExPer: EAttrType
+AttrFireDefense: EAttrType
+AttrFireDefenseTotal: EAttrType
+AttrFireDefenseAdd: EAttrType
+AttrFireDefenseExAdd: EAttrType
+AttrFireDefensePer: EAttrType
+AttrFireDefenseExPer: EAttrType
+AttrWaterDefense: EAttrType
+AttrWaterDefenseTotal: EAttrType
+AttrWaterDefenseAdd: EAttrType
+AttrWaterDefenseExAdd: EAttrType
+AttrWaterDefensePer: EAttrType
+AttrWaterDefenseExPer: EAttrType
+AttrWoodDefense: EAttrType
+AttrWoodDefenseTotal: EAttrType
+AttrWoodDefenseAdd: EAttrType
+AttrWoodDefenseExAdd: EAttrType
+AttrWoodDefensePer: EAttrType
+AttrWoodDefenseExPer: EAttrType
+AttrElectricityDefense: EAttrType
+AttrElectricityDefenseTotal: EAttrType
+AttrElectricityDefenseAdd: EAttrType
+AttrElectricityDefenseExAdd: EAttrType
+AttrElectricityDefensePer: EAttrType
+AttrElectricityDefenseExPer: EAttrType
+AttrWindDefense: EAttrType
+AttrWindDefenseTotal: EAttrType
+AttrWindDefenseAdd: EAttrType
+AttrWindDefenseExAdd: EAttrType
+AttrWindDefensePer: EAttrType
+AttrWindDefenseExPer: EAttrType
+AttrRockDefense: EAttrType
+AttrRockDefenseTotal: EAttrType
+AttrRockDefenseAdd: EAttrType
+AttrRockDefenseExAdd: EAttrType
+AttrRockDefensePer: EAttrType
+AttrRockDefenseExPer: EAttrType
+AttrLightDefense: EAttrType
+AttrLightDefenseTotal: EAttrType
+AttrLightDefenseAdd: EAttrType
+AttrLightDefenseExAdd: EAttrType
+AttrLightDefensePer: EAttrType
+AttrLightDefenseExPer: EAttrType
+AttrDarkDefense: EAttrType
+AttrDarkDefenseTotal: EAttrType
+AttrDarkDefenseAdd: EAttrType
+AttrDarkDefenseExAdd: EAttrType
+AttrDarkDefensePer: EAttrType
+AttrDarkDefenseExPer: EAttrType
+AttrElementDamRes: EAttrType
+AttrElementDamResTotal: EAttrType
+AttrElementDamResAdd: EAttrType
+AttrElementDamResExAdd: EAttrType
+AttrElementDamResPer: EAttrType
+AttrElementDamResExPer: EAttrType
+AttrFireDamageReduction: EAttrType
+AttrFireDamageReductionTotal: EAttrType
+AttrFireDamageReductionAdd: EAttrType
+AttrFireDamageReductionExAdd: EAttrType
+AttrFireDamageReductionPer: EAttrType
+AttrFireDamageReductionExPer: EAttrType
+AttrWaterDamageReduction: EAttrType
+AttrWaterDamageReductionTotal: EAttrType
+AttrWaterDamageReductionAdd: EAttrType
+AttrWaterDamageReductionExAdd: EAttrType
+AttrWaterDamageReductionPer: EAttrType
+AttrWaterDamageReductionExPer: EAttrType
+AttrWoodDamageReduction: EAttrType
+AttrWoodDamageReductionTotal: EAttrType
+AttrWoodDamageReductionAdd: EAttrType
+AttrWoodDamageReductionExAdd: EAttrType
+AttrWoodDamageReductionPer: EAttrType
+AttrWoodDamageReductionExPer: EAttrType
+AttrElectricityDamageReduction: EAttrType
+AttrElectricityDamageReductionTotal: EAttrType
+AttrElectricityDamageReductionAdd: EAttrType
+AttrElectricityDamageReductionExAdd: EAttrType
+AttrElectricityDamageReductionPer: EAttrType
+AttrElectricityDamageReductionExPer: EAttrType
+AttrWindDamageReduction: EAttrType
+AttrWindDamageReductionTotal: EAttrType
+AttrWindDamageReductionAdd: EAttrType
+AttrWindDamageReductionExAdd: EAttrType
+AttrWindDamageReductionPer: EAttrType
+AttrWindDamageReductionExPer: EAttrType
+AttrRockDamageReduction: EAttrType
+AttrRockDamageReductionTotal: EAttrType
+AttrRockDamageReductionAdd: EAttrType
+AttrRockDamageReductionExAdd: EAttrType
+AttrRockDamageReductionPer: EAttrType
+AttrRockDamageReductionExPer: EAttrType
+AttrLightDamageReduction: EAttrType
+AttrLightDamageReductionTotal: EAttrType
+AttrLightDamageReductionAdd: EAttrType
+AttrLightDamageReductionExAdd: EAttrType
+AttrLightDamageReductionPer: EAttrType
+AttrLightDamageReductionExPer: EAttrType
+AttrDarkDamageReduction: EAttrType
+AttrDarkDamageReductionTotal: EAttrType
+AttrDarkDamageReductionAdd: EAttrType
+AttrDarkDamageReductionExAdd: EAttrType
+AttrDarkDamageReductionPer: EAttrType
+AttrDarkDamageReductionExPer: EAttrType
+AttrOriginEnergy: EAttrType
+AttrMaxOriginEnergy: EAttrType
+AttrMaxOriginEnergyTotal: EAttrType
+AttrMaxOriginEnergyAdd: EAttrType
+AttrMaxOriginEnergyExAdd: EAttrType
+AttrMaxOriginEnergyPer: EAttrType
+AttrMaxOriginEnergyExPer: EAttrType
+AttrOriginEnergyConsumeRate: EAttrType
+AttrParkourStandbyOriginEnergyRecovery: EAttrType
+AttrParkourStandbyOriginEnergyRecoveryTotal: EAttrType
+AttrParkourStandbyOriginEnergyRecoveryAdd: EAttrType
+AttrParkourStandbyOriginEnergyRecoveryExAdd: EAttrType
+AttrParkourStandbyOriginEnergyRecoveryPer: EAttrType
+AttrParkourStandbyOriginEnergyRecoveryExPer: EAttrType
+AttrParkourOriginEnergyRecovery: EAttrType
+AttrParkourOriginEnergyRecoveryTotal: EAttrType
+AttrParkourOriginEnergyRecoveryAdd: EAttrType
+AttrParkourOriginEnergyRecoveryExAdd: EAttrType
+AttrParkourOriginEnergyRecoveryPer: EAttrType
+AttrParkourOriginEnergyRecoveryExPer: EAttrType
+AttrParkourRunPhaseOneAcceleration: EAttrType
+AttrParkourRunPhaseOneAccelerationTotal: EAttrType
+AttrParkourRunPhaseOneAccelerationAdd: EAttrType
+AttrParkourRunPhaseOneAccelerationExAdd: EAttrType
+AttrParkourRunPhaseOneAccelerationPer: EAttrType
+AttrParkourRunPhaseOneAccelerationExPer: EAttrType
+AttrParkourRunPhaseOneSpeedLimit: EAttrType
+AttrParkourRunPhaseOneSpeedLimitTotal: EAttrType
+AttrParkourRunPhaseOneSpeedLimitAdd: EAttrType
+AttrParkourRunPhaseOneSpeedLimitExAdd: EAttrType
+AttrParkourRunPhaseOneSpeedLimitPer: EAttrType
+AttrParkourRunPhaseOneSpeedLimitExPer: EAttrType
+AttrParkourRunPhaseTwoAcceleration: EAttrType
+AttrParkourRunPhaseTwoAccelerationTotal: EAttrType
+AttrParkourRunPhaseTwoAccelerationAdd: EAttrType
+AttrParkourRunPhaseTwoAccelerationExAdd: EAttrType
+AttrParkourRunPhaseTwoAccelerationPer: EAttrType
+AttrParkourRunPhaseTwoAccelerationExPer: EAttrType
+AttrParkourRunPhaseTwoSpeedLimit: EAttrType
+AttrParkourRunPhaseTwoSpeedLimitTotal: EAttrType
+AttrParkourRunPhaseTwoSpeedLimitAdd: EAttrType
+AttrParkourRunPhaseTwoSpeedLimitExAdd: EAttrType
+AttrParkourRunPhaseTwoSpeedLimitPer: EAttrType
+AttrParkourRunPhaseTwoSpeedLimitExPer: EAttrType
+AttrParkourRunPhaseThreeAcceleration: EAttrType
+AttrParkourRunPhaseThreeAccelerationTotal: EAttrType
+AttrParkourRunPhaseThreeAccelerationAdd: EAttrType
+AttrParkourRunPhaseThreeAccelerationExAdd: EAttrType
+AttrParkourRunPhaseThreeAccelerationPer: EAttrType
+AttrParkourRunPhaseThreeAccelerationExPer: EAttrType
+AttrParkourRunPhaseThreeSpeedLimit: EAttrType
+AttrParkourRunPhaseThreeSpeedLimitTotal: EAttrType
+AttrParkourRunPhaseThreeSpeedLimitAdd: EAttrType
+AttrParkourRunPhaseThreeSpeedLimitExAdd: EAttrType
+AttrParkourRunPhaseThreeSpeedLimitPer: EAttrType
+AttrParkourRunPhaseThreeSpeedLimitExPer: EAttrType
+AttrInBattleParkourStandbyOriginEnergyRecovery: EAttrType
+AttrInBattleParkourStandbyOriginEnergyRecoveryTotal: EAttrType
+AttrInBattleParkourStandbyOriginEnergyRecoveryAdd: EAttrType
+AttrInBattleParkourStandbyOriginEnergyRecoveryExAdd: EAttrType
+AttrInBattleParkourStandbyOriginEnergyRecoveryPer: EAttrType
+AttrInBattleParkourStandbyOriginEnergyRecoveryExPer: EAttrType
+AttrInBattleParkourOriginEnergyRecovery: EAttrType
+AttrInBattleParkourOriginEnergyRecoveryTotal: EAttrType
+AttrInBattleParkourOriginEnergyRecoveryAdd: EAttrType
+AttrInBattleParkourOriginEnergyRecoveryExAdd: EAttrType
+AttrInBattleParkourOriginEnergyRecoveryPer: EAttrType
+AttrInBattleParkourOriginEnergyRecoveryExPer: EAttrType
+AttrFallDamageReduction: EAttrType
+AttrDelayDie: EAttrType
+AttrFightResourceIds: EAttrType
+AttrFightResources: EAttrType
+AttrFightResNoUp: EAttrType
+AttrFightResNoDown: EAttrType
+AttrFreezeFrame: EAttrType
+AttrShieldList: EAttrType
+AttrPressingOpen: EAttrType
+AttrUpLift: EAttrType

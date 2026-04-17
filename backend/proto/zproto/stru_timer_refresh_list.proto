@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_timer_refresh_info.proto";
+
+message TimerRefreshList {
+  map<uint32, zproto.TimerRefreshInfo> refresh_data = 1;
+}
+

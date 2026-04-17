@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_player_record_single.proto";
+
+message PlayerRecordInfo {
+  map<int32, zproto.PlayerRecordSingle> player_records = 1;
+}
+

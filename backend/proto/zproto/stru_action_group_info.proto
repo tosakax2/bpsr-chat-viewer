@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_action_group_track.proto";
+
+message ActionGroupInfo {
+  int32 action_group_id = 1;
+  float duration = 2;
+  repeated zproto.ActionGroupTrack line_list = 3;
+}
+

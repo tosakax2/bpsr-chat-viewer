@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message FightPointSubData {
+  int32 function_type = 1;
+  int32 root_function_type = 2;
+  int32 point = 3;
+}
+

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message SceneLuaData {
+  map<uint32, string> scene_lua_info = 1;
+}
+

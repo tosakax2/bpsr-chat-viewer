@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message MasterModeDungeonData {
+  int32 season_score = 1;
+  bool is_show = 2;
+}
+

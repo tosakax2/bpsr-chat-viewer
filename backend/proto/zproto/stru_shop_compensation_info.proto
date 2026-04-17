@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message ShopCompensationInfo {
+  int64 entor_store_num = 1;
+  int64 buy_num = 2;
+}
+

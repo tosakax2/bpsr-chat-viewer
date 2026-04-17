@@ -1,0 +1,562 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class ETargetType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    TargetUnknown: _ClassVar[ETargetType]
+    TargetClearLevel: _ClassVar[ETargetType]
+    TargetTreasure: _ClassVar[ETargetType]
+    TargetShyNapo: _ClassVar[ETargetType]
+    TargetDrillNapo: _ClassVar[ETargetType]
+    TargetProfessionKill: _ClassVar[ETargetType]
+    TargetClearLevelTime: _ClassVar[ETargetType]
+    TargetSkillHit: _ClassVar[ETargetType]
+    TargetPuzzle: _ClassVar[ETargetType]
+    TargetKillMonster: _ClassVar[ETargetType]
+    TargetLua: _ClassVar[ETargetType]
+    TargetKillSceneObj: _ClassVar[ETargetType]
+    TargetEnterZone: _ClassVar[ETargetType]
+    TargetMonsterCombatTime: _ClassVar[ETargetType]
+    TargetAttackDamage: _ClassVar[ETargetType]
+    TargetAttackedDamage: _ClassVar[ETargetType]
+    TargetDeath: _ClassVar[ETargetType]
+    TargetKillBoss: _ClassVar[ETargetType]
+    TargetPlanetMemory: _ClassVar[ETargetType]
+    TargetKillMonsterProgress: _ClassVar[ETargetType]
+    TargetTrigger: _ClassVar[ETargetType]
+    TargetTalk: _ClassVar[ETargetType]
+    TargetNpcTalk: _ClassVar[ETargetType]
+    TargetLuaArea: _ClassVar[ETargetType]
+    TargetTriggerCount: _ClassVar[ETargetType]
+    TargetAutoNoticeTip: _ClassVar[ETargetType]
+    TargetRecoverHp: _ClassVar[ETargetType]
+    TargetDungeonScore: _ClassVar[ETargetType]
+    TargetEmptyTarget: _ClassVar[ETargetType]
+    TargetQuestEvent: _ClassVar[ETargetType]
+    TargetEquipPerfectionEvent: _ClassVar[ETargetType]
+    TargetProfessionGrowEvent: _ClassVar[ETargetType]
+    TargetActivationProfessionEvent: _ClassVar[ETargetType]
+    TargetEquipProfessionEvent: _ClassVar[ETargetType]
+    TargetAoyiUpgradeProfessionEvent: _ClassVar[ETargetType]
+    TargetSkillUpgradeEvent: _ClassVar[ETargetType]
+    TargetSkillRemodelEvent: _ClassVar[ETargetType]
+    TargetActivationSkillEvent: _ClassVar[ETargetType]
+    TargetClearDungeonScore: _ClassVar[ETargetType]
+    TargetUnionMemAddActivity: _ClassVar[ETargetType]
+    TargetUnionJoinPVE: _ClassVar[ETargetType]
+    TargetUnionFreight: _ClassVar[ETargetType]
+    TargetUnionDanceBall: _ClassVar[ETargetType]
+    TargetEquipModEvent: _ClassVar[ETargetType]
+    TargetModLinkEvent: _ClassVar[ETargetType]
+    TargetCoreUpgradeEvent: _ClassVar[ETargetType]
+    TargetDecomposeModEvent: _ClassVar[ETargetType]
+    TargetAddProfessionEvent: _ClassVar[ETargetType]
+    TargetUpgradeMedalHoleEvent: _ClassVar[ETargetType]
+    TargetUpgradeCoreHoleEvent: _ClassVar[ETargetType]
+    TargetChooseCoreSeasonHoleEvent: _ClassVar[ETargetType]
+    TargetRanKStarEvent: _ClassVar[ETargetType]
+    TargetSkillOneHitDamageEvent: _ClassVar[ETargetType]
+    TargetOneRecoverHpEvent: _ClassVar[ETargetType]
+    TargetMaxShieldEvent: _ClassVar[ETargetType]
+    TargetMonsterHuntLevelEvent: _ClassVar[ETargetType]
+    TargetSetAvatarEvent: _ClassVar[ETargetType]
+    TargetSetPersonalZonePhotoEvent: _ClassVar[ETargetType]
+    TargetFishingEvent: _ClassVar[ETargetType]
+    TargetBuyShopEvent: _ClassVar[ETargetType]
+    TargetFashionCollectPointEvent: _ClassVar[ETargetType]
+    TargetBuyShopConsumeEvent: _ClassVar[ETargetType]
+    TargetExchangeItemEvent: _ClassVar[ETargetType]
+    TargetExchangePutItemEvent: _ClassVar[ETargetType]
+    TargetExchangeBuyItemEvent: _ClassVar[ETargetType]
+    TargetFinishSeasonQuestEvent: _ClassVar[ETargetType]
+    TargetKillBossDungeonByUnion: _ClassVar[ETargetType]
+    TargetClearDungeonNewbie: _ClassVar[ETargetType]
+    TargetClearDungeonMasterModeTotalScore: _ClassVar[ETargetType]
+    TargetClearDungeonMasterModeScore: _ClassVar[ETargetType]
+    TargetKillMonsterCountType: _ClassVar[ETargetType]
+    TargetCompleteMonsterHuntType: _ClassVar[ETargetType]
+    TargetGetItemByType: _ClassVar[ETargetType]
+    TargetConsumeItemByType: _ClassVar[ETargetType]
+    TargetCompleteQuestByType: _ClassVar[ETargetType]
+    TargetEquipGsPerfection: _ClassVar[ETargetType]
+    TargetFishRegionUnlock: _ClassVar[ETargetType]
+    TargetFishLevelAndId: _ClassVar[ETargetType]
+    TargetFishStarAndId: _ClassVar[ETargetType]
+    TargetLifeProfessionLevel: _ClassVar[ETargetType]
+    TargetLifeProfessionSpecialization: _ClassVar[ETargetType]
+    TargetLifeProfessionSpecializationPointCount: _ClassVar[ETargetType]
+    TargetLifeProfessionSpecializationPointTotal: _ClassVar[ETargetType]
+    TargetLifeProfessionCurLevel: _ClassVar[ETargetType]
+    TargetFishQualityAndId: _ClassVar[ETargetType]
+    TargetFishRank: _ClassVar[ETargetType]
+    TargetFishShare: _ClassVar[ETargetType]
+    TargetLifeProfessionCurLevelByNum: _ClassVar[ETargetType]
+    TargetModEffectLevelCnt: _ClassVar[ETargetType]
+    TargetCommunityOrder: _ClassVar[ETargetType]
+    TargetCommunityMakeFurniture: _ClassVar[ETargetType]
+    TargetCommunityGetItemType: _ClassVar[ETargetType]
+    TargetCommunityBuyHouse: _ClassVar[ETargetType]
+    TargetCommunitHaveCohabitant: _ClassVar[ETargetType]
+    TargetCommunityHouseLevel: _ClassVar[ETargetType]
+    TargetCommunityEditorAdd: _ClassVar[ETargetType]
+    TargetCommunitySeedingUpdate: _ClassVar[ETargetType]
+    TargetCommunitySell: _ClassVar[ETargetType]
+    TargetCommunityGetFurniture: _ClassVar[ETargetType]
+    TargetCommunityGetColorFlower: _ClassVar[ETargetType]
+    TargetCommunityGetFullColorFlower: _ClassVar[ETargetType]
+    TargetCommunityGetFlowerTrait: _ClassVar[ETargetType]
+    TargetCommunityExpandHouse: _ClassVar[ETargetType]
+    TargetHandBook: _ClassVar[ETargetType]
+    TargetTime: _ClassVar[ETargetType]
+    TargetCollection: _ClassVar[ETargetType]
+    TargetHandBookRole: _ClassVar[ETargetType]
+    TargetInvolveKillMonster: _ClassVar[ETargetType]
+    TargetCompleteInvestigateStep: _ClassVar[ETargetType]
+    TargetBartending: _ClassVar[ETargetType]
+    TargetEquipFashion: _ClassVar[ETargetType]
+    TargetFirstClearLevel: _ClassVar[ETargetType]
+    TargetCompleteQuest: _ClassVar[ETargetType]
+    TargetCompleteQuestStep: _ClassVar[ETargetType]
+    TargetWorldQuest: _ClassVar[ETargetType]
+    TargetRoleLevelUp: _ClassVar[ETargetType]
+    TargetEquipProfession: _ClassVar[ETargetType]
+    TargetProficiency: _ClassVar[ETargetType]
+    TargetJudgeTime: _ClassVar[ETargetType]
+    TargetFinishDungeonTarget: _ClassVar[ETargetType]
+    TargetSceneObj: _ClassVar[ETargetType]
+    TargetEquipTwoProfession: _ClassVar[ETargetType]
+    TargetWorldQuestAward: _ClassVar[ETargetType]
+    TargetMapBook: _ClassVar[ETargetType]
+    TargetOpenTreasure: _ClassVar[ETargetType]
+    TargetUpgradeProfession: _ClassVar[ETargetType]
+    TargetUpgradeProfessionSkill: _ClassVar[ETargetType]
+    TargetProfessionMemory: _ClassVar[ETargetType]
+    TargetDungeonExplore: _ClassVar[ETargetType]
+    TargetEquipByQuality: _ClassVar[ETargetType]
+    TargetFirstLogin: _ClassVar[ETargetType]
+    TargetInvolveKillMonsterType: _ClassVar[ETargetType]
+    TargetKillMonsterGroup: _ClassVar[ETargetType]
+    TargetEquipBySuitId: _ClassVar[ETargetType]
+    TargetClearLevelByMemberType: _ClassVar[ETargetType]
+    TargetBubblePlayPoints: _ClassVar[ETargetType]
+    TargetConsumeTalentPoint: _ClassVar[ETargetType]
+    TargetGetItem: _ClassVar[ETargetType]
+    TargetProfessionSkillActive: _ClassVar[ETargetType]
+    TargetGetGashaType: _ClassVar[ETargetType]
+    TargetResonanceSkill: _ClassVar[ETargetType]
+    TargetPutOnMod: _ClassVar[ETargetType]
+    TargetTransferPoint: _ClassVar[ETargetType]
+    TargetCompletePivot: _ClassVar[ETargetType]
+    TargetActivePivot: _ClassVar[ETargetType]
+    TargetCooking: _ClassVar[ETargetType]
+    TargetGetAllCookBook: _ClassVar[ETargetType]
+    TargetEquipBreach: _ClassVar[ETargetType]
+    TargetEquipGs: _ClassVar[ETargetType]
+    TargetAttrUpdate: _ClassVar[ETargetType]
+    TargetTeamClearLevel: _ClassVar[ETargetType]
+    TargetTeamClearLevelDeathLimit: _ClassVar[ETargetType]
+    TargetConsumeItem: _ClassVar[ETargetType]
+    TargetUnLockEmote: _ClassVar[ETargetType]
+    TargetUnLockFashionId: _ClassVar[ETargetType]
+    TargetColor: _ClassVar[ETargetType]
+    TargetMonsterExplore: _ClassVar[ETargetType]
+    TargetGetPackageItemById: _ClassVar[ETargetType]
+    TargetDeathDamageLimit: _ClassVar[ETargetType]
+    TargetDrowning: _ClassVar[ETargetType]
+    TargetDeathFall: _ClassVar[ETargetType]
+    TargetInteractiveEnd: _ClassVar[ETargetType]
+    TargetSeasonActivity: _ClassVar[ETargetType]
+    TargetSeasonWeekQuestFinishAll: _ClassVar[ETargetType]
+    TargetTrialPassThreeByRoomId: _ClassVar[ETargetType]
+    TargetUseTalentPoint: _ClassVar[ETargetType]
+    TargetCollectionNotShare: _ClassVar[ETargetType]
+    TargetKillMonsterUid: _ClassVar[ETargetType]
+    TargetFirstKillMonsterHuntBoss: _ClassVar[ETargetType]
+    TargetClearLevelMasterMode: _ClassVar[ETargetType]
+    TargetAutoCutScene: _ClassVar[ETargetType]
+    TargetAutoUserTransfer: _ClassVar[ETargetType]
+    TargetAutoEnterDungeon: _ClassVar[ETargetType]
+    TargetInZone: _ClassVar[ETargetType]
+    TargetOutZone: _ClassVar[ETargetType]
+    TargetAutoSendAIEvent: _ClassVar[ETargetType]
+    TargetAutoEnterVisualLayer: _ClassVar[ETargetType]
+    TargetKillMonsterBuff: _ClassVar[ETargetType]
+    TargetKillMonsterPlayerBuff: _ClassVar[ETargetType]
+    TargetMonsterUseEmote: _ClassVar[ETargetType]
+    TargetMonsterUseAction: _ClassVar[ETargetType]
+    TargetKillWithSkillTag: _ClassVar[ETargetType]
+    TargetKillWithPlayerHpPercent: _ClassVar[ETargetType]
+    TargetBreak: _ClassVar[ETargetType]
+    TargetDamageWithSkillTag: _ClassVar[ETargetType]
+    TargetDestroyShield: _ClassVar[ETargetType]
+    TargetSameTypeBuffNum: _ClassVar[ETargetType]
+    TargetDodgeSpecialSkill: _ClassVar[ETargetType]
+    TargetUltimateDodgeSkill: _ClassVar[ETargetType]
+    TargetSkillNotKill: _ClassVar[ETargetType]
+    TargetKillWithoutCastSpecialSkill: _ClassVar[ETargetType]
+    TargetKillWithoutDestroyShield: _ClassVar[ETargetType]
+    TargetKillWithoutDamage: _ClassVar[ETargetType]
+    TargetClearLevelAll: _ClassVar[ETargetType]
+    TargetClearLevelAny: _ClassVar[ETargetType]
+    TargetTrialRoadAny: _ClassVar[ETargetType]
+    TargetTrialRoadAll: _ClassVar[ETargetType]
+    TargetPersonalObjectState: _ClassVar[ETargetType]
+    TargetAutoSendAward: _ClassVar[ETargetType]
+    TargetAutoImitateInteraction: _ClassVar[ETargetType]
+    TargetTrialPassThree: _ClassVar[ETargetType]
+    TargetFightPoint: _ClassVar[ETargetType]
+    TargetEquipRecast: _ClassVar[ETargetType]
+    TargetDungeonClearTimes: _ClassVar[ETargetType]
+    TargetWorldBossRank: _ClassVar[ETargetType]
+    TargetWorldScore: _ClassVar[ETargetType]
+    TargetKillMonsterNum: _ClassVar[ETargetType]
+    TargetUserSkill: _ClassVar[ETargetType]
+    TargetDungeonClearCantDead: _ClassVar[ETargetType]
+    TargetTrialRoadPassPerfect: _ClassVar[ETargetType]
+    TargetUnlockAvatar: _ClassVar[ETargetType]
+    TargetFishing: _ClassVar[ETargetType]
+    TargetUnlockFashion: _ClassVar[ETargetType]
+    TargetFishLevel: _ClassVar[ETargetType]
+    TargetFishItem: _ClassVar[ETargetType]
+    TargetFriendNum: _ClassVar[ETargetType]
+    TargetExchangeItemSaleNum: _ClassVar[ETargetType]
+    TargetUnionPhoto: _ClassVar[ETargetType]
+    TargetDungeonPlayScore: _ClassVar[ETargetType]
+    TargetSeasonScoreShopBuy: _ClassVar[ETargetType]
+    TargetBuffCantDeadTime: _ClassVar[ETargetType]
+    TargetTeamKillMonsterNum: _ClassVar[ETargetType]
+    TargetClimbUpLayer: _ClassVar[ETargetType]
+    TargetRefineEquip: _ClassVar[ETargetType]
+    TargetRefineEquipLevel: _ClassVar[ETargetType]
+    TargetRefineEquipLevelNum: _ClassVar[ETargetType]
+    TargetRefineEquipConsume: _ClassVar[ETargetType]
+    TargetMonthCardNum: _ClassVar[ETargetType]
+    TargetDungeonAssist: _ClassVar[ETargetType]
+    TargetEnchant: _ClassVar[ETargetType]
+    TargetCompeleteDungeonType: _ClassVar[ETargetType]
+    TargetActionContinueTimeSec: _ClassVar[ETargetType]
+    TargetGetGashaNum: _ClassVar[ETargetType]
+    TargetFashionLevel: _ClassVar[ETargetType]
+    TargetReplacedFace: _ClassVar[ETargetType]
+    TargetReplacedColor: _ClassVar[ETargetType]
+    TargetFashionWearsUpdate: _ClassVar[ETargetType]
+    TargetInvolveKillMonsterTag: _ClassVar[ETargetType]
+    TargetPrivilegeActivate: _ClassVar[ETargetType]
+    TargetGetBossAward: _ClassVar[ETargetType]
+    TargetRougeGetCountOnce: _ClassVar[ETargetType]
+    TargetRougeGetCountInc: _ClassVar[ETargetType]
+    TargetRougePassCount: _ClassVar[ETargetType]
+    TargetMahjongSettlement: _ClassVar[ETargetType]
+    TargetFinishOperate: _ClassVar[ETargetType]
+    TargetFollowNpc: _ClassVar[ETargetType]
+    TargetFollowNpcWalk: _ClassVar[ETargetType]
+    TargetNpcFollowUser: _ClassVar[ETargetType]
+    TargetChatNpc: _ClassVar[ETargetType]
+    TargetNpcFlow: _ClassVar[ETargetType]
+    TargetOpenInsight: _ClassVar[ETargetType]
+    TargetPhoto: _ClassVar[ETargetType]
+    TargetPhotoByTableId: _ClassVar[ETargetType]
+    TargetParkourZone: _ClassVar[ETargetType]
+    TargetClientSubmitItem: _ClassVar[ETargetType]
+    TargetClientShowItem: _ClassVar[ETargetType]
+    TargetDoExpression: _ClassVar[ETargetType]
+    TargetEntityPhoto: _ClassVar[ETargetType]
+    TargetInMapArea: _ClassVar[ETargetType]
+    TargetExitVisualLayer: _ClassVar[ETargetType]
+    TargetChatChannel: _ClassVar[ETargetType]
+    TargetUnionJoin: _ClassVar[ETargetType]
+    TargetCameraPatternType: _ClassVar[ETargetType]
+    TargetHoverTime: _ClassVar[ETargetType]
+    TargetFriendTotal: _ClassVar[ETargetType]
+    TargetMultiPlayerPhoto: _ClassVar[ETargetType]
+    TargetShortcutKeySetting: _ClassVar[ETargetType]
+    TargetClientAutoCutScene: _ClassVar[ETargetType]
+    TargetClientCreateNpc: _ClassVar[ETargetType]
+    TargetClientRemoveNpc: _ClassVar[ETargetType]
+    TargetAutoOpenUi: _ClassVar[ETargetType]
+    TargetAutoFlow: _ClassVar[ETargetType]
+    TargetClientCreateZone: _ClassVar[ETargetType]
+    TargetClientRemoveZone: _ClassVar[ETargetType]
+    TargetClientEpisodeStart: _ClassVar[ETargetType]
+    TargetClientEpisodeEnd: _ClassVar[ETargetType]
+    TargetBubblePlayFinish: _ClassVar[ETargetType]
+TargetUnknown: ETargetType
+TargetClearLevel: ETargetType
+TargetTreasure: ETargetType
+TargetShyNapo: ETargetType
+TargetDrillNapo: ETargetType
+TargetProfessionKill: ETargetType
+TargetClearLevelTime: ETargetType
+TargetSkillHit: ETargetType
+TargetPuzzle: ETargetType
+TargetKillMonster: ETargetType
+TargetLua: ETargetType
+TargetKillSceneObj: ETargetType
+TargetEnterZone: ETargetType
+TargetMonsterCombatTime: ETargetType
+TargetAttackDamage: ETargetType
+TargetAttackedDamage: ETargetType
+TargetDeath: ETargetType
+TargetKillBoss: ETargetType
+TargetPlanetMemory: ETargetType
+TargetKillMonsterProgress: ETargetType
+TargetTrigger: ETargetType
+TargetTalk: ETargetType
+TargetNpcTalk: ETargetType
+TargetLuaArea: ETargetType
+TargetTriggerCount: ETargetType
+TargetAutoNoticeTip: ETargetType
+TargetRecoverHp: ETargetType
+TargetDungeonScore: ETargetType
+TargetEmptyTarget: ETargetType
+TargetQuestEvent: ETargetType
+TargetEquipPerfectionEvent: ETargetType
+TargetProfessionGrowEvent: ETargetType
+TargetActivationProfessionEvent: ETargetType
+TargetEquipProfessionEvent: ETargetType
+TargetAoyiUpgradeProfessionEvent: ETargetType
+TargetSkillUpgradeEvent: ETargetType
+TargetSkillRemodelEvent: ETargetType
+TargetActivationSkillEvent: ETargetType
+TargetClearDungeonScore: ETargetType
+TargetUnionMemAddActivity: ETargetType
+TargetUnionJoinPVE: ETargetType
+TargetUnionFreight: ETargetType
+TargetUnionDanceBall: ETargetType
+TargetEquipModEvent: ETargetType
+TargetModLinkEvent: ETargetType
+TargetCoreUpgradeEvent: ETargetType
+TargetDecomposeModEvent: ETargetType
+TargetAddProfessionEvent: ETargetType
+TargetUpgradeMedalHoleEvent: ETargetType
+TargetUpgradeCoreHoleEvent: ETargetType
+TargetChooseCoreSeasonHoleEvent: ETargetType
+TargetRanKStarEvent: ETargetType
+TargetSkillOneHitDamageEvent: ETargetType
+TargetOneRecoverHpEvent: ETargetType
+TargetMaxShieldEvent: ETargetType
+TargetMonsterHuntLevelEvent: ETargetType
+TargetSetAvatarEvent: ETargetType
+TargetSetPersonalZonePhotoEvent: ETargetType
+TargetFishingEvent: ETargetType
+TargetBuyShopEvent: ETargetType
+TargetFashionCollectPointEvent: ETargetType
+TargetBuyShopConsumeEvent: ETargetType
+TargetExchangeItemEvent: ETargetType
+TargetExchangePutItemEvent: ETargetType
+TargetExchangeBuyItemEvent: ETargetType
+TargetFinishSeasonQuestEvent: ETargetType
+TargetKillBossDungeonByUnion: ETargetType
+TargetClearDungeonNewbie: ETargetType
+TargetClearDungeonMasterModeTotalScore: ETargetType
+TargetClearDungeonMasterModeScore: ETargetType
+TargetKillMonsterCountType: ETargetType
+TargetCompleteMonsterHuntType: ETargetType
+TargetGetItemByType: ETargetType
+TargetConsumeItemByType: ETargetType
+TargetCompleteQuestByType: ETargetType
+TargetEquipGsPerfection: ETargetType
+TargetFishRegionUnlock: ETargetType
+TargetFishLevelAndId: ETargetType
+TargetFishStarAndId: ETargetType
+TargetLifeProfessionLevel: ETargetType
+TargetLifeProfessionSpecialization: ETargetType
+TargetLifeProfessionSpecializationPointCount: ETargetType
+TargetLifeProfessionSpecializationPointTotal: ETargetType
+TargetLifeProfessionCurLevel: ETargetType
+TargetFishQualityAndId: ETargetType
+TargetFishRank: ETargetType
+TargetFishShare: ETargetType
+TargetLifeProfessionCurLevelByNum: ETargetType
+TargetModEffectLevelCnt: ETargetType
+TargetCommunityOrder: ETargetType
+TargetCommunityMakeFurniture: ETargetType
+TargetCommunityGetItemType: ETargetType
+TargetCommunityBuyHouse: ETargetType
+TargetCommunitHaveCohabitant: ETargetType
+TargetCommunityHouseLevel: ETargetType
+TargetCommunityEditorAdd: ETargetType
+TargetCommunitySeedingUpdate: ETargetType
+TargetCommunitySell: ETargetType
+TargetCommunityGetFurniture: ETargetType
+TargetCommunityGetColorFlower: ETargetType
+TargetCommunityGetFullColorFlower: ETargetType
+TargetCommunityGetFlowerTrait: ETargetType
+TargetCommunityExpandHouse: ETargetType
+TargetHandBook: ETargetType
+TargetTime: ETargetType
+TargetCollection: ETargetType
+TargetHandBookRole: ETargetType
+TargetInvolveKillMonster: ETargetType
+TargetCompleteInvestigateStep: ETargetType
+TargetBartending: ETargetType
+TargetEquipFashion: ETargetType
+TargetFirstClearLevel: ETargetType
+TargetCompleteQuest: ETargetType
+TargetCompleteQuestStep: ETargetType
+TargetWorldQuest: ETargetType
+TargetRoleLevelUp: ETargetType
+TargetEquipProfession: ETargetType
+TargetProficiency: ETargetType
+TargetJudgeTime: ETargetType
+TargetFinishDungeonTarget: ETargetType
+TargetSceneObj: ETargetType
+TargetEquipTwoProfession: ETargetType
+TargetWorldQuestAward: ETargetType
+TargetMapBook: ETargetType
+TargetOpenTreasure: ETargetType
+TargetUpgradeProfession: ETargetType
+TargetUpgradeProfessionSkill: ETargetType
+TargetProfessionMemory: ETargetType
+TargetDungeonExplore: ETargetType
+TargetEquipByQuality: ETargetType
+TargetFirstLogin: ETargetType
+TargetInvolveKillMonsterType: ETargetType
+TargetKillMonsterGroup: ETargetType
+TargetEquipBySuitId: ETargetType
+TargetClearLevelByMemberType: ETargetType
+TargetBubblePlayPoints: ETargetType
+TargetConsumeTalentPoint: ETargetType
+TargetGetItem: ETargetType
+TargetProfessionSkillActive: ETargetType
+TargetGetGashaType: ETargetType
+TargetResonanceSkill: ETargetType
+TargetPutOnMod: ETargetType
+TargetTransferPoint: ETargetType
+TargetCompletePivot: ETargetType
+TargetActivePivot: ETargetType
+TargetCooking: ETargetType
+TargetGetAllCookBook: ETargetType
+TargetEquipBreach: ETargetType
+TargetEquipGs: ETargetType
+TargetAttrUpdate: ETargetType
+TargetTeamClearLevel: ETargetType
+TargetTeamClearLevelDeathLimit: ETargetType
+TargetConsumeItem: ETargetType
+TargetUnLockEmote: ETargetType
+TargetUnLockFashionId: ETargetType
+TargetColor: ETargetType
+TargetMonsterExplore: ETargetType
+TargetGetPackageItemById: ETargetType
+TargetDeathDamageLimit: ETargetType
+TargetDrowning: ETargetType
+TargetDeathFall: ETargetType
+TargetInteractiveEnd: ETargetType
+TargetSeasonActivity: ETargetType
+TargetSeasonWeekQuestFinishAll: ETargetType
+TargetTrialPassThreeByRoomId: ETargetType
+TargetUseTalentPoint: ETargetType
+TargetCollectionNotShare: ETargetType
+TargetKillMonsterUid: ETargetType
+TargetFirstKillMonsterHuntBoss: ETargetType
+TargetClearLevelMasterMode: ETargetType
+TargetAutoCutScene: ETargetType
+TargetAutoUserTransfer: ETargetType
+TargetAutoEnterDungeon: ETargetType
+TargetInZone: ETargetType
+TargetOutZone: ETargetType
+TargetAutoSendAIEvent: ETargetType
+TargetAutoEnterVisualLayer: ETargetType
+TargetKillMonsterBuff: ETargetType
+TargetKillMonsterPlayerBuff: ETargetType
+TargetMonsterUseEmote: ETargetType
+TargetMonsterUseAction: ETargetType
+TargetKillWithSkillTag: ETargetType
+TargetKillWithPlayerHpPercent: ETargetType
+TargetBreak: ETargetType
+TargetDamageWithSkillTag: ETargetType
+TargetDestroyShield: ETargetType
+TargetSameTypeBuffNum: ETargetType
+TargetDodgeSpecialSkill: ETargetType
+TargetUltimateDodgeSkill: ETargetType
+TargetSkillNotKill: ETargetType
+TargetKillWithoutCastSpecialSkill: ETargetType
+TargetKillWithoutDestroyShield: ETargetType
+TargetKillWithoutDamage: ETargetType
+TargetClearLevelAll: ETargetType
+TargetClearLevelAny: ETargetType
+TargetTrialRoadAny: ETargetType
+TargetTrialRoadAll: ETargetType
+TargetPersonalObjectState: ETargetType
+TargetAutoSendAward: ETargetType
+TargetAutoImitateInteraction: ETargetType
+TargetTrialPassThree: ETargetType
+TargetFightPoint: ETargetType
+TargetEquipRecast: ETargetType
+TargetDungeonClearTimes: ETargetType
+TargetWorldBossRank: ETargetType
+TargetWorldScore: ETargetType
+TargetKillMonsterNum: ETargetType
+TargetUserSkill: ETargetType
+TargetDungeonClearCantDead: ETargetType
+TargetTrialRoadPassPerfect: ETargetType
+TargetUnlockAvatar: ETargetType
+TargetFishing: ETargetType
+TargetUnlockFashion: ETargetType
+TargetFishLevel: ETargetType
+TargetFishItem: ETargetType
+TargetFriendNum: ETargetType
+TargetExchangeItemSaleNum: ETargetType
+TargetUnionPhoto: ETargetType
+TargetDungeonPlayScore: ETargetType
+TargetSeasonScoreShopBuy: ETargetType
+TargetBuffCantDeadTime: ETargetType
+TargetTeamKillMonsterNum: ETargetType
+TargetClimbUpLayer: ETargetType
+TargetRefineEquip: ETargetType
+TargetRefineEquipLevel: ETargetType
+TargetRefineEquipLevelNum: ETargetType
+TargetRefineEquipConsume: ETargetType
+TargetMonthCardNum: ETargetType
+TargetDungeonAssist: ETargetType
+TargetEnchant: ETargetType
+TargetCompeleteDungeonType: ETargetType
+TargetActionContinueTimeSec: ETargetType
+TargetGetGashaNum: ETargetType
+TargetFashionLevel: ETargetType
+TargetReplacedFace: ETargetType
+TargetReplacedColor: ETargetType
+TargetFashionWearsUpdate: ETargetType
+TargetInvolveKillMonsterTag: ETargetType
+TargetPrivilegeActivate: ETargetType
+TargetGetBossAward: ETargetType
+TargetRougeGetCountOnce: ETargetType
+TargetRougeGetCountInc: ETargetType
+TargetRougePassCount: ETargetType
+TargetMahjongSettlement: ETargetType
+TargetFinishOperate: ETargetType
+TargetFollowNpc: ETargetType
+TargetFollowNpcWalk: ETargetType
+TargetNpcFollowUser: ETargetType
+TargetChatNpc: ETargetType
+TargetNpcFlow: ETargetType
+TargetOpenInsight: ETargetType
+TargetPhoto: ETargetType
+TargetPhotoByTableId: ETargetType
+TargetParkourZone: ETargetType
+TargetClientSubmitItem: ETargetType
+TargetClientShowItem: ETargetType
+TargetDoExpression: ETargetType
+TargetEntityPhoto: ETargetType
+TargetInMapArea: ETargetType
+TargetExitVisualLayer: ETargetType
+TargetChatChannel: ETargetType
+TargetUnionJoin: ETargetType
+TargetCameraPatternType: ETargetType
+TargetHoverTime: ETargetType
+TargetFriendTotal: ETargetType
+TargetMultiPlayerPhoto: ETargetType
+TargetShortcutKeySetting: ETargetType
+TargetClientAutoCutScene: ETargetType
+TargetClientCreateNpc: ETargetType
+TargetClientRemoveNpc: ETargetType
+TargetAutoOpenUi: ETargetType
+TargetAutoFlow: ETargetType
+TargetClientCreateZone: ETargetType
+TargetClientRemoveZone: ETargetType
+TargetClientEpisodeStart: ETargetType
+TargetClientEpisodeEnd: ETargetType
+TargetBubblePlayFinish: ETargetType

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_dungeon_info.proto";
+
+message MasterModeDiffDungeonInfo {
+  map<int32, zproto.DungeonInfo> dungeon_info = 1;
+}
+

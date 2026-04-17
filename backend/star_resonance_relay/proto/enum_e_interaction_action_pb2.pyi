@@ -1,0 +1,204 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class EInteractionAction(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    EInteractionActionNone: _ClassVar[EInteractionAction]
+    EInteractionActionToServer: _ClassVar[EInteractionAction]
+    EInteractionActionNpcTalk: _ClassVar[EInteractionAction]
+    EInteractionActionDungeonEntry: _ClassVar[EInteractionAction]
+    EInteractionActionFunctionEntry: _ClassVar[EInteractionAction]
+    EInteractionActionClientSceneEvent: _ClassVar[EInteractionAction]
+    EInteractionActionOptionSelect: _ClassVar[EInteractionAction]
+    EInteractionActionHeroNormalDungeon: _ClassVar[EInteractionAction]
+    EInteractionActionHeroChallengeDungeon: _ClassVar[EInteractionAction]
+    EInteractionActionRevive: _ClassVar[EInteractionAction]
+    EInteractionActionVMFuction: _ClassVar[EInteractionAction]
+    EInteractionActionTips: _ClassVar[EInteractionAction]
+    EInteractionActionOpenUI: _ClassVar[EInteractionAction]
+    EInteractionActionWindZone: _ClassVar[EInteractionAction]
+    EInteractionActionWindRing: _ClassVar[EInteractionAction]
+    EInteractionActionWindTornado: _ClassVar[EInteractionAction]
+    EInteractionActionDanceTogether: _ClassVar[EInteractionAction]
+    EInteractionActionStartFlow: _ClassVar[EInteractionAction]
+    EInteractionActionShowCutScene: _ClassVar[EInteractionAction]
+    EInteractionActionUnionHuntEntry: _ClassVar[EInteractionAction]
+    EInteractionActionUnionBuild: _ClassVar[EInteractionAction]
+    EInteractionActionUnionBuildFunc: _ClassVar[EInteractionAction]
+    EInteractionActionExploreMonsterDeplete: _ClassVar[EInteractionAction]
+    EInteractionActionUseSkill: _ClassVar[EInteractionAction]
+    EInteractionActionFishing: _ClassVar[EInteractionAction]
+    EInteractionActionSendClientAiEvent: _ClassVar[EInteractionAction]
+    EInteractionActionDoNoThing: _ClassVar[EInteractionAction]
+    EInteractionActionCookFunc: _ClassVar[EInteractionAction]
+    EInteractionActionMoveToDistance: _ClassVar[EInteractionAction]
+    EInteractionActionMoveToPosition: _ClassVar[EInteractionAction]
+    EInteractionActionMoveToInteractionSeat: _ClassVar[EInteractionAction]
+    EInteractionActionRotateToTarget: _ClassVar[EInteractionAction]
+    EInteractionActionRotateToTargetAndWait: _ClassVar[EInteractionAction]
+    EInteractionActionAddClientBuff: _ClassVar[EInteractionAction]
+    EInteractionActionAddClientBuffAndWait: _ClassVar[EInteractionAction]
+    EInteractionActionAddClientBuffToTarget: _ClassVar[EInteractionAction]
+    EInteractionActionAddClientBuffToTargetAndWait: _ClassVar[EInteractionAction]
+    EInteractionActionProgressBar: _ClassVar[EInteractionAction]
+    EInteractionActionCameraInvoke: _ClassVar[EInteractionAction]
+    EInteractionActionWaitUiConfirm: _ClassVar[EInteractionAction]
+    EInteractionActionIgnoreInput: _ClassVar[EInteractionAction]
+    EInteractionActionHideHud: _ClassVar[EInteractionAction]
+    EInteractionActionHideUI: _ClassVar[EInteractionAction]
+    EInteractionActionMoveToStaticObj: _ClassVar[EInteractionAction]
+    EInteractionActionUnionWarDance: _ClassVar[EInteractionAction]
+    EInteractionActionWaitInputMove: _ClassVar[EInteractionAction]
+    EInteractionActionRemoveClientBuff: _ClassVar[EInteractionAction]
+    EInteractionActionRemoveTargetClientBuff: _ClassVar[EInteractionAction]
+    EInteractionActionEnterAutoFlow: _ClassVar[EInteractionAction]
+    EInteractionActionNpcTalkFlow: _ClassVar[EInteractionAction]
+    EInteractionActionStartFlowAndWait: _ClassVar[EInteractionAction]
+    EInteractionActionShowCutSceneAndWait: _ClassVar[EInteractionAction]
+    EInteractionActionSittingControl: _ClassVar[EInteractionAction]
+    EInteractionActionMagneticAttach: _ClassVar[EInteractionAction]
+    EInteractionActionSwitchCameraTemplate: _ClassVar[EInteractionAction]
+    EInteractionActionHomeFarm: _ClassVar[EInteractionAction]
+    EInteractionActionScenicSpotPhoto: _ClassVar[EInteractionAction]
+    EInteractionActionJoinParade: _ClassVar[EInteractionAction]
+    EInteractionActionLua: _ClassVar[EInteractionAction]
+    EInteractionActionBase: _ClassVar[EInteractionAction]
+    EInteractionActionPivot: _ClassVar[EInteractionAction]
+    EInteractionActionPivotBreak: _ClassVar[EInteractionAction]
+    EInteractionActionTransferPoint: _ClassVar[EInteractionAction]
+    EInteractionActionLogicResonance: _ClassVar[EInteractionAction]
+    EInteractionActionLogicStatic: _ClassVar[EInteractionAction]
+    EInteractionActionLogicDance: _ClassVar[EInteractionAction]
+    EInteractionActionAddBuff: _ClassVar[EInteractionAction]
+    EInteractionActionTeleport: _ClassVar[EInteractionAction]
+    EInteractionActionEnterDungeon: _ClassVar[EInteractionAction]
+    EInteractionActionEnterVisualLayer: _ClassVar[EInteractionAction]
+    EInteractionActionExitVisualLayer: _ClassVar[EInteractionAction]
+    EInteractionActionTriggerSceneEvent: _ClassVar[EInteractionAction]
+    EInteractionActionTriggerSceneCustomEvent: _ClassVar[EInteractionAction]
+    EInteractionActionUserDoAction: _ClassVar[EInteractionAction]
+    EInteractionActionPickup: _ClassVar[EInteractionAction]
+    EInteractionActionOpenEliteTreasureBox: _ClassVar[EInteractionAction]
+    EInteractionActionOpenBossTreasureBox: _ClassVar[EInteractionAction]
+    EInteractionActionQuest: _ClassVar[EInteractionAction]
+    EInteractionActionQuestEvent: _ClassVar[EInteractionAction]
+    EInteractionActionKillSelf: _ClassVar[EInteractionAction]
+    EInteractionActionSendAiEvent: _ClassVar[EInteractionAction]
+    EInteractionActionDanceAwardNPC: _ClassVar[EInteractionAction]
+    EInteractionActionRequestInteractionSeat: _ClassVar[EInteractionAction]
+    EInteractionActionRemoveBuff: _ClassVar[EInteractionAction]
+    EInteractionActionAddBuffToTarget: _ClassVar[EInteractionAction]
+    EInteractionActionRemoveBuffToTarget: _ClassVar[EInteractionAction]
+    EInteractionActionPaintToySwitchPage: _ClassVar[EInteractionAction]
+    EInteractionActionOpenTowerTreasureBox: _ClassVar[EInteractionAction]
+    EInteractionActionRoughCollection: _ClassVar[EInteractionAction]
+    EInteractionActionFineCollection: _ClassVar[EInteractionAction]
+    EInteractionActionBubbleActStart: _ClassVar[EInteractionAction]
+    EInteractionActionBubbleActEnd: _ClassVar[EInteractionAction]
+    EInteractionActionRaidOpenBox: _ClassVar[EInteractionAction]
+    EInteractionActionBuffCustomizeEvent: _ClassVar[EInteractionAction]
+    EInteractionActionOpenRogueUi: _ClassVar[EInteractionAction]
+    EInteractionActionTempAffixCtr: _ClassVar[EInteractionAction]
+    EInteractionActionTempAffixInit: _ClassVar[EInteractionAction]
+    EInteractionActionMahjong: _ClassVar[EInteractionAction]
+EInteractionActionNone: EInteractionAction
+EInteractionActionToServer: EInteractionAction
+EInteractionActionNpcTalk: EInteractionAction
+EInteractionActionDungeonEntry: EInteractionAction
+EInteractionActionFunctionEntry: EInteractionAction
+EInteractionActionClientSceneEvent: EInteractionAction
+EInteractionActionOptionSelect: EInteractionAction
+EInteractionActionHeroNormalDungeon: EInteractionAction
+EInteractionActionHeroChallengeDungeon: EInteractionAction
+EInteractionActionRevive: EInteractionAction
+EInteractionActionVMFuction: EInteractionAction
+EInteractionActionTips: EInteractionAction
+EInteractionActionOpenUI: EInteractionAction
+EInteractionActionWindZone: EInteractionAction
+EInteractionActionWindRing: EInteractionAction
+EInteractionActionWindTornado: EInteractionAction
+EInteractionActionDanceTogether: EInteractionAction
+EInteractionActionStartFlow: EInteractionAction
+EInteractionActionShowCutScene: EInteractionAction
+EInteractionActionUnionHuntEntry: EInteractionAction
+EInteractionActionUnionBuild: EInteractionAction
+EInteractionActionUnionBuildFunc: EInteractionAction
+EInteractionActionExploreMonsterDeplete: EInteractionAction
+EInteractionActionUseSkill: EInteractionAction
+EInteractionActionFishing: EInteractionAction
+EInteractionActionSendClientAiEvent: EInteractionAction
+EInteractionActionDoNoThing: EInteractionAction
+EInteractionActionCookFunc: EInteractionAction
+EInteractionActionMoveToDistance: EInteractionAction
+EInteractionActionMoveToPosition: EInteractionAction
+EInteractionActionMoveToInteractionSeat: EInteractionAction
+EInteractionActionRotateToTarget: EInteractionAction
+EInteractionActionRotateToTargetAndWait: EInteractionAction
+EInteractionActionAddClientBuff: EInteractionAction
+EInteractionActionAddClientBuffAndWait: EInteractionAction
+EInteractionActionAddClientBuffToTarget: EInteractionAction
+EInteractionActionAddClientBuffToTargetAndWait: EInteractionAction
+EInteractionActionProgressBar: EInteractionAction
+EInteractionActionCameraInvoke: EInteractionAction
+EInteractionActionWaitUiConfirm: EInteractionAction
+EInteractionActionIgnoreInput: EInteractionAction
+EInteractionActionHideHud: EInteractionAction
+EInteractionActionHideUI: EInteractionAction
+EInteractionActionMoveToStaticObj: EInteractionAction
+EInteractionActionUnionWarDance: EInteractionAction
+EInteractionActionWaitInputMove: EInteractionAction
+EInteractionActionRemoveClientBuff: EInteractionAction
+EInteractionActionRemoveTargetClientBuff: EInteractionAction
+EInteractionActionEnterAutoFlow: EInteractionAction
+EInteractionActionNpcTalkFlow: EInteractionAction
+EInteractionActionStartFlowAndWait: EInteractionAction
+EInteractionActionShowCutSceneAndWait: EInteractionAction
+EInteractionActionSittingControl: EInteractionAction
+EInteractionActionMagneticAttach: EInteractionAction
+EInteractionActionSwitchCameraTemplate: EInteractionAction
+EInteractionActionHomeFarm: EInteractionAction
+EInteractionActionScenicSpotPhoto: EInteractionAction
+EInteractionActionJoinParade: EInteractionAction
+EInteractionActionLua: EInteractionAction
+EInteractionActionBase: EInteractionAction
+EInteractionActionPivot: EInteractionAction
+EInteractionActionPivotBreak: EInteractionAction
+EInteractionActionTransferPoint: EInteractionAction
+EInteractionActionLogicResonance: EInteractionAction
+EInteractionActionLogicStatic: EInteractionAction
+EInteractionActionLogicDance: EInteractionAction
+EInteractionActionAddBuff: EInteractionAction
+EInteractionActionTeleport: EInteractionAction
+EInteractionActionEnterDungeon: EInteractionAction
+EInteractionActionEnterVisualLayer: EInteractionAction
+EInteractionActionExitVisualLayer: EInteractionAction
+EInteractionActionTriggerSceneEvent: EInteractionAction
+EInteractionActionTriggerSceneCustomEvent: EInteractionAction
+EInteractionActionUserDoAction: EInteractionAction
+EInteractionActionPickup: EInteractionAction
+EInteractionActionOpenEliteTreasureBox: EInteractionAction
+EInteractionActionOpenBossTreasureBox: EInteractionAction
+EInteractionActionQuest: EInteractionAction
+EInteractionActionQuestEvent: EInteractionAction
+EInteractionActionKillSelf: EInteractionAction
+EInteractionActionSendAiEvent: EInteractionAction
+EInteractionActionDanceAwardNPC: EInteractionAction
+EInteractionActionRequestInteractionSeat: EInteractionAction
+EInteractionActionRemoveBuff: EInteractionAction
+EInteractionActionAddBuffToTarget: EInteractionAction
+EInteractionActionRemoveBuffToTarget: EInteractionAction
+EInteractionActionPaintToySwitchPage: EInteractionAction
+EInteractionActionOpenTowerTreasureBox: EInteractionAction
+EInteractionActionRoughCollection: EInteractionAction
+EInteractionActionFineCollection: EInteractionAction
+EInteractionActionBubbleActStart: EInteractionAction
+EInteractionActionBubbleActEnd: EInteractionAction
+EInteractionActionRaidOpenBox: EInteractionAction
+EInteractionActionBuffCustomizeEvent: EInteractionAction
+EInteractionActionOpenRogueUi: EInteractionAction
+EInteractionActionTempAffixCtr: EInteractionAction
+EInteractionActionTempAffixInit: EInteractionAction
+EInteractionActionMahjong: EInteractionAction

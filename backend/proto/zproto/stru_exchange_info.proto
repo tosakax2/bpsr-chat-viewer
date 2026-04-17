@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_exchange_data.proto";
+
+message ExchangeInfo {
+  int32 id = 1;
+  map<int32, zproto.ExchangeData> exchange_data = 2;
+}
+

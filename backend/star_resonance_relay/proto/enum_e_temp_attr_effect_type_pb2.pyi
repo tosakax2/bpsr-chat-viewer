@@ -1,0 +1,134 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class ETempAttrEffectType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    TempAttrVar: _ClassVar[ETempAttrEffectType]
+    TempSummonCountChange: _ClassVar[ETempAttrEffectType]
+    TempMultiply: _ClassVar[ETempAttrEffectType]
+    TempAdd: _ClassVar[ETempAttrEffectType]
+    TempAttrSkillCD: _ClassVar[ETempAttrEffectType]
+    TempAttrSkillCDFixed: _ClassVar[ETempAttrEffectType]
+    TempAttrSkillDamage: _ClassVar[ETempAttrEffectType]
+    TempAttrSkillAccelerate: _ClassVar[ETempAttrEffectType]
+    TempAttrBulletScale: _ClassVar[ETempAttrEffectType]
+    TempAttrBulletDamage: _ClassVar[ETempAttrEffectType]
+    TempAttrBulletStartSpeed: _ClassVar[ETempAttrEffectType]
+    TempAttrBulletAcceleratedSpeed: _ClassVar[ETempAttrEffectType]
+    TempAttrBulletMaxSpeed: _ClassVar[ETempAttrEffectType]
+    TempAttrFightResAddRate: _ClassVar[ETempAttrEffectType]
+    TempAttrFightResSubRate: _ClassVar[ETempAttrEffectType]
+    TempAttrDodgeLosslessRate: _ClassVar[ETempAttrEffectType]
+    TempAttrDodgeMaxCount: _ClassVar[ETempAttrEffectType]
+    TempAttrChargeCountAdd: _ClassVar[ETempAttrEffectType]
+    TempAttrInteractionTime: _ClassVar[ETempAttrEffectType]
+    TempAttrInteractionTimeRate: _ClassVar[ETempAttrEffectType]
+    TempAttrInteractionCost: _ClassVar[ETempAttrEffectType]
+    TempAttrInteractionCostRate: _ClassVar[ETempAttrEffectType]
+    TempAttrLifeProfessionExp: _ClassVar[ETempAttrEffectType]
+    TempAttrLifeProfessionExpRate: _ClassVar[ETempAttrEffectType]
+    TempAttrLifeProfessionWorkCost: _ClassVar[ETempAttrEffectType]
+    TempAttrLifeProfessionWorkCostRate: _ClassVar[ETempAttrEffectType]
+    TempAttrLifeProfessionWorkTime: _ClassVar[ETempAttrEffectType]
+    TempAttrTagDamage: _ClassVar[ETempAttrEffectType]
+    TempAttrTagExtraDamage: _ClassVar[ETempAttrEffectType]
+    TempAttrBuffTimePCT: _ClassVar[ETempAttrEffectType]
+    TempAttrBuffTime: _ClassVar[ETempAttrEffectType]
+    TempAttrBuffMaxLayer: _ClassVar[ETempAttrEffectType]
+    TempAttrSkillSubBeginTime: _ClassVar[ETempAttrEffectType]
+    TempAttrSkillHitRange: _ClassVar[ETempAttrEffectType]
+    TempAttrActionAttrAdd: _ClassVar[ETempAttrEffectType]
+    TempAttrHateRatePTC: _ClassVar[ETempAttrEffectType]
+    TempAttrStunneRatePTC: _ClassVar[ETempAttrEffectType]
+    TempAttrSkillBanSwitch: _ClassVar[ETempAttrEffectType]
+    TempAttrEliteAdd: _ClassVar[ETempAttrEffectType]
+    TempAttrBossAdd: _ClassVar[ETempAttrEffectType]
+    TempAttrAffectAward: _ClassVar[ETempAttrEffectType]
+    TempAttrHeroDungeonMultiaAward: _ClassVar[ETempAttrEffectType]
+    TempAttrAttackSpeedAdd: _ClassVar[ETempAttrEffectType]
+    TempAttrLuckyAdd: _ClassVar[ETempAttrEffectType]
+    TempAttrCritAdd: _ClassVar[ETempAttrEffectType]
+    TempAttrCritDamageAdd: _ClassVar[ETempAttrEffectType]
+    TempAttrHealAdd: _ClassVar[ETempAttrEffectType]
+    TempAttrDamageBoostAdd: _ClassVar[ETempAttrEffectType]
+    TempAttrOtherDamIncAdd: _ClassVar[ETempAttrEffectType]
+    TempAttrAttackAdd: _ClassVar[ETempAttrEffectType]
+    TempAttrMAttackAdd: _ClassVar[ETempAttrEffectType]
+    TempAttrHastePctAdd: _ClassVar[ETempAttrEffectType]
+    TempAttrCastSpeedPCTAdd: _ClassVar[ETempAttrEffectType]
+    TempAttrSeasonStrength: _ClassVar[ETempAttrEffectType]
+    TempAttrSeasonDexterity: _ClassVar[ETempAttrEffectType]
+    TempAttrSeasonIntelligence: _ClassVar[ETempAttrEffectType]
+    TempAttrAdaptiveBasic: _ClassVar[ETempAttrEffectType]
+    TempAttrAdaptiveAttack: _ClassVar[ETempAttrEffectType]
+    TempAttrSummonUpperLimitAdd: _ClassVar[ETempAttrEffectType]
+    TempAttrRogueEntryIdWeight: _ClassVar[ETempAttrEffectType]
+    TempAttrRogueEntryBDWeight: _ClassVar[ETempAttrEffectType]
+    TempAttrRogueEntryProfessionWeight: _ClassVar[ETempAttrEffectType]
+    TempAttrRogueEntryQualityWeight: _ClassVar[ETempAttrEffectType]
+TempAttrVar: ETempAttrEffectType
+TempSummonCountChange: ETempAttrEffectType
+TempMultiply: ETempAttrEffectType
+TempAdd: ETempAttrEffectType
+TempAttrSkillCD: ETempAttrEffectType
+TempAttrSkillCDFixed: ETempAttrEffectType
+TempAttrSkillDamage: ETempAttrEffectType
+TempAttrSkillAccelerate: ETempAttrEffectType
+TempAttrBulletScale: ETempAttrEffectType
+TempAttrBulletDamage: ETempAttrEffectType
+TempAttrBulletStartSpeed: ETempAttrEffectType
+TempAttrBulletAcceleratedSpeed: ETempAttrEffectType
+TempAttrBulletMaxSpeed: ETempAttrEffectType
+TempAttrFightResAddRate: ETempAttrEffectType
+TempAttrFightResSubRate: ETempAttrEffectType
+TempAttrDodgeLosslessRate: ETempAttrEffectType
+TempAttrDodgeMaxCount: ETempAttrEffectType
+TempAttrChargeCountAdd: ETempAttrEffectType
+TempAttrInteractionTime: ETempAttrEffectType
+TempAttrInteractionTimeRate: ETempAttrEffectType
+TempAttrInteractionCost: ETempAttrEffectType
+TempAttrInteractionCostRate: ETempAttrEffectType
+TempAttrLifeProfessionExp: ETempAttrEffectType
+TempAttrLifeProfessionExpRate: ETempAttrEffectType
+TempAttrLifeProfessionWorkCost: ETempAttrEffectType
+TempAttrLifeProfessionWorkCostRate: ETempAttrEffectType
+TempAttrLifeProfessionWorkTime: ETempAttrEffectType
+TempAttrTagDamage: ETempAttrEffectType
+TempAttrTagExtraDamage: ETempAttrEffectType
+TempAttrBuffTimePCT: ETempAttrEffectType
+TempAttrBuffTime: ETempAttrEffectType
+TempAttrBuffMaxLayer: ETempAttrEffectType
+TempAttrSkillSubBeginTime: ETempAttrEffectType
+TempAttrSkillHitRange: ETempAttrEffectType
+TempAttrActionAttrAdd: ETempAttrEffectType
+TempAttrHateRatePTC: ETempAttrEffectType
+TempAttrStunneRatePTC: ETempAttrEffectType
+TempAttrSkillBanSwitch: ETempAttrEffectType
+TempAttrEliteAdd: ETempAttrEffectType
+TempAttrBossAdd: ETempAttrEffectType
+TempAttrAffectAward: ETempAttrEffectType
+TempAttrHeroDungeonMultiaAward: ETempAttrEffectType
+TempAttrAttackSpeedAdd: ETempAttrEffectType
+TempAttrLuckyAdd: ETempAttrEffectType
+TempAttrCritAdd: ETempAttrEffectType
+TempAttrCritDamageAdd: ETempAttrEffectType
+TempAttrHealAdd: ETempAttrEffectType
+TempAttrDamageBoostAdd: ETempAttrEffectType
+TempAttrOtherDamIncAdd: ETempAttrEffectType
+TempAttrAttackAdd: ETempAttrEffectType
+TempAttrMAttackAdd: ETempAttrEffectType
+TempAttrHastePctAdd: ETempAttrEffectType
+TempAttrCastSpeedPCTAdd: ETempAttrEffectType
+TempAttrSeasonStrength: ETempAttrEffectType
+TempAttrSeasonDexterity: ETempAttrEffectType
+TempAttrSeasonIntelligence: ETempAttrEffectType
+TempAttrAdaptiveBasic: ETempAttrEffectType
+TempAttrAdaptiveAttack: ETempAttrEffectType
+TempAttrSummonUpperLimitAdd: ETempAttrEffectType
+TempAttrRogueEntryIdWeight: ETempAttrEffectType
+TempAttrRogueEntryBDWeight: ETempAttrEffectType
+TempAttrRogueEntryProfessionWeight: ETempAttrEffectType
+TempAttrRogueEntryQualityWeight: ETempAttrEffectType

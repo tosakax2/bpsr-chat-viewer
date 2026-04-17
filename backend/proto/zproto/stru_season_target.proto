@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_season_target_info.proto";
+
+message SeasonTarget {
+  map<int32, zproto.SeasonTargetInfo> target_info = 1;
+}
+

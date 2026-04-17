@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message FunctionTimeData {
+  uint32 times = 1;
+  uint32 timestamp = 2;
+}
+

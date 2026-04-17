@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message MailClaimedInfo {
+  repeated int64 attachment_mail_list = 1;
+  map<int64, int64> claimed_mails = 2;
+}
+

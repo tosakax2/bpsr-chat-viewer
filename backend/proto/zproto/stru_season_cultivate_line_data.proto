@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_cultivate_line_data.proto";
+
+message SeasonCultivateLineData {
+  map<int32, zproto.CultivateLineData> season_cultivate_line_map = 1;
+}
+

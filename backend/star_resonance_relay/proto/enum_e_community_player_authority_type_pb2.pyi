@@ -1,0 +1,26 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class ECommunityPlayerAuthorityType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    CommunityAuthorityPlayerType: _ClassVar[ECommunityPlayerAuthorityType]
+    CommunityAuthorityPlayerTypeFurnitureEdit: _ClassVar[ECommunityPlayerAuthorityType]
+    CommunityAuthorityPlayerTypeFurnitureMake: _ClassVar[ECommunityPlayerAuthorityType]
+    CommunityAuthorityPlayerTypeProduction: _ClassVar[ECommunityPlayerAuthorityType]
+    CommunityAuthorityPlayerTypePlant: _ClassVar[ECommunityPlayerAuthorityType]
+    CommunityAuthorityPlayerTypeWareHouse: _ClassVar[ECommunityPlayerAuthorityType]
+    CommunityAuthorityPlayerTypeEnterHome: _ClassVar[ECommunityPlayerAuthorityType]
+    CommunityAuthorityPlayerTypeFurnitureInteraction: _ClassVar[ECommunityPlayerAuthorityType]
+    CommunityAuthorityPlayerTypeShopSell: _ClassVar[ECommunityPlayerAuthorityType]
+CommunityAuthorityPlayerType: ECommunityPlayerAuthorityType
+CommunityAuthorityPlayerTypeFurnitureEdit: ECommunityPlayerAuthorityType
+CommunityAuthorityPlayerTypeFurnitureMake: ECommunityPlayerAuthorityType
+CommunityAuthorityPlayerTypeProduction: ECommunityPlayerAuthorityType
+CommunityAuthorityPlayerTypePlant: ECommunityPlayerAuthorityType
+CommunityAuthorityPlayerTypeWareHouse: ECommunityPlayerAuthorityType
+CommunityAuthorityPlayerTypeEnterHome: ECommunityPlayerAuthorityType
+CommunityAuthorityPlayerTypeFurnitureInteraction: ECommunityPlayerAuthorityType
+CommunityAuthorityPlayerTypeShopSell: ECommunityPlayerAuthorityType

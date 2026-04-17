@@ -1,0 +1,26 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class ECommunityBulletinBoardType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    CommunityBulletinBoardTransfer: _ClassVar[ECommunityBulletinBoardType]
+    CommunityBulletinBoardTransferAgree: _ClassVar[ECommunityBulletinBoardType]
+    CommunityBulletinBoardTransferCancel: _ClassVar[ECommunityBulletinBoardType]
+    CommunityBulletinBoardTransferRefusal: _ClassVar[ECommunityBulletinBoardType]
+    CommunityBulletinCohabitantJoin: _ClassVar[ECommunityBulletinBoardType]
+    CommunityBulletinCohabitantExit: _ClassVar[ECommunityBulletinBoardType]
+    CommunityBulletinAuthority: _ClassVar[ECommunityBulletinBoardType]
+    CommunityBulletinPlayerAuthority: _ClassVar[ECommunityBulletinBoardType]
+    CommunityBulletinCreate: _ClassVar[ECommunityBulletinBoardType]
+CommunityBulletinBoardTransfer: ECommunityBulletinBoardType
+CommunityBulletinBoardTransferAgree: ECommunityBulletinBoardType
+CommunityBulletinBoardTransferCancel: ECommunityBulletinBoardType
+CommunityBulletinBoardTransferRefusal: ECommunityBulletinBoardType
+CommunityBulletinCohabitantJoin: ECommunityBulletinBoardType
+CommunityBulletinCohabitantExit: ECommunityBulletinBoardType
+CommunityBulletinAuthority: ECommunityBulletinBoardType
+CommunityBulletinPlayerAuthority: ECommunityBulletinBoardType
+CommunityBulletinCreate: ECommunityBulletinBoardType

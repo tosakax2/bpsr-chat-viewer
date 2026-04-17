@@ -1,0 +1,102 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class TextCheckSceneType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    TextCheckError: _ClassVar[TextCheckSceneType]
+    TextCheckCreateRoleName: _ClassVar[TextCheckSceneType]
+    TextCheckCreateUnionName: _ClassVar[TextCheckSceneType]
+    TextCheckUnionManifesto: _ClassVar[TextCheckSceneType]
+    TextCheckUnionJobName: _ClassVar[TextCheckSceneType]
+    TextCheckUnionRecruit: _ClassVar[TextCheckSceneType]
+    TextCheckUnionRecruitDescription: _ClassVar[TextCheckSceneType]
+    TextCheckMapCustomFlag: _ClassVar[TextCheckSceneType]
+    TextCheckAlbumName: _ClassVar[TextCheckSceneType]
+    TextCheckChangeName: _ClassVar[TextCheckSceneType]
+    TextCheckUnionChangeName: _ClassVar[TextCheckSceneType]
+    TextCheckAlbumUploadTmp: _ClassVar[TextCheckSceneType]
+    TextCheckAlbumPhotoEditText: _ClassVar[TextCheckSceneType]
+    TextCheckAlbumPhotoEditUpload: _ClassVar[TextCheckSceneType]
+    TextCheckAlbumUploadPhoto: _ClassVar[TextCheckSceneType]
+    TextCheckUnionUploadHead: _ClassVar[TextCheckSceneType]
+    TextCheckUnionUploadCard: _ClassVar[TextCheckSceneType]
+    TextCheckAlbumChangeName: _ClassVar[TextCheckSceneType]
+    TextCheckCommunityCheckIntroduce: _ClassVar[TextCheckSceneType]
+    TextCheckCommunityCheckInvite: _ClassVar[TextCheckSceneType]
+    TextCheckCommunityCheckLightingName: _ClassVar[TextCheckSceneType]
+    TextCheckCommunityCheckCombinationFurnitureName: _ClassVar[TextCheckSceneType]
+    TextCheckCommunityCheckPhotoName: _ClassVar[TextCheckSceneType]
+    TextCheckCommunityCheckName: _ClassVar[TextCheckSceneType]
+    TextCheckUnionAlbumName: _ClassVar[TextCheckSceneType]
+    TextCheckChangeUnionAlbumName: _ClassVar[TextCheckSceneType]
+    TextCheckChangeMapCustomFlag: _ClassVar[TextCheckSceneType]
+    TextCheckChangeUnionRecruit: _ClassVar[TextCheckSceneType]
+    TextCheckChangeUnionRecruitDescription: _ClassVar[TextCheckSceneType]
+    TextCheckUnionAlbumUploadPhoto: _ClassVar[TextCheckSceneType]
+    TextCheckProfessionProjectCustomName: _ClassVar[TextCheckSceneType]
+    TextCheckActionGroupCustomName: _ClassVar[TextCheckSceneType]
+    TextCheckChatWorldChannel: _ClassVar[TextCheckSceneType]
+    TextCheckChatUnionChannel: _ClassVar[TextCheckSceneType]
+    TextCheckChatTeamChannel: _ClassVar[TextCheckSceneType]
+    TextCheckChatPrivateChannel: _ClassVar[TextCheckSceneType]
+    TextCheckChatSceneChannel: _ClassVar[TextCheckSceneType]
+    TextCheckFriendRemark: _ClassVar[TextCheckSceneType]
+    TextCheckTeamTargetInfo: _ClassVar[TextCheckSceneType]
+    TextCheckFriendGroupNameCreate: _ClassVar[TextCheckSceneType]
+    TextCheckFriendGroupNameChange: _ClassVar[TextCheckSceneType]
+    TextCheckTeamTargetQuickSay: _ClassVar[TextCheckSceneType]
+    TextCheckSearchFriend: _ClassVar[TextCheckSceneType]
+    TextCheckSearchUnionMember: _ClassVar[TextCheckSceneType]
+    TextCheckSearchUnion: _ClassVar[TextCheckSceneType]
+    TextCheckHomelandOuterStructures: _ClassVar[TextCheckSceneType]
+    TextCheckHomelandInnerStructures: _ClassVar[TextCheckSceneType]
+TextCheckError: TextCheckSceneType
+TextCheckCreateRoleName: TextCheckSceneType
+TextCheckCreateUnionName: TextCheckSceneType
+TextCheckUnionManifesto: TextCheckSceneType
+TextCheckUnionJobName: TextCheckSceneType
+TextCheckUnionRecruit: TextCheckSceneType
+TextCheckUnionRecruitDescription: TextCheckSceneType
+TextCheckMapCustomFlag: TextCheckSceneType
+TextCheckAlbumName: TextCheckSceneType
+TextCheckChangeName: TextCheckSceneType
+TextCheckUnionChangeName: TextCheckSceneType
+TextCheckAlbumUploadTmp: TextCheckSceneType
+TextCheckAlbumPhotoEditText: TextCheckSceneType
+TextCheckAlbumPhotoEditUpload: TextCheckSceneType
+TextCheckAlbumUploadPhoto: TextCheckSceneType
+TextCheckUnionUploadHead: TextCheckSceneType
+TextCheckUnionUploadCard: TextCheckSceneType
+TextCheckAlbumChangeName: TextCheckSceneType
+TextCheckCommunityCheckIntroduce: TextCheckSceneType
+TextCheckCommunityCheckInvite: TextCheckSceneType
+TextCheckCommunityCheckLightingName: TextCheckSceneType
+TextCheckCommunityCheckCombinationFurnitureName: TextCheckSceneType
+TextCheckCommunityCheckPhotoName: TextCheckSceneType
+TextCheckCommunityCheckName: TextCheckSceneType
+TextCheckUnionAlbumName: TextCheckSceneType
+TextCheckChangeUnionAlbumName: TextCheckSceneType
+TextCheckChangeMapCustomFlag: TextCheckSceneType
+TextCheckChangeUnionRecruit: TextCheckSceneType
+TextCheckChangeUnionRecruitDescription: TextCheckSceneType
+TextCheckUnionAlbumUploadPhoto: TextCheckSceneType
+TextCheckProfessionProjectCustomName: TextCheckSceneType
+TextCheckActionGroupCustomName: TextCheckSceneType
+TextCheckChatWorldChannel: TextCheckSceneType
+TextCheckChatUnionChannel: TextCheckSceneType
+TextCheckChatTeamChannel: TextCheckSceneType
+TextCheckChatPrivateChannel: TextCheckSceneType
+TextCheckChatSceneChannel: TextCheckSceneType
+TextCheckFriendRemark: TextCheckSceneType
+TextCheckTeamTargetInfo: TextCheckSceneType
+TextCheckFriendGroupNameCreate: TextCheckSceneType
+TextCheckFriendGroupNameChange: TextCheckSceneType
+TextCheckTeamTargetQuickSay: TextCheckSceneType
+TextCheckSearchFriend: TextCheckSceneType
+TextCheckSearchUnionMember: TextCheckSceneType
+TextCheckSearchUnion: TextCheckSceneType
+TextCheckHomelandOuterStructures: TextCheckSceneType
+TextCheckHomelandInnerStructures: TextCheckSceneType

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message LifeProfessionRecipe {
+  int32 id = 1;
+  int64 unlock_time = 2;
+}
+

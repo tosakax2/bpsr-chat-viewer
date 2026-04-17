@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message UserUnionHuntInfo {
+  int32 hunt_rank = 1;
+}
+

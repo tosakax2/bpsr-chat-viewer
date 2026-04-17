@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message SceneRecord {
+  uint64 cnt = 1;
+  map<int32, uint64> group_cnts = 2;
+}
+

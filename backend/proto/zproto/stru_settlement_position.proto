@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_position.proto";
+
+message SettlementPosition {
+  zproto.Position pos = 1;
+  zproto.Position rotate = 2;
+}
+

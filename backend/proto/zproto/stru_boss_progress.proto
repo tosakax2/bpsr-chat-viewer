@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message BossProgress {
+  int32 total_award_cnt = 1;
+}
+

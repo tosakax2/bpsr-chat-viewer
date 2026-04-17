@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message BattlePassAwardInfo {
+  bool free_award = 1;
+  bool paid_award = 2;
+}
+

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message LuckyValueInfo {
+  int32 luck_id = 1;
+  int32 luck_value = 2;
+  int64 next_time = 3;
+}
+

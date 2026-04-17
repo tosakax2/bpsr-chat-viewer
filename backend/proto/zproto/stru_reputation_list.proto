@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_reputation_info.proto";
+
+message ReputationList {
+  map<uint32, zproto.ReputationInfo> reputation_map = 1;
+}
+

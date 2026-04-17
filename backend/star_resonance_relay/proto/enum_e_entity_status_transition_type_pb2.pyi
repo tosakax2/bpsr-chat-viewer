@@ -1,0 +1,16 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class EEntityStatusTransitionType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    EEntityStatusTransitionType_Default: _ClassVar[EEntityStatusTransitionType]
+    EEntityStatusTransitionType_GlobalCondition: _ClassVar[EEntityStatusTransitionType]
+    EEntityStatusTransitionType_InteractionTimes: _ClassVar[EEntityStatusTransitionType]
+    EEntityStatusTransitionType_InteractionTemplate: _ClassVar[EEntityStatusTransitionType]
+EEntityStatusTransitionType_Default: EEntityStatusTransitionType
+EEntityStatusTransitionType_GlobalCondition: EEntityStatusTransitionType
+EEntityStatusTransitionType_InteractionTimes: EEntityStatusTransitionType
+EEntityStatusTransitionType_InteractionTemplate: EEntityStatusTransitionType

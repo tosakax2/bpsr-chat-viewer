@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message UserAttrData {
+  int32 state = 3;
+  int64 fight_point = 4;
+}
+

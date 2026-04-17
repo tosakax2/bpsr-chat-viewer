@@ -1,0 +1,208 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class EGlobalConditionType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    GlobalConditionTypeNone: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeUserLevel: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeFinishQuest: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypePlanCostTalentPoints: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeGs: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeItem: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeCompleteDungeon: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeDungeonScore: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeTimerRunning: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeTimerOpen: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeGsWillDelete: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeInSight: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeTimeHour: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeFunctionOpen: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeUnlockProfessionSkill: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypePersonalObjectStatus: _ClassVar[EGlobalConditionType]
+    GlobalConditionSkillHit: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeMonsterDead: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeMonsterDeadGroup: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeSeasonBpLevel: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeCurSeasonRank: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeSeasonTimeRange: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeSeasonTimeOffset: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeQuestStepState: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeBeginTime: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeUnionBuildLevel: _ClassVar[EGlobalConditionType]
+    GlobalConditionUnionLevel: _ClassVar[EGlobalConditionType]
+    GlobalConditionUnionMoney: _ClassVar[EGlobalConditionType]
+    GlobalConditionDungeonPlayerLimit: _ClassVar[EGlobalConditionType]
+    GlobalConditionTalentTotalPoint: _ClassVar[EGlobalConditionType]
+    GlobalConditionWeatherTime: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeWeather: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypePlayerState: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeGender: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeEquipWeapon: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeSkillLevel: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeOpenServer: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeWorldEventExist: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeBeReviveScene: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeNotScene: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeInScene: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeNotScenePlayType: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeInScenePlayType: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeHasDialog: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeRecommendPlay: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeFishLevel: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeIsRide: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeInHpRange: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeHasBuff: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeLifeProfessionLevel: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeLifeProSpecializationLevel: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeRecipeUnlock: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeInteractionCraftEnergy: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeFashionBenfitLevel: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeIsSummoner: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeMagneticAttachEnable: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeHasItem: _ClassVar[EGlobalConditionType]
+    GlobalCOnditionTypeIsMagneticAttach: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeInteractionUuidList: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeNotHasBuff: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeHasHome: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeHomeLandLevel: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeCleanleass: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeHousingItemBuildState: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeNotInShapeShift: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeLaunchPlatform: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeFarmlandNeedWater: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeCollected: _ClassVar[EGlobalConditionType]
+    GlobalConditionLuckyValue: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeFarmlandState: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypePlantOwner: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeHasPollen: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeHasFertilizer: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypePollenTimes: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeFertilizerTimes: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeHasTypeItem: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeRideId: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeActionId: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeLifeProfessionRecipe: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeHomeAreaUnlock: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeGreaterOnlineTime: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeLessOnlineTime: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeSeasonLevel: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeHasHomeAuthority: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeHomeCohabitant: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeNewbieOnline: _ClassVar[EGlobalConditionType]
+    GlobalConditionSameUnion: _ClassVar[EGlobalConditionType]
+    GlobalConditionIsTeamLeader: _ClassVar[EGlobalConditionType]
+    GlobalConditionCheckSeasonId: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeWeeklyTowerMaxClimberId: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeReputationLevel: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeInVisualLayer: _ClassVar[EGlobalConditionType]
+    GlobalConditionAchievementReached: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeHasFlowerPickUpTimes: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeParadeId: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeObjOnGround: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeObjNoXZRotation: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeRogueEntryProfession: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeRogueEntryBDCount: _ClassVar[EGlobalConditionType]
+    GlobalConditionTypeItemPackageLeftGrid: _ClassVar[EGlobalConditionType]
+GlobalConditionTypeNone: EGlobalConditionType
+GlobalConditionTypeUserLevel: EGlobalConditionType
+GlobalConditionTypeFinishQuest: EGlobalConditionType
+GlobalConditionTypePlanCostTalentPoints: EGlobalConditionType
+GlobalConditionTypeGs: EGlobalConditionType
+GlobalConditionTypeItem: EGlobalConditionType
+GlobalConditionTypeCompleteDungeon: EGlobalConditionType
+GlobalConditionTypeDungeonScore: EGlobalConditionType
+GlobalConditionTypeTimerRunning: EGlobalConditionType
+GlobalConditionTypeTimerOpen: EGlobalConditionType
+GlobalConditionTypeGsWillDelete: EGlobalConditionType
+GlobalConditionTypeInSight: EGlobalConditionType
+GlobalConditionTypeTimeHour: EGlobalConditionType
+GlobalConditionTypeFunctionOpen: EGlobalConditionType
+GlobalConditionTypeUnlockProfessionSkill: EGlobalConditionType
+GlobalConditionTypePersonalObjectStatus: EGlobalConditionType
+GlobalConditionSkillHit: EGlobalConditionType
+GlobalConditionTypeMonsterDead: EGlobalConditionType
+GlobalConditionTypeMonsterDeadGroup: EGlobalConditionType
+GlobalConditionTypeSeasonBpLevel: EGlobalConditionType
+GlobalConditionTypeCurSeasonRank: EGlobalConditionType
+GlobalConditionTypeSeasonTimeRange: EGlobalConditionType
+GlobalConditionTypeSeasonTimeOffset: EGlobalConditionType
+GlobalConditionTypeQuestStepState: EGlobalConditionType
+GlobalConditionTypeBeginTime: EGlobalConditionType
+GlobalConditionTypeUnionBuildLevel: EGlobalConditionType
+GlobalConditionUnionLevel: EGlobalConditionType
+GlobalConditionUnionMoney: EGlobalConditionType
+GlobalConditionDungeonPlayerLimit: EGlobalConditionType
+GlobalConditionTalentTotalPoint: EGlobalConditionType
+GlobalConditionWeatherTime: EGlobalConditionType
+GlobalConditionTypeWeather: EGlobalConditionType
+GlobalConditionTypePlayerState: EGlobalConditionType
+GlobalConditionTypeGender: EGlobalConditionType
+GlobalConditionTypeEquipWeapon: EGlobalConditionType
+GlobalConditionTypeSkillLevel: EGlobalConditionType
+GlobalConditionTypeOpenServer: EGlobalConditionType
+GlobalConditionTypeWorldEventExist: EGlobalConditionType
+GlobalConditionTypeBeReviveScene: EGlobalConditionType
+GlobalConditionTypeNotScene: EGlobalConditionType
+GlobalConditionTypeInScene: EGlobalConditionType
+GlobalConditionTypeNotScenePlayType: EGlobalConditionType
+GlobalConditionTypeInScenePlayType: EGlobalConditionType
+GlobalConditionTypeHasDialog: EGlobalConditionType
+GlobalConditionTypeRecommendPlay: EGlobalConditionType
+GlobalConditionTypeFishLevel: EGlobalConditionType
+GlobalConditionTypeIsRide: EGlobalConditionType
+GlobalConditionTypeInHpRange: EGlobalConditionType
+GlobalConditionTypeHasBuff: EGlobalConditionType
+GlobalConditionTypeLifeProfessionLevel: EGlobalConditionType
+GlobalConditionTypeLifeProSpecializationLevel: EGlobalConditionType
+GlobalConditionTypeRecipeUnlock: EGlobalConditionType
+GlobalConditionTypeInteractionCraftEnergy: EGlobalConditionType
+GlobalConditionTypeFashionBenfitLevel: EGlobalConditionType
+GlobalConditionTypeIsSummoner: EGlobalConditionType
+GlobalConditionTypeMagneticAttachEnable: EGlobalConditionType
+GlobalConditionTypeHasItem: EGlobalConditionType
+GlobalCOnditionTypeIsMagneticAttach: EGlobalConditionType
+GlobalConditionTypeInteractionUuidList: EGlobalConditionType
+GlobalConditionTypeNotHasBuff: EGlobalConditionType
+GlobalConditionTypeHasHome: EGlobalConditionType
+GlobalConditionTypeHomeLandLevel: EGlobalConditionType
+GlobalConditionTypeCleanleass: EGlobalConditionType
+GlobalConditionTypeHousingItemBuildState: EGlobalConditionType
+GlobalConditionTypeNotInShapeShift: EGlobalConditionType
+GlobalConditionTypeLaunchPlatform: EGlobalConditionType
+GlobalConditionTypeFarmlandNeedWater: EGlobalConditionType
+GlobalConditionTypeCollected: EGlobalConditionType
+GlobalConditionLuckyValue: EGlobalConditionType
+GlobalConditionTypeFarmlandState: EGlobalConditionType
+GlobalConditionTypePlantOwner: EGlobalConditionType
+GlobalConditionTypeHasPollen: EGlobalConditionType
+GlobalConditionTypeHasFertilizer: EGlobalConditionType
+GlobalConditionTypePollenTimes: EGlobalConditionType
+GlobalConditionTypeFertilizerTimes: EGlobalConditionType
+GlobalConditionTypeHasTypeItem: EGlobalConditionType
+GlobalConditionTypeRideId: EGlobalConditionType
+GlobalConditionTypeActionId: EGlobalConditionType
+GlobalConditionTypeLifeProfessionRecipe: EGlobalConditionType
+GlobalConditionTypeHomeAreaUnlock: EGlobalConditionType
+GlobalConditionTypeGreaterOnlineTime: EGlobalConditionType
+GlobalConditionTypeLessOnlineTime: EGlobalConditionType
+GlobalConditionTypeSeasonLevel: EGlobalConditionType
+GlobalConditionTypeHasHomeAuthority: EGlobalConditionType
+GlobalConditionTypeHomeCohabitant: EGlobalConditionType
+GlobalConditionTypeNewbieOnline: EGlobalConditionType
+GlobalConditionSameUnion: EGlobalConditionType
+GlobalConditionIsTeamLeader: EGlobalConditionType
+GlobalConditionCheckSeasonId: EGlobalConditionType
+GlobalConditionTypeWeeklyTowerMaxClimberId: EGlobalConditionType
+GlobalConditionTypeReputationLevel: EGlobalConditionType
+GlobalConditionTypeInVisualLayer: EGlobalConditionType
+GlobalConditionAchievementReached: EGlobalConditionType
+GlobalConditionTypeHasFlowerPickUpTimes: EGlobalConditionType
+GlobalConditionTypeParadeId: EGlobalConditionType
+GlobalConditionTypeObjOnGround: EGlobalConditionType
+GlobalConditionTypeObjNoXZRotation: EGlobalConditionType
+GlobalConditionTypeRogueEntryProfession: EGlobalConditionType
+GlobalConditionTypeRogueEntryBDCount: EGlobalConditionType
+GlobalConditionTypeItemPackageLeftGrid: EGlobalConditionType

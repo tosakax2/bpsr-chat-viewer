@@ -1,0 +1,316 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class EItemGetOptSrc(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    EItemGetOptSrcDefault: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcExchange: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcDecompose: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcCompose: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcQuest: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcWorldQuestPoint: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcWorldQuest: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcSeasonQuest: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcMail: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcDrop: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcGM: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcIDIP: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcRefine: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcInit: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcRestore: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcMapBook: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcSettlement: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcCollection: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcRiddle: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcTreasureBox: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcPioneer: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcPivotStage: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcSeasonTarget: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcUseItem: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcRoleLevel: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcRoleLevelOneKey: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcLuaScript: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcShopBuy: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcMonsterExplore: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcMonsterHuntStage: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcMonsterHuntLevel: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcMonsterHuntDrop: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcMonsterHuntRefresh: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcCook: _ClassVar[EItemGetOptSrc]
+    EItemGetOptChallengeDungeonAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptMasterModeDungeonSeasonAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcPaymentRealCurrency: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcPaymentQueryCurrency: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcPaymentAmountToDiamond: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcPersonalFriendlinessLevelAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcTotalFriendlinessLevelAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcSeasonAchievementAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcCommonTargetActivityAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcSeasonRankAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcSeasonRankAdvanceAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcDungeonHeroKey: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcBattlePass: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcHomeland: _ClassVar[EItemGetOptSrc]
+    EItemInteraction: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcActivationTarget: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcTalentReset: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcProfessionSkillReset: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcSeasonMedalNormalHoleRest: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcDungeonWeekTarget: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcUnionActiveFinishTarget: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcUnionActiveAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcUnionNoClaimedActiveAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcUnionSpeedUpFailedBack: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcUnionCreateFailedBack: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcUnionChangeNameFailedBack: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcModDecompose: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcWorldEventAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcFishing: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcUnionSpeedUpBuild: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcFreightBaseAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcFreightExtraAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcWarehouseCreateFailedBack: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcWarehouseTakeOut: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcWarehouseExitBack: _ClassVar[EItemGetOptSrc]
+    EItemGetOPtSrcWarehouseDepositFailedBack: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcFishLevelAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcUnionActivity: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcExchangeTake: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcExchangeWithdraw: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcExchangePutCallBack: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcExchangeBuy: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcExchangeBuyCallBack: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcExchangeSaleTake: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcExchangeSaleBuy: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcGasha: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcPersonalZoneTarget: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcTrialRodeGet: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcUnionPersonalDance: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcUnionAllDance: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcWeeklyTowerKillMonster: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcWeeklyTowerStage: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcWeeklyTowerStageMail: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcWeeklyTowerRank: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcWeeklyTowerStageOneKey: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcWeeklyTowerStageReset: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcItemRecycle: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSreFunctionOpenAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcIdIpAdd: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcLifeTargetAdd: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcLifeTargetSpecialAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcLifeProfession: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcLifeProfessionMake: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcLifeProfessionWorkStop: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcLifeProfessionWork: _ClassVar[EItemGetOptSrc]
+    EItemGetOptMonthCardAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcLifeProfessionUnlock: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcLifeProfessionUpLevel: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcProfessionAttach: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcActivityReward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcLifeProfessionItem: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcCommunityBuy: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcCommunityWarehouseToBag: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcAssist: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcFashionCollect: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcActivateRideSkin: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcBuildFurnitureCancel: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcBuildFurnitureSuccess: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcTreasure: _ClassVar[EItemGetOptSrc]
+    EItemHomeTaskFinished: _ClassVar[EItemGetOptSrc]
+    EItemHomeSellItem: _ClassVar[EItemGetOptSrc]
+    EItemHomeSeedReturn: _ClassVar[EItemGetOptSrc]
+    EItemHomeFertilizerReturn: _ClassVar[EItemGetOptSrc]
+    EItemHomePollenReturn: _ClassVar[EItemGetOptSrc]
+    EItemHomePickUp: _ClassVar[EItemGetOptSrc]
+    EItemHomeGain: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcLaunchPrivilege: _ClassVar[EItemGetOptSrc]
+    EItemHomeSubmitTaskReturn: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcEquipCreate: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcCompensation: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcPresentBalance: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcClientQueryBalance: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcMonthCardQueryBalance: _ClassVar[EItemGetOptSrc]
+    EItemGetLifeProfessionPointFirstUnlock: _ClassVar[EItemGetOptSrc]
+    EItemGetLifeProfessionPointConsumeEnergy: _ClassVar[EItemGetOptSrc]
+    EItemGetLifeProfessionPointResetSpecialization: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcRaidDungeonOpenBox: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcNewbie: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcNewbieHelp: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcGetSign: _ClassVar[EItemGetOptSrc]
+    EItemGetReissueSignReward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcSeasonTalentResetAllNode: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcSeasonTalentUninstallIntermediateNode: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcReputationLevel: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcWeeklyTowerJumpReward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcMahjongReward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcNewbieBackflowTarget: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcBackflowSignAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcNewbieBackflowElectiveProgress: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcNewbieBackflowFuncOpenAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcNewbieGraduateAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcNewbieBackflowLevelAward: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcNewbieCancelMail: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcBackflowCancelMail: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcBuildLifeProfessionSuccess: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcBuildLifeProfessionCancel: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcLifeProfessionBuild: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcBuildLifeProfessionQuitCohabitant: _ClassVar[EItemGetOptSrc]
+    EItemGetOptSrcLifeProfessionEntrust: _ClassVar[EItemGetOptSrc]
+EItemGetOptSrcDefault: EItemGetOptSrc
+EItemGetOptSrcAward: EItemGetOptSrc
+EItemGetOptSrcExchange: EItemGetOptSrc
+EItemGetOptSrcDecompose: EItemGetOptSrc
+EItemGetOptSrcCompose: EItemGetOptSrc
+EItemGetOptSrcQuest: EItemGetOptSrc
+EItemGetOptSrcWorldQuestPoint: EItemGetOptSrc
+EItemGetOptSrcWorldQuest: EItemGetOptSrc
+EItemGetOptSrcSeasonQuest: EItemGetOptSrc
+EItemGetOptSrcMail: EItemGetOptSrc
+EItemGetOptSrcDrop: EItemGetOptSrc
+EItemGetOptSrcGM: EItemGetOptSrc
+EItemGetOptSrcIDIP: EItemGetOptSrc
+EItemGetOptSrcRefine: EItemGetOptSrc
+EItemGetOptSrcInit: EItemGetOptSrc
+EItemGetOptSrcRestore: EItemGetOptSrc
+EItemGetOptSrcMapBook: EItemGetOptSrc
+EItemGetOptSrcSettlement: EItemGetOptSrc
+EItemGetOptSrcCollection: EItemGetOptSrc
+EItemGetOptSrcRiddle: EItemGetOptSrc
+EItemGetOptSrcTreasureBox: EItemGetOptSrc
+EItemGetOptSrcPioneer: EItemGetOptSrc
+EItemGetOptSrcPivotStage: EItemGetOptSrc
+EItemGetOptSrcSeasonTarget: EItemGetOptSrc
+EItemGetOptSrcUseItem: EItemGetOptSrc
+EItemGetOptSrcRoleLevel: EItemGetOptSrc
+EItemGetOptSrcRoleLevelOneKey: EItemGetOptSrc
+EItemGetOptSrcLuaScript: EItemGetOptSrc
+EItemGetOptSrcShopBuy: EItemGetOptSrc
+EItemGetOptSrcMonsterExplore: EItemGetOptSrc
+EItemGetOptSrcMonsterHuntStage: EItemGetOptSrc
+EItemGetOptSrcMonsterHuntLevel: EItemGetOptSrc
+EItemGetOptSrcMonsterHuntDrop: EItemGetOptSrc
+EItemGetOptSrcMonsterHuntRefresh: EItemGetOptSrc
+EItemGetOptSrcCook: EItemGetOptSrc
+EItemGetOptChallengeDungeonAward: EItemGetOptSrc
+EItemGetOptMasterModeDungeonSeasonAward: EItemGetOptSrc
+EItemGetOptSrcPaymentRealCurrency: EItemGetOptSrc
+EItemGetOptSrcPaymentQueryCurrency: EItemGetOptSrc
+EItemGetOptSrcPaymentAmountToDiamond: EItemGetOptSrc
+EItemGetOptSrcPersonalFriendlinessLevelAward: EItemGetOptSrc
+EItemGetOptSrcTotalFriendlinessLevelAward: EItemGetOptSrc
+EItemGetOptSrcSeasonAchievementAward: EItemGetOptSrc
+EItemGetOptSrcCommonTargetActivityAward: EItemGetOptSrc
+EItemGetOptSrcSeasonRankAward: EItemGetOptSrc
+EItemGetOptSrcSeasonRankAdvanceAward: EItemGetOptSrc
+EItemGetOptSrcDungeonHeroKey: EItemGetOptSrc
+EItemGetOptSrcBattlePass: EItemGetOptSrc
+EItemGetOptSrcHomeland: EItemGetOptSrc
+EItemInteraction: EItemGetOptSrc
+EItemGetOptSrcActivationTarget: EItemGetOptSrc
+EItemGetOptSrcTalentReset: EItemGetOptSrc
+EItemGetOptSrcProfessionSkillReset: EItemGetOptSrc
+EItemGetOptSrcSeasonMedalNormalHoleRest: EItemGetOptSrc
+EItemGetOptSrcDungeonWeekTarget: EItemGetOptSrc
+EItemGetOptSrcUnionActiveFinishTarget: EItemGetOptSrc
+EItemGetOptSrcUnionActiveAward: EItemGetOptSrc
+EItemGetOptSrcUnionNoClaimedActiveAward: EItemGetOptSrc
+EItemGetOptSrcUnionSpeedUpFailedBack: EItemGetOptSrc
+EItemGetOptSrcUnionCreateFailedBack: EItemGetOptSrc
+EItemGetOptSrcUnionChangeNameFailedBack: EItemGetOptSrc
+EItemGetOptSrcModDecompose: EItemGetOptSrc
+EItemGetOptSrcWorldEventAward: EItemGetOptSrc
+EItemGetOptSrcFishing: EItemGetOptSrc
+EItemGetOptSrcUnionSpeedUpBuild: EItemGetOptSrc
+EItemGetOptSrcFreightBaseAward: EItemGetOptSrc
+EItemGetOptSrcFreightExtraAward: EItemGetOptSrc
+EItemGetOptSrcWarehouseCreateFailedBack: EItemGetOptSrc
+EItemGetOptSrcWarehouseTakeOut: EItemGetOptSrc
+EItemGetOptSrcWarehouseExitBack: EItemGetOptSrc
+EItemGetOPtSrcWarehouseDepositFailedBack: EItemGetOptSrc
+EItemGetOptSrcFishLevelAward: EItemGetOptSrc
+EItemGetOptSrcUnionActivity: EItemGetOptSrc
+EItemGetOptSrcExchangeTake: EItemGetOptSrc
+EItemGetOptSrcExchangeWithdraw: EItemGetOptSrc
+EItemGetOptSrcExchangePutCallBack: EItemGetOptSrc
+EItemGetOptSrcExchangeBuy: EItemGetOptSrc
+EItemGetOptSrcExchangeBuyCallBack: EItemGetOptSrc
+EItemGetOptSrcExchangeSaleTake: EItemGetOptSrc
+EItemGetOptSrcExchangeSaleBuy: EItemGetOptSrc
+EItemGetOptSrcGasha: EItemGetOptSrc
+EItemGetOptSrcPersonalZoneTarget: EItemGetOptSrc
+EItemGetOptSrcTrialRodeGet: EItemGetOptSrc
+EItemGetOptSrcUnionPersonalDance: EItemGetOptSrc
+EItemGetOptSrcUnionAllDance: EItemGetOptSrc
+EItemGetOptSrcWeeklyTowerKillMonster: EItemGetOptSrc
+EItemGetOptSrcWeeklyTowerStage: EItemGetOptSrc
+EItemGetOptSrcWeeklyTowerStageMail: EItemGetOptSrc
+EItemGetOptSrcWeeklyTowerRank: EItemGetOptSrc
+EItemGetOptSrcWeeklyTowerStageOneKey: EItemGetOptSrc
+EItemGetOptSrcWeeklyTowerStageReset: EItemGetOptSrc
+EItemGetOptSrcItemRecycle: EItemGetOptSrc
+EItemGetOptSreFunctionOpenAward: EItemGetOptSrc
+EItemGetOptSrcIdIpAdd: EItemGetOptSrc
+EItemGetOptSrcLifeTargetAdd: EItemGetOptSrc
+EItemGetOptSrcLifeTargetSpecialAward: EItemGetOptSrc
+EItemGetOptSrcLifeProfession: EItemGetOptSrc
+EItemGetOptSrcLifeProfessionMake: EItemGetOptSrc
+EItemGetOptSrcLifeProfessionWorkStop: EItemGetOptSrc
+EItemGetOptSrcLifeProfessionWork: EItemGetOptSrc
+EItemGetOptMonthCardAward: EItemGetOptSrc
+EItemGetOptSrcLifeProfessionUnlock: EItemGetOptSrc
+EItemGetOptSrcLifeProfessionUpLevel: EItemGetOptSrc
+EItemGetOptSrcProfessionAttach: EItemGetOptSrc
+EItemGetOptSrcActivityReward: EItemGetOptSrc
+EItemGetOptSrcLifeProfessionItem: EItemGetOptSrc
+EItemGetOptSrcCommunityBuy: EItemGetOptSrc
+EItemGetOptSrcCommunityWarehouseToBag: EItemGetOptSrc
+EItemGetOptSrcAssist: EItemGetOptSrc
+EItemGetOptSrcFashionCollect: EItemGetOptSrc
+EItemGetOptSrcActivateRideSkin: EItemGetOptSrc
+EItemGetOptSrcBuildFurnitureCancel: EItemGetOptSrc
+EItemGetOptSrcBuildFurnitureSuccess: EItemGetOptSrc
+EItemGetOptSrcTreasure: EItemGetOptSrc
+EItemHomeTaskFinished: EItemGetOptSrc
+EItemHomeSellItem: EItemGetOptSrc
+EItemHomeSeedReturn: EItemGetOptSrc
+EItemHomeFertilizerReturn: EItemGetOptSrc
+EItemHomePollenReturn: EItemGetOptSrc
+EItemHomePickUp: EItemGetOptSrc
+EItemHomeGain: EItemGetOptSrc
+EItemGetOptSrcLaunchPrivilege: EItemGetOptSrc
+EItemHomeSubmitTaskReturn: EItemGetOptSrc
+EItemGetOptSrcEquipCreate: EItemGetOptSrc
+EItemGetOptSrcCompensation: EItemGetOptSrc
+EItemGetOptSrcPresentBalance: EItemGetOptSrc
+EItemGetOptSrcClientQueryBalance: EItemGetOptSrc
+EItemGetOptSrcMonthCardQueryBalance: EItemGetOptSrc
+EItemGetLifeProfessionPointFirstUnlock: EItemGetOptSrc
+EItemGetLifeProfessionPointConsumeEnergy: EItemGetOptSrc
+EItemGetLifeProfessionPointResetSpecialization: EItemGetOptSrc
+EItemGetOptSrcRaidDungeonOpenBox: EItemGetOptSrc
+EItemGetOptSrcNewbie: EItemGetOptSrc
+EItemGetOptSrcNewbieHelp: EItemGetOptSrc
+EItemGetOptSrcGetSign: EItemGetOptSrc
+EItemGetReissueSignReward: EItemGetOptSrc
+EItemGetOptSrcSeasonTalentResetAllNode: EItemGetOptSrc
+EItemGetOptSrcSeasonTalentUninstallIntermediateNode: EItemGetOptSrc
+EItemGetOptSrcReputationLevel: EItemGetOptSrc
+EItemGetOptSrcWeeklyTowerJumpReward: EItemGetOptSrc
+EItemGetOptSrcMahjongReward: EItemGetOptSrc
+EItemGetOptSrcNewbieBackflowTarget: EItemGetOptSrc
+EItemGetOptSrcBackflowSignAward: EItemGetOptSrc
+EItemGetOptSrcNewbieBackflowElectiveProgress: EItemGetOptSrc
+EItemGetOptSrcNewbieBackflowFuncOpenAward: EItemGetOptSrc
+EItemGetOptSrcNewbieGraduateAward: EItemGetOptSrc
+EItemGetOptSrcNewbieBackflowLevelAward: EItemGetOptSrc
+EItemGetOptSrcNewbieCancelMail: EItemGetOptSrc
+EItemGetOptSrcBackflowCancelMail: EItemGetOptSrc
+EItemGetOptSrcBuildLifeProfessionSuccess: EItemGetOptSrc
+EItemGetOptSrcBuildLifeProfessionCancel: EItemGetOptSrc
+EItemGetOptSrcLifeProfessionBuild: EItemGetOptSrc
+EItemGetOptSrcBuildLifeProfessionQuitCohabitant: EItemGetOptSrc
+EItemGetOptSrcLifeProfessionEntrust: EItemGetOptSrc

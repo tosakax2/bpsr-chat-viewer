@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message SeasonRoleLevel {
+  int32 level = 1;
+  int64 cur_level_exp = 2;
+}
+

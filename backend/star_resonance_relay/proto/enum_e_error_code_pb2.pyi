@@ -1,0 +1,2684 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class EErrorCode(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    ErrSuccess: _ClassVar[EErrorCode]
+    ErrNoRecord: _ClassVar[EErrorCode]
+    ErrExceptionCancel: _ClassVar[EErrorCode]
+    ErrDBException: _ClassVar[EErrorCode]
+    ErrDBSeqException: _ClassVar[EErrorCode]
+    ErrDBSceneException: _ClassVar[EErrorCode]
+    ErrDBTokenException: _ClassVar[EErrorCode]
+    ErrCancelled: _ClassVar[EErrorCode]
+    ErrUnknownRpc: _ClassVar[EErrorCode]
+    ErrInvalidArgument: _ClassVar[EErrorCode]
+    ErrDeadlineExceeded: _ClassVar[EErrorCode]
+    ErrNotFound: _ClassVar[EErrorCode]
+    ErrAlreadyExists: _ClassVar[EErrorCode]
+    ErrPermissionDenied: _ClassVar[EErrorCode]
+    ErrResourceExhausted: _ClassVar[EErrorCode]
+    ErrFailedPrecondition: _ClassVar[EErrorCode]
+    ErrAborted: _ClassVar[EErrorCode]
+    ErrOutOfRange: _ClassVar[EErrorCode]
+    ErrUnimplemented: _ClassVar[EErrorCode]
+    ErrInternal: _ClassVar[EErrorCode]
+    ErrUnavailable: _ClassVar[EErrorCode]
+    ErrDataLoss: _ClassVar[EErrorCode]
+    ErrUnauthenticated: _ClassVar[EErrorCode]
+    ErrSystemMax: _ClassVar[EErrorCode]
+    ErrDBError: _ClassVar[EErrorCode]
+    ErrCreateOpenInfo: _ClassVar[EErrorCode]
+    ErrCreateAccountInfo: _ClassVar[EErrorCode]
+    ErrCreateCharInfo: _ClassVar[EErrorCode]
+    ErrCreateAccountToken: _ClassVar[EErrorCode]
+    ErrGetOpenInfo: _ClassVar[EErrorCode]
+    ErrGetAccountInfo: _ClassVar[EErrorCode]
+    ErrGetCharInfo: _ClassVar[EErrorCode]
+    ErrGetAccountToken: _ClassVar[EErrorCode]
+    ErrLoginInQueue: _ClassVar[EErrorCode]
+    ErrOtherLogin: _ClassVar[EErrorCode]
+    ErrServerError: _ClassVar[EErrorCode]
+    ErrNoAccountInfo: _ClassVar[EErrorCode]
+    ErrNoCharInfo: _ClassVar[EErrorCode]
+    ErrTokenExpired: _ClassVar[EErrorCode]
+    ErrUpdateTokenFail: _ClassVar[EErrorCode]
+    ErrRegIntoSceneError: _ClassVar[EErrorCode]
+    ErrLoginTypeErr: _ClassVar[EErrorCode]
+    ErrChangeMapErr: _ClassVar[EErrorCode]
+    ErrLoginPlatformErr: _ClassVar[EErrorCode]
+    ErrVersionErr: _ClassVar[EErrorCode]
+    ErrDelayOffLineKickOff: _ClassVar[EErrorCode]
+    ErrServiceLanguageError: _ClassVar[EErrorCode]
+    NoEnterScene: _ClassVar[EErrorCode]
+    ModIDNotOpen: _ClassVar[EErrorCode]
+    ErrFaceData: _ClassVar[EErrorCode]
+    ErrInitProfession: _ClassVar[EErrorCode]
+    ErrSceneCloseKickoff: _ClassVar[EErrorCode]
+    ErrLoginReconnectKick: _ClassVar[EErrorCode]
+    ErrLoginErrorResume: _ClassVar[EErrorCode]
+    ErrRepeatedLogin: _ClassVar[EErrorCode]
+    ErrRestrictLogin: _ClassVar[EErrorCode]
+    ErrRestrictBlack: _ClassVar[EErrorCode]
+    ErrSdkVerifyFail: _ClassVar[EErrorCode]
+    ErrSdkTokenExpired: _ClassVar[EErrorCode]
+    ErrServerNotOpen: _ClassVar[EErrorCode]
+    ErrServerEndOpen: _ClassVar[EErrorCode]
+    ErrNormalKick: _ClassVar[EErrorCode]
+    ErrServerBusy: _ClassVar[EErrorCode]
+    ErrServerClose: _ClassVar[EErrorCode]
+    ErrExitGame: _ClassVar[EErrorCode]
+    ErrHopeKick: _ClassVar[EErrorCode]
+    ErrClientVersionError: _ClassVar[EErrorCode]
+    ErrInvalidDeviceId: _ClassVar[EErrorCode]
+    ErrInvalidSystemType: _ClassVar[EErrorCode]
+    ErrDeleteChar: _ClassVar[EErrorCode]
+    ErrCancelDeleteChar: _ClassVar[EErrorCode]
+    ErrCancelDeleteCharIsDelete: _ClassVar[EErrorCode]
+    ErrIntoSceneOwnerFail: _ClassVar[EErrorCode]
+    ErrLoginNoEnoughToken: _ClassVar[EErrorCode]
+    ErrSceneQueueUp: _ClassVar[EErrorCode]
+    ErrProtocolVersionErr: _ClassVar[EErrorCode]
+    ErrConfigVersionErr: _ClassVar[EErrorCode]
+    ErrStateEventFailed: _ClassVar[EErrorCode]
+    ErrSelectCharDoing: _ClassVar[EErrorCode]
+    ErrSelectCharDeleted: _ClassVar[EErrorCode]
+    ErrLoginChannelMax: _ClassVar[EErrorCode]
+    ErrDeleteAccountKick: _ClassVar[EErrorCode]
+    ErrIsDeleteAccount: _ClassVar[EErrorCode]
+    ErrIsVersionKick: _ClassVar[EErrorCode]
+    ErrNotQQChnnel: _ClassVar[EErrorCode]
+    ErrIncorrectLaunchPlatform: _ClassVar[EErrorCode]
+    ErrConditionWrong: _ClassVar[EErrorCode]
+    ErrNotSupportLoginType: _ClassVar[EErrorCode]
+    ErrKickoutWithChangeBodySize: _ClassVar[EErrorCode]
+    ErrNotFindVoiceId: _ClassVar[EErrorCode]
+    ErrVoiceIdInValid: _ClassVar[EErrorCode]
+    ErrSceneNotExist: _ClassVar[EErrorCode]
+    ErrUserNotExist: _ClassVar[EErrorCode]
+    ErrComponentNotExist: _ClassVar[EErrorCode]
+    ErrSceneConfigNotExist: _ClassVar[EErrorCode]
+    ErrServiceNotExist: _ClassVar[EErrorCode]
+    ErrDataContainerNotExist: _ClassVar[EErrorCode]
+    ErrAsynchronousReturn: _ClassVar[EErrorCode]
+    ErrConfigNotExist: _ClassVar[EErrorCode]
+    ErrNotUser: _ClassVar[EErrorCode]
+    ErrConfigError: _ClassVar[EErrorCode]
+    ErrActorNotExist: _ClassVar[EErrorCode]
+    ErrCutSceneAlreadyPlayed: _ClassVar[EErrorCode]
+    ErrFunctionUnlock: _ClassVar[EErrorCode]
+    ErrFunctionClosed: _ClassVar[EErrorCode]
+    ErrUserPlayerNotFurniturePackage: _ClassVar[EErrorCode]
+    ErrSysInnerError: _ClassVar[EErrorCode]
+    ErrSysWebClientNull: _ClassVar[EErrorCode]
+    ErrSysWebRequestTimeOut: _ClassVar[EErrorCode]
+    ErrSysWebReturnError: _ClassVar[EErrorCode]
+    ErrRequestTooFrequently: _ClassVar[EErrorCode]
+    ErrArgStringTooLong: _ClassVar[EErrorCode]
+    ErrArgStringEmpty: _ClassVar[EErrorCode]
+    ErrArgArrayTooBig: _ClassVar[EErrorCode]
+    ErrArgArrayEmpty: _ClassVar[EErrorCode]
+    ErrArgMapTooBig: _ClassVar[EErrorCode]
+    ErrArgMapEmpty: _ClassVar[EErrorCode]
+    ErrItemNotExist: _ClassVar[EErrorCode]
+    ErrPackageNotExist: _ClassVar[EErrorCode]
+    ErrPackageFull: _ClassVar[EErrorCode]
+    ErrItemExpireTime: _ClassVar[EErrorCode]
+    ErrItemPackageGridNotEnough: _ClassVar[EErrorCode]
+    ErrItemUUIDError: _ClassVar[EErrorCode]
+    ErrItemNotEnough: _ClassVar[EErrorCode]
+    ErrOptTypeError: _ClassVar[EErrorCode]
+    ErrItemInCoolDown: _ClassVar[EErrorCode]
+    ErrItemNotUse: _ClassVar[EErrorCode]
+    ErrItemEffectTypeError: _ClassVar[EErrorCode]
+    ErrItemParamError: _ClassVar[EErrorCode]
+    ErrItemAddBuffError: _ClassVar[EErrorCode]
+    ErrItemAdd: _ClassVar[EErrorCode]
+    ErrUseItemState: _ClassVar[EErrorCode]
+    ErrBatchUse: _ClassVar[EErrorCode]
+    ErrFullSendMail: _ClassVar[EErrorCode]
+    ErrItemNumZero: _ClassVar[EErrorCode]
+    ErrItemSelectAwardIllegalNum: _ClassVar[EErrorCode]
+    ErrItemSelectAwardIllegalPos: _ClassVar[EErrorCode]
+    ErrItemSelectLimit: _ClassVar[EErrorCode]
+    ErrItemPeriodGainExceeded: _ClassVar[EErrorCode]
+    ErrItemNoRecycle: _ClassVar[EErrorCode]
+    ErrItemRecycleBeyondMaxGrid: _ClassVar[EErrorCode]
+    ErrItemRecycleBeyondMaxNum: _ClassVar[EErrorCode]
+    ErrItemRecycleIdNoMatchItemId: _ClassVar[EErrorCode]
+    ErrItemRecycleIllegalId: _ClassVar[EErrorCode]
+    ErrItemLimitCount: _ClassVar[EErrorCode]
+    ErrItemFriendPontExceeded: _ClassVar[EErrorCode]
+    ErrItemToySingleEntUseExceeded: _ClassVar[EErrorCode]
+    ErrItemToySceneUseExceeded: _ClassVar[EErrorCode]
+    ErrItemToyUseInDisableArea: _ClassVar[EErrorCode]
+    ErrItemToySingleCellUseExceeded: _ClassVar[EErrorCode]
+    ErrItemToyCantUse: _ClassVar[EErrorCode]
+    ErrItemLifeProfessionExceeded: _ClassVar[EErrorCode]
+    ErrItemPackageInCd: _ClassVar[EErrorCode]
+    ErrItemLocked: _ClassVar[EErrorCode]
+    ErrItemLockOverflow: _ClassVar[EErrorCode]
+    ErrHomeLandItemNotExist: _ClassVar[EErrorCode]
+    ErrHomeLandNotFurnitureCannotRecycle: _ClassVar[EErrorCode]
+    ErrMonthlyCardNotExists: _ClassVar[EErrorCode]
+    ErrMonthlyCardDataError: _ClassVar[EErrorCode]
+    ErrMonthlyCardDayAwardReceived: _ClassVar[EErrorCode]
+    ErrMonthlyCardLimitCount: _ClassVar[EErrorCode]
+    ErrCommunityNoHome: _ClassVar[EErrorCode]
+    ErrNotHouseOwner: _ClassVar[EErrorCode]
+    ErrHomeLandExisted: _ClassVar[EErrorCode]
+    ErrHomeLandContentWrongful: _ClassVar[EErrorCode]
+    ErrHouseLivetogetherCD: _ClassVar[EErrorCode]
+    ErrHomeLandNotExisted: _ClassVar[EErrorCode]
+    ErrHomeLandNotInScene: _ClassVar[EErrorCode]
+    ErrHomeLandIsInvitation: _ClassVar[EErrorCode]
+    ErrHomeLandInsufficientAuthority: _ClassVar[EErrorCode]
+    ErrHomeLandTransferRequestPending: _ClassVar[EErrorCode]
+    ErrHomeLandTransferRequestTimeout: _ClassVar[EErrorCode]
+    ErrHomeLandTransferCD: _ClassVar[EErrorCode]
+    ErrHomelandTargetIsHasHome: _ClassVar[EErrorCode]
+    ErrHomelandTargetIsOwner: _ClassVar[EErrorCode]
+    ErrHomelandNotOwnerCannotOperate: _ClassVar[EErrorCode]
+    ErrHomeLandHasHouse: _ClassVar[EErrorCode]
+    ErrHomeLandContentTooLong: _ClassVar[EErrorCode]
+    ErrHomeLandClutterNotExist: _ClassVar[EErrorCode]
+    ErrHouseNameOrStatementCD: _ClassVar[EErrorCode]
+    ErrHouseIntroductionStatementCD: _ClassVar[EErrorCode]
+    ErrCommunityBuildInvalidRecipeId: _ClassVar[EErrorCode]
+    ErrCommunityBuildRecipeIsUnlock: _ClassVar[EErrorCode]
+    ErrCommunityBuildMax: _ClassVar[EErrorCode]
+    ErrCommunityBuildNoAuthority: _ClassVar[EErrorCode]
+    ErrCommunityNotBuildCannotCancel: _ClassVar[EErrorCode]
+    ErrCommunityBuildNotSelfCannotCancel: _ClassVar[EErrorCode]
+    ErrCommunityNotBuildCannotAccelerate: _ClassVar[EErrorCode]
+    ErrCommunityBuildNotSelfCannotAccelerate: _ClassVar[EErrorCode]
+    ErrCommunityBuildCannotAccelerate: _ClassVar[EErrorCode]
+    ErrCommunityBuildAlreadyAccelerate: _ClassVar[EErrorCode]
+    ErrCommunityBuildInDungeon: _ClassVar[EErrorCode]
+    ErrCommunityBuildRecipeIsLock: _ClassVar[EErrorCode]
+    ErrCommunityBuildRecipeNotItemUnlock: _ClassVar[EErrorCode]
+    ErrCommunityBuildInvalidCount: _ClassVar[EErrorCode]
+    ErrCommunityNotBuildCannotReceive: _ClassVar[EErrorCode]
+    ErrCommunityCanNotBuild: _ClassVar[EErrorCode]
+    ErrHomeLandCohabitantLimit: _ClassVar[EErrorCode]
+    ErrHomeLandRootNotQuitCohabitant: _ClassVar[EErrorCode]
+    ErrHomeLandNotOwnerCannotQuitCohabitant: _ClassVar[EErrorCode]
+    ErrHomeLandCohabitantIsExiting: _ClassVar[EErrorCode]
+    ErrHomeLandCohabitantNotExists: _ClassVar[EErrorCode]
+    ErrHomeLandCohabitantExitRequestExists: _ClassVar[EErrorCode]
+    ErrHomeLandCohabitantDismiss: _ClassVar[EErrorCode]
+    ErrHomeLandNotInvitation: _ClassVar[EErrorCode]
+    ErrHomeLandCohabitantInvitationTimeout: _ClassVar[EErrorCode]
+    ErrHomeLandCohabitantNotFriend: _ClassVar[EErrorCode]
+    ErrHomeLandCohabitantFriendLevel: _ClassVar[EErrorCode]
+    ErrHomeLandCohabitantLevel: _ClassVar[EErrorCode]
+    ErrHomeLandInviteCohabitantNotOwner: _ClassVar[EErrorCode]
+    ErrCommunityWarehouseGridFull: _ClassVar[EErrorCode]
+    ErrCommunityWarehouseNoAuthority: _ClassVar[EErrorCode]
+    ErrCommunityWarehouseGridPosItemNoEnough: _ClassVar[EErrorCode]
+    ErrHomeLandInsufficientFurniture: _ClassVar[EErrorCode]
+    ErrCommunityWarehouseTakeOutCountLimit: _ClassVar[EErrorCode]
+    ErrHomeLandTaskNotExist: _ClassVar[EErrorCode]
+    ErrHomeLandTaskTimeNotEnough: _ClassVar[EErrorCode]
+    ErrHomeLandTaskAlreadyFinished: _ClassVar[EErrorCode]
+    ErrHomeLandTaskItemNotEnough: _ClassVar[EErrorCode]
+    ErrHomeLandCurLevelError: _ClassVar[EErrorCode]
+    ErrHomeLandExpNotEnough: _ClassVar[EErrorCode]
+    ErrHomeLandAlreadyMaxLevel: _ClassVar[EErrorCode]
+    ErrHomeLandLevelLocked: _ClassVar[EErrorCode]
+    ErrHomeLandLevelConfigError: _ClassVar[EErrorCode]
+    ErrCommunityEditorNotEditable: _ClassVar[EErrorCode]
+    ErrCommunityEditorNotFurniture: _ClassVar[EErrorCode]
+    ErrCommunityEditorNotOutdoor: _ClassVar[EErrorCode]
+    ErrCommunityEditorNotIndoor: _ClassVar[EErrorCode]
+    ErrCommunityEditorOverMax: _ClassVar[EErrorCode]
+    ErrCommunityEditorOverTypeMax: _ClassVar[EErrorCode]
+    ErrCommunityEditorFurnitureNotEnough: _ClassVar[EErrorCode]
+    ErrCommunityEditorFurnitureNotExist: _ClassVar[EErrorCode]
+    ErrCommunityEditorOverMaxGroup: _ClassVar[EErrorCode]
+    ErrCommunityEditorNoStructure: _ClassVar[EErrorCode]
+    ErrCommunityEditorGroupMaxStructure: _ClassVar[EErrorCode]
+    ErrCommunityEditorStructureInGroup: _ClassVar[EErrorCode]
+    ErrCommunityEditorGroupNotExist: _ClassVar[EErrorCode]
+    ErrCommunityEditorAlreadyExist: _ClassVar[EErrorCode]
+    ErrCommunityEditorInValidParam: _ClassVar[EErrorCode]
+    ErrHomeLandSellItemNotExist: _ClassVar[EErrorCode]
+    ErrHomeLandLeftNumNotEnough: _ClassVar[EErrorCode]
+    ErrHomeLandSellShopLocked: _ClassVar[EErrorCode]
+    ErrHomeLandSeedExist: _ClassVar[EErrorCode]
+    ErrHomeLandItemNotOwner: _ClassVar[EErrorCode]
+    ErrHomeLandSeedStateError: _ClassVar[EErrorCode]
+    ErrHomeLandNoSeed: _ClassVar[EErrorCode]
+    ErrHomeLandNoWater: _ClassVar[EErrorCode]
+    ErrHomeLandFertilizerMaxNumLimit: _ClassVar[EErrorCode]
+    ErrHomeLandNotFertilize: _ClassVar[EErrorCode]
+    ErrHomeLandNotPollen: _ClassVar[EErrorCode]
+    ErrHomeLandAlreadyPollen: _ClassVar[EErrorCode]
+    ErrHomeLandNotHarvest: _ClassVar[EErrorCode]
+    ErrHomeLandPickUpSinglePlayerLimit: _ClassVar[EErrorCode]
+    ErrHomeLandPickUpTotalLimit: _ClassVar[EErrorCode]
+    ErrHomeLandPickUpFlowerNotFinished: _ClassVar[EErrorCode]
+    ErrHomeLandPickUpOwner: _ClassVar[EErrorCode]
+    ErrHomeLandGainNotOwner: _ClassVar[EErrorCode]
+    ErrHomeLandItemFullGrid: _ClassVar[EErrorCode]
+    ErrHomeLandFurnitureFull: _ClassVar[EErrorCode]
+    ErrCommunityWarehouseNotBindOrCooldown: _ClassVar[EErrorCode]
+    ErrHomeLandSeedNotExist: _ClassVar[EErrorCode]
+    ErrHomeLandSeedConfigError: _ClassVar[EErrorCode]
+    ErrHomeLandFlowerNoExist: _ClassVar[EErrorCode]
+    ErrHomeLandFlowerConfigError: _ClassVar[EErrorCode]
+    ErrHomeLandCoinNotEnough: _ClassVar[EErrorCode]
+    ErrHomeLandInSceneNotAgreeInvitation: _ClassVar[EErrorCode]
+    ErrCommunityVisitLimit: _ClassVar[EErrorCode]
+    ErrHomeNoEntryVisitCd: _ClassVar[EErrorCode]
+    ErrHomeNoWareHouseAuthority: _ClassVar[EErrorCode]
+    ErrHomeNoFurnitureEditAuthority: _ClassVar[EErrorCode]
+    ErrHomeNoCraftBenchAuthority: _ClassVar[EErrorCode]
+    ErrHomeNoGlobalCraftBenchAuthority: _ClassVar[EErrorCode]
+    ErrHomeNoVisitAuthority: _ClassVar[EErrorCode]
+    ErrHomeNoHarvestAuthority: _ClassVar[EErrorCode]
+    ErrHomeNoInviteCohabitantAuthority: _ClassVar[EErrorCode]
+    ErrHomeNoUpgradeHomeAuthority: _ClassVar[EErrorCode]
+    ErrHomeNoCollectFurnitureAuthority: _ClassVar[EErrorCode]
+    ErrComposeItemNotEnough: _ClassVar[EErrorCode]
+    ErrComposeFailed: _ClassVar[EErrorCode]
+    ErrRedemptionItemNotExist: _ClassVar[EErrorCode]
+    ErrRedemptionItemMaxCount: _ClassVar[EErrorCode]
+    ErrRedemptionItemNotEnough: _ClassVar[EErrorCode]
+    ErrRedemptionItemGender: _ClassVar[EErrorCode]
+    ErrHomeNoPlantAuthority: _ClassVar[EErrorCode]
+    ErrHomeNoWaterAuthority: _ClassVar[EErrorCode]
+    ErrHomeNoFertilizeAuthority: _ClassVar[EErrorCode]
+    ErrHomeNoPollinateCollectAuthority: _ClassVar[EErrorCode]
+    ErrHomeNoFarmlandEditAuthority: _ClassVar[EErrorCode]
+    ErrHomeNoPollinateAuthority: _ClassVar[EErrorCode]
+    ErrHomeDissolveStructureGroup: _ClassVar[EErrorCode]
+    ErrCommunityEditorBuildLifeProfessionMaxCount: _ClassVar[EErrorCode]
+    ErrCommunityEditorBuildLifeProfessionCountExceed: _ClassVar[EErrorCode]
+    ErrCommunityEditorBuildLifeProfessionTypeNotFound: _ClassVar[EErrorCode]
+    ErrCommunityBuildLifeProfessionFail: _ClassVar[EErrorCode]
+    ErrCommunityBuildLifeProfessionReceiveFail: _ClassVar[EErrorCode]
+    ErrCommunityBuildLifeProfessionMaxCount: _ClassVar[EErrorCode]
+    ErrAwardConfigNotFound: _ClassVar[EErrorCode]
+    ErrAwardConfigWeightError: _ClassVar[EErrorCode]
+    ErrAwardConfigLimitAndContentNotMatch: _ClassVar[EErrorCode]
+    ErrAwardConfigContentSizeError: _ClassVar[EErrorCode]
+    ErrAwardConfigContentRatesSizeError: _ClassVar[EErrorCode]
+    ErrAwardConfigContentWeightSizeError: _ClassVar[EErrorCode]
+    ErrAwardConfigGroupContentEmpty: _ClassVar[EErrorCode]
+    ErrAwardConfigGroupNumEmpty: _ClassVar[EErrorCode]
+    ErrAwardConfigGroupContentNoMatchGroupNum: _ClassVar[EErrorCode]
+    ErrAwardConfigNoRandomDrop: _ClassVar[EErrorCode]
+    ErrAwardConfigNoSelectAward: _ClassVar[EErrorCode]
+    ErrAwardConfigSelfSelectContentNoItem: _ClassVar[EErrorCode]
+    ErrAwardConfigWeightRateMustOne: _ClassVar[EErrorCode]
+    ErrAwardConfigGroupContentRandomNoMatch: _ClassVar[EErrorCode]
+    ErrAwardConfigGroupContentError: _ClassVar[EErrorCode]
+    ErrAwardConfigPackageContentRandomNoMatch: _ClassVar[EErrorCode]
+    ErrAwardConfigLevelUpPackConfigPackageNoMatch: _ClassVar[EErrorCode]
+    ErrAwardConfigProItemRuleNoMatch: _ClassVar[EErrorCode]
+    ErrAwardConfigPackageContentEmpty: _ClassVar[EErrorCode]
+    ErrAwardConfigDropContentSize: _ClassVar[EErrorCode]
+    ErrAwardConfigDropContentNum: _ClassVar[EErrorCode]
+    ErrAwardConfigGroupRateEmpty: _ClassVar[EErrorCode]
+    ErrAwardConfigGroupWeightEmpty: _ClassVar[EErrorCode]
+    ErrAwardInnerError: _ClassVar[EErrorCode]
+    ErrAwardIllegalRandomType: _ClassVar[EErrorCode]
+    ErrAwardConditionNoMeet: _ClassVar[EErrorCode]
+    ErrAwardRandomTypeNone: _ClassVar[EErrorCode]
+    ErrAwardRandomTypeNoMatch: _ClassVar[EErrorCode]
+    ErrAwardActorIsNull: _ClassVar[EErrorCode]
+    ErrCounterUpToLimit: _ClassVar[EErrorCode]
+    ErrEquipWashAttrNotExist: _ClassVar[EErrorCode]
+    ErrNotEquipInCombat: _ClassVar[EErrorCode]
+    ErrEquipPart: _ClassVar[EErrorCode]
+    ErrComposeItemNotExist: _ClassVar[EErrorCode]
+    ErrPickupDropItemDistance: _ClassVar[EErrorCode]
+    ErrPickupDropItemPackageFull: _ClassVar[EErrorCode]
+    ErrPickupDropItemNoAuthority: _ClassVar[EErrorCode]
+    ErrLayerActorExist: _ClassVar[EErrorCode]
+    ErrTeamCreateHas: _ClassVar[EErrorCode]
+    ErrTeamIllTarget: _ClassVar[EErrorCode]
+    ErrTeamCreateTryLater: _ClassVar[EErrorCode]
+    ErrTeamGetNo: _ClassVar[EErrorCode]
+    ErrTeamListEmpty: _ClassVar[EErrorCode]
+    ErrTeamInner: _ClassVar[EErrorCode]
+    ErrTeamNoLeader: _ClassVar[EErrorCode]
+    ErrTeamInMatch: _ClassVar[EErrorCode]
+    ErrTeamCustomizeTarget: _ClassVar[EErrorCode]
+    ErrTeamNoOwn: _ClassVar[EErrorCode]
+    ErrTeamTickSelf: _ClassVar[EErrorCode]
+    ErrTeamNoMem: _ClassVar[EErrorCode]
+    ErrTeamApplyingLeader: _ClassVar[EErrorCode]
+    ErrTeamHasBeLeader: _ClassVar[EErrorCode]
+    ErrTeamNoTransferSelf: _ClassVar[EErrorCode]
+    ErrTeamNoLeaderTransfer: _ClassVar[EErrorCode]
+    ErrTeamHasOwnTeam: _ClassVar[EErrorCode]
+    ErrTeamNoExist: _ClassVar[EErrorCode]
+    ErrTeamApplyInCD: _ClassVar[EErrorCode]
+    ErrTeamApplyExpire: _ClassVar[EErrorCode]
+    ErrTeamJoinOther: _ClassVar[EErrorCode]
+    ErrTeamMemMax: _ClassVar[EErrorCode]
+    ErrTeamNoInvited: _ClassVar[EErrorCode]
+    ErrTeamIsMatching: _ClassVar[EErrorCode]
+    ErrTeamIllegalTag: _ClassVar[EErrorCode]
+    ErrTeamNoMatching: _ClassVar[EErrorCode]
+    ErrTeamIllegalActivity: _ClassVar[EErrorCode]
+    ErrTeamInActivity: _ClassVar[EErrorCode]
+    ErrTeamNoMeetCondition: _ClassVar[EErrorCode]
+    ErrTeamWaitVoting: _ClassVar[EErrorCode]
+    ErrTeamDoingActivity: _ClassVar[EErrorCode]
+    ErrTeamNoInVoting: _ClassVar[EErrorCode]
+    ErrTeamVoteEnd: _ClassVar[EErrorCode]
+    ErrTeamHasVoted: _ClassVar[EErrorCode]
+    ErrTeamInviteCD: _ClassVar[EErrorCode]
+    ErrTeamApplyLeadCD: _ClassVar[EErrorCode]
+    ErrTeamMoreMaxWorlds: _ClassVar[EErrorCode]
+    ErrTeamValidApplyInfo: _ClassVar[EErrorCode]
+    ErrTeamInMatchCancelCD: _ClassVar[EErrorCode]
+    ErrTeamMatchFinished: _ClassVar[EErrorCode]
+    ErrTeamMatchWaitSec: _ClassVar[EErrorCode]
+    ErrTeamMemWorldFull: _ClassVar[EErrorCode]
+    ErrTeamMemNotLeader: _ClassVar[EErrorCode]
+    ErrTeamLeaderNotStaticScene: _ClassVar[EErrorCode]
+    ErrTeamLeaderCallDoing: _ClassVar[EErrorCode]
+    ErrTeamIllegalCallOperator: _ClassVar[EErrorCode]
+    ErrTeamLeaderIllegalCallOperator: _ClassVar[EErrorCode]
+    ErrTeamNoMemCall: _ClassVar[EErrorCode]
+    ErrTeamLeaderCallEnd: _ClassVar[EErrorCode]
+    ErrTeamSameScene: _ClassVar[EErrorCode]
+    ErrTeamNotSameScene: _ClassVar[EErrorCode]
+    ErrTeamMemTooMore: _ClassVar[EErrorCode]
+    ErrTeamMemInDungeon: _ClassVar[EErrorCode]
+    ErrTeamMemTooLess: _ClassVar[EErrorCode]
+    ErrTeamIllegalInviteType: _ClassVar[EErrorCode]
+    ErrTeamMemberNotInScene: _ClassVar[EErrorCode]
+    ErrTeamLeaderReadyCheckTimeNotReady: _ClassVar[EErrorCode]
+    ErrTeamExistDungeonCheck: _ClassVar[EErrorCode]
+    ErrTeamTargetMatchTalentLimit: _ClassVar[EErrorCode]
+    ErrTeamEditGroupNotAllowed: _ClassVar[EErrorCode]
+    ErrTeamGroupNotExist: _ClassVar[EErrorCode]
+    ErrTeamTargetNoMatchMemberType: _ClassVar[EErrorCode]
+    ErrTeamMemberInDungeon: _ClassVar[EErrorCode]
+    ErrDecomposeItemNotExist: _ClassVar[EErrorCode]
+    ErrDecomposeItemNotEnough: _ClassVar[EErrorCode]
+    ErrRefineEnergyNotEnough: _ClassVar[EErrorCode]
+    ErrRefineItemMaxCount: _ClassVar[EErrorCode]
+    ErrRefineItemNotExist: _ClassVar[EErrorCode]
+    ErrRefineItemColumnNotUnlock: _ClassVar[EErrorCode]
+    ErrRefineItemColumnUnlock: _ClassVar[EErrorCode]
+    ErrRefineItemExist: _ClassVar[EErrorCode]
+    ErrEnergyLimitMax: _ClassVar[EErrorCode]
+    ErrRefineItemColumnNotEmpty: _ClassVar[EErrorCode]
+    ErrProfessionNotExist: _ClassVar[EErrorCode]
+    ErrModSlotNotUnlock: _ClassVar[EErrorCode]
+    ErrChangeProfessionStateFail: _ClassVar[EErrorCode]
+    ErrChangeProfessionCDFail: _ClassVar[EErrorCode]
+    ErrProfessionSkinNotActive: _ClassVar[EErrorCode]
+    ErrProfessionSkinActive: _ClassVar[EErrorCode]
+    ErrProfessionNotUseSkin: _ClassVar[EErrorCode]
+    ErrProfessionSkillSkinActive: _ClassVar[EErrorCode]
+    ErrProfessionSkillSkinNotActive: _ClassVar[EErrorCode]
+    ErrProfessionSkillNotActive: _ClassVar[EErrorCode]
+    ErrCharOffline: _ClassVar[EErrorCode]
+    ErrUserDataBaseError: _ClassVar[EErrorCode]
+    ErrCharGetFail: _ClassVar[EErrorCode]
+    ErrAlreadyAlive: _ClassVar[EErrorCode]
+    ErrReviveParam: _ClassVar[EErrorCode]
+    ErrStateIllegal: _ClassVar[EErrorCode]
+    ErrStateNoChange: _ClassVar[EErrorCode]
+    ErrReviveConsumeNotEnough: _ClassVar[EErrorCode]
+    ErrReviveByOtherForbid: _ClassVar[EErrorCode]
+    ErrReviveTimeNotArrived: _ClassVar[EErrorCode]
+    ErrReviveBossBattle: _ClassVar[EErrorCode]
+    ErrReviveCountLimit: _ClassVar[EErrorCode]
+    ErrReviveInDeadTp: _ClassVar[EErrorCode]
+    ErrDungeonPlayTypeError: _ClassVar[EErrorCode]
+    ErrDungeonNotExist: _ClassVar[EErrorCode]
+    ErrDungeonCreateError: _ClassVar[EErrorCode]
+    ErrCantChangeDungeon: _ClassVar[EErrorCode]
+    ErrDungeonLock: _ClassVar[EErrorCode]
+    ErrPioneerFail: _ClassVar[EErrorCode]
+    ErrAwardFail: _ClassVar[EErrorCode]
+    ErrGsNotEnough: _ClassVar[EErrorCode]
+    ErrQuestNotCompleted: _ClassVar[EErrorCode]
+    ErrDungeonNotClear: _ClassVar[EErrorCode]
+    ErrConditionNotExist: _ClassVar[EErrorCode]
+    ErrAwardReceived: _ClassVar[EErrorCode]
+    ErrCantRepeatedPlay: _ClassVar[EErrorCode]
+    ErrNeedPassPreRoom: _ClassVar[EErrorCode]
+    ErrDungeonEnterCountLimit: _ClassVar[EErrorCode]
+    ErrDungeonScoreError: _ClassVar[EErrorCode]
+    ErrDungeonRepeatedVote: _ClassVar[EErrorCode]
+    ErrDungeonChallengeAwardState: _ClassVar[EErrorCode]
+    ErrDungeonChallengeAffixNotFound: _ClassVar[EErrorCode]
+    ErrDungeonStateNotActive: _ClassVar[EErrorCode]
+    ErrDungeonCantVoteSelf: _ClassVar[EErrorCode]
+    ErrDungeonPlayerNotEnough: _ClassVar[EErrorCode]
+    ErrDungeonPlayerFull: _ClassVar[EErrorCode]
+    ErrDungeonCantHeroKey: _ClassVar[EErrorCode]
+    ErrDungeonNotSettlement: _ClassVar[EErrorCode]
+    ErrDungeonNotFindRollItem: _ClassVar[EErrorCode]
+    ErrDungeonCantRoll: _ClassVar[EErrorCode]
+    ErrDungeonRollFinish: _ClassVar[EErrorCode]
+    ErrDungeonSelectError: _ClassVar[EErrorCode]
+    ErrDungeonAiModeError: _ClassVar[EErrorCode]
+    ErrDungeonTargetNotFinish: _ClassVar[EErrorCode]
+    ErrDungeonTargetBeAward: _ClassVar[EErrorCode]
+    ErrDungeonSinglePlayerMore: _ClassVar[EErrorCode]
+    ErrDungeonAiGroupNotEnough: _ClassVar[EErrorCode]
+    ErrDungeonNoPass: _ClassVar[EErrorCode]
+    ErrDungeonCloseSceneId: _ClassVar[EErrorCode]
+    ErrDungeonEnterTypeError: _ClassVar[EErrorCode]
+    ErrDungeonActorCount: _ClassVar[EErrorCode]
+    ErrDungeonDiffLocked: _ClassVar[EErrorCode]
+    ErrDungeonPreBattleVoteCd: _ClassVar[EErrorCode]
+    ErrDungeonBossInvalid: _ClassVar[EErrorCode]
+    ErrDungeonNoUser: _ClassVar[EErrorCode]
+    ErrDungeonUserInvalid: _ClassVar[EErrorCode]
+    ErrDungeonAwardualification: _ClassVar[EErrorCode]
+    ErrDungeonAwardTriesLimit: _ClassVar[EErrorCode]
+    ErrFashionIsLimit: _ClassVar[EErrorCode]
+    ErrFashionNotFound: _ClassVar[EErrorCode]
+    ErrFashionSlotEmpty: _ClassVar[EErrorCode]
+    ErrFashionIDNotFound: _ClassVar[EErrorCode]
+    ErrFashionLock: _ClassVar[EErrorCode]
+    ErrFashCollectionAwardAlread: _ClassVar[EErrorCode]
+    ErrFashCollectionScoreNotEnough: _ClassVar[EErrorCode]
+    ErrFashCollectionAwardAlreadMonth: _ClassVar[EErrorCode]
+    ErrFashionAlreadUnlock: _ClassVar[EErrorCode]
+    ErrFashionAdvanceNotExist: _ClassVar[EErrorCode]
+    ErrFashionBaseNotUnlock: _ClassVar[EErrorCode]
+    ErrFashionAdvanceAlreadyUnlock: _ClassVar[EErrorCode]
+    ErrCameraNoExistAlbum: _ClassVar[EErrorCode]
+    ErrCameraBeyondPhotoNum: _ClassVar[EErrorCode]
+    ErrCameraBeyondAlumNum: _ClassVar[EErrorCode]
+    ErrCameraNoAccessRight: _ClassVar[EErrorCode]
+    ErrCameraNoExistPhoto: _ClassVar[EErrorCode]
+    ErrCameraBeyondWordNum: _ClassVar[EErrorCode]
+    ErrCameraPhotoNoInAlbum: _ClassVar[EErrorCode]
+    ErrCameraInnerError: _ClassVar[EErrorCode]
+    ErrCameraIllegalRight: _ClassVar[EErrorCode]
+    ErrCameraNoExistChar: _ClassVar[EErrorCode]
+    ErrCameraNoDelCloudAlbum: _ClassVar[EErrorCode]
+    ErrCameraBeyondMaxURlLen: _ClassVar[EErrorCode]
+    ErrCameraBeyondMaxXMLLen: _ClassVar[EErrorCode]
+    ErrCameraBeyondMaxNameLen: _ClassVar[EErrorCode]
+    ErrCameraIllegalUrl: _ClassVar[EErrorCode]
+    ErrCameraRenderInfoEmpty: _ClassVar[EErrorCode]
+    ErrCameraBeyondPhotoMaxSize: _ClassVar[EErrorCode]
+    ErrCameraIllegalPictureType: _ClassVar[EErrorCode]
+    ErrCameraTypeRepeated: _ClassVar[EErrorCode]
+    ErrCameraWithoutOriginal: _ClassVar[EErrorCode]
+    ErrCameraWithoutThumbnailOrRender: _ClassVar[EErrorCode]
+    ErrCameraPhotoNameEmpty: _ClassVar[EErrorCode]
+    ErrCameraPhotoNameOutMaxLen: _ClassVar[EErrorCode]
+    ErrCameraAlbumNameEmpty: _ClassVar[EErrorCode]
+    ErrCameraPhotoHasDel: _ClassVar[EErrorCode]
+    ErrCameraSysInnerError: _ClassVar[EErrorCode]
+    ErrCameraIllegalPictureId: _ClassVar[EErrorCode]
+    ErrCameraBeyondMaxExtraLen: _ClassVar[EErrorCode]
+    ErrCameraNoIncludeOriginal: _ClassVar[EErrorCode]
+    ErrCameraNoDealingPhoto: _ClassVar[EErrorCode]
+    ErrCameraNoDealingPhotoType: _ClassVar[EErrorCode]
+    ErrCameraNoAnyAlbum: _ClassVar[EErrorCode]
+    ErrCameraNoPassReview: _ClassVar[EErrorCode]
+    ErrCameraPhotoMissImage: _ClassVar[EErrorCode]
+    ErrCameraWithoutThumbnail: _ClassVar[EErrorCode]
+    ErrCameraBeyondMaxUploadTimes: _ClassVar[EErrorCode]
+    ErrInvalidLifeProfessionId: _ClassVar[EErrorCode]
+    ErrLifeProfessionIsUnlock: _ClassVar[EErrorCode]
+    ErrLifeProfessionMaxLevel: _ClassVar[EErrorCode]
+    ErrLifeProfessionLevelNotEnough: _ClassVar[EErrorCode]
+    ErrLifeProfessionLevelRewardGot: _ClassVar[EErrorCode]
+    ErrInvalidLifeProfessionSpecializationId: _ClassVar[EErrorCode]
+    ErrLifeProfessionSpecializationNotEnough: _ClassVar[EErrorCode]
+    ErrLifeProfessionSpecializationUpgradeError: _ClassVar[EErrorCode]
+    ErrLifeProfessionPointNotEnough: _ClassVar[EErrorCode]
+    ErrInvalidLifeProfessionTargetId: _ClassVar[EErrorCode]
+    ErrLifeProfessionTargetNotEnough: _ClassVar[EErrorCode]
+    ErrLifeProfessionRewardCanNotGet: _ClassVar[EErrorCode]
+    ErrLifeProfessionEnergyChange: _ClassVar[EErrorCode]
+    ErrLifeProfessionRecipeIsUnlock: _ClassVar[EErrorCode]
+    ErrLifeProfessionRecipeNotExist: _ClassVar[EErrorCode]
+    ErrLifeProfessionRecipeNotUnlock: _ClassVar[EErrorCode]
+    ErrLifeProfessionMaxRDRecipeCount: _ClassVar[EErrorCode]
+    ErrLifeProfessionWorkingNotEnd: _ClassVar[EErrorCode]
+    ErrLifeProfessionAlreadyWorking: _ClassVar[EErrorCode]
+    ErrLifeProfessionNotWorking: _ClassVar[EErrorCode]
+    ErrLifeProfessionWorkingIsEnd: _ClassVar[EErrorCode]
+    ErrLifeProfessionUnActiveSpecialization: _ClassVar[EErrorCode]
+    ErrLifeProfessionAlreadyEntrusting: _ClassVar[EErrorCode]
+    ErrLifeProfessionNotEntrusting: _ClassVar[EErrorCode]
+    ErrCurLevelConfigNotExist: _ClassVar[EErrorCode]
+    ErrNeedBreakthrough: _ClassVar[EErrorCode]
+    ErrExperienceConfigNotExist: _ClassVar[EErrorCode]
+    ErrExperienceMismatch: _ClassVar[EErrorCode]
+    ErrNotNeedToBreakthrough: _ClassVar[EErrorCode]
+    ErrConsumeConfigError: _ClassVar[EErrorCode]
+    ErrSkillNotExist: _ClassVar[EErrorCode]
+    ErrSkillLevelMax: _ClassVar[EErrorCode]
+    ErrSkillLevelNotExist: _ClassVar[EErrorCode]
+    ErrSkillConfigError: _ClassVar[EErrorCode]
+    ErrStarNotExist: _ClassVar[EErrorCode]
+    ErrMaxStar: _ClassVar[EErrorCode]
+    ErrMaxLevel: _ClassVar[EErrorCode]
+    ErrSkillLevelNotEnough: _ClassVar[EErrorCode]
+    ErrCanNotChangeActionState: _ClassVar[EErrorCode]
+    ErrActionNotExist: _ClassVar[EErrorCode]
+    ErrIsInteracting: _ClassVar[EErrorCode]
+    ErrState: _ClassVar[EErrorCode]
+    ErrRequestExpired: _ClassVar[EErrorCode]
+    ErrStateSetFailed: _ClassVar[EErrorCode]
+    ErrCollectIdError: _ClassVar[EErrorCode]
+    ErrCollectStateFailed: _ClassVar[EErrorCode]
+    ErrCollectActorErr: _ClassVar[EErrorCode]
+    ErrCollectOutRange: _ClassVar[EErrorCode]
+    ErrCollectConditionEquip: _ClassVar[EErrorCode]
+    ErrCollectConditionQuest: _ClassVar[EErrorCode]
+    ErrAlreadyCollected: _ClassVar[EErrorCode]
+    ErrMailGetFailed: _ClassVar[EErrorCode]
+    ErrMailIllegality: _ClassVar[EErrorCode]
+    ErrMailIsGet: _ClassVar[EErrorCode]
+    ErrMailIsDel: _ClassVar[EErrorCode]
+    ErrMailAcceptorEmpty: _ClassVar[EErrorCode]
+    ErrMailTokenInvalid: _ClassVar[EErrorCode]
+    ErrMailFull: _ClassVar[EErrorCode]
+    ErrUnRegisterType: _ClassVar[EErrorCode]
+    ErrIndexNotFound: _ClassVar[EErrorCode]
+    ErrCantOpenTreasureBox: _ClassVar[EErrorCode]
+    ErrPersonalStateEnd: _ClassVar[EErrorCode]
+    ErrPersonalObjectStatus: _ClassVar[EErrorCode]
+    ErrExp: _ClassVar[EErrorCode]
+    ErrLevel: _ClassVar[EErrorCode]
+    ErrAward: _ClassVar[EErrorCode]
+    ErrReceivedLevelAward: _ClassVar[EErrorCode]
+    ErrLevelNotEnough: _ClassVar[EErrorCode]
+    ErrRoleLevelNoRewards: _ClassVar[EErrorCode]
+    ErrReputationLevelNotEnough: _ClassVar[EErrorCode]
+    ErrReputationReceivedRewards: _ClassVar[EErrorCode]
+    ErrUnionNotHaveLimit: _ClassVar[EErrorCode]
+    ErrUnionIsNotMember: _ClassVar[EErrorCode]
+    ErrUnionOfficialNotExits: _ClassVar[EErrorCode]
+    ErrUnionOfficialTooMany: _ClassVar[EErrorCode]
+    ErrUnionHas: _ClassVar[EErrorCode]
+    ErrUnionReqCd: _ClassVar[EErrorCode]
+    ErrUnionReqHas: _ClassVar[EErrorCode]
+    ErrUnionFull: _ClassVar[EErrorCode]
+    ErrUnionFailed: _ClassVar[EErrorCode]
+    ErrUnionNameWrongful: _ClassVar[EErrorCode]
+    ErrUnionNameUsed: _ClassVar[EErrorCode]
+    ErrUnionNameOccupied: _ClassVar[EErrorCode]
+    ErrApplyMax: _ClassVar[EErrorCode]
+    ErrUnionChangeNameCD: _ClassVar[EErrorCode]
+    ErrUnionNameSizeError: _ClassVar[EErrorCode]
+    ErrDeclarationSize: _ClassVar[EErrorCode]
+    ErrDeclarationError: _ClassVar[EErrorCode]
+    ErrOfficialNameRepeat: _ClassVar[EErrorCode]
+    ErrDeclarationCd: _ClassVar[EErrorCode]
+    ErrUnionInfoCd: _ClassVar[EErrorCode]
+    ErrUnionNotExist: _ClassVar[EErrorCode]
+    ErrUnionIllegalConditionType: _ClassVar[EErrorCode]
+    ErrUnionRecruitSloganTooLong: _ClassVar[EErrorCode]
+    ErrUnionRecruitDescriptionTooLong: _ClassVar[EErrorCode]
+    ErrUnionCreateTooOften: _ClassVar[EErrorCode]
+    ErrUnionTagNoExist: _ClassVar[EErrorCode]
+    ErrUnionIconTooMuch: _ClassVar[EErrorCode]
+    ErrUnionGetListCd: _ClassVar[EErrorCode]
+    ErrUnionBatchSearchUnionIdsTooMuch: _ClassVar[EErrorCode]
+    ErrUnionBatchSearchCd: _ClassVar[EErrorCode]
+    ErrUnionGetCollectedIdsCd: _ClassVar[EErrorCode]
+    ErrUnionBeyondMaxCollectedNum: _ClassVar[EErrorCode]
+    ErrUnionIdHasCollected: _ClassVar[EErrorCode]
+    ErrUnionIdNoCollected: _ClassVar[EErrorCode]
+    ErrUnionActiveValueNotEnough: _ClassVar[EErrorCode]
+    ErrUnionIllegalActiveId: _ClassVar[EErrorCode]
+    ErrUnionTooShortForAwards: _ClassVar[EErrorCode]
+    ErrUnionHasActiveAwards: _ClassVar[EErrorCode]
+    ErrUnionNoJoin: _ClassVar[EErrorCode]
+    ErrUnionOnlyEnterSelf: _ClassVar[EErrorCode]
+    ErrUnionNoUnlockScene: _ClassVar[EErrorCode]
+    ErrUnionBuildingMaxLevel: _ClassVar[EErrorCode]
+    ErrUnionBuildingUpgrading: _ClassVar[EErrorCode]
+    ErrUnionBuildingUpgradeNoFinish: _ClassVar[EErrorCode]
+    ErrUnionPrefixBuildNoMeet: _ClassVar[EErrorCode]
+    ErrUnionExperienceNoEnough: _ClassVar[EErrorCode]
+    ErrUnionMoneyNoEnough: _ClassVar[EErrorCode]
+    ErrUnionBuildingNoUpgrading: _ClassVar[EErrorCode]
+    ErrUnionSpeedUpItemNoEnough: _ClassVar[EErrorCode]
+    ErrUnionSpeedUpTimesOut: _ClassVar[EErrorCode]
+    ErrUnionTryLater: _ClassVar[EErrorCode]
+    ErrUnionSpeedUpLevelError: _ClassVar[EErrorCode]
+    ErrUnionUpgradeHasCompleted: _ClassVar[EErrorCode]
+    ErrUnionIllegalBuildIdLv: _ClassVar[EErrorCode]
+    ErrUnionBeyMaxCount: _ClassVar[EErrorCode]
+    ErrUnionUserNoApply: _ClassVar[EErrorCode]
+    ErrUnionNoOneKeyNoMuch: _ClassVar[EErrorCode]
+    ErrUnionActivityNotStart: _ClassVar[EErrorCode]
+    ErrUnionActivityNotProgress: _ClassVar[EErrorCode]
+    ErrUnionActivityAwardGet: _ClassVar[EErrorCode]
+    ErrUnionActivityNotEnjoy: _ClassVar[EErrorCode]
+    ErrUnionCreateTimeTooShort: _ClassVar[EErrorCode]
+    ErrUnionFunctionLock: _ClassVar[EErrorCode]
+    ErrUnionEScreenLock: _ClassVar[EErrorCode]
+    ErrUnionEScreenPositionLock: _ClassVar[EErrorCode]
+    ErrUnionEScreenNoSet: _ClassVar[EErrorCode]
+    ErrUnionEScreenPositionNoSet: _ClassVar[EErrorCode]
+    ErrUnionEffectGridLock: _ClassVar[EErrorCode]
+    ErrUnionEffectIdLock: _ClassVar[EErrorCode]
+    ErrUnionEffectPosNoSet: _ClassVar[EErrorCode]
+    ErrUnionEffectPosHasEnd: _ClassVar[EErrorCode]
+    ErrUnionCrowFuncHasEnd: _ClassVar[EErrorCode]
+    ErrUnionCrowFuncPosHasUsed: _ClassVar[EErrorCode]
+    ErrUnionCrowFuncHasJoined: _ClassVar[EErrorCode]
+    ErrUnionCrowFuncNoBegin: _ClassVar[EErrorCode]
+    ErrUnionNoFinishBaseBuilding: _ClassVar[EErrorCode]
+    ErrUnionCrowFuncIllegalFuncPos: _ClassVar[EErrorCode]
+    ErrUnionEScreenBeyondMaxTimes: _ClassVar[EErrorCode]
+    ErrUnionTargetFunctionLock: _ClassVar[EErrorCode]
+    ErrUnionNoMeet: _ClassVar[EErrorCode]
+    ErrUnionActivityAwardCd: _ClassVar[EErrorCode]
+    ErrUnionManagerNoKicked: _ClassVar[EErrorCode]
+    ErrUnionDanceNoBegin: _ClassVar[EErrorCode]
+    ErrUnionDanceEnd: _ClassVar[EErrorCode]
+    ErrUnionDanceDrawnBox: _ClassVar[EErrorCode]
+    ErrUnionDanceBoxDrawn: _ClassVar[EErrorCode]
+    ErrUnionDanceNoDanceId: _ClassVar[EErrorCode]
+    ErrUnionNoJoinDance: _ClassVar[EErrorCode]
+    ErrUnionDanceNoDancing: _ClassVar[EErrorCode]
+    ErrUnionRejectInvite: _ClassVar[EErrorCode]
+    ErrUnionActivityHuntEnd: _ClassVar[EErrorCode]
+    ErrUnionApplyListFull: _ClassVar[EErrorCode]
+    ErrUionApplyListExist: _ClassVar[EErrorCode]
+    ErrUnionGroupIvalid: _ClassVar[EErrorCode]
+    ErrRepeatedRequest: _ClassVar[EErrorCode]
+    ErrHasBeenBlackened: _ClassVar[EErrorCode]
+    ErrNotFoundCharInfo: _ClassVar[EErrorCode]
+    ErrInner: _ClassVar[EErrorCode]
+    ErrParam: _ClassVar[EErrorCode]
+    ErrSetShowPicture: _ClassVar[EErrorCode]
+    ErrSetSignature: _ClassVar[EErrorCode]
+    ErrSetHobbyMark: _ClassVar[EErrorCode]
+    ErrSetTimeMark: _ClassVar[EErrorCode]
+    ErrSetRemind: _ClassVar[EErrorCode]
+    ErrSetTop: _ClassVar[EErrorCode]
+    ErrAddFriend: _ClassVar[EErrorCode]
+    ErrSetProcessed: _ClassVar[EErrorCode]
+    ErrSetRemark: _ClassVar[EErrorCode]
+    ErrDeleteFriend: _ClassVar[EErrorCode]
+    ErrNotFoundGroup: _ClassVar[EErrorCode]
+    ErrNotExistInGroup: _ClassVar[EErrorCode]
+    ErrChangeGroup: _ClassVar[EErrorCode]
+    ErrPersonalState: _ClassVar[EErrorCode]
+    ErrOtherFriendMax: _ClassVar[EErrorCode]
+    ErrCurFriendMax: _ClassVar[EErrorCode]
+    ErrConfig: _ClassVar[EErrorCode]
+    ErrAlreadyFriend: _ClassVar[EErrorCode]
+    ErrSearchSelf: _ClassVar[EErrorCode]
+    ErrSuggestionCd: _ClassVar[EErrorCode]
+    ErrGroupMax: _ClassVar[EErrorCode]
+    ErrGroupNotExist: _ClassVar[EErrorCode]
+    ErrGroupNameEmpty: _ClassVar[EErrorCode]
+    ErrIllegalCharacter: _ClassVar[EErrorCode]
+    ErrStringMax: _ClassVar[EErrorCode]
+    ErrOtherApplicationMax: _ClassVar[EErrorCode]
+    ErrFriendlinessAwardHasRecord: _ClassVar[EErrorCode]
+    ErrFriendlinessLevelLowAwardLevel: _ClassVar[EErrorCode]
+    ErrFriendBeyondAllFriendNum: _ClassVar[EErrorCode]
+    ErrFriendIsNoUserFriend: _ClassVar[EErrorCode]
+    ErrFriendlinessIllegalAwardLevel: _ClassVar[EErrorCode]
+    ErrFriendlinessLevelAwardIsEmpty: _ClassVar[EErrorCode]
+    ErrFriendBeBlackenedByTarget: _ClassVar[EErrorCode]
+    ErrFriendApplyEachOther: _ClassVar[EErrorCode]
+    ErrFriendCallBySmallerCharId: _ClassVar[EErrorCode]
+    ErrFriendCallByBiggerCharId: _ClassVar[EErrorCode]
+    ErrFriendBeBlackenedBySmaller: _ClassVar[EErrorCode]
+    ErrFriendBeBlackenedByBigger: _ClassVar[EErrorCode]
+    ErrFriendNoApply: _ClassVar[EErrorCode]
+    ErrFriendApplySelf: _ClassVar[EErrorCode]
+    ErrUserNameFormat: _ClassVar[EErrorCode]
+    ErrFriendGetBaseTooOften: _ClassVar[EErrorCode]
+    ErrFriendOnlyGetSelfBaseInfo: _ClassVar[EErrorCode]
+    ErrUserNameLanguage: _ClassVar[EErrorCode]
+    ErrActorGetFailed: _ClassVar[EErrorCode]
+    ErrPivotIsActive: _ClassVar[EErrorCode]
+    ErrPivotIsNotActive: _ClassVar[EErrorCode]
+    ErrBreakPointIsGet: _ClassVar[EErrorCode]
+    ErrActorIsNotPivot: _ClassVar[EErrorCode]
+    ErrActorIsNotBreakPoint: _ClassVar[EErrorCode]
+    ErrActorIsBreakPointNotFull: _ClassVar[EErrorCode]
+    ErrPivotRewardIsGiven: _ClassVar[EErrorCode]
+    ErrNotInsight: _ClassVar[EErrorCode]
+    ErrLearnSkillFail: _ClassVar[EErrorCode]
+    ErrRemoveSkillFail: _ClassVar[EErrorCode]
+    ErrUpdateSkillFail: _ClassVar[EErrorCode]
+    ErrSkillOperatorType: _ClassVar[EErrorCode]
+    ErrContainerOperator: _ClassVar[EErrorCode]
+    ErrExchangeFail: _ClassVar[EErrorCode]
+    ErrExchangeFailInCombat: _ClassVar[EErrorCode]
+    ErrResonanceTimeOutNotActived: _ClassVar[EErrorCode]
+    ErrAvatarBeyondMaxPictureSize: _ClassVar[EErrorCode]
+    ErrGetTokenFailed: _ClassVar[EErrorCode]
+    ErrPictureVerifyFailed: _ClassVar[EErrorCode]
+    ErrPictureIllegalType: _ClassVar[EErrorCode]
+    ErrPictureErrorInfo: _ClassVar[EErrorCode]
+    ErrPictureSizeInconsistent: _ClassVar[EErrorCode]
+    ErrPictureFuncTypeIllegal: _ClassVar[EErrorCode]
+    ErrPictureCallBackJudgeIllegal: _ClassVar[EErrorCode]
+    ErrPictureVerifyNoPass: _ClassVar[EErrorCode]
+    ErrPictureVerifyBackParamIllegal: _ClassVar[EErrorCode]
+    ErrPictureCallBackParamIllegal: _ClassVar[EErrorCode]
+    ErrPictureIllegalId: _ClassVar[EErrorCode]
+    ErrPictureCosErrors: _ClassVar[EErrorCode]
+    ErrPictureInnerSysErr: _ClassVar[EErrorCode]
+    ErrPictureNoSetEnvCosSecretId: _ClassVar[EErrorCode]
+    ErrPictureNoSetEnvCosSecretKey: _ClassVar[EErrorCode]
+    ErrPictureCheckInMachineLocked: _ClassVar[EErrorCode]
+    ErrPictureNoTryOutItem: _ClassVar[EErrorCode]
+    ErrPictureNoUploadItem: _ClassVar[EErrorCode]
+    ErrPictureNoUnion: _ClassVar[EErrorCode]
+    ErrNameSizeError: _ClassVar[EErrorCode]
+    ErrSensitiveContent: _ClassVar[EErrorCode]
+    ErrChangeNameFail: _ClassVar[EErrorCode]
+    ErrChangeNameCardNotEnough: _ClassVar[EErrorCode]
+    ErrChangeSameName: _ClassVar[EErrorCode]
+    ErrCheckMuteWordsFailed: _ClassVar[EErrorCode]
+    ErrCheckMuteWordsEmpty: _ClassVar[EErrorCode]
+    ErrChangeShowIdFail: _ClassVar[EErrorCode]
+    ErrChangeShowIdDuplicated: _ClassVar[EErrorCode]
+    ErrChangeShowIdCardNotEnough: _ClassVar[EErrorCode]
+    ErrFaceItemLock: _ClassVar[EErrorCode]
+    ErrFaceItemGender: _ClassVar[EErrorCode]
+    ErrFaceNoUploading: _ClassVar[EErrorCode]
+    ErrFaceNoSupportFileSuffix: _ClassVar[EErrorCode]
+    ErrFaceFileSuffixEmpty: _ClassVar[EErrorCode]
+    ErrFaceIllegalCosKey: _ClassVar[EErrorCode]
+    ErrFaceParseSuffixFailed: _ClassVar[EErrorCode]
+    ErrFaceParseShortGuidFailed: _ClassVar[EErrorCode]
+    ErrFaceSetBodySizeNoChange: _ClassVar[EErrorCode]
+    ErrFaceSetBodySizeInvalid: _ClassVar[EErrorCode]
+    ErrFaceVoiceLock: _ClassVar[EErrorCode]
+    ErrProficiencyNeedUnlock: _ClassVar[EErrorCode]
+    ErrProficiencyUnlock: _ClassVar[EErrorCode]
+    ErrUnlockItemNotEnough: _ClassVar[EErrorCode]
+    ErrTaskNotFinish: _ClassVar[EErrorCode]
+    ErrStickerAwardIsGet: _ClassVar[EErrorCode]
+    ErrBookAwardIsGet: _ClassVar[EErrorCode]
+    ErrUnstuckInCd: _ClassVar[EErrorCode]
+    ErrUnstuckInDynamic: _ClassVar[EErrorCode]
+    ErrMoneyNotEnough: _ClassVar[EErrorCode]
+    ErrShopItemCantBuy: _ClassVar[EErrorCode]
+    ErrShopBuyBusy: _ClassVar[EErrorCode]
+    ErrPaymentConfigNotFound: _ClassVar[EErrorCode]
+    ErrRefreshShopCountExceed: _ClassVar[EErrorCode]
+    ErrShopCouponNotEnough: _ClassVar[EErrorCode]
+    ErrShopCouponLimitNum: _ClassVar[EErrorCode]
+    ErrShopCantBuyNoPrice: _ClassVar[EErrorCode]
+    ErrNotFoundMonster: _ClassVar[EErrorCode]
+    ErrNotMonster: _ClassVar[EErrorCode]
+    ErrMonsterUnlockExist: _ClassVar[EErrorCode]
+    ErrMonsterAwardIsGet: _ClassVar[EErrorCode]
+    ErrMonsterTargetNotFinish: _ClassVar[EErrorCode]
+    ErrDropTypeNotSupport: _ClassVar[EErrorCode]
+    ErrCounterNotEnough: _ClassVar[EErrorCode]
+    ErrDropItemAlreadyPicked: _ClassVar[EErrorCode]
+    ErrInteractionDoing: _ClassVar[EErrorCode]
+    ErrInteractionCondition: _ClassVar[EErrorCode]
+    ErrInteractionNotMore: _ClassVar[EErrorCode]
+    ErrInteractionExistPos: _ClassVar[EErrorCode]
+    ErrInteractionNotExist: _ClassVar[EErrorCode]
+    ErrInteractionEntityNotExist: _ClassVar[EErrorCode]
+    ErrInteractionHandleNotExist: _ClassVar[EErrorCode]
+    ErrInteractionType: _ClassVar[EErrorCode]
+    ErrInteractionBan: _ClassVar[EErrorCode]
+    ErrInteractionConfig: _ClassVar[EErrorCode]
+    ErrInteractionNotOneself: _ClassVar[EErrorCode]
+    ErrInteractionDistance: _ClassVar[EErrorCode]
+    ErrInteractionNotDoing: _ClassVar[EErrorCode]
+    ErrInteractionEndEarly: _ClassVar[EErrorCode]
+    ErrInteractionTimeOutByClient: _ClassVar[EErrorCode]
+    ErrInteractionTimeOutByServer: _ClassVar[EErrorCode]
+    ErrInteractionNotFindTimer: _ClassVar[EErrorCode]
+    ErrInteractionTimerNotEmpty: _ClassVar[EErrorCode]
+    ErrInteractionStage: _ClassVar[EErrorCode]
+    ErrInteractionTemplateNotExist: _ClassVar[EErrorCode]
+    ErrShowPieceIllegalPieceType: _ClassVar[EErrorCode]
+    ErrShowPieceIllegalPieceId: _ClassVar[EErrorCode]
+    ErrShowPieceNoInOftenUseList: _ClassVar[EErrorCode]
+    ErrShowPieceNoUnlockList: _ClassVar[EErrorCode]
+    ErrShowPieceRoulettePositionNoSet: _ClassVar[EErrorCode]
+    ErrShowPieceBeyondOftenUseMaxLen: _ClassVar[EErrorCode]
+    ErrShowPieceBeyondOftenRoulettePositionNum: _ClassVar[EErrorCode]
+    ErrShowPieceNoCommonPiece: _ClassVar[EErrorCode]
+    ErrShowPieceNoTakeOn: _ClassVar[EErrorCode]
+    ErrProfessionActivated: _ClassVar[EErrorCode]
+    ErrProfessionNotHas: _ClassVar[EErrorCode]
+    ErrProfessionSlotErr: _ClassVar[EErrorCode]
+    ErrProfessionRemoveErr: _ClassVar[EErrorCode]
+    ErrProfessionChangePlanFail: _ClassVar[EErrorCode]
+    ErrProfessionStarConfigNotExist: _ClassVar[EErrorCode]
+    ErrProfessionStarNodeUnlock: _ClassVar[EErrorCode]
+    ErrProfessionStarNodeNotUnlock: _ClassVar[EErrorCode]
+    ErrProfessionReplaceSkillNotExist: _ClassVar[EErrorCode]
+    ErrProfessionUpgradeNotGreaterCurLevel: _ClassVar[EErrorCode]
+    ErrProfessionProfessionBeForged: _ClassVar[EErrorCode]
+    ErrProfessionSlotTwoNotUnlock: _ClassVar[EErrorCode]
+    ErrProfessionSkillAlreadyActive: _ClassVar[EErrorCode]
+    ErrProfessionSkillRemodelLevelWrong: _ClassVar[EErrorCode]
+    ErrAoyiSkillAlreadyActive: _ClassVar[EErrorCode]
+    ErrAoyiSkillRemodelConfigNotExist: _ClassVar[EErrorCode]
+    ErrAoyiSkillRemodelLevelWrong: _ClassVar[EErrorCode]
+    ErrProfessionEquipInCombat: _ClassVar[EErrorCode]
+    ErrProfessionSwitchInCombat: _ClassVar[EErrorCode]
+    ErrProfessionDungeonNotAllowSwitch: _ClassVar[EErrorCode]
+    ErrAoYiDecomposeOverflow: _ClassVar[EErrorCode]
+    ErrProfessionProjectNotExist: _ClassVar[EErrorCode]
+    ErrProfessionProjectCreateAlreadyExist: _ClassVar[EErrorCode]
+    ErrProfessionProjectNameInvalid: _ClassVar[EErrorCode]
+    ErrProfessionProjectUnlockConditionNotMeet: _ClassVar[EErrorCode]
+    ErrProfessionProjectCantChangeProfession: _ClassVar[EErrorCode]
+    ErrInteractionIsMoreNotEndByClient: _ClassVar[EErrorCode]
+    ErrInteractionQuest: _ClassVar[EErrorCode]
+    ErrTalentIllegalTalentPoolId: _ClassVar[EErrorCode]
+    ErrTalentBeyondCurTalentMaxPlanNum: _ClassVar[EErrorCode]
+    ErrTalentPoolNoActive: _ClassVar[EErrorCode]
+    ErrTalentPlanNoActive: _ClassVar[EErrorCode]
+    ErrTalentIllegalTalentId: _ClassVar[EErrorCode]
+    ErrTalentTalentHasUnlocked: _ClassVar[EErrorCode]
+    ErrTalentTalentNoUnlocked: _ClassVar[EErrorCode]
+    ErrTalentChangeLvPassiveTalentMoreThanInPool: _ClassVar[EErrorCode]
+    ErrTalentRepeatedTalentId: _ClassVar[EErrorCode]
+    ErrTalentNoPoolPassiveTalent: _ClassVar[EErrorCode]
+    ErrTalentTalentPointsNoEnough: _ClassVar[EErrorCode]
+    ErrTalentPassiveTalentListNoEmpty: _ClassVar[EErrorCode]
+    ErrTalentIllegalTalentLevel: _ClassVar[EErrorCode]
+    ErrTalentNoMeetUpgradeCondition: _ClassVar[EErrorCode]
+    ErrTalentNoSupportDownLevelNow: _ClassVar[EErrorCode]
+    ErrTalentNoMeetPrevTalentLv: _ClassVar[EErrorCode]
+    ErrTalentNoMeetPrevTalentPoint: _ClassVar[EErrorCode]
+    ErrTalentTreeNodeBDExclusive: _ClassVar[EErrorCode]
+    ErrTalentTotalTalentPointNotEnough: _ClassVar[EErrorCode]
+    ErrTalentPreTalentNodeNotActivated: _ClassVar[EErrorCode]
+    ErrTalentResetTalentInCombat: _ClassVar[EErrorCode]
+    ErrTalentActiveTalentInCombat: _ClassVar[EErrorCode]
+    ErrTalentMarkUpToLimit: _ClassVar[EErrorCode]
+    ErrCookBookNotExist: _ClassVar[EErrorCode]
+    ErrCookFoodNotEnough: _ClassVar[EErrorCode]
+    ErrCookTypeMore: _ClassVar[EErrorCode]
+    ErrCookCountMore: _ClassVar[EErrorCode]
+    ErrCookHasBook: _ClassVar[EErrorCode]
+    ErrCookMaterialNotMatch: _ClassVar[EErrorCode]
+    ErrChatIllegalPrivateChatTarget: _ClassVar[EErrorCode]
+    ErrChatInTargetBlockList: _ClassVar[EErrorCode]
+    ErrChatSendMsgBeyondMaxWords: _ClassVar[EErrorCode]
+    ErrChatWorldChannelIdIsZero: _ClassVar[EErrorCode]
+    ErrChatWorldChannelIdBeyondMaxId: _ClassVar[EErrorCode]
+    ErrChatIllegalChannelType: _ClassVar[EErrorCode]
+    ErrChatIllegalMsgType: _ClassVar[EErrorCode]
+    ErrChatNoInGoalChannel: _ClassVar[EErrorCode]
+    ErrChatNeedConfigIdNotZero: _ClassVar[EErrorCode]
+    ErrChatNeedMsgTextNotEmpty: _ClassVar[EErrorCode]
+    ErrChatSendCdNoEnd: _ClassVar[EErrorCode]
+    ErrChatRecordListIsEmpty: _ClassVar[EErrorCode]
+    ErrChatTargetNotInPrivateList: _ClassVar[EErrorCode]
+    ErrChatMsgIdMoreThanMaxReadMsgId: _ClassVar[EErrorCode]
+    ErrChatBeyondBlockListLimit: _ClassVar[EErrorCode]
+    ErrChatWorldChannelIdBeyondMaxNum: _ClassVar[EErrorCode]
+    ErrChatBeyondMaxRecordId: _ClassVar[EErrorCode]
+    ErrChatNoCreatePrivateSession: _ClassVar[EErrorCode]
+    ErrChatPrivateSessionHasExit: _ClassVar[EErrorCode]
+    ErrChatBeBan: _ClassVar[EErrorCode]
+    ErrChatFileIdTooLong: _ClassVar[EErrorCode]
+    ErrChatFileIdEmpty: _ClassVar[EErrorCode]
+    ErrChatMsgInfoEmpty: _ClassVar[EErrorCode]
+    ErrChatNoShareChannel: _ClassVar[EErrorCode]
+    ErrChatIllegalShareType: _ClassVar[EErrorCode]
+    ErrChatIllegalHolderType: _ClassVar[EErrorCode]
+    ErrChatNoSupportShareType: _ClassVar[EErrorCode]
+    ErrChatShareTpeNoChatId: _ClassVar[EErrorCode]
+    ErrChatShareNoFishRank: _ClassVar[EErrorCode]
+    ErrChatLevelLimit: _ClassVar[EErrorCode]
+    ErrChatNoFoundBlockListLimit: _ClassVar[EErrorCode]
+    ErrTalentModTalentTagNotExist: _ClassVar[EErrorCode]
+    ErrTextCheckForbidden: _ClassVar[EErrorCode]
+    ErrTextCheckNoSceneType: _ClassVar[EErrorCode]
+    ErrTextCheckIllegal: _ClassVar[EErrorCode]
+    ErrTextCheckHttpError: _ClassVar[EErrorCode]
+    ErrTextCheckTooManyItems: _ClassVar[EErrorCode]
+    ErrConditionTimerOpen: _ClassVar[EErrorCode]
+    ErrConditionOpenServer: _ClassVar[EErrorCode]
+    ErrConditionSceneNotMet: _ClassVar[EErrorCode]
+    ErrSkillDisable: _ClassVar[EErrorCode]
+    ErrSkillIsCD: _ClassVar[EErrorCode]
+    ErrSkillMaxPassiveCount: _ClassVar[EErrorCode]
+    ErrSkillInit: _ClassVar[EErrorCode]
+    ErrSkillInfo: _ClassVar[EErrorCode]
+    ErrUseSkillFightResInsufficient: _ClassVar[EErrorCode]
+    ErrUseSkillBuffNotEnough: _ClassVar[EErrorCode]
+    ErrUseSkillItemInsufficient: _ClassVar[EErrorCode]
+    ErrUseSkillAttrInsufficient: _ClassVar[EErrorCode]
+    ErrUseSkillEnduranceInsufficient: _ClassVar[EErrorCode]
+    ErrUseSkillStateChange: _ClassVar[EErrorCode]
+    ErrUseSkillClientSkillUuid: _ClassVar[EErrorCode]
+    ErrUseSkillTargetPosDisCheck: _ClassVar[EErrorCode]
+    ErrStopPassiveSkillByType: _ClassVar[EErrorCode]
+    ErrStopPassiveSkillById: _ClassVar[EErrorCode]
+    ErrFightLogicConditionBlockInvalid: _ClassVar[EErrorCode]
+    ErrFightLogicActionGroupInvalid: _ClassVar[EErrorCode]
+    ErrFightLogicConditionNotMatch: _ClassVar[EErrorCode]
+    ErrFightLogicRunDataInvalid: _ClassVar[EErrorCode]
+    ErrSkillStageNotFind: _ClassVar[EErrorCode]
+    ErrConditionCfgSize: _ClassVar[EErrorCode]
+    ErrConditionDissatisfy: _ClassVar[EErrorCode]
+    ErrConditionObjectIsNull: _ClassVar[EErrorCode]
+    ErrConditionTypeNotFound: _ClassVar[EErrorCode]
+    ErrConditionEntityDeath: _ClassVar[EErrorCode]
+    ErrConditionUnionLevel: _ClassVar[EErrorCode]
+    ErrConditionUnionMoney: _ClassVar[EErrorCode]
+    ErrConditionNotMeet: _ClassVar[EErrorCode]
+    ErrConditionNotInShapeShift: _ClassVar[EErrorCode]
+    ErrSeasonAchievementNoExist: _ClassVar[EErrorCode]
+    ErrSeasonAchievementNoFinish: _ClassVar[EErrorCode]
+    ErrSeasonAchievementHasReceived: _ClassVar[EErrorCode]
+    ErrSeasonAchievementPrevIdNoReceived: _ClassVar[EErrorCode]
+    ErrSeasonAchievementPrevIdNoExist: _ClassVar[EErrorCode]
+    ErrSeasonAchievementTargetConfigError: _ClassVar[EErrorCode]
+    ErrCommonTargetActivityNoFinish: _ClassVar[EErrorCode]
+    ErrCommonTargetActivityHasReceived: _ClassVar[EErrorCode]
+    ErrCommonTargetActivityNoExist: _ClassVar[EErrorCode]
+    ErrSeasonRankHasMax: _ClassVar[EErrorCode]
+    ErrSeasonRankHasReceived: _ClassVar[EErrorCode]
+    ErrSeasonRankNoAchieve: _ClassVar[EErrorCode]
+    ErrSeasonRankCurSeasonIdZero: _ClassVar[EErrorCode]
+    ErrSeasonRankNoMeetCondition: _ClassVar[EErrorCode]
+    ErrSeasonRankSeasonNoSame: _ClassVar[EErrorCode]
+    ErrBattlePassBuyLevel: _ClassVar[EErrorCode]
+    ErrBattlePassBuyMaterial: _ClassVar[EErrorCode]
+    ErrBattlePassAwardGet: _ClassVar[EErrorCode]
+    ErrBattlePassAwardNotUnlock: _ClassVar[EErrorCode]
+    ErrBattlePassBuyWeekExpLimit: _ClassVar[EErrorCode]
+    ErrBattlePassLevelError: _ClassVar[EErrorCode]
+    ErrNoRefreshTimes: _ClassVar[EErrorCode]
+    ErrTargetNotCompleted: _ClassVar[EErrorCode]
+    ErrOnlinePeriodTooMore: _ClassVar[EErrorCode]
+    ErrPersonalTagTooMore: _ClassVar[EErrorCode]
+    ErrPersonalTagNotFound: _ClassVar[EErrorCode]
+    ErrPersonalAvatarUnearned: _ClassVar[EErrorCode]
+    ErrPersonalAvatarFrameUnearned: _ClassVar[EErrorCode]
+    ErrPersonalCardStyleUnearned: _ClassVar[EErrorCode]
+    ErrPersonalPhotoTooMore: _ClassVar[EErrorCode]
+    ErrPersonalMedalUnearned: _ClassVar[EErrorCode]
+    ErrPersonalTargetUnlock: _ClassVar[EErrorCode]
+    ErrPersonalTargetAlreadyGet: _ClassVar[EErrorCode]
+    ErrPersonalMedalInvalidSlot: _ClassVar[EErrorCode]
+    ErrPersonalMedalDuplicateValue: _ClassVar[EErrorCode]
+    ErrOnlinePeriodDuplicate: _ClassVar[EErrorCode]
+    ErrPersonalTagDuplicate: _ClassVar[EErrorCode]
+    ErrPersonalPhotoInvalidSlot: _ClassVar[EErrorCode]
+    ErrPersonalPhotoDuplicateValue: _ClassVar[EErrorCode]
+    ErrSeasonMedalNoMeetActiveCondition: _ClassVar[EErrorCode]
+    ErrSeasonMedalNoMeetUpgradeCondition: _ClassVar[EErrorCode]
+    ErrSeasonMedalActiveMeetNoEnough: _ClassVar[EErrorCode]
+    ErrSeasonMedalUpgradeMeetNoEnough: _ClassVar[EErrorCode]
+    ErrSeasonMedalIllegalNodeId: _ClassVar[EErrorCode]
+    ErrSeasonMedalChooseNodeIdBeyondMax: _ClassVar[EErrorCode]
+    ErrSeasonMedalHoleNoExist: _ClassVar[EErrorCode]
+    ErrSeasonMedalHoleLock: _ClassVar[EErrorCode]
+    ErrSeasonMedalNodeNoExist: _ClassVar[EErrorCode]
+    ErrSeasonMedalHoleNoGet: _ClassVar[EErrorCode]
+    ErrSeasonMedalMaxHoleLevel: _ClassVar[EErrorCode]
+    ErrSeasonMedalCoreHoleLock: _ClassVar[EErrorCode]
+    ErrSeasonMedalUpgradeMoneyNoEnough: _ClassVar[EErrorCode]
+    ErrSeasonNoCoreHole: _ClassVar[EErrorCode]
+    ErrSeasonNoNormalHole: _ClassVar[EErrorCode]
+    ErrSeasonMedalNoUpgradeNormalHoleItem: _ClassVar[EErrorCode]
+    ErrSceneLineNotExists: _ClassVar[EErrorCode]
+    ErrSceneLineRefreshCd: _ClassVar[EErrorCode]
+    ErrSceneLineNotSameScene: _ClassVar[EErrorCode]
+    ErrSceneLineSameLine: _ClassVar[EErrorCode]
+    ErrSceneLineInteracting: _ClassVar[EErrorCode]
+    ErrSceneLineUserDead: _ClassVar[EErrorCode]
+    ErrSceneLineFull: _ClassVar[EErrorCode]
+    ErrSceneLineChangeCd: _ClassVar[EErrorCode]
+    ErrSceneVersionRecycle: _ClassVar[EErrorCode]
+    ErrSceneLineKick: _ClassVar[EErrorCode]
+    ErrInstallSlotFailed: _ClassVar[EErrorCode]
+    ErrUseSlotFailed: _ClassVar[EErrorCode]
+    ErrUseSlotInCd: _ClassVar[EErrorCode]
+    ErrInstatallSlotFailedInCombat: _ClassVar[EErrorCode]
+    ErrSlotSkillUnLoad: _ClassVar[EErrorCode]
+    ErrUseCfgSkillFailed: _ClassVar[EErrorCode]
+    ErrResonanceNotExists: _ClassVar[EErrorCode]
+    ErrResonanceUnLoad: _ClassVar[EErrorCode]
+    ErrUseDodgeFailed: _ClassVar[EErrorCode]
+    ErrUseFixedSkillFailed: _ClassVar[EErrorCode]
+    ErrUseBlockedSkill: _ClassVar[EErrorCode]
+    ErrInstallBlockedSkill: _ClassVar[EErrorCode]
+    ErrDutySkillNotExists: _ClassVar[EErrorCode]
+    ErrSkillDutyNotMatchProfession: _ClassVar[EErrorCode]
+    ErrSlotFunctionIsClose: _ClassVar[EErrorCode]
+    ErrExchangeNotFound: _ClassVar[EErrorCode]
+    ErrExchangeNotEnough: _ClassVar[EErrorCode]
+    ErrExchangeItemLimit: _ClassVar[EErrorCode]
+    ErrExchangeStepRange: _ClassVar[EErrorCode]
+    ErrExchangeItemFull: _ClassVar[EErrorCode]
+    ErrExchangePackageFull: _ClassVar[EErrorCode]
+    ErrExchangePriceItemNotFind: _ClassVar[EErrorCode]
+    ErrExchangeBuyNumNotEnough: _ClassVar[EErrorCode]
+    ErrExchangeBuyItemNotFound: _ClassVar[EErrorCode]
+    ErrExchangeTakeFailDelayTime: _ClassVar[EErrorCode]
+    ErrExchangeTakeFailSellNum: _ClassVar[EErrorCode]
+    ErrExchangeTakeItemNotFound: _ClassVar[EErrorCode]
+    ErrExchangeWithdrawNoMoney: _ClassVar[EErrorCode]
+    ErrExchangeDepositNotEnough: _ClassVar[EErrorCode]
+    ErrExchangeItemNotBindOrCooldownNotExpire: _ClassVar[EErrorCode]
+    ErrExchangeInCd: _ClassVar[EErrorCode]
+    ErrExchangeBuyCurrencyNoEnough: _ClassVar[EErrorCode]
+    ErrExchangeItemDelayTimeOver: _ClassVar[EErrorCode]
+    ErrExchangeItemIsNotWithdraw: _ClassVar[EErrorCode]
+    ErrExchangeBuyItemLimit: _ClassVar[EErrorCode]
+    ErrExchangeItemIsNotNoticeShopItem: _ClassVar[EErrorCode]
+    ErrExchangeItemIsPreBuyAlready: _ClassVar[EErrorCode]
+    ErrExchangeItemNotPublic: _ClassVar[EErrorCode]
+    ErrExchangeSaleRankExist: _ClassVar[EErrorCode]
+    ErrExchangeSaleItemFull: _ClassVar[EErrorCode]
+    ErrExchangeSaleDiamondNotEnough: _ClassVar[EErrorCode]
+    ErrExchangeSaleItemNotExists: _ClassVar[EErrorCode]
+    ErrExchangeBuySaleCurrencyNoEnough: _ClassVar[EErrorCode]
+    ErrExchangeDiamondNotEnough: _ClassVar[EErrorCode]
+    ErrExchangeSaleTakeOffCd: _ClassVar[EErrorCode]
+    ErrExchangeSaleRateInvalid: _ClassVar[EErrorCode]
+    ErrExchangePreItemFull: _ClassVar[EErrorCode]
+    ErrExchangeSaleNumInvalid: _ClassVar[EErrorCode]
+    ErrExchangeCareItemAlready: _ClassVar[EErrorCode]
+    ErrExchangePriceRange: _ClassVar[EErrorCode]
+    ErrExchangeRequestLimit: _ClassVar[EErrorCode]
+    ErrExchangeItemBanned: _ClassVar[EErrorCode]
+    ErrExchangePriceNotLow: _ClassVar[EErrorCode]
+    ErrExchangeItemNotFind: _ClassVar[EErrorCode]
+    ErrExchangeItemExistMinPrice: _ClassVar[EErrorCode]
+    ErrExchangeNoticeItemMin: _ClassVar[EErrorCode]
+    ErrExchangePreBuyUserFull: _ClassVar[EErrorCode]
+    ErrModHoleNotUnlock: _ClassVar[EErrorCode]
+    ErrModNotExist: _ClassVar[EErrorCode]
+    ErrModSimilarRepeated: _ClassVar[EErrorCode]
+    ErrModTypeLimitExceeded: _ClassVar[EErrorCode]
+    ErrModPartNotExist: _ClassVar[EErrorCode]
+    ErrModPartEnhanceLimit: _ClassVar[EErrorCode]
+    ErrModInUse: _ClassVar[EErrorCode]
+    ErrModAlreadyInstalled: _ClassVar[EErrorCode]
+    ErrModInitConfigNotExist: _ClassVar[EErrorCode]
+    ErrModPartOverflow: _ClassVar[EErrorCode]
+    ErrModCanNotLink: _ClassVar[EErrorCode]
+    ErrModDecomposeOverflow: _ClassVar[EErrorCode]
+    ErrFishingNotUseBait: _ClassVar[EErrorCode]
+    ErrFishingRandomFailed: _ClassVar[EErrorCode]
+    ErrFishingAlreadyGetFishItem: _ClassVar[EErrorCode]
+    ErrFishingGetFishIdWrong: _ClassVar[EErrorCode]
+    ErrFishingNotGet: _ClassVar[EErrorCode]
+    ErrFishingNotResearchYet: _ClassVar[EErrorCode]
+    ErrFishingNotUseRod: _ClassVar[EErrorCode]
+    ErrFishingNoSeat: _ClassVar[EErrorCode]
+    ErrFishingCantResearch: _ClassVar[EErrorCode]
+    ErrFishDrawnLevelAward: _ClassVar[EErrorCode]
+    ErrFishCannotDrawLevelAward: _ClassVar[EErrorCode]
+    ErrFishDrawnNoLevelAward: _ClassVar[EErrorCode]
+    ErrFreightNoRefreshGoods: _ClassVar[EErrorCode]
+    ErrFreightBeyondMaxValue: _ClassVar[EErrorCode]
+    ErrFreightDownMinValue: _ClassVar[EErrorCode]
+    ErrFreightHasSetOff: _ClassVar[EErrorCode]
+    ErrFreightNoSetOff: _ClassVar[EErrorCode]
+    ErrFreightHasReward: _ClassVar[EErrorCode]
+    ErrFreightIllegalGoodsId: _ClassVar[EErrorCode]
+    ErrFreightItemNoEnough: _ClassVar[EErrorCode]
+    ErrFreightNoUpSetOffTime: _ClassVar[EErrorCode]
+    ErrFreightNoUpRewardTime: _ClassVar[EErrorCode]
+    ErrFreightAutoSetOff: _ClassVar[EErrorCode]
+    ErrTrialRoadAwardNotFinished: _ClassVar[EErrorCode]
+    ErrTrialRoadAwardRoomGet: _ClassVar[EErrorCode]
+    ErrNotCanRide: _ClassVar[EErrorCode]
+    ErrCombatStateNotRide: _ClassVar[EErrorCode]
+    ErrAlreadyRide: _ClassVar[EErrorCode]
+    ErrRideNotEnough: _ClassVar[EErrorCode]
+    ErrCreateVehicleActorFailed: _ClassVar[EErrorCode]
+    ErrNotVehicleOwner: _ClassVar[EErrorCode]
+    ErrVehicleHasController: _ClassVar[EErrorCode]
+    ErrVehicleNoSeat: _ClassVar[EErrorCode]
+    ErrVehicleHasSeat: _ClassVar[EErrorCode]
+    ErrNotRideVehicle: _ClassVar[EErrorCode]
+    ErrVehicleNotExits: _ClassVar[EErrorCode]
+    ErrInvalidRidePropertyType: _ClassVar[EErrorCode]
+    ErrRideApplyTargetUserNotExist: _ClassVar[EErrorCode]
+    ErrRideConfigNotFind: _ClassVar[EErrorCode]
+    ErrRideNotUnlock: _ClassVar[EErrorCode]
+    ErrRideNotFind: _ClassVar[EErrorCode]
+    ErrInvalidRideType: _ClassVar[EErrorCode]
+    ErrRideApplyAlreadyExist: _ClassVar[EErrorCode]
+    ErrRideApplyNotRideVehicle: _ClassVar[EErrorCode]
+    ErrRideApplyVehicleNotSeat: _ClassVar[EErrorCode]
+    ErrRideAlReadyRide: _ClassVar[EErrorCode]
+    ErrRideApplyTargetTooFar: _ClassVar[EErrorCode]
+    ErrRideNotTake: _ClassVar[EErrorCode]
+    ErrRideInteracting: _ClassVar[EErrorCode]
+    ErrShapeshiftNotRide: _ClassVar[EErrorCode]
+    ErrFishingNotRide: _ClassVar[EErrorCode]
+    ErrRideStateReject: _ClassVar[EErrorCode]
+    ErrRideTypeNotSupport: _ClassVar[EErrorCode]
+    ErrRideNotControl: _ClassVar[EErrorCode]
+    ErrRideNotFunction: _ClassVar[EErrorCode]
+    ErrRideSkinNotSupport: _ClassVar[EErrorCode]
+    ErrRideSkinNotUnlock: _ClassVar[EErrorCode]
+    ErrRideSkinDataAddFailed: _ClassVar[EErrorCode]
+    ErrRideSkinNotSkin: _ClassVar[EErrorCode]
+    ErrRideSkinAlreadyActivate: _ClassVar[EErrorCode]
+    ErrRideCantRideDown: _ClassVar[EErrorCode]
+    ErrRogueActorNotPlayer: _ClassVar[EErrorCode]
+    ErrRogueEntryConfigError: _ClassVar[EErrorCode]
+    ErrRogueCoinNotEnough: _ClassVar[EErrorCode]
+    ErrRogueObjNotUseful: _ClassVar[EErrorCode]
+    ErrRogueObjNotExist: _ClassVar[EErrorCode]
+    ErrRogueDungeonError: _ClassVar[EErrorCode]
+    ErrRogueRandomError: _ClassVar[EErrorCode]
+    ErrRogueRandomNoCount: _ClassVar[EErrorCode]
+    ErrRogueRandomNoNeed: _ClassVar[EErrorCode]
+    ErrRogueEntryNotLearn: _ClassVar[EErrorCode]
+    ErrRogueEntryLearned: _ClassVar[EErrorCode]
+    ErrRogueEntryUpgradeCant: _ClassVar[EErrorCode]
+    ErrRogueEntryUpgradeMax: _ClassVar[EErrorCode]
+    ErrRogueEntryBuffAddError: _ClassVar[EErrorCode]
+    ErrRogueEntryBuffNotExist: _ClassVar[EErrorCode]
+    ErrRogueEntryBuffDataError: _ClassVar[EErrorCode]
+    ErrRogueEntryBuffChangeError: _ClassVar[EErrorCode]
+    ErrRogueLockCant: _ClassVar[EErrorCode]
+    ErrRogueLockRepeat: _ClassVar[EErrorCode]
+    ErrRogueActiveBuffConfigError: _ClassVar[EErrorCode]
+    ErrRogueActiveBuffSeasonError: _ClassVar[EErrorCode]
+    ErrRogueActiveBuffAlreadyActive: _ClassVar[EErrorCode]
+    ErrRogueActiveBuffItemError: _ClassVar[EErrorCode]
+    ErrRogueActiveBuffItemNotEnough: _ClassVar[EErrorCode]
+    ErrWarehouseHas: _ClassVar[EErrorCode]
+    ErrWarehouseNoHas: _ClassVar[EErrorCode]
+    ErrWarehouseNoMem: _ClassVar[EErrorCode]
+    ErrWarehouseNoPresident: _ClassVar[EErrorCode]
+    ErrWarehouseNoHasItem: _ClassVar[EErrorCode]
+    ErrWarehouseItemNoDeposit: _ClassVar[EErrorCode]
+    ErrWarehouseGridPosNoExist: _ClassVar[EErrorCode]
+    ErrWarehouseGridPosItemNoEnough: _ClassVar[EErrorCode]
+    ErrWarehouseNoInviteSelf: _ClassVar[EErrorCode]
+    ErrWarehouseInviteesHas: _ClassVar[EErrorCode]
+    ErrWarehouseMemBeyondMax: _ClassVar[EErrorCode]
+    ErrWarehouseGridBeyondMax: _ClassVar[EErrorCode]
+    ErrWarehouseNoSelf: _ClassVar[EErrorCode]
+    ErrWarehouseIsMem: _ClassVar[EErrorCode]
+    ErrWarehouseNoExist: _ClassVar[EErrorCode]
+    ErrWarehouseDepositBeyondMax: _ClassVar[EErrorCode]
+    ErrWarehouseTakeOutBeyondMax: _ClassVar[EErrorCode]
+    ErrWarehouseItemIdNotSame: _ClassVar[EErrorCode]
+    ErrWarehouseParams: _ClassVar[EErrorCode]
+    ErrWarehouseNoKickSelf: _ClassVar[EErrorCode]
+    ErrWarehousePresidentNoExit: _ClassVar[EErrorCode]
+    ErrGashaDrawCount: _ClassVar[EErrorCode]
+    ErrGashaDrawLimit: _ClassVar[EErrorCode]
+    ErrGashaInvalidWishId: _ClassVar[EErrorCode]
+    EErGashaWishRepeated: _ClassVar[EErrorCode]
+    EErGashaWishCountNoEnough: _ClassVar[EErrorCode]
+    ErrWarehouseAuthority: _ClassVar[EErrorCode]
+    ErrEquipCantDecompose: _ClassVar[EErrorCode]
+    ErrEquipNotRecastRecord: _ClassVar[EErrorCode]
+    ErrEquipOnCantUsedRecastConsume: _ClassVar[EErrorCode]
+    ErrEquipWeaponNotEqualProfession: _ClassVar[EErrorCode]
+    ErrEquipSlotRefineBlessNotFit: _ClassVar[EErrorCode]
+    ErrEquipNotRecast: _ClassVar[EErrorCode]
+    ErrEquipEnchantItemMismatch: _ClassVar[EErrorCode]
+    ErrEquipEnchantAlreadyEnchanted: _ClassVar[EErrorCode]
+    ErrEquipAnyItemMismatch: _ClassVar[EErrorCode]
+    ErrEquipSlotRefineBlessNumTooMuch: _ClassVar[EErrorCode]
+    ErrEquipNameGroupNoMatch: _ClassVar[EErrorCode]
+    ErrEquipPerfectionNoMatch: _ClassVar[EErrorCode]
+    ErrEquipNotBreak: _ClassVar[EErrorCode]
+    ErrEquipPutOnIng: _ClassVar[EErrorCode]
+    ErrEquipDecomposeOverflow: _ClassVar[EErrorCode]
+    ErrEquipDecomposeEnchantAward: _ClassVar[EErrorCode]
+    ErrEquipDecomposeBreakAward: _ClassVar[EErrorCode]
+    ErrUserIsMatching: _ClassVar[EErrorCode]
+    ErrUserNotInMatching: _ClassVar[EErrorCode]
+    ErrUseNotWaitReady: _ClassVar[EErrorCode]
+    ErrDungeonCantMatch: _ClassVar[EErrorCode]
+    ErrMatchQueueFull: _ClassVar[EErrorCode]
+    ErrCommonAwardCantReceive: _ClassVar[EErrorCode]
+    ErrCommonAwardHasReceived: _ClassVar[EErrorCode]
+    ErrCraftEnergyNotEnough: _ClassVar[EErrorCode]
+    ErrCraftEnergyFull: _ClassVar[EErrorCode]
+    ErrRecommendPlayNotOpen: _ClassVar[EErrorCode]
+    ErrWeeklyTowerNoStart: _ClassVar[EErrorCode]
+    ErrWeeklyTowerHasEnd: _ClassVar[EErrorCode]
+    ErrWeeklyNoMeetProcessAward: _ClassVar[EErrorCode]
+    ErrWeeklyHasRewardProcessAward: _ClassVar[EErrorCode]
+    ErrWeeklyNoLayerStageAward: _ClassVar[EErrorCode]
+    ErrWeekOnlyCurSeasonAward: _ClassVar[EErrorCode]
+    ErrWeeklyTowerCannotEnterLayer: _ClassVar[EErrorCode]
+    ErrWeeklyTowerBoxHasOpen: _ClassVar[EErrorCode]
+    ErrWeeklyTowerNoBox: _ClassVar[EErrorCode]
+    ErrWeeklyTowerNoStageAward: _ClassVar[EErrorCode]
+    ErrWeeklyTowerNoTowerDungeon: _ClassVar[EErrorCode]
+    ErrWeeklyTowerLayerNotSatisfy: _ClassVar[EErrorCode]
+    ErrWeeklyTowerHasNotJumpReward: _ClassVar[EErrorCode]
+    ErrWeeklyTowerNeedToClaimLowerLayerJumpReward: _ClassVar[EErrorCode]
+    ErrWeeklyTowerHasNotJumpRewardToLayer: _ClassVar[EErrorCode]
+    ErrWeeklyTowerDuplicateReward: _ClassVar[EErrorCode]
+    ErrWeeklyTowerJumpLayerNotMatch: _ClassVar[EErrorCode]
+    ErrWeeklyNoMeetJumpAward: _ClassVar[EErrorCode]
+    ErrTeamRobotQuitFailed: _ClassVar[EErrorCode]
+    ErrFunctionNoAward: _ClassVar[EErrorCode]
+    ErrFunctionHasDrawn: _ClassVar[EErrorCode]
+    ErrTLogIllegalExportArea: _ClassVar[EErrorCode]
+    ErrPayOrderFail: _ClassVar[EErrorCode]
+    ErrPayCostNotEnough: _ClassVar[EErrorCode]
+    ErrPayCantBuy: _ClassVar[EErrorCode]
+    ErrPayCantExplore: _ClassVar[EErrorCode]
+    ErrActivityNotFind: _ClassVar[EErrorCode]
+    ErrActivityOffline: _ClassVar[EErrorCode]
+    ErrActivityNotOpen: _ClassVar[EErrorCode]
+    ErrActivityRewardNotFound: _ClassVar[EErrorCode]
+    ErrActivityConditionNotFinish: _ClassVar[EErrorCode]
+    ErrActivityAlreadyObtain: _ClassVar[EErrorCode]
+    ErrActivityNotUnlock: _ClassVar[EErrorCode]
+    ErrEmojiConfigError: _ClassVar[EErrorCode]
+    ErrEmojiAlreadyUnlock: _ClassVar[EErrorCode]
+    ErrEmojiUnlockItemError: _ClassVar[EErrorCode]
+    ErrEmojiUnlockItemErrorItemNotEnough: _ClassVar[EErrorCode]
+    ErrEmojiUnlock: _ClassVar[EErrorCode]
+    ErrGlobalConditionNotFound: _ClassVar[EErrorCode]
+    ErrGlobalConditionNotLuckyValue: _ClassVar[EErrorCode]
+    ErrPathFindingCant: _ClassVar[EErrorCode]
+    ErrPathFindingDataError: _ClassVar[EErrorCode]
+    ErrPathFindingEndPosError: _ClassVar[EErrorCode]
+    ErrPathFindingStartPosError: _ClassVar[EErrorCode]
+    ErrPathFindingNoPath: _ClassVar[EErrorCode]
+    ErrSignNotOpen: _ClassVar[EErrorCode]
+    ErrSignNotSigned: _ClassVar[EErrorCode]
+    ErrSignAlreadySigned: _ClassVar[EErrorCode]
+    ErrSignTimeError: _ClassVar[EErrorCode]
+    ErrNotNewbie: _ClassVar[EErrorCode]
+    ErrNotBackflow: _ClassVar[EErrorCode]
+    ErrNewBackElectiveRandConfigError: _ClassVar[EErrorCode]
+    ErrNewbieCancel: _ClassVar[EErrorCode]
+    ErrBackflowCancel: _ClassVar[EErrorCode]
+    CdKeyInvalid: _ClassVar[EErrorCode]
+    CdKeyDuplicate: _ClassVar[EErrorCode]
+    CdKeyExpired: _ClassVar[EErrorCode]
+    CdKeyNotFound: _ClassVar[EErrorCode]
+    CdKeyNotActivated: _ClassVar[EErrorCode]
+    CdKeyPlayerLevelTooLow: _ClassVar[EErrorCode]
+    CdKeyTakeLimitReached: _ClassVar[EErrorCode]
+    CdKeyGroupNotFound: _ClassVar[EErrorCode]
+    ErrMahjongTableExist: _ClassVar[EErrorCode]
+    ErrMahjongTableNotExist: _ClassVar[EErrorCode]
+    ErrMahjongTablePlayerNotExist: _ClassVar[EErrorCode]
+    ErrMahjongLessPlayer: _ClassVar[EErrorCode]
+    ErrMahjongRestoreError: _ClassVar[EErrorCode]
+    ErrMahjongTableEnd: _ClassVar[EErrorCode]
+    ErrMahjongUnknownProtocol: _ClassVar[EErrorCode]
+    ErrSeasonTalentOrdinaryNodeAlreadyActive: _ClassVar[EErrorCode]
+    ErrSeasonTalentIntermediateNodeAlreadyActive: _ClassVar[EErrorCode]
+    ErrSeasonTalentPreNodeNotActive: _ClassVar[EErrorCode]
+    ErrSeasonTalentAllNodeReset: _ClassVar[EErrorCode]
+    ErrSeasonTalentOrdinaryNodeReset: _ClassVar[EErrorCode]
+    ErrSeasonTalentIntermediateNodeReset: _ClassVar[EErrorCode]
+    ErrSeasonTalentInFight: _ClassVar[EErrorCode]
+    ErrSeasonTalentAdvancedNodeAlreadyInstallFantasy: _ClassVar[EErrorCode]
+    ErrSeasonTalentAdvancedNodeReset: _ClassVar[EErrorCode]
+    ErrSeasonTalentTreeNodeNotNormal: _ClassVar[EErrorCode]
+    ErrSeasonTalentTreeNodeNotIntermediate: _ClassVar[EErrorCode]
+    ErrSeasonTalentIntermediateNodeClassNumExceeded: _ClassVar[EErrorCode]
+    ErrSeasonTalentIntermediateNodeFactorTypeNotMatch: _ClassVar[EErrorCode]
+    ErrSeasonTalentIntermediateNodeProfessionNotMatch: _ClassVar[EErrorCode]
+    ErrSeasonTalentCultivateLineAlreadyActive: _ClassVar[EErrorCode]
+    ErrSeasonTalentCultivateLineAlreadyDisabled: _ClassVar[EErrorCode]
+    ErrSeasonTalentSwitchInGreaterRiftScene: _ClassVar[EErrorCode]
+    ErrActionGroupNumUpToLimit: _ClassVar[EErrorCode]
+    ErrActionGroupNotExist: _ClassVar[EErrorCode]
+    ErrActionGroupActionIdInvalid: _ClassVar[EErrorCode]
+    ErrTokenBucketLimit: _ClassVar[EErrorCode]
+    ErrUnknown: _ClassVar[EErrorCode]
+ErrSuccess: EErrorCode
+ErrNoRecord: EErrorCode
+ErrExceptionCancel: EErrorCode
+ErrDBException: EErrorCode
+ErrDBSeqException: EErrorCode
+ErrDBSceneException: EErrorCode
+ErrDBTokenException: EErrorCode
+ErrCancelled: EErrorCode
+ErrUnknownRpc: EErrorCode
+ErrInvalidArgument: EErrorCode
+ErrDeadlineExceeded: EErrorCode
+ErrNotFound: EErrorCode
+ErrAlreadyExists: EErrorCode
+ErrPermissionDenied: EErrorCode
+ErrResourceExhausted: EErrorCode
+ErrFailedPrecondition: EErrorCode
+ErrAborted: EErrorCode
+ErrOutOfRange: EErrorCode
+ErrUnimplemented: EErrorCode
+ErrInternal: EErrorCode
+ErrUnavailable: EErrorCode
+ErrDataLoss: EErrorCode
+ErrUnauthenticated: EErrorCode
+ErrSystemMax: EErrorCode
+ErrDBError: EErrorCode
+ErrCreateOpenInfo: EErrorCode
+ErrCreateAccountInfo: EErrorCode
+ErrCreateCharInfo: EErrorCode
+ErrCreateAccountToken: EErrorCode
+ErrGetOpenInfo: EErrorCode
+ErrGetAccountInfo: EErrorCode
+ErrGetCharInfo: EErrorCode
+ErrGetAccountToken: EErrorCode
+ErrLoginInQueue: EErrorCode
+ErrOtherLogin: EErrorCode
+ErrServerError: EErrorCode
+ErrNoAccountInfo: EErrorCode
+ErrNoCharInfo: EErrorCode
+ErrTokenExpired: EErrorCode
+ErrUpdateTokenFail: EErrorCode
+ErrRegIntoSceneError: EErrorCode
+ErrLoginTypeErr: EErrorCode
+ErrChangeMapErr: EErrorCode
+ErrLoginPlatformErr: EErrorCode
+ErrVersionErr: EErrorCode
+ErrDelayOffLineKickOff: EErrorCode
+ErrServiceLanguageError: EErrorCode
+NoEnterScene: EErrorCode
+ModIDNotOpen: EErrorCode
+ErrFaceData: EErrorCode
+ErrInitProfession: EErrorCode
+ErrSceneCloseKickoff: EErrorCode
+ErrLoginReconnectKick: EErrorCode
+ErrLoginErrorResume: EErrorCode
+ErrRepeatedLogin: EErrorCode
+ErrRestrictLogin: EErrorCode
+ErrRestrictBlack: EErrorCode
+ErrSdkVerifyFail: EErrorCode
+ErrSdkTokenExpired: EErrorCode
+ErrServerNotOpen: EErrorCode
+ErrServerEndOpen: EErrorCode
+ErrNormalKick: EErrorCode
+ErrServerBusy: EErrorCode
+ErrServerClose: EErrorCode
+ErrExitGame: EErrorCode
+ErrHopeKick: EErrorCode
+ErrClientVersionError: EErrorCode
+ErrInvalidDeviceId: EErrorCode
+ErrInvalidSystemType: EErrorCode
+ErrDeleteChar: EErrorCode
+ErrCancelDeleteChar: EErrorCode
+ErrCancelDeleteCharIsDelete: EErrorCode
+ErrIntoSceneOwnerFail: EErrorCode
+ErrLoginNoEnoughToken: EErrorCode
+ErrSceneQueueUp: EErrorCode
+ErrProtocolVersionErr: EErrorCode
+ErrConfigVersionErr: EErrorCode
+ErrStateEventFailed: EErrorCode
+ErrSelectCharDoing: EErrorCode
+ErrSelectCharDeleted: EErrorCode
+ErrLoginChannelMax: EErrorCode
+ErrDeleteAccountKick: EErrorCode
+ErrIsDeleteAccount: EErrorCode
+ErrIsVersionKick: EErrorCode
+ErrNotQQChnnel: EErrorCode
+ErrIncorrectLaunchPlatform: EErrorCode
+ErrConditionWrong: EErrorCode
+ErrNotSupportLoginType: EErrorCode
+ErrKickoutWithChangeBodySize: EErrorCode
+ErrNotFindVoiceId: EErrorCode
+ErrVoiceIdInValid: EErrorCode
+ErrSceneNotExist: EErrorCode
+ErrUserNotExist: EErrorCode
+ErrComponentNotExist: EErrorCode
+ErrSceneConfigNotExist: EErrorCode
+ErrServiceNotExist: EErrorCode
+ErrDataContainerNotExist: EErrorCode
+ErrAsynchronousReturn: EErrorCode
+ErrConfigNotExist: EErrorCode
+ErrNotUser: EErrorCode
+ErrConfigError: EErrorCode
+ErrActorNotExist: EErrorCode
+ErrCutSceneAlreadyPlayed: EErrorCode
+ErrFunctionUnlock: EErrorCode
+ErrFunctionClosed: EErrorCode
+ErrUserPlayerNotFurniturePackage: EErrorCode
+ErrSysInnerError: EErrorCode
+ErrSysWebClientNull: EErrorCode
+ErrSysWebRequestTimeOut: EErrorCode
+ErrSysWebReturnError: EErrorCode
+ErrRequestTooFrequently: EErrorCode
+ErrArgStringTooLong: EErrorCode
+ErrArgStringEmpty: EErrorCode
+ErrArgArrayTooBig: EErrorCode
+ErrArgArrayEmpty: EErrorCode
+ErrArgMapTooBig: EErrorCode
+ErrArgMapEmpty: EErrorCode
+ErrItemNotExist: EErrorCode
+ErrPackageNotExist: EErrorCode
+ErrPackageFull: EErrorCode
+ErrItemExpireTime: EErrorCode
+ErrItemPackageGridNotEnough: EErrorCode
+ErrItemUUIDError: EErrorCode
+ErrItemNotEnough: EErrorCode
+ErrOptTypeError: EErrorCode
+ErrItemInCoolDown: EErrorCode
+ErrItemNotUse: EErrorCode
+ErrItemEffectTypeError: EErrorCode
+ErrItemParamError: EErrorCode
+ErrItemAddBuffError: EErrorCode
+ErrItemAdd: EErrorCode
+ErrUseItemState: EErrorCode
+ErrBatchUse: EErrorCode
+ErrFullSendMail: EErrorCode
+ErrItemNumZero: EErrorCode
+ErrItemSelectAwardIllegalNum: EErrorCode
+ErrItemSelectAwardIllegalPos: EErrorCode
+ErrItemSelectLimit: EErrorCode
+ErrItemPeriodGainExceeded: EErrorCode
+ErrItemNoRecycle: EErrorCode
+ErrItemRecycleBeyondMaxGrid: EErrorCode
+ErrItemRecycleBeyondMaxNum: EErrorCode
+ErrItemRecycleIdNoMatchItemId: EErrorCode
+ErrItemRecycleIllegalId: EErrorCode
+ErrItemLimitCount: EErrorCode
+ErrItemFriendPontExceeded: EErrorCode
+ErrItemToySingleEntUseExceeded: EErrorCode
+ErrItemToySceneUseExceeded: EErrorCode
+ErrItemToyUseInDisableArea: EErrorCode
+ErrItemToySingleCellUseExceeded: EErrorCode
+ErrItemToyCantUse: EErrorCode
+ErrItemLifeProfessionExceeded: EErrorCode
+ErrItemPackageInCd: EErrorCode
+ErrItemLocked: EErrorCode
+ErrItemLockOverflow: EErrorCode
+ErrHomeLandItemNotExist: EErrorCode
+ErrHomeLandNotFurnitureCannotRecycle: EErrorCode
+ErrMonthlyCardNotExists: EErrorCode
+ErrMonthlyCardDataError: EErrorCode
+ErrMonthlyCardDayAwardReceived: EErrorCode
+ErrMonthlyCardLimitCount: EErrorCode
+ErrCommunityNoHome: EErrorCode
+ErrNotHouseOwner: EErrorCode
+ErrHomeLandExisted: EErrorCode
+ErrHomeLandContentWrongful: EErrorCode
+ErrHouseLivetogetherCD: EErrorCode
+ErrHomeLandNotExisted: EErrorCode
+ErrHomeLandNotInScene: EErrorCode
+ErrHomeLandIsInvitation: EErrorCode
+ErrHomeLandInsufficientAuthority: EErrorCode
+ErrHomeLandTransferRequestPending: EErrorCode
+ErrHomeLandTransferRequestTimeout: EErrorCode
+ErrHomeLandTransferCD: EErrorCode
+ErrHomelandTargetIsHasHome: EErrorCode
+ErrHomelandTargetIsOwner: EErrorCode
+ErrHomelandNotOwnerCannotOperate: EErrorCode
+ErrHomeLandHasHouse: EErrorCode
+ErrHomeLandContentTooLong: EErrorCode
+ErrHomeLandClutterNotExist: EErrorCode
+ErrHouseNameOrStatementCD: EErrorCode
+ErrHouseIntroductionStatementCD: EErrorCode
+ErrCommunityBuildInvalidRecipeId: EErrorCode
+ErrCommunityBuildRecipeIsUnlock: EErrorCode
+ErrCommunityBuildMax: EErrorCode
+ErrCommunityBuildNoAuthority: EErrorCode
+ErrCommunityNotBuildCannotCancel: EErrorCode
+ErrCommunityBuildNotSelfCannotCancel: EErrorCode
+ErrCommunityNotBuildCannotAccelerate: EErrorCode
+ErrCommunityBuildNotSelfCannotAccelerate: EErrorCode
+ErrCommunityBuildCannotAccelerate: EErrorCode
+ErrCommunityBuildAlreadyAccelerate: EErrorCode
+ErrCommunityBuildInDungeon: EErrorCode
+ErrCommunityBuildRecipeIsLock: EErrorCode
+ErrCommunityBuildRecipeNotItemUnlock: EErrorCode
+ErrCommunityBuildInvalidCount: EErrorCode
+ErrCommunityNotBuildCannotReceive: EErrorCode
+ErrCommunityCanNotBuild: EErrorCode
+ErrHomeLandCohabitantLimit: EErrorCode
+ErrHomeLandRootNotQuitCohabitant: EErrorCode
+ErrHomeLandNotOwnerCannotQuitCohabitant: EErrorCode
+ErrHomeLandCohabitantIsExiting: EErrorCode
+ErrHomeLandCohabitantNotExists: EErrorCode
+ErrHomeLandCohabitantExitRequestExists: EErrorCode
+ErrHomeLandCohabitantDismiss: EErrorCode
+ErrHomeLandNotInvitation: EErrorCode
+ErrHomeLandCohabitantInvitationTimeout: EErrorCode
+ErrHomeLandCohabitantNotFriend: EErrorCode
+ErrHomeLandCohabitantFriendLevel: EErrorCode
+ErrHomeLandCohabitantLevel: EErrorCode
+ErrHomeLandInviteCohabitantNotOwner: EErrorCode
+ErrCommunityWarehouseGridFull: EErrorCode
+ErrCommunityWarehouseNoAuthority: EErrorCode
+ErrCommunityWarehouseGridPosItemNoEnough: EErrorCode
+ErrHomeLandInsufficientFurniture: EErrorCode
+ErrCommunityWarehouseTakeOutCountLimit: EErrorCode
+ErrHomeLandTaskNotExist: EErrorCode
+ErrHomeLandTaskTimeNotEnough: EErrorCode
+ErrHomeLandTaskAlreadyFinished: EErrorCode
+ErrHomeLandTaskItemNotEnough: EErrorCode
+ErrHomeLandCurLevelError: EErrorCode
+ErrHomeLandExpNotEnough: EErrorCode
+ErrHomeLandAlreadyMaxLevel: EErrorCode
+ErrHomeLandLevelLocked: EErrorCode
+ErrHomeLandLevelConfigError: EErrorCode
+ErrCommunityEditorNotEditable: EErrorCode
+ErrCommunityEditorNotFurniture: EErrorCode
+ErrCommunityEditorNotOutdoor: EErrorCode
+ErrCommunityEditorNotIndoor: EErrorCode
+ErrCommunityEditorOverMax: EErrorCode
+ErrCommunityEditorOverTypeMax: EErrorCode
+ErrCommunityEditorFurnitureNotEnough: EErrorCode
+ErrCommunityEditorFurnitureNotExist: EErrorCode
+ErrCommunityEditorOverMaxGroup: EErrorCode
+ErrCommunityEditorNoStructure: EErrorCode
+ErrCommunityEditorGroupMaxStructure: EErrorCode
+ErrCommunityEditorStructureInGroup: EErrorCode
+ErrCommunityEditorGroupNotExist: EErrorCode
+ErrCommunityEditorAlreadyExist: EErrorCode
+ErrCommunityEditorInValidParam: EErrorCode
+ErrHomeLandSellItemNotExist: EErrorCode
+ErrHomeLandLeftNumNotEnough: EErrorCode
+ErrHomeLandSellShopLocked: EErrorCode
+ErrHomeLandSeedExist: EErrorCode
+ErrHomeLandItemNotOwner: EErrorCode
+ErrHomeLandSeedStateError: EErrorCode
+ErrHomeLandNoSeed: EErrorCode
+ErrHomeLandNoWater: EErrorCode
+ErrHomeLandFertilizerMaxNumLimit: EErrorCode
+ErrHomeLandNotFertilize: EErrorCode
+ErrHomeLandNotPollen: EErrorCode
+ErrHomeLandAlreadyPollen: EErrorCode
+ErrHomeLandNotHarvest: EErrorCode
+ErrHomeLandPickUpSinglePlayerLimit: EErrorCode
+ErrHomeLandPickUpTotalLimit: EErrorCode
+ErrHomeLandPickUpFlowerNotFinished: EErrorCode
+ErrHomeLandPickUpOwner: EErrorCode
+ErrHomeLandGainNotOwner: EErrorCode
+ErrHomeLandItemFullGrid: EErrorCode
+ErrHomeLandFurnitureFull: EErrorCode
+ErrCommunityWarehouseNotBindOrCooldown: EErrorCode
+ErrHomeLandSeedNotExist: EErrorCode
+ErrHomeLandSeedConfigError: EErrorCode
+ErrHomeLandFlowerNoExist: EErrorCode
+ErrHomeLandFlowerConfigError: EErrorCode
+ErrHomeLandCoinNotEnough: EErrorCode
+ErrHomeLandInSceneNotAgreeInvitation: EErrorCode
+ErrCommunityVisitLimit: EErrorCode
+ErrHomeNoEntryVisitCd: EErrorCode
+ErrHomeNoWareHouseAuthority: EErrorCode
+ErrHomeNoFurnitureEditAuthority: EErrorCode
+ErrHomeNoCraftBenchAuthority: EErrorCode
+ErrHomeNoGlobalCraftBenchAuthority: EErrorCode
+ErrHomeNoVisitAuthority: EErrorCode
+ErrHomeNoHarvestAuthority: EErrorCode
+ErrHomeNoInviteCohabitantAuthority: EErrorCode
+ErrHomeNoUpgradeHomeAuthority: EErrorCode
+ErrHomeNoCollectFurnitureAuthority: EErrorCode
+ErrComposeItemNotEnough: EErrorCode
+ErrComposeFailed: EErrorCode
+ErrRedemptionItemNotExist: EErrorCode
+ErrRedemptionItemMaxCount: EErrorCode
+ErrRedemptionItemNotEnough: EErrorCode
+ErrRedemptionItemGender: EErrorCode
+ErrHomeNoPlantAuthority: EErrorCode
+ErrHomeNoWaterAuthority: EErrorCode
+ErrHomeNoFertilizeAuthority: EErrorCode
+ErrHomeNoPollinateCollectAuthority: EErrorCode
+ErrHomeNoFarmlandEditAuthority: EErrorCode
+ErrHomeNoPollinateAuthority: EErrorCode
+ErrHomeDissolveStructureGroup: EErrorCode
+ErrCommunityEditorBuildLifeProfessionMaxCount: EErrorCode
+ErrCommunityEditorBuildLifeProfessionCountExceed: EErrorCode
+ErrCommunityEditorBuildLifeProfessionTypeNotFound: EErrorCode
+ErrCommunityBuildLifeProfessionFail: EErrorCode
+ErrCommunityBuildLifeProfessionReceiveFail: EErrorCode
+ErrCommunityBuildLifeProfessionMaxCount: EErrorCode
+ErrAwardConfigNotFound: EErrorCode
+ErrAwardConfigWeightError: EErrorCode
+ErrAwardConfigLimitAndContentNotMatch: EErrorCode
+ErrAwardConfigContentSizeError: EErrorCode
+ErrAwardConfigContentRatesSizeError: EErrorCode
+ErrAwardConfigContentWeightSizeError: EErrorCode
+ErrAwardConfigGroupContentEmpty: EErrorCode
+ErrAwardConfigGroupNumEmpty: EErrorCode
+ErrAwardConfigGroupContentNoMatchGroupNum: EErrorCode
+ErrAwardConfigNoRandomDrop: EErrorCode
+ErrAwardConfigNoSelectAward: EErrorCode
+ErrAwardConfigSelfSelectContentNoItem: EErrorCode
+ErrAwardConfigWeightRateMustOne: EErrorCode
+ErrAwardConfigGroupContentRandomNoMatch: EErrorCode
+ErrAwardConfigGroupContentError: EErrorCode
+ErrAwardConfigPackageContentRandomNoMatch: EErrorCode
+ErrAwardConfigLevelUpPackConfigPackageNoMatch: EErrorCode
+ErrAwardConfigProItemRuleNoMatch: EErrorCode
+ErrAwardConfigPackageContentEmpty: EErrorCode
+ErrAwardConfigDropContentSize: EErrorCode
+ErrAwardConfigDropContentNum: EErrorCode
+ErrAwardConfigGroupRateEmpty: EErrorCode
+ErrAwardConfigGroupWeightEmpty: EErrorCode
+ErrAwardInnerError: EErrorCode
+ErrAwardIllegalRandomType: EErrorCode
+ErrAwardConditionNoMeet: EErrorCode
+ErrAwardRandomTypeNone: EErrorCode
+ErrAwardRandomTypeNoMatch: EErrorCode
+ErrAwardActorIsNull: EErrorCode
+ErrCounterUpToLimit: EErrorCode
+ErrEquipWashAttrNotExist: EErrorCode
+ErrNotEquipInCombat: EErrorCode
+ErrEquipPart: EErrorCode
+ErrComposeItemNotExist: EErrorCode
+ErrPickupDropItemDistance: EErrorCode
+ErrPickupDropItemPackageFull: EErrorCode
+ErrPickupDropItemNoAuthority: EErrorCode
+ErrLayerActorExist: EErrorCode
+ErrTeamCreateHas: EErrorCode
+ErrTeamIllTarget: EErrorCode
+ErrTeamCreateTryLater: EErrorCode
+ErrTeamGetNo: EErrorCode
+ErrTeamListEmpty: EErrorCode
+ErrTeamInner: EErrorCode
+ErrTeamNoLeader: EErrorCode
+ErrTeamInMatch: EErrorCode
+ErrTeamCustomizeTarget: EErrorCode
+ErrTeamNoOwn: EErrorCode
+ErrTeamTickSelf: EErrorCode
+ErrTeamNoMem: EErrorCode
+ErrTeamApplyingLeader: EErrorCode
+ErrTeamHasBeLeader: EErrorCode
+ErrTeamNoTransferSelf: EErrorCode
+ErrTeamNoLeaderTransfer: EErrorCode
+ErrTeamHasOwnTeam: EErrorCode
+ErrTeamNoExist: EErrorCode
+ErrTeamApplyInCD: EErrorCode
+ErrTeamApplyExpire: EErrorCode
+ErrTeamJoinOther: EErrorCode
+ErrTeamMemMax: EErrorCode
+ErrTeamNoInvited: EErrorCode
+ErrTeamIsMatching: EErrorCode
+ErrTeamIllegalTag: EErrorCode
+ErrTeamNoMatching: EErrorCode
+ErrTeamIllegalActivity: EErrorCode
+ErrTeamInActivity: EErrorCode
+ErrTeamNoMeetCondition: EErrorCode
+ErrTeamWaitVoting: EErrorCode
+ErrTeamDoingActivity: EErrorCode
+ErrTeamNoInVoting: EErrorCode
+ErrTeamVoteEnd: EErrorCode
+ErrTeamHasVoted: EErrorCode
+ErrTeamInviteCD: EErrorCode
+ErrTeamApplyLeadCD: EErrorCode
+ErrTeamMoreMaxWorlds: EErrorCode
+ErrTeamValidApplyInfo: EErrorCode
+ErrTeamInMatchCancelCD: EErrorCode
+ErrTeamMatchFinished: EErrorCode
+ErrTeamMatchWaitSec: EErrorCode
+ErrTeamMemWorldFull: EErrorCode
+ErrTeamMemNotLeader: EErrorCode
+ErrTeamLeaderNotStaticScene: EErrorCode
+ErrTeamLeaderCallDoing: EErrorCode
+ErrTeamIllegalCallOperator: EErrorCode
+ErrTeamLeaderIllegalCallOperator: EErrorCode
+ErrTeamNoMemCall: EErrorCode
+ErrTeamLeaderCallEnd: EErrorCode
+ErrTeamSameScene: EErrorCode
+ErrTeamNotSameScene: EErrorCode
+ErrTeamMemTooMore: EErrorCode
+ErrTeamMemInDungeon: EErrorCode
+ErrTeamMemTooLess: EErrorCode
+ErrTeamIllegalInviteType: EErrorCode
+ErrTeamMemberNotInScene: EErrorCode
+ErrTeamLeaderReadyCheckTimeNotReady: EErrorCode
+ErrTeamExistDungeonCheck: EErrorCode
+ErrTeamTargetMatchTalentLimit: EErrorCode
+ErrTeamEditGroupNotAllowed: EErrorCode
+ErrTeamGroupNotExist: EErrorCode
+ErrTeamTargetNoMatchMemberType: EErrorCode
+ErrTeamMemberInDungeon: EErrorCode
+ErrDecomposeItemNotExist: EErrorCode
+ErrDecomposeItemNotEnough: EErrorCode
+ErrRefineEnergyNotEnough: EErrorCode
+ErrRefineItemMaxCount: EErrorCode
+ErrRefineItemNotExist: EErrorCode
+ErrRefineItemColumnNotUnlock: EErrorCode
+ErrRefineItemColumnUnlock: EErrorCode
+ErrRefineItemExist: EErrorCode
+ErrEnergyLimitMax: EErrorCode
+ErrRefineItemColumnNotEmpty: EErrorCode
+ErrProfessionNotExist: EErrorCode
+ErrModSlotNotUnlock: EErrorCode
+ErrChangeProfessionStateFail: EErrorCode
+ErrChangeProfessionCDFail: EErrorCode
+ErrProfessionSkinNotActive: EErrorCode
+ErrProfessionSkinActive: EErrorCode
+ErrProfessionNotUseSkin: EErrorCode
+ErrProfessionSkillSkinActive: EErrorCode
+ErrProfessionSkillSkinNotActive: EErrorCode
+ErrProfessionSkillNotActive: EErrorCode
+ErrCharOffline: EErrorCode
+ErrUserDataBaseError: EErrorCode
+ErrCharGetFail: EErrorCode
+ErrAlreadyAlive: EErrorCode
+ErrReviveParam: EErrorCode
+ErrStateIllegal: EErrorCode
+ErrStateNoChange: EErrorCode
+ErrReviveConsumeNotEnough: EErrorCode
+ErrReviveByOtherForbid: EErrorCode
+ErrReviveTimeNotArrived: EErrorCode
+ErrReviveBossBattle: EErrorCode
+ErrReviveCountLimit: EErrorCode
+ErrReviveInDeadTp: EErrorCode
+ErrDungeonPlayTypeError: EErrorCode
+ErrDungeonNotExist: EErrorCode
+ErrDungeonCreateError: EErrorCode
+ErrCantChangeDungeon: EErrorCode
+ErrDungeonLock: EErrorCode
+ErrPioneerFail: EErrorCode
+ErrAwardFail: EErrorCode
+ErrGsNotEnough: EErrorCode
+ErrQuestNotCompleted: EErrorCode
+ErrDungeonNotClear: EErrorCode
+ErrConditionNotExist: EErrorCode
+ErrAwardReceived: EErrorCode
+ErrCantRepeatedPlay: EErrorCode
+ErrNeedPassPreRoom: EErrorCode
+ErrDungeonEnterCountLimit: EErrorCode
+ErrDungeonScoreError: EErrorCode
+ErrDungeonRepeatedVote: EErrorCode
+ErrDungeonChallengeAwardState: EErrorCode
+ErrDungeonChallengeAffixNotFound: EErrorCode
+ErrDungeonStateNotActive: EErrorCode
+ErrDungeonCantVoteSelf: EErrorCode
+ErrDungeonPlayerNotEnough: EErrorCode
+ErrDungeonPlayerFull: EErrorCode
+ErrDungeonCantHeroKey: EErrorCode
+ErrDungeonNotSettlement: EErrorCode
+ErrDungeonNotFindRollItem: EErrorCode
+ErrDungeonCantRoll: EErrorCode
+ErrDungeonRollFinish: EErrorCode
+ErrDungeonSelectError: EErrorCode
+ErrDungeonAiModeError: EErrorCode
+ErrDungeonTargetNotFinish: EErrorCode
+ErrDungeonTargetBeAward: EErrorCode
+ErrDungeonSinglePlayerMore: EErrorCode
+ErrDungeonAiGroupNotEnough: EErrorCode
+ErrDungeonNoPass: EErrorCode
+ErrDungeonCloseSceneId: EErrorCode
+ErrDungeonEnterTypeError: EErrorCode
+ErrDungeonActorCount: EErrorCode
+ErrDungeonDiffLocked: EErrorCode
+ErrDungeonPreBattleVoteCd: EErrorCode
+ErrDungeonBossInvalid: EErrorCode
+ErrDungeonNoUser: EErrorCode
+ErrDungeonUserInvalid: EErrorCode
+ErrDungeonAwardualification: EErrorCode
+ErrDungeonAwardTriesLimit: EErrorCode
+ErrFashionIsLimit: EErrorCode
+ErrFashionNotFound: EErrorCode
+ErrFashionSlotEmpty: EErrorCode
+ErrFashionIDNotFound: EErrorCode
+ErrFashionLock: EErrorCode
+ErrFashCollectionAwardAlread: EErrorCode
+ErrFashCollectionScoreNotEnough: EErrorCode
+ErrFashCollectionAwardAlreadMonth: EErrorCode
+ErrFashionAlreadUnlock: EErrorCode
+ErrFashionAdvanceNotExist: EErrorCode
+ErrFashionBaseNotUnlock: EErrorCode
+ErrFashionAdvanceAlreadyUnlock: EErrorCode
+ErrCameraNoExistAlbum: EErrorCode
+ErrCameraBeyondPhotoNum: EErrorCode
+ErrCameraBeyondAlumNum: EErrorCode
+ErrCameraNoAccessRight: EErrorCode
+ErrCameraNoExistPhoto: EErrorCode
+ErrCameraBeyondWordNum: EErrorCode
+ErrCameraPhotoNoInAlbum: EErrorCode
+ErrCameraInnerError: EErrorCode
+ErrCameraIllegalRight: EErrorCode
+ErrCameraNoExistChar: EErrorCode
+ErrCameraNoDelCloudAlbum: EErrorCode
+ErrCameraBeyondMaxURlLen: EErrorCode
+ErrCameraBeyondMaxXMLLen: EErrorCode
+ErrCameraBeyondMaxNameLen: EErrorCode
+ErrCameraIllegalUrl: EErrorCode
+ErrCameraRenderInfoEmpty: EErrorCode
+ErrCameraBeyondPhotoMaxSize: EErrorCode
+ErrCameraIllegalPictureType: EErrorCode
+ErrCameraTypeRepeated: EErrorCode
+ErrCameraWithoutOriginal: EErrorCode
+ErrCameraWithoutThumbnailOrRender: EErrorCode
+ErrCameraPhotoNameEmpty: EErrorCode
+ErrCameraPhotoNameOutMaxLen: EErrorCode
+ErrCameraAlbumNameEmpty: EErrorCode
+ErrCameraPhotoHasDel: EErrorCode
+ErrCameraSysInnerError: EErrorCode
+ErrCameraIllegalPictureId: EErrorCode
+ErrCameraBeyondMaxExtraLen: EErrorCode
+ErrCameraNoIncludeOriginal: EErrorCode
+ErrCameraNoDealingPhoto: EErrorCode
+ErrCameraNoDealingPhotoType: EErrorCode
+ErrCameraNoAnyAlbum: EErrorCode
+ErrCameraNoPassReview: EErrorCode
+ErrCameraPhotoMissImage: EErrorCode
+ErrCameraWithoutThumbnail: EErrorCode
+ErrCameraBeyondMaxUploadTimes: EErrorCode
+ErrInvalidLifeProfessionId: EErrorCode
+ErrLifeProfessionIsUnlock: EErrorCode
+ErrLifeProfessionMaxLevel: EErrorCode
+ErrLifeProfessionLevelNotEnough: EErrorCode
+ErrLifeProfessionLevelRewardGot: EErrorCode
+ErrInvalidLifeProfessionSpecializationId: EErrorCode
+ErrLifeProfessionSpecializationNotEnough: EErrorCode
+ErrLifeProfessionSpecializationUpgradeError: EErrorCode
+ErrLifeProfessionPointNotEnough: EErrorCode
+ErrInvalidLifeProfessionTargetId: EErrorCode
+ErrLifeProfessionTargetNotEnough: EErrorCode
+ErrLifeProfessionRewardCanNotGet: EErrorCode
+ErrLifeProfessionEnergyChange: EErrorCode
+ErrLifeProfessionRecipeIsUnlock: EErrorCode
+ErrLifeProfessionRecipeNotExist: EErrorCode
+ErrLifeProfessionRecipeNotUnlock: EErrorCode
+ErrLifeProfessionMaxRDRecipeCount: EErrorCode
+ErrLifeProfessionWorkingNotEnd: EErrorCode
+ErrLifeProfessionAlreadyWorking: EErrorCode
+ErrLifeProfessionNotWorking: EErrorCode
+ErrLifeProfessionWorkingIsEnd: EErrorCode
+ErrLifeProfessionUnActiveSpecialization: EErrorCode
+ErrLifeProfessionAlreadyEntrusting: EErrorCode
+ErrLifeProfessionNotEntrusting: EErrorCode
+ErrCurLevelConfigNotExist: EErrorCode
+ErrNeedBreakthrough: EErrorCode
+ErrExperienceConfigNotExist: EErrorCode
+ErrExperienceMismatch: EErrorCode
+ErrNotNeedToBreakthrough: EErrorCode
+ErrConsumeConfigError: EErrorCode
+ErrSkillNotExist: EErrorCode
+ErrSkillLevelMax: EErrorCode
+ErrSkillLevelNotExist: EErrorCode
+ErrSkillConfigError: EErrorCode
+ErrStarNotExist: EErrorCode
+ErrMaxStar: EErrorCode
+ErrMaxLevel: EErrorCode
+ErrSkillLevelNotEnough: EErrorCode
+ErrCanNotChangeActionState: EErrorCode
+ErrActionNotExist: EErrorCode
+ErrIsInteracting: EErrorCode
+ErrState: EErrorCode
+ErrRequestExpired: EErrorCode
+ErrStateSetFailed: EErrorCode
+ErrCollectIdError: EErrorCode
+ErrCollectStateFailed: EErrorCode
+ErrCollectActorErr: EErrorCode
+ErrCollectOutRange: EErrorCode
+ErrCollectConditionEquip: EErrorCode
+ErrCollectConditionQuest: EErrorCode
+ErrAlreadyCollected: EErrorCode
+ErrMailGetFailed: EErrorCode
+ErrMailIllegality: EErrorCode
+ErrMailIsGet: EErrorCode
+ErrMailIsDel: EErrorCode
+ErrMailAcceptorEmpty: EErrorCode
+ErrMailTokenInvalid: EErrorCode
+ErrMailFull: EErrorCode
+ErrUnRegisterType: EErrorCode
+ErrIndexNotFound: EErrorCode
+ErrCantOpenTreasureBox: EErrorCode
+ErrPersonalStateEnd: EErrorCode
+ErrPersonalObjectStatus: EErrorCode
+ErrExp: EErrorCode
+ErrLevel: EErrorCode
+ErrAward: EErrorCode
+ErrReceivedLevelAward: EErrorCode
+ErrLevelNotEnough: EErrorCode
+ErrRoleLevelNoRewards: EErrorCode
+ErrReputationLevelNotEnough: EErrorCode
+ErrReputationReceivedRewards: EErrorCode
+ErrUnionNotHaveLimit: EErrorCode
+ErrUnionIsNotMember: EErrorCode
+ErrUnionOfficialNotExits: EErrorCode
+ErrUnionOfficialTooMany: EErrorCode
+ErrUnionHas: EErrorCode
+ErrUnionReqCd: EErrorCode
+ErrUnionReqHas: EErrorCode
+ErrUnionFull: EErrorCode
+ErrUnionFailed: EErrorCode
+ErrUnionNameWrongful: EErrorCode
+ErrUnionNameUsed: EErrorCode
+ErrUnionNameOccupied: EErrorCode
+ErrApplyMax: EErrorCode
+ErrUnionChangeNameCD: EErrorCode
+ErrUnionNameSizeError: EErrorCode
+ErrDeclarationSize: EErrorCode
+ErrDeclarationError: EErrorCode
+ErrOfficialNameRepeat: EErrorCode
+ErrDeclarationCd: EErrorCode
+ErrUnionInfoCd: EErrorCode
+ErrUnionNotExist: EErrorCode
+ErrUnionIllegalConditionType: EErrorCode
+ErrUnionRecruitSloganTooLong: EErrorCode
+ErrUnionRecruitDescriptionTooLong: EErrorCode
+ErrUnionCreateTooOften: EErrorCode
+ErrUnionTagNoExist: EErrorCode
+ErrUnionIconTooMuch: EErrorCode
+ErrUnionGetListCd: EErrorCode
+ErrUnionBatchSearchUnionIdsTooMuch: EErrorCode
+ErrUnionBatchSearchCd: EErrorCode
+ErrUnionGetCollectedIdsCd: EErrorCode
+ErrUnionBeyondMaxCollectedNum: EErrorCode
+ErrUnionIdHasCollected: EErrorCode
+ErrUnionIdNoCollected: EErrorCode
+ErrUnionActiveValueNotEnough: EErrorCode
+ErrUnionIllegalActiveId: EErrorCode
+ErrUnionTooShortForAwards: EErrorCode
+ErrUnionHasActiveAwards: EErrorCode
+ErrUnionNoJoin: EErrorCode
+ErrUnionOnlyEnterSelf: EErrorCode
+ErrUnionNoUnlockScene: EErrorCode
+ErrUnionBuildingMaxLevel: EErrorCode
+ErrUnionBuildingUpgrading: EErrorCode
+ErrUnionBuildingUpgradeNoFinish: EErrorCode
+ErrUnionPrefixBuildNoMeet: EErrorCode
+ErrUnionExperienceNoEnough: EErrorCode
+ErrUnionMoneyNoEnough: EErrorCode
+ErrUnionBuildingNoUpgrading: EErrorCode
+ErrUnionSpeedUpItemNoEnough: EErrorCode
+ErrUnionSpeedUpTimesOut: EErrorCode
+ErrUnionTryLater: EErrorCode
+ErrUnionSpeedUpLevelError: EErrorCode
+ErrUnionUpgradeHasCompleted: EErrorCode
+ErrUnionIllegalBuildIdLv: EErrorCode
+ErrUnionBeyMaxCount: EErrorCode
+ErrUnionUserNoApply: EErrorCode
+ErrUnionNoOneKeyNoMuch: EErrorCode
+ErrUnionActivityNotStart: EErrorCode
+ErrUnionActivityNotProgress: EErrorCode
+ErrUnionActivityAwardGet: EErrorCode
+ErrUnionActivityNotEnjoy: EErrorCode
+ErrUnionCreateTimeTooShort: EErrorCode
+ErrUnionFunctionLock: EErrorCode
+ErrUnionEScreenLock: EErrorCode
+ErrUnionEScreenPositionLock: EErrorCode
+ErrUnionEScreenNoSet: EErrorCode
+ErrUnionEScreenPositionNoSet: EErrorCode
+ErrUnionEffectGridLock: EErrorCode
+ErrUnionEffectIdLock: EErrorCode
+ErrUnionEffectPosNoSet: EErrorCode
+ErrUnionEffectPosHasEnd: EErrorCode
+ErrUnionCrowFuncHasEnd: EErrorCode
+ErrUnionCrowFuncPosHasUsed: EErrorCode
+ErrUnionCrowFuncHasJoined: EErrorCode
+ErrUnionCrowFuncNoBegin: EErrorCode
+ErrUnionNoFinishBaseBuilding: EErrorCode
+ErrUnionCrowFuncIllegalFuncPos: EErrorCode
+ErrUnionEScreenBeyondMaxTimes: EErrorCode
+ErrUnionTargetFunctionLock: EErrorCode
+ErrUnionNoMeet: EErrorCode
+ErrUnionActivityAwardCd: EErrorCode
+ErrUnionManagerNoKicked: EErrorCode
+ErrUnionDanceNoBegin: EErrorCode
+ErrUnionDanceEnd: EErrorCode
+ErrUnionDanceDrawnBox: EErrorCode
+ErrUnionDanceBoxDrawn: EErrorCode
+ErrUnionDanceNoDanceId: EErrorCode
+ErrUnionNoJoinDance: EErrorCode
+ErrUnionDanceNoDancing: EErrorCode
+ErrUnionRejectInvite: EErrorCode
+ErrUnionActivityHuntEnd: EErrorCode
+ErrUnionApplyListFull: EErrorCode
+ErrUionApplyListExist: EErrorCode
+ErrUnionGroupIvalid: EErrorCode
+ErrRepeatedRequest: EErrorCode
+ErrHasBeenBlackened: EErrorCode
+ErrNotFoundCharInfo: EErrorCode
+ErrInner: EErrorCode
+ErrParam: EErrorCode
+ErrSetShowPicture: EErrorCode
+ErrSetSignature: EErrorCode
+ErrSetHobbyMark: EErrorCode
+ErrSetTimeMark: EErrorCode
+ErrSetRemind: EErrorCode
+ErrSetTop: EErrorCode
+ErrAddFriend: EErrorCode
+ErrSetProcessed: EErrorCode
+ErrSetRemark: EErrorCode
+ErrDeleteFriend: EErrorCode
+ErrNotFoundGroup: EErrorCode
+ErrNotExistInGroup: EErrorCode
+ErrChangeGroup: EErrorCode
+ErrPersonalState: EErrorCode
+ErrOtherFriendMax: EErrorCode
+ErrCurFriendMax: EErrorCode
+ErrConfig: EErrorCode
+ErrAlreadyFriend: EErrorCode
+ErrSearchSelf: EErrorCode
+ErrSuggestionCd: EErrorCode
+ErrGroupMax: EErrorCode
+ErrGroupNotExist: EErrorCode
+ErrGroupNameEmpty: EErrorCode
+ErrIllegalCharacter: EErrorCode
+ErrStringMax: EErrorCode
+ErrOtherApplicationMax: EErrorCode
+ErrFriendlinessAwardHasRecord: EErrorCode
+ErrFriendlinessLevelLowAwardLevel: EErrorCode
+ErrFriendBeyondAllFriendNum: EErrorCode
+ErrFriendIsNoUserFriend: EErrorCode
+ErrFriendlinessIllegalAwardLevel: EErrorCode
+ErrFriendlinessLevelAwardIsEmpty: EErrorCode
+ErrFriendBeBlackenedByTarget: EErrorCode
+ErrFriendApplyEachOther: EErrorCode
+ErrFriendCallBySmallerCharId: EErrorCode
+ErrFriendCallByBiggerCharId: EErrorCode
+ErrFriendBeBlackenedBySmaller: EErrorCode
+ErrFriendBeBlackenedByBigger: EErrorCode
+ErrFriendNoApply: EErrorCode
+ErrFriendApplySelf: EErrorCode
+ErrUserNameFormat: EErrorCode
+ErrFriendGetBaseTooOften: EErrorCode
+ErrFriendOnlyGetSelfBaseInfo: EErrorCode
+ErrUserNameLanguage: EErrorCode
+ErrActorGetFailed: EErrorCode
+ErrPivotIsActive: EErrorCode
+ErrPivotIsNotActive: EErrorCode
+ErrBreakPointIsGet: EErrorCode
+ErrActorIsNotPivot: EErrorCode
+ErrActorIsNotBreakPoint: EErrorCode
+ErrActorIsBreakPointNotFull: EErrorCode
+ErrPivotRewardIsGiven: EErrorCode
+ErrNotInsight: EErrorCode
+ErrLearnSkillFail: EErrorCode
+ErrRemoveSkillFail: EErrorCode
+ErrUpdateSkillFail: EErrorCode
+ErrSkillOperatorType: EErrorCode
+ErrContainerOperator: EErrorCode
+ErrExchangeFail: EErrorCode
+ErrExchangeFailInCombat: EErrorCode
+ErrResonanceTimeOutNotActived: EErrorCode
+ErrAvatarBeyondMaxPictureSize: EErrorCode
+ErrGetTokenFailed: EErrorCode
+ErrPictureVerifyFailed: EErrorCode
+ErrPictureIllegalType: EErrorCode
+ErrPictureErrorInfo: EErrorCode
+ErrPictureSizeInconsistent: EErrorCode
+ErrPictureFuncTypeIllegal: EErrorCode
+ErrPictureCallBackJudgeIllegal: EErrorCode
+ErrPictureVerifyNoPass: EErrorCode
+ErrPictureVerifyBackParamIllegal: EErrorCode
+ErrPictureCallBackParamIllegal: EErrorCode
+ErrPictureIllegalId: EErrorCode
+ErrPictureCosErrors: EErrorCode
+ErrPictureInnerSysErr: EErrorCode
+ErrPictureNoSetEnvCosSecretId: EErrorCode
+ErrPictureNoSetEnvCosSecretKey: EErrorCode
+ErrPictureCheckInMachineLocked: EErrorCode
+ErrPictureNoTryOutItem: EErrorCode
+ErrPictureNoUploadItem: EErrorCode
+ErrPictureNoUnion: EErrorCode
+ErrNameSizeError: EErrorCode
+ErrSensitiveContent: EErrorCode
+ErrChangeNameFail: EErrorCode
+ErrChangeNameCardNotEnough: EErrorCode
+ErrChangeSameName: EErrorCode
+ErrCheckMuteWordsFailed: EErrorCode
+ErrCheckMuteWordsEmpty: EErrorCode
+ErrChangeShowIdFail: EErrorCode
+ErrChangeShowIdDuplicated: EErrorCode
+ErrChangeShowIdCardNotEnough: EErrorCode
+ErrFaceItemLock: EErrorCode
+ErrFaceItemGender: EErrorCode
+ErrFaceNoUploading: EErrorCode
+ErrFaceNoSupportFileSuffix: EErrorCode
+ErrFaceFileSuffixEmpty: EErrorCode
+ErrFaceIllegalCosKey: EErrorCode
+ErrFaceParseSuffixFailed: EErrorCode
+ErrFaceParseShortGuidFailed: EErrorCode
+ErrFaceSetBodySizeNoChange: EErrorCode
+ErrFaceSetBodySizeInvalid: EErrorCode
+ErrFaceVoiceLock: EErrorCode
+ErrProficiencyNeedUnlock: EErrorCode
+ErrProficiencyUnlock: EErrorCode
+ErrUnlockItemNotEnough: EErrorCode
+ErrTaskNotFinish: EErrorCode
+ErrStickerAwardIsGet: EErrorCode
+ErrBookAwardIsGet: EErrorCode
+ErrUnstuckInCd: EErrorCode
+ErrUnstuckInDynamic: EErrorCode
+ErrMoneyNotEnough: EErrorCode
+ErrShopItemCantBuy: EErrorCode
+ErrShopBuyBusy: EErrorCode
+ErrPaymentConfigNotFound: EErrorCode
+ErrRefreshShopCountExceed: EErrorCode
+ErrShopCouponNotEnough: EErrorCode
+ErrShopCouponLimitNum: EErrorCode
+ErrShopCantBuyNoPrice: EErrorCode
+ErrNotFoundMonster: EErrorCode
+ErrNotMonster: EErrorCode
+ErrMonsterUnlockExist: EErrorCode
+ErrMonsterAwardIsGet: EErrorCode
+ErrMonsterTargetNotFinish: EErrorCode
+ErrDropTypeNotSupport: EErrorCode
+ErrCounterNotEnough: EErrorCode
+ErrDropItemAlreadyPicked: EErrorCode
+ErrInteractionDoing: EErrorCode
+ErrInteractionCondition: EErrorCode
+ErrInteractionNotMore: EErrorCode
+ErrInteractionExistPos: EErrorCode
+ErrInteractionNotExist: EErrorCode
+ErrInteractionEntityNotExist: EErrorCode
+ErrInteractionHandleNotExist: EErrorCode
+ErrInteractionType: EErrorCode
+ErrInteractionBan: EErrorCode
+ErrInteractionConfig: EErrorCode
+ErrInteractionNotOneself: EErrorCode
+ErrInteractionDistance: EErrorCode
+ErrInteractionNotDoing: EErrorCode
+ErrInteractionEndEarly: EErrorCode
+ErrInteractionTimeOutByClient: EErrorCode
+ErrInteractionTimeOutByServer: EErrorCode
+ErrInteractionNotFindTimer: EErrorCode
+ErrInteractionTimerNotEmpty: EErrorCode
+ErrInteractionStage: EErrorCode
+ErrInteractionTemplateNotExist: EErrorCode
+ErrShowPieceIllegalPieceType: EErrorCode
+ErrShowPieceIllegalPieceId: EErrorCode
+ErrShowPieceNoInOftenUseList: EErrorCode
+ErrShowPieceNoUnlockList: EErrorCode
+ErrShowPieceRoulettePositionNoSet: EErrorCode
+ErrShowPieceBeyondOftenUseMaxLen: EErrorCode
+ErrShowPieceBeyondOftenRoulettePositionNum: EErrorCode
+ErrShowPieceNoCommonPiece: EErrorCode
+ErrShowPieceNoTakeOn: EErrorCode
+ErrProfessionActivated: EErrorCode
+ErrProfessionNotHas: EErrorCode
+ErrProfessionSlotErr: EErrorCode
+ErrProfessionRemoveErr: EErrorCode
+ErrProfessionChangePlanFail: EErrorCode
+ErrProfessionStarConfigNotExist: EErrorCode
+ErrProfessionStarNodeUnlock: EErrorCode
+ErrProfessionStarNodeNotUnlock: EErrorCode
+ErrProfessionReplaceSkillNotExist: EErrorCode
+ErrProfessionUpgradeNotGreaterCurLevel: EErrorCode
+ErrProfessionProfessionBeForged: EErrorCode
+ErrProfessionSlotTwoNotUnlock: EErrorCode
+ErrProfessionSkillAlreadyActive: EErrorCode
+ErrProfessionSkillRemodelLevelWrong: EErrorCode
+ErrAoyiSkillAlreadyActive: EErrorCode
+ErrAoyiSkillRemodelConfigNotExist: EErrorCode
+ErrAoyiSkillRemodelLevelWrong: EErrorCode
+ErrProfessionEquipInCombat: EErrorCode
+ErrProfessionSwitchInCombat: EErrorCode
+ErrProfessionDungeonNotAllowSwitch: EErrorCode
+ErrAoYiDecomposeOverflow: EErrorCode
+ErrProfessionProjectNotExist: EErrorCode
+ErrProfessionProjectCreateAlreadyExist: EErrorCode
+ErrProfessionProjectNameInvalid: EErrorCode
+ErrProfessionProjectUnlockConditionNotMeet: EErrorCode
+ErrProfessionProjectCantChangeProfession: EErrorCode
+ErrInteractionIsMoreNotEndByClient: EErrorCode
+ErrInteractionQuest: EErrorCode
+ErrTalentIllegalTalentPoolId: EErrorCode
+ErrTalentBeyondCurTalentMaxPlanNum: EErrorCode
+ErrTalentPoolNoActive: EErrorCode
+ErrTalentPlanNoActive: EErrorCode
+ErrTalentIllegalTalentId: EErrorCode
+ErrTalentTalentHasUnlocked: EErrorCode
+ErrTalentTalentNoUnlocked: EErrorCode
+ErrTalentChangeLvPassiveTalentMoreThanInPool: EErrorCode
+ErrTalentRepeatedTalentId: EErrorCode
+ErrTalentNoPoolPassiveTalent: EErrorCode
+ErrTalentTalentPointsNoEnough: EErrorCode
+ErrTalentPassiveTalentListNoEmpty: EErrorCode
+ErrTalentIllegalTalentLevel: EErrorCode
+ErrTalentNoMeetUpgradeCondition: EErrorCode
+ErrTalentNoSupportDownLevelNow: EErrorCode
+ErrTalentNoMeetPrevTalentLv: EErrorCode
+ErrTalentNoMeetPrevTalentPoint: EErrorCode
+ErrTalentTreeNodeBDExclusive: EErrorCode
+ErrTalentTotalTalentPointNotEnough: EErrorCode
+ErrTalentPreTalentNodeNotActivated: EErrorCode
+ErrTalentResetTalentInCombat: EErrorCode
+ErrTalentActiveTalentInCombat: EErrorCode
+ErrTalentMarkUpToLimit: EErrorCode
+ErrCookBookNotExist: EErrorCode
+ErrCookFoodNotEnough: EErrorCode
+ErrCookTypeMore: EErrorCode
+ErrCookCountMore: EErrorCode
+ErrCookHasBook: EErrorCode
+ErrCookMaterialNotMatch: EErrorCode
+ErrChatIllegalPrivateChatTarget: EErrorCode
+ErrChatInTargetBlockList: EErrorCode
+ErrChatSendMsgBeyondMaxWords: EErrorCode
+ErrChatWorldChannelIdIsZero: EErrorCode
+ErrChatWorldChannelIdBeyondMaxId: EErrorCode
+ErrChatIllegalChannelType: EErrorCode
+ErrChatIllegalMsgType: EErrorCode
+ErrChatNoInGoalChannel: EErrorCode
+ErrChatNeedConfigIdNotZero: EErrorCode
+ErrChatNeedMsgTextNotEmpty: EErrorCode
+ErrChatSendCdNoEnd: EErrorCode
+ErrChatRecordListIsEmpty: EErrorCode
+ErrChatTargetNotInPrivateList: EErrorCode
+ErrChatMsgIdMoreThanMaxReadMsgId: EErrorCode
+ErrChatBeyondBlockListLimit: EErrorCode
+ErrChatWorldChannelIdBeyondMaxNum: EErrorCode
+ErrChatBeyondMaxRecordId: EErrorCode
+ErrChatNoCreatePrivateSession: EErrorCode
+ErrChatPrivateSessionHasExit: EErrorCode
+ErrChatBeBan: EErrorCode
+ErrChatFileIdTooLong: EErrorCode
+ErrChatFileIdEmpty: EErrorCode
+ErrChatMsgInfoEmpty: EErrorCode
+ErrChatNoShareChannel: EErrorCode
+ErrChatIllegalShareType: EErrorCode
+ErrChatIllegalHolderType: EErrorCode
+ErrChatNoSupportShareType: EErrorCode
+ErrChatShareTpeNoChatId: EErrorCode
+ErrChatShareNoFishRank: EErrorCode
+ErrChatLevelLimit: EErrorCode
+ErrChatNoFoundBlockListLimit: EErrorCode
+ErrTalentModTalentTagNotExist: EErrorCode
+ErrTextCheckForbidden: EErrorCode
+ErrTextCheckNoSceneType: EErrorCode
+ErrTextCheckIllegal: EErrorCode
+ErrTextCheckHttpError: EErrorCode
+ErrTextCheckTooManyItems: EErrorCode
+ErrConditionTimerOpen: EErrorCode
+ErrConditionOpenServer: EErrorCode
+ErrConditionSceneNotMet: EErrorCode
+ErrSkillDisable: EErrorCode
+ErrSkillIsCD: EErrorCode
+ErrSkillMaxPassiveCount: EErrorCode
+ErrSkillInit: EErrorCode
+ErrSkillInfo: EErrorCode
+ErrUseSkillFightResInsufficient: EErrorCode
+ErrUseSkillBuffNotEnough: EErrorCode
+ErrUseSkillItemInsufficient: EErrorCode
+ErrUseSkillAttrInsufficient: EErrorCode
+ErrUseSkillEnduranceInsufficient: EErrorCode
+ErrUseSkillStateChange: EErrorCode
+ErrUseSkillClientSkillUuid: EErrorCode
+ErrUseSkillTargetPosDisCheck: EErrorCode
+ErrStopPassiveSkillByType: EErrorCode
+ErrStopPassiveSkillById: EErrorCode
+ErrFightLogicConditionBlockInvalid: EErrorCode
+ErrFightLogicActionGroupInvalid: EErrorCode
+ErrFightLogicConditionNotMatch: EErrorCode
+ErrFightLogicRunDataInvalid: EErrorCode
+ErrSkillStageNotFind: EErrorCode
+ErrConditionCfgSize: EErrorCode
+ErrConditionDissatisfy: EErrorCode
+ErrConditionObjectIsNull: EErrorCode
+ErrConditionTypeNotFound: EErrorCode
+ErrConditionEntityDeath: EErrorCode
+ErrConditionUnionLevel: EErrorCode
+ErrConditionUnionMoney: EErrorCode
+ErrConditionNotMeet: EErrorCode
+ErrConditionNotInShapeShift: EErrorCode
+ErrSeasonAchievementNoExist: EErrorCode
+ErrSeasonAchievementNoFinish: EErrorCode
+ErrSeasonAchievementHasReceived: EErrorCode
+ErrSeasonAchievementPrevIdNoReceived: EErrorCode
+ErrSeasonAchievementPrevIdNoExist: EErrorCode
+ErrSeasonAchievementTargetConfigError: EErrorCode
+ErrCommonTargetActivityNoFinish: EErrorCode
+ErrCommonTargetActivityHasReceived: EErrorCode
+ErrCommonTargetActivityNoExist: EErrorCode
+ErrSeasonRankHasMax: EErrorCode
+ErrSeasonRankHasReceived: EErrorCode
+ErrSeasonRankNoAchieve: EErrorCode
+ErrSeasonRankCurSeasonIdZero: EErrorCode
+ErrSeasonRankNoMeetCondition: EErrorCode
+ErrSeasonRankSeasonNoSame: EErrorCode
+ErrBattlePassBuyLevel: EErrorCode
+ErrBattlePassBuyMaterial: EErrorCode
+ErrBattlePassAwardGet: EErrorCode
+ErrBattlePassAwardNotUnlock: EErrorCode
+ErrBattlePassBuyWeekExpLimit: EErrorCode
+ErrBattlePassLevelError: EErrorCode
+ErrNoRefreshTimes: EErrorCode
+ErrTargetNotCompleted: EErrorCode
+ErrOnlinePeriodTooMore: EErrorCode
+ErrPersonalTagTooMore: EErrorCode
+ErrPersonalTagNotFound: EErrorCode
+ErrPersonalAvatarUnearned: EErrorCode
+ErrPersonalAvatarFrameUnearned: EErrorCode
+ErrPersonalCardStyleUnearned: EErrorCode
+ErrPersonalPhotoTooMore: EErrorCode
+ErrPersonalMedalUnearned: EErrorCode
+ErrPersonalTargetUnlock: EErrorCode
+ErrPersonalTargetAlreadyGet: EErrorCode
+ErrPersonalMedalInvalidSlot: EErrorCode
+ErrPersonalMedalDuplicateValue: EErrorCode
+ErrOnlinePeriodDuplicate: EErrorCode
+ErrPersonalTagDuplicate: EErrorCode
+ErrPersonalPhotoInvalidSlot: EErrorCode
+ErrPersonalPhotoDuplicateValue: EErrorCode
+ErrSeasonMedalNoMeetActiveCondition: EErrorCode
+ErrSeasonMedalNoMeetUpgradeCondition: EErrorCode
+ErrSeasonMedalActiveMeetNoEnough: EErrorCode
+ErrSeasonMedalUpgradeMeetNoEnough: EErrorCode
+ErrSeasonMedalIllegalNodeId: EErrorCode
+ErrSeasonMedalChooseNodeIdBeyondMax: EErrorCode
+ErrSeasonMedalHoleNoExist: EErrorCode
+ErrSeasonMedalHoleLock: EErrorCode
+ErrSeasonMedalNodeNoExist: EErrorCode
+ErrSeasonMedalHoleNoGet: EErrorCode
+ErrSeasonMedalMaxHoleLevel: EErrorCode
+ErrSeasonMedalCoreHoleLock: EErrorCode
+ErrSeasonMedalUpgradeMoneyNoEnough: EErrorCode
+ErrSeasonNoCoreHole: EErrorCode
+ErrSeasonNoNormalHole: EErrorCode
+ErrSeasonMedalNoUpgradeNormalHoleItem: EErrorCode
+ErrSceneLineNotExists: EErrorCode
+ErrSceneLineRefreshCd: EErrorCode
+ErrSceneLineNotSameScene: EErrorCode
+ErrSceneLineSameLine: EErrorCode
+ErrSceneLineInteracting: EErrorCode
+ErrSceneLineUserDead: EErrorCode
+ErrSceneLineFull: EErrorCode
+ErrSceneLineChangeCd: EErrorCode
+ErrSceneVersionRecycle: EErrorCode
+ErrSceneLineKick: EErrorCode
+ErrInstallSlotFailed: EErrorCode
+ErrUseSlotFailed: EErrorCode
+ErrUseSlotInCd: EErrorCode
+ErrInstatallSlotFailedInCombat: EErrorCode
+ErrSlotSkillUnLoad: EErrorCode
+ErrUseCfgSkillFailed: EErrorCode
+ErrResonanceNotExists: EErrorCode
+ErrResonanceUnLoad: EErrorCode
+ErrUseDodgeFailed: EErrorCode
+ErrUseFixedSkillFailed: EErrorCode
+ErrUseBlockedSkill: EErrorCode
+ErrInstallBlockedSkill: EErrorCode
+ErrDutySkillNotExists: EErrorCode
+ErrSkillDutyNotMatchProfession: EErrorCode
+ErrSlotFunctionIsClose: EErrorCode
+ErrExchangeNotFound: EErrorCode
+ErrExchangeNotEnough: EErrorCode
+ErrExchangeItemLimit: EErrorCode
+ErrExchangeStepRange: EErrorCode
+ErrExchangeItemFull: EErrorCode
+ErrExchangePackageFull: EErrorCode
+ErrExchangePriceItemNotFind: EErrorCode
+ErrExchangeBuyNumNotEnough: EErrorCode
+ErrExchangeBuyItemNotFound: EErrorCode
+ErrExchangeTakeFailDelayTime: EErrorCode
+ErrExchangeTakeFailSellNum: EErrorCode
+ErrExchangeTakeItemNotFound: EErrorCode
+ErrExchangeWithdrawNoMoney: EErrorCode
+ErrExchangeDepositNotEnough: EErrorCode
+ErrExchangeItemNotBindOrCooldownNotExpire: EErrorCode
+ErrExchangeInCd: EErrorCode
+ErrExchangeBuyCurrencyNoEnough: EErrorCode
+ErrExchangeItemDelayTimeOver: EErrorCode
+ErrExchangeItemIsNotWithdraw: EErrorCode
+ErrExchangeBuyItemLimit: EErrorCode
+ErrExchangeItemIsNotNoticeShopItem: EErrorCode
+ErrExchangeItemIsPreBuyAlready: EErrorCode
+ErrExchangeItemNotPublic: EErrorCode
+ErrExchangeSaleRankExist: EErrorCode
+ErrExchangeSaleItemFull: EErrorCode
+ErrExchangeSaleDiamondNotEnough: EErrorCode
+ErrExchangeSaleItemNotExists: EErrorCode
+ErrExchangeBuySaleCurrencyNoEnough: EErrorCode
+ErrExchangeDiamondNotEnough: EErrorCode
+ErrExchangeSaleTakeOffCd: EErrorCode
+ErrExchangeSaleRateInvalid: EErrorCode
+ErrExchangePreItemFull: EErrorCode
+ErrExchangeSaleNumInvalid: EErrorCode
+ErrExchangeCareItemAlready: EErrorCode
+ErrExchangePriceRange: EErrorCode
+ErrExchangeRequestLimit: EErrorCode
+ErrExchangeItemBanned: EErrorCode
+ErrExchangePriceNotLow: EErrorCode
+ErrExchangeItemNotFind: EErrorCode
+ErrExchangeItemExistMinPrice: EErrorCode
+ErrExchangeNoticeItemMin: EErrorCode
+ErrExchangePreBuyUserFull: EErrorCode
+ErrModHoleNotUnlock: EErrorCode
+ErrModNotExist: EErrorCode
+ErrModSimilarRepeated: EErrorCode
+ErrModTypeLimitExceeded: EErrorCode
+ErrModPartNotExist: EErrorCode
+ErrModPartEnhanceLimit: EErrorCode
+ErrModInUse: EErrorCode
+ErrModAlreadyInstalled: EErrorCode
+ErrModInitConfigNotExist: EErrorCode
+ErrModPartOverflow: EErrorCode
+ErrModCanNotLink: EErrorCode
+ErrModDecomposeOverflow: EErrorCode
+ErrFishingNotUseBait: EErrorCode
+ErrFishingRandomFailed: EErrorCode
+ErrFishingAlreadyGetFishItem: EErrorCode
+ErrFishingGetFishIdWrong: EErrorCode
+ErrFishingNotGet: EErrorCode
+ErrFishingNotResearchYet: EErrorCode
+ErrFishingNotUseRod: EErrorCode
+ErrFishingNoSeat: EErrorCode
+ErrFishingCantResearch: EErrorCode
+ErrFishDrawnLevelAward: EErrorCode
+ErrFishCannotDrawLevelAward: EErrorCode
+ErrFishDrawnNoLevelAward: EErrorCode
+ErrFreightNoRefreshGoods: EErrorCode
+ErrFreightBeyondMaxValue: EErrorCode
+ErrFreightDownMinValue: EErrorCode
+ErrFreightHasSetOff: EErrorCode
+ErrFreightNoSetOff: EErrorCode
+ErrFreightHasReward: EErrorCode
+ErrFreightIllegalGoodsId: EErrorCode
+ErrFreightItemNoEnough: EErrorCode
+ErrFreightNoUpSetOffTime: EErrorCode
+ErrFreightNoUpRewardTime: EErrorCode
+ErrFreightAutoSetOff: EErrorCode
+ErrTrialRoadAwardNotFinished: EErrorCode
+ErrTrialRoadAwardRoomGet: EErrorCode
+ErrNotCanRide: EErrorCode
+ErrCombatStateNotRide: EErrorCode
+ErrAlreadyRide: EErrorCode
+ErrRideNotEnough: EErrorCode
+ErrCreateVehicleActorFailed: EErrorCode
+ErrNotVehicleOwner: EErrorCode
+ErrVehicleHasController: EErrorCode
+ErrVehicleNoSeat: EErrorCode
+ErrVehicleHasSeat: EErrorCode
+ErrNotRideVehicle: EErrorCode
+ErrVehicleNotExits: EErrorCode
+ErrInvalidRidePropertyType: EErrorCode
+ErrRideApplyTargetUserNotExist: EErrorCode
+ErrRideConfigNotFind: EErrorCode
+ErrRideNotUnlock: EErrorCode
+ErrRideNotFind: EErrorCode
+ErrInvalidRideType: EErrorCode
+ErrRideApplyAlreadyExist: EErrorCode
+ErrRideApplyNotRideVehicle: EErrorCode
+ErrRideApplyVehicleNotSeat: EErrorCode
+ErrRideAlReadyRide: EErrorCode
+ErrRideApplyTargetTooFar: EErrorCode
+ErrRideNotTake: EErrorCode
+ErrRideInteracting: EErrorCode
+ErrShapeshiftNotRide: EErrorCode
+ErrFishingNotRide: EErrorCode
+ErrRideStateReject: EErrorCode
+ErrRideTypeNotSupport: EErrorCode
+ErrRideNotControl: EErrorCode
+ErrRideNotFunction: EErrorCode
+ErrRideSkinNotSupport: EErrorCode
+ErrRideSkinNotUnlock: EErrorCode
+ErrRideSkinDataAddFailed: EErrorCode
+ErrRideSkinNotSkin: EErrorCode
+ErrRideSkinAlreadyActivate: EErrorCode
+ErrRideCantRideDown: EErrorCode
+ErrRogueActorNotPlayer: EErrorCode
+ErrRogueEntryConfigError: EErrorCode
+ErrRogueCoinNotEnough: EErrorCode
+ErrRogueObjNotUseful: EErrorCode
+ErrRogueObjNotExist: EErrorCode
+ErrRogueDungeonError: EErrorCode
+ErrRogueRandomError: EErrorCode
+ErrRogueRandomNoCount: EErrorCode
+ErrRogueRandomNoNeed: EErrorCode
+ErrRogueEntryNotLearn: EErrorCode
+ErrRogueEntryLearned: EErrorCode
+ErrRogueEntryUpgradeCant: EErrorCode
+ErrRogueEntryUpgradeMax: EErrorCode
+ErrRogueEntryBuffAddError: EErrorCode
+ErrRogueEntryBuffNotExist: EErrorCode
+ErrRogueEntryBuffDataError: EErrorCode
+ErrRogueEntryBuffChangeError: EErrorCode
+ErrRogueLockCant: EErrorCode
+ErrRogueLockRepeat: EErrorCode
+ErrRogueActiveBuffConfigError: EErrorCode
+ErrRogueActiveBuffSeasonError: EErrorCode
+ErrRogueActiveBuffAlreadyActive: EErrorCode
+ErrRogueActiveBuffItemError: EErrorCode
+ErrRogueActiveBuffItemNotEnough: EErrorCode
+ErrWarehouseHas: EErrorCode
+ErrWarehouseNoHas: EErrorCode
+ErrWarehouseNoMem: EErrorCode
+ErrWarehouseNoPresident: EErrorCode
+ErrWarehouseNoHasItem: EErrorCode
+ErrWarehouseItemNoDeposit: EErrorCode
+ErrWarehouseGridPosNoExist: EErrorCode
+ErrWarehouseGridPosItemNoEnough: EErrorCode
+ErrWarehouseNoInviteSelf: EErrorCode
+ErrWarehouseInviteesHas: EErrorCode
+ErrWarehouseMemBeyondMax: EErrorCode
+ErrWarehouseGridBeyondMax: EErrorCode
+ErrWarehouseNoSelf: EErrorCode
+ErrWarehouseIsMem: EErrorCode
+ErrWarehouseNoExist: EErrorCode
+ErrWarehouseDepositBeyondMax: EErrorCode
+ErrWarehouseTakeOutBeyondMax: EErrorCode
+ErrWarehouseItemIdNotSame: EErrorCode
+ErrWarehouseParams: EErrorCode
+ErrWarehouseNoKickSelf: EErrorCode
+ErrWarehousePresidentNoExit: EErrorCode
+ErrGashaDrawCount: EErrorCode
+ErrGashaDrawLimit: EErrorCode
+ErrGashaInvalidWishId: EErrorCode
+EErGashaWishRepeated: EErrorCode
+EErGashaWishCountNoEnough: EErrorCode
+ErrWarehouseAuthority: EErrorCode
+ErrEquipCantDecompose: EErrorCode
+ErrEquipNotRecastRecord: EErrorCode
+ErrEquipOnCantUsedRecastConsume: EErrorCode
+ErrEquipWeaponNotEqualProfession: EErrorCode
+ErrEquipSlotRefineBlessNotFit: EErrorCode
+ErrEquipNotRecast: EErrorCode
+ErrEquipEnchantItemMismatch: EErrorCode
+ErrEquipEnchantAlreadyEnchanted: EErrorCode
+ErrEquipAnyItemMismatch: EErrorCode
+ErrEquipSlotRefineBlessNumTooMuch: EErrorCode
+ErrEquipNameGroupNoMatch: EErrorCode
+ErrEquipPerfectionNoMatch: EErrorCode
+ErrEquipNotBreak: EErrorCode
+ErrEquipPutOnIng: EErrorCode
+ErrEquipDecomposeOverflow: EErrorCode
+ErrEquipDecomposeEnchantAward: EErrorCode
+ErrEquipDecomposeBreakAward: EErrorCode
+ErrUserIsMatching: EErrorCode
+ErrUserNotInMatching: EErrorCode
+ErrUseNotWaitReady: EErrorCode
+ErrDungeonCantMatch: EErrorCode
+ErrMatchQueueFull: EErrorCode
+ErrCommonAwardCantReceive: EErrorCode
+ErrCommonAwardHasReceived: EErrorCode
+ErrCraftEnergyNotEnough: EErrorCode
+ErrCraftEnergyFull: EErrorCode
+ErrRecommendPlayNotOpen: EErrorCode
+ErrWeeklyTowerNoStart: EErrorCode
+ErrWeeklyTowerHasEnd: EErrorCode
+ErrWeeklyNoMeetProcessAward: EErrorCode
+ErrWeeklyHasRewardProcessAward: EErrorCode
+ErrWeeklyNoLayerStageAward: EErrorCode
+ErrWeekOnlyCurSeasonAward: EErrorCode
+ErrWeeklyTowerCannotEnterLayer: EErrorCode
+ErrWeeklyTowerBoxHasOpen: EErrorCode
+ErrWeeklyTowerNoBox: EErrorCode
+ErrWeeklyTowerNoStageAward: EErrorCode
+ErrWeeklyTowerNoTowerDungeon: EErrorCode
+ErrWeeklyTowerLayerNotSatisfy: EErrorCode
+ErrWeeklyTowerHasNotJumpReward: EErrorCode
+ErrWeeklyTowerNeedToClaimLowerLayerJumpReward: EErrorCode
+ErrWeeklyTowerHasNotJumpRewardToLayer: EErrorCode
+ErrWeeklyTowerDuplicateReward: EErrorCode
+ErrWeeklyTowerJumpLayerNotMatch: EErrorCode
+ErrWeeklyNoMeetJumpAward: EErrorCode
+ErrTeamRobotQuitFailed: EErrorCode
+ErrFunctionNoAward: EErrorCode
+ErrFunctionHasDrawn: EErrorCode
+ErrTLogIllegalExportArea: EErrorCode
+ErrPayOrderFail: EErrorCode
+ErrPayCostNotEnough: EErrorCode
+ErrPayCantBuy: EErrorCode
+ErrPayCantExplore: EErrorCode
+ErrActivityNotFind: EErrorCode
+ErrActivityOffline: EErrorCode
+ErrActivityNotOpen: EErrorCode
+ErrActivityRewardNotFound: EErrorCode
+ErrActivityConditionNotFinish: EErrorCode
+ErrActivityAlreadyObtain: EErrorCode
+ErrActivityNotUnlock: EErrorCode
+ErrEmojiConfigError: EErrorCode
+ErrEmojiAlreadyUnlock: EErrorCode
+ErrEmojiUnlockItemError: EErrorCode
+ErrEmojiUnlockItemErrorItemNotEnough: EErrorCode
+ErrEmojiUnlock: EErrorCode
+ErrGlobalConditionNotFound: EErrorCode
+ErrGlobalConditionNotLuckyValue: EErrorCode
+ErrPathFindingCant: EErrorCode
+ErrPathFindingDataError: EErrorCode
+ErrPathFindingEndPosError: EErrorCode
+ErrPathFindingStartPosError: EErrorCode
+ErrPathFindingNoPath: EErrorCode
+ErrSignNotOpen: EErrorCode
+ErrSignNotSigned: EErrorCode
+ErrSignAlreadySigned: EErrorCode
+ErrSignTimeError: EErrorCode
+ErrNotNewbie: EErrorCode
+ErrNotBackflow: EErrorCode
+ErrNewBackElectiveRandConfigError: EErrorCode
+ErrNewbieCancel: EErrorCode
+ErrBackflowCancel: EErrorCode
+CdKeyInvalid: EErrorCode
+CdKeyDuplicate: EErrorCode
+CdKeyExpired: EErrorCode
+CdKeyNotFound: EErrorCode
+CdKeyNotActivated: EErrorCode
+CdKeyPlayerLevelTooLow: EErrorCode
+CdKeyTakeLimitReached: EErrorCode
+CdKeyGroupNotFound: EErrorCode
+ErrMahjongTableExist: EErrorCode
+ErrMahjongTableNotExist: EErrorCode
+ErrMahjongTablePlayerNotExist: EErrorCode
+ErrMahjongLessPlayer: EErrorCode
+ErrMahjongRestoreError: EErrorCode
+ErrMahjongTableEnd: EErrorCode
+ErrMahjongUnknownProtocol: EErrorCode
+ErrSeasonTalentOrdinaryNodeAlreadyActive: EErrorCode
+ErrSeasonTalentIntermediateNodeAlreadyActive: EErrorCode
+ErrSeasonTalentPreNodeNotActive: EErrorCode
+ErrSeasonTalentAllNodeReset: EErrorCode
+ErrSeasonTalentOrdinaryNodeReset: EErrorCode
+ErrSeasonTalentIntermediateNodeReset: EErrorCode
+ErrSeasonTalentInFight: EErrorCode
+ErrSeasonTalentAdvancedNodeAlreadyInstallFantasy: EErrorCode
+ErrSeasonTalentAdvancedNodeReset: EErrorCode
+ErrSeasonTalentTreeNodeNotNormal: EErrorCode
+ErrSeasonTalentTreeNodeNotIntermediate: EErrorCode
+ErrSeasonTalentIntermediateNodeClassNumExceeded: EErrorCode
+ErrSeasonTalentIntermediateNodeFactorTypeNotMatch: EErrorCode
+ErrSeasonTalentIntermediateNodeProfessionNotMatch: EErrorCode
+ErrSeasonTalentCultivateLineAlreadyActive: EErrorCode
+ErrSeasonTalentCultivateLineAlreadyDisabled: EErrorCode
+ErrSeasonTalentSwitchInGreaterRiftScene: EErrorCode
+ErrActionGroupNumUpToLimit: EErrorCode
+ErrActionGroupNotExist: EErrorCode
+ErrActionGroupActionIdInvalid: EErrorCode
+ErrTokenBucketLimit: EErrorCode
+ErrUnknown: EErrorCode

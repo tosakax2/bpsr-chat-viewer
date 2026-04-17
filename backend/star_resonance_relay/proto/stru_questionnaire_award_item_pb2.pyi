@@ -1,0 +1,13 @@
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from typing import ClassVar as _ClassVar, Optional as _Optional
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class QuestionnaireAwardItem(_message.Message):
+    __slots__ = ("config_id", "count")
+    CONFIG_ID_FIELD_NUMBER: _ClassVar[int]
+    COUNT_FIELD_NUMBER: _ClassVar[int]
+    config_id: int
+    count: int
+    def __init__(self, config_id: _Optional[int] = ..., count: _Optional[int] = ...) -> None: ...

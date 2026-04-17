@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_player_box_data.proto";
+
+message PlayerBox {
+  map<uint64, zproto.PlayerBoxData> scenes = 1;
+}
+

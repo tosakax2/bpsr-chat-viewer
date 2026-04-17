@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message EquipSuitInfo {
+  map<int32, int32> suit_attr = 3;
+  int32 attr_type = 4;
+}
+

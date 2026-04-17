@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_investigate_step.proto";
+
+message InvestigateData {
+  uint32 id = 1;
+  map<int32, zproto.InvestigateStep> step_ids = 2;
+}
+

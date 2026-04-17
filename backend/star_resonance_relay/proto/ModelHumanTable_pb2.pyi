@@ -1,0 +1,207 @@
+import table_basic_pb2 as _table_basic_pb2
+from google.protobuf.internal import containers as _containers
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from collections.abc import Mapping as _Mapping
+from typing import ClassVar as _ClassVar, Optional as _Optional, Union as _Union
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class ModelHumanTableBase(_message.Message):
+    __slots__ = ("model_prefab_id", "model_prefab_desc", "skeleton", "anim_template", "head", "emo_prefix", "sex", "model", "height_parm", "arm_parm", "chest_parm", "waist_parm", "crotch_parm", "thigh_parm", "calf_parm", "female_parm", "skin", "face", "chin", "eyebrow", "eyebrow_angle", "eyebrow_color", "eye", "eye_up_down", "eye_angle", "eye_tex", "lash_tex", "lash_color", "eye_color_diff", "l_eye_color", "r_eye_color", "color_zone", "l_eye_color_arr", "r_eye_color_arr", "nose", "nose_up_down", "mouth", "eye_shadow", "eye_shadow_color", "lip", "lip_color", "feature", "feature_color", "decal_tex", "decal_color", "beard", "beard_color", "hair", "fhair", "bhair", "dull_hair", "hair_highlight", "hair_color", "hair_gradient", "tail", "tail_color", "weapon", "combine_type", "half_suit", "half_suit_color", "suit", "suit_color", "clothes", "clothes_color", "pants", "pants_color", "gloves", "gloves_color", "shoes", "shoes_color", "socks", "socks_color", "bodyu", "bodyd", "under_wear", "under_wear_color", "headwear", "headwear_color", "mask", "mask_color", "mouth_mask", "mouth_mask_color", "earrings", "earrings_color", "necklace", "necklace_color", "ring", "ring_color", "preview_action", "preview_icon", "pinch_config")
+    MODEL_PREFAB_ID_FIELD_NUMBER: _ClassVar[int]
+    MODEL_PREFAB_DESC_FIELD_NUMBER: _ClassVar[int]
+    SKELETON_FIELD_NUMBER: _ClassVar[int]
+    ANIM_TEMPLATE_FIELD_NUMBER: _ClassVar[int]
+    HEAD_FIELD_NUMBER: _ClassVar[int]
+    EMO_PREFIX_FIELD_NUMBER: _ClassVar[int]
+    SEX_FIELD_NUMBER: _ClassVar[int]
+    MODEL_FIELD_NUMBER: _ClassVar[int]
+    HEIGHT_PARM_FIELD_NUMBER: _ClassVar[int]
+    ARM_PARM_FIELD_NUMBER: _ClassVar[int]
+    CHEST_PARM_FIELD_NUMBER: _ClassVar[int]
+    WAIST_PARM_FIELD_NUMBER: _ClassVar[int]
+    CROTCH_PARM_FIELD_NUMBER: _ClassVar[int]
+    THIGH_PARM_FIELD_NUMBER: _ClassVar[int]
+    CALF_PARM_FIELD_NUMBER: _ClassVar[int]
+    FEMALE_PARM_FIELD_NUMBER: _ClassVar[int]
+    SKIN_FIELD_NUMBER: _ClassVar[int]
+    FACE_FIELD_NUMBER: _ClassVar[int]
+    CHIN_FIELD_NUMBER: _ClassVar[int]
+    EYEBROW_FIELD_NUMBER: _ClassVar[int]
+    EYEBROW_ANGLE_FIELD_NUMBER: _ClassVar[int]
+    EYEBROW_COLOR_FIELD_NUMBER: _ClassVar[int]
+    EYE_FIELD_NUMBER: _ClassVar[int]
+    EYE_UP_DOWN_FIELD_NUMBER: _ClassVar[int]
+    EYE_ANGLE_FIELD_NUMBER: _ClassVar[int]
+    EYE_TEX_FIELD_NUMBER: _ClassVar[int]
+    LASH_TEX_FIELD_NUMBER: _ClassVar[int]
+    LASH_COLOR_FIELD_NUMBER: _ClassVar[int]
+    EYE_COLOR_DIFF_FIELD_NUMBER: _ClassVar[int]
+    L_EYE_COLOR_FIELD_NUMBER: _ClassVar[int]
+    R_EYE_COLOR_FIELD_NUMBER: _ClassVar[int]
+    COLOR_ZONE_FIELD_NUMBER: _ClassVar[int]
+    L_EYE_COLOR_ARR_FIELD_NUMBER: _ClassVar[int]
+    R_EYE_COLOR_ARR_FIELD_NUMBER: _ClassVar[int]
+    NOSE_FIELD_NUMBER: _ClassVar[int]
+    NOSE_UP_DOWN_FIELD_NUMBER: _ClassVar[int]
+    MOUTH_FIELD_NUMBER: _ClassVar[int]
+    EYE_SHADOW_FIELD_NUMBER: _ClassVar[int]
+    EYE_SHADOW_COLOR_FIELD_NUMBER: _ClassVar[int]
+    LIP_FIELD_NUMBER: _ClassVar[int]
+    LIP_COLOR_FIELD_NUMBER: _ClassVar[int]
+    FEATURE_FIELD_NUMBER: _ClassVar[int]
+    FEATURE_COLOR_FIELD_NUMBER: _ClassVar[int]
+    DECAL_TEX_FIELD_NUMBER: _ClassVar[int]
+    DECAL_COLOR_FIELD_NUMBER: _ClassVar[int]
+    BEARD_FIELD_NUMBER: _ClassVar[int]
+    BEARD_COLOR_FIELD_NUMBER: _ClassVar[int]
+    HAIR_FIELD_NUMBER: _ClassVar[int]
+    FHAIR_FIELD_NUMBER: _ClassVar[int]
+    BHAIR_FIELD_NUMBER: _ClassVar[int]
+    DULL_HAIR_FIELD_NUMBER: _ClassVar[int]
+    HAIR_HIGHLIGHT_FIELD_NUMBER: _ClassVar[int]
+    HAIR_COLOR_FIELD_NUMBER: _ClassVar[int]
+    HAIR_GRADIENT_FIELD_NUMBER: _ClassVar[int]
+    TAIL_FIELD_NUMBER: _ClassVar[int]
+    TAIL_COLOR_FIELD_NUMBER: _ClassVar[int]
+    WEAPON_FIELD_NUMBER: _ClassVar[int]
+    COMBINE_TYPE_FIELD_NUMBER: _ClassVar[int]
+    HALF_SUIT_FIELD_NUMBER: _ClassVar[int]
+    HALF_SUIT_COLOR_FIELD_NUMBER: _ClassVar[int]
+    SUIT_FIELD_NUMBER: _ClassVar[int]
+    SUIT_COLOR_FIELD_NUMBER: _ClassVar[int]
+    CLOTHES_FIELD_NUMBER: _ClassVar[int]
+    CLOTHES_COLOR_FIELD_NUMBER: _ClassVar[int]
+    PANTS_FIELD_NUMBER: _ClassVar[int]
+    PANTS_COLOR_FIELD_NUMBER: _ClassVar[int]
+    GLOVES_FIELD_NUMBER: _ClassVar[int]
+    GLOVES_COLOR_FIELD_NUMBER: _ClassVar[int]
+    SHOES_FIELD_NUMBER: _ClassVar[int]
+    SHOES_COLOR_FIELD_NUMBER: _ClassVar[int]
+    SOCKS_FIELD_NUMBER: _ClassVar[int]
+    SOCKS_COLOR_FIELD_NUMBER: _ClassVar[int]
+    BODYU_FIELD_NUMBER: _ClassVar[int]
+    BODYD_FIELD_NUMBER: _ClassVar[int]
+    UNDER_WEAR_FIELD_NUMBER: _ClassVar[int]
+    UNDER_WEAR_COLOR_FIELD_NUMBER: _ClassVar[int]
+    HEADWEAR_FIELD_NUMBER: _ClassVar[int]
+    HEADWEAR_COLOR_FIELD_NUMBER: _ClassVar[int]
+    MASK_FIELD_NUMBER: _ClassVar[int]
+    MASK_COLOR_FIELD_NUMBER: _ClassVar[int]
+    MOUTH_MASK_FIELD_NUMBER: _ClassVar[int]
+    MOUTH_MASK_COLOR_FIELD_NUMBER: _ClassVar[int]
+    EARRINGS_FIELD_NUMBER: _ClassVar[int]
+    EARRINGS_COLOR_FIELD_NUMBER: _ClassVar[int]
+    NECKLACE_FIELD_NUMBER: _ClassVar[int]
+    NECKLACE_COLOR_FIELD_NUMBER: _ClassVar[int]
+    RING_FIELD_NUMBER: _ClassVar[int]
+    RING_COLOR_FIELD_NUMBER: _ClassVar[int]
+    PREVIEW_ACTION_FIELD_NUMBER: _ClassVar[int]
+    PREVIEW_ICON_FIELD_NUMBER: _ClassVar[int]
+    PINCH_CONFIG_FIELD_NUMBER: _ClassVar[int]
+    model_prefab_id: int
+    model_prefab_desc: str
+    skeleton: str
+    anim_template: str
+    head: str
+    emo_prefix: str
+    sex: int
+    model: int
+    height_parm: float
+    arm_parm: float
+    chest_parm: float
+    waist_parm: float
+    crotch_parm: float
+    thigh_parm: float
+    calf_parm: float
+    female_parm: float
+    skin: _table_basic_pb2.vector3
+    face: _table_basic_pb2.string_array
+    chin: float
+    eyebrow: _table_basic_pb2.string_array
+    eyebrow_angle: float
+    eyebrow_color: _table_basic_pb2.vector3
+    eye: _table_basic_pb2.string_array
+    eye_up_down: float
+    eye_angle: float
+    eye_tex: _table_basic_pb2.string_array
+    lash_tex: _table_basic_pb2.string_array
+    lash_color: _table_basic_pb2.vector3
+    eye_color_diff: int
+    l_eye_color: _table_basic_pb2.vector3
+    r_eye_color: _table_basic_pb2.vector3
+    color_zone: int
+    l_eye_color_arr: _table_basic_pb2.vector3_array
+    r_eye_color_arr: _table_basic_pb2.vector3_array
+    nose: _table_basic_pb2.string_array
+    nose_up_down: float
+    mouth: _table_basic_pb2.string_array
+    eye_shadow: _table_basic_pb2.string_array
+    eye_shadow_color: _table_basic_pb2.vector3
+    lip: _table_basic_pb2.string_array
+    lip_color: _table_basic_pb2.vector3
+    feature: _table_basic_pb2.string_array
+    feature_color: _table_basic_pb2.vector3
+    decal_tex: _table_basic_pb2.string_array
+    decal_color: _table_basic_pb2.vector3
+    beard: _table_basic_pb2.string_array
+    beard_color: _table_basic_pb2.vector3
+    hair: _table_basic_pb2.string_array
+    fhair: _table_basic_pb2.string_array
+    bhair: _table_basic_pb2.string_array
+    dull_hair: _table_basic_pb2.string_array
+    hair_highlight: int
+    hair_color: _table_basic_pb2.vector3_array
+    hair_gradient: _table_basic_pb2.number_array
+    tail: _table_basic_pb2.string_array
+    tail_color: _table_basic_pb2.vector3_array
+    weapon: _table_basic_pb2.string_array
+    combine_type: int
+    half_suit: _table_basic_pb2.string_array
+    half_suit_color: _table_basic_pb2.vector3_array
+    suit: _table_basic_pb2.string_array
+    suit_color: _table_basic_pb2.vector3_array
+    clothes: _table_basic_pb2.string_array
+    clothes_color: _table_basic_pb2.vector3_array
+    pants: _table_basic_pb2.string_array
+    pants_color: _table_basic_pb2.vector3_array
+    gloves: _table_basic_pb2.string_array
+    gloves_color: _table_basic_pb2.vector3_array
+    shoes: _table_basic_pb2.string_array
+    shoes_color: _table_basic_pb2.vector3_array
+    socks: str
+    socks_color: _table_basic_pb2.vector3_array
+    bodyu: str
+    bodyd: str
+    under_wear: str
+    under_wear_color: _table_basic_pb2.vector3_array
+    headwear: _table_basic_pb2.string_array
+    headwear_color: _table_basic_pb2.vector3_array
+    mask: _table_basic_pb2.string_array
+    mask_color: _table_basic_pb2.vector3_array
+    mouth_mask: _table_basic_pb2.string_array
+    mouth_mask_color: _table_basic_pb2.vector3_array
+    earrings: _table_basic_pb2.string_array
+    earrings_color: _table_basic_pb2.vector3_array
+    necklace: _table_basic_pb2.string_array
+    necklace_color: _table_basic_pb2.vector3_array
+    ring: _table_basic_pb2.string_array
+    ring_color: _table_basic_pb2.vector3_array
+    preview_action: _table_basic_pb2.number_array
+    preview_icon: str
+    pinch_config: str
+    def __init__(self, model_prefab_id: _Optional[int] = ..., model_prefab_desc: _Optional[str] = ..., skeleton: _Optional[str] = ..., anim_template: _Optional[str] = ..., head: _Optional[str] = ..., emo_prefix: _Optional[str] = ..., sex: _Optional[int] = ..., model: _Optional[int] = ..., height_parm: _Optional[float] = ..., arm_parm: _Optional[float] = ..., chest_parm: _Optional[float] = ..., waist_parm: _Optional[float] = ..., crotch_parm: _Optional[float] = ..., thigh_parm: _Optional[float] = ..., calf_parm: _Optional[float] = ..., female_parm: _Optional[float] = ..., skin: _Optional[_Union[_table_basic_pb2.vector3, _Mapping]] = ..., face: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., chin: _Optional[float] = ..., eyebrow: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., eyebrow_angle: _Optional[float] = ..., eyebrow_color: _Optional[_Union[_table_basic_pb2.vector3, _Mapping]] = ..., eye: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., eye_up_down: _Optional[float] = ..., eye_angle: _Optional[float] = ..., eye_tex: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., lash_tex: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., lash_color: _Optional[_Union[_table_basic_pb2.vector3, _Mapping]] = ..., eye_color_diff: _Optional[int] = ..., l_eye_color: _Optional[_Union[_table_basic_pb2.vector3, _Mapping]] = ..., r_eye_color: _Optional[_Union[_table_basic_pb2.vector3, _Mapping]] = ..., color_zone: _Optional[int] = ..., l_eye_color_arr: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., r_eye_color_arr: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., nose: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., nose_up_down: _Optional[float] = ..., mouth: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., eye_shadow: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., eye_shadow_color: _Optional[_Union[_table_basic_pb2.vector3, _Mapping]] = ..., lip: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., lip_color: _Optional[_Union[_table_basic_pb2.vector3, _Mapping]] = ..., feature: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., feature_color: _Optional[_Union[_table_basic_pb2.vector3, _Mapping]] = ..., decal_tex: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., decal_color: _Optional[_Union[_table_basic_pb2.vector3, _Mapping]] = ..., beard: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., beard_color: _Optional[_Union[_table_basic_pb2.vector3, _Mapping]] = ..., hair: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., fhair: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., bhair: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., dull_hair: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., hair_highlight: _Optional[int] = ..., hair_color: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., hair_gradient: _Optional[_Union[_table_basic_pb2.number_array, _Mapping]] = ..., tail: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., tail_color: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., weapon: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., combine_type: _Optional[int] = ..., half_suit: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., half_suit_color: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., suit: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., suit_color: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., clothes: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., clothes_color: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., pants: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., pants_color: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., gloves: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., gloves_color: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., shoes: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., shoes_color: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., socks: _Optional[str] = ..., socks_color: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., bodyu: _Optional[str] = ..., bodyd: _Optional[str] = ..., under_wear: _Optional[str] = ..., under_wear_color: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., headwear: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., headwear_color: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., mask: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., mask_color: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., mouth_mask: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., mouth_mask_color: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., earrings: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., earrings_color: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., necklace: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., necklace_color: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., ring: _Optional[_Union[_table_basic_pb2.string_array, _Mapping]] = ..., ring_color: _Optional[_Union[_table_basic_pb2.vector3_array, _Mapping]] = ..., preview_action: _Optional[_Union[_table_basic_pb2.number_array, _Mapping]] = ..., preview_icon: _Optional[str] = ..., pinch_config: _Optional[str] = ...) -> None: ...
+
+class ModelHumanTableMgr(_message.Message):
+    __slots__ = ("datas",)
+    class DatasEntry(_message.Message):
+        __slots__ = ("key", "value")
+        KEY_FIELD_NUMBER: _ClassVar[int]
+        VALUE_FIELD_NUMBER: _ClassVar[int]
+        key: int
+        value: ModelHumanTableBase
+        def __init__(self, key: _Optional[int] = ..., value: _Optional[_Union[ModelHumanTableBase, _Mapping]] = ...) -> None: ...
+    DATAS_FIELD_NUMBER: _ClassVar[int]
+    datas: _containers.MessageMap[int, ModelHumanTableBase]
+    def __init__(self, datas: _Optional[_Mapping[int, ModelHumanTableBase]] = ...) -> None: ...

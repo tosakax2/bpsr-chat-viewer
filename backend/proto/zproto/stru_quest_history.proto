@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message QuestHistory {
+  map<uint32, uint32> step_history = 1;
+}
+

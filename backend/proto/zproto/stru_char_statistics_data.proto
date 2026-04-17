@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message CharStatisticsData {
+  int32 login_days = 1;
+  uint64 last_login_time = 2;
+}
+

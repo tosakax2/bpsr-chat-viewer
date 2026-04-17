@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message EquipNine {
+  int32 slot = 1;
+  int32 equip_id = 2;
+}
+

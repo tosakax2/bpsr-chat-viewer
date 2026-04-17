@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message DungeonRankInfo {
+  int32 num = 1;
+  int32 rank = 2;
+}
+

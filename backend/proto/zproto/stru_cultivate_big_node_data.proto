@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message CultivateBigNodeData {
+  int32 fantasy_id = 1;
+}
+

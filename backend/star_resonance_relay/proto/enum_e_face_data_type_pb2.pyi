@@ -1,0 +1,146 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class EFaceDataType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    EFaceDataTypeNone: _ClassVar[EFaceDataType]
+    SkinColor: _ClassVar[EFaceDataType]
+    BodyHeight: _ClassVar[EFaceDataType]
+    ArmWidth: _ClassVar[EFaceDataType]
+    ChestWidth: _ClassVar[EFaceDataType]
+    FemaleChest: _ClassVar[EFaceDataType]
+    WaistWidth: _ClassVar[EFaceDataType]
+    CrotchWidth: _ClassVar[EFaceDataType]
+    ThighWidth: _ClassVar[EFaceDataType]
+    ShankWidth: _ClassVar[EFaceDataType]
+    HairID: _ClassVar[EFaceDataType]
+    FrontHairID: _ClassVar[EFaceDataType]
+    BackHairID: _ClassVar[EFaceDataType]
+    DullHairID: _ClassVar[EFaceDataType]
+    FeatureOneID: _ClassVar[EFaceDataType]
+    FeatureTwoID: _ClassVar[EFaceDataType]
+    PupilID: _ClassVar[EFaceDataType]
+    FaceShapeID: _ClassVar[EFaceDataType]
+    EyebrowID: _ClassVar[EFaceDataType]
+    EyelashID: _ClassVar[EFaceDataType]
+    EyeID: _ClassVar[EFaceDataType]
+    NoseID: _ClassVar[EFaceDataType]
+    MouthID: _ClassVar[EFaceDataType]
+    EyeshadowID: _ClassVar[EFaceDataType]
+    LipstickID: _ClassVar[EFaceDataType]
+    BeardID: _ClassVar[EFaceDataType]
+    Tooth: _ClassVar[EFaceDataType]
+    HairColorBase: _ClassVar[EFaceDataType]
+    HairIsGradual: _ClassVar[EFaceDataType]
+    HairGradualColor: _ClassVar[EFaceDataType]
+    HairGradualRange: _ClassVar[EFaceDataType]
+    HairOneIsHighlights: _ClassVar[EFaceDataType]
+    HairOneHighlightsColor: _ClassVar[EFaceDataType]
+    HairTwoIsHighlights: _ClassVar[EFaceDataType]
+    HairTwoHighlightsColor: _ClassVar[EFaceDataType]
+    FeatureOnePosX: _ClassVar[EFaceDataType]
+    FeatureOnePosY: _ClassVar[EFaceDataType]
+    FeatureOneScale: _ClassVar[EFaceDataType]
+    FeatureOneRotation: _ClassVar[EFaceDataType]
+    FeatureOneIsReverse: _ClassVar[EFaceDataType]
+    FeatureOneColor: _ClassVar[EFaceDataType]
+    FeatureTwoPosX: _ClassVar[EFaceDataType]
+    FeatureTwoPosY: _ClassVar[EFaceDataType]
+    FeatureTwoScale: _ClassVar[EFaceDataType]
+    FeatureTwoRotation: _ClassVar[EFaceDataType]
+    FeatureTwoIsReverse: _ClassVar[EFaceDataType]
+    FeatureTwoColor: _ClassVar[EFaceDataType]
+    PupilIsDiff: _ClassVar[EFaceDataType]
+    PupilIsArea: _ClassVar[EFaceDataType]
+    PupilLeftColor0: _ClassVar[EFaceDataType]
+    PupilLeftColor1: _ClassVar[EFaceDataType]
+    PupilLeftColor2: _ClassVar[EFaceDataType]
+    PupilLeftColor3: _ClassVar[EFaceDataType]
+    PupilRightColor0: _ClassVar[EFaceDataType]
+    PupilRightColor1: _ClassVar[EFaceDataType]
+    PupilRightColor2: _ClassVar[EFaceDataType]
+    PupilRightColor3: _ClassVar[EFaceDataType]
+    PupilLongDiameter: _ClassVar[EFaceDataType]
+    PupilShortDiameter: _ClassVar[EFaceDataType]
+    FaceLength: _ClassVar[EFaceDataType]
+    EyebrowAngle: _ClassVar[EFaceDataType]
+    EyebrowColor: _ClassVar[EFaceDataType]
+    EyelashColor: _ClassVar[EFaceDataType]
+    EyeUpDown: _ClassVar[EFaceDataType]
+    EyeAngle: _ClassVar[EFaceDataType]
+    NoseUpDown: _ClassVar[EFaceDataType]
+    EyeshadowColor: _ClassVar[EFaceDataType]
+    LipstickColor: _ClassVar[EFaceDataType]
+    BeardColor: _ClassVar[EFaceDataType]
+EFaceDataTypeNone: EFaceDataType
+SkinColor: EFaceDataType
+BodyHeight: EFaceDataType
+ArmWidth: EFaceDataType
+ChestWidth: EFaceDataType
+FemaleChest: EFaceDataType
+WaistWidth: EFaceDataType
+CrotchWidth: EFaceDataType
+ThighWidth: EFaceDataType
+ShankWidth: EFaceDataType
+HairID: EFaceDataType
+FrontHairID: EFaceDataType
+BackHairID: EFaceDataType
+DullHairID: EFaceDataType
+FeatureOneID: EFaceDataType
+FeatureTwoID: EFaceDataType
+PupilID: EFaceDataType
+FaceShapeID: EFaceDataType
+EyebrowID: EFaceDataType
+EyelashID: EFaceDataType
+EyeID: EFaceDataType
+NoseID: EFaceDataType
+MouthID: EFaceDataType
+EyeshadowID: EFaceDataType
+LipstickID: EFaceDataType
+BeardID: EFaceDataType
+Tooth: EFaceDataType
+HairColorBase: EFaceDataType
+HairIsGradual: EFaceDataType
+HairGradualColor: EFaceDataType
+HairGradualRange: EFaceDataType
+HairOneIsHighlights: EFaceDataType
+HairOneHighlightsColor: EFaceDataType
+HairTwoIsHighlights: EFaceDataType
+HairTwoHighlightsColor: EFaceDataType
+FeatureOnePosX: EFaceDataType
+FeatureOnePosY: EFaceDataType
+FeatureOneScale: EFaceDataType
+FeatureOneRotation: EFaceDataType
+FeatureOneIsReverse: EFaceDataType
+FeatureOneColor: EFaceDataType
+FeatureTwoPosX: EFaceDataType
+FeatureTwoPosY: EFaceDataType
+FeatureTwoScale: EFaceDataType
+FeatureTwoRotation: EFaceDataType
+FeatureTwoIsReverse: EFaceDataType
+FeatureTwoColor: EFaceDataType
+PupilIsDiff: EFaceDataType
+PupilIsArea: EFaceDataType
+PupilLeftColor0: EFaceDataType
+PupilLeftColor1: EFaceDataType
+PupilLeftColor2: EFaceDataType
+PupilLeftColor3: EFaceDataType
+PupilRightColor0: EFaceDataType
+PupilRightColor1: EFaceDataType
+PupilRightColor2: EFaceDataType
+PupilRightColor3: EFaceDataType
+PupilLongDiameter: EFaceDataType
+PupilShortDiameter: EFaceDataType
+FaceLength: EFaceDataType
+EyebrowAngle: EFaceDataType
+EyebrowColor: EFaceDataType
+EyelashColor: EFaceDataType
+EyeUpDown: EFaceDataType
+EyeAngle: EFaceDataType
+NoseUpDown: EFaceDataType
+EyeshadowColor: EFaceDataType
+LipstickColor: EFaceDataType
+BeardColor: EFaceDataType

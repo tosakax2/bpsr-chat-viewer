@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_common_target_activity.proto";
+
+message CommonTargetActivityList {
+  map<uint32, zproto.CommonTargetActivity> common_target_activity_map = 1;
+  uint64 version = 2;
+}
+

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message DungeonVote {
+  map<int64, int32> vote = 1;
+}
+

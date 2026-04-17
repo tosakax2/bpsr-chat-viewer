@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_dungeon_event_data.proto";
+
+message DungeonEvent {
+  map<int32, zproto.DungeonEventData> dungeon_event_data = 1;
+}
+

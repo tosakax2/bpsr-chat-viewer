@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_dungeon_target_progress.proto";
+
+message DungeonTargetAward {
+  map<int32, zproto.DungeonTargetProgress> dungeon_target_progress = 1;
+}
+

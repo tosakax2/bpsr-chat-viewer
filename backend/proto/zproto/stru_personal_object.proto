@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_scene_personal_object.proto";
+
+message PersonalObject {
+  map<int32, zproto.ScenePersonalObject> scene_obj_data = 1;
+}
+

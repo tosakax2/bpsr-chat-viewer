@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message CraftEnergyRecord {
+  map<int32, int32> records = 1;
+}
+

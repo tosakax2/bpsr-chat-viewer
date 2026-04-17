@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message DungeonAffixData {
+  repeated uint32 affix_data = 1;
+}
+

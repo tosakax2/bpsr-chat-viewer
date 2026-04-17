@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message FunctionData {
+  map<int32, bool> unlocked_map = 1;
+  repeated int32 drawn_function_ids = 2;
+}
+

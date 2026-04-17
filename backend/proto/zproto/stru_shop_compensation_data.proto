@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_shop_compensation_info.proto";
+
+message ShopCompensationData {
+  map<uint32, zproto.ShopCompensationInfo> items = 1;
+}
+

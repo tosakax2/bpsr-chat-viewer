@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message DungeonPlanetMemoryRoom {
+  int32 room_id = 1;
+}
+

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_map_sticker_info.proto";
+
+message MapBookInfo {
+  uint32 id = 1;
+  map<uint32, zproto.MapStickerInfo> map_sticker_map = 2;
+  uint32 award_flag = 3;
+}
+

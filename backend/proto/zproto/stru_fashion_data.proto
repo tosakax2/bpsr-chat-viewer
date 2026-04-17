@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_fashion_info.proto";
+
+message FashionData {
+  repeated zproto.FashionInfo fashion_infos = 1;
+}
+

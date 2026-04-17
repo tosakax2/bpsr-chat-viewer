@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_achievement.proto";
+
+message SeasonAchievement {
+  map<uint32, zproto.Achievement> season_achievement = 1;
+}
+

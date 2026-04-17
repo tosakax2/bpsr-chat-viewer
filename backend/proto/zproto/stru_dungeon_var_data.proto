@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message DungeonVarData {
+  string name = 1;
+  int32 value = 2;
+}
+

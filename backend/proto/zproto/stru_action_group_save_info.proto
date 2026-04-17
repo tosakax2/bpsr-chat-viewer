@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_action_group_info.proto";
+
+message ActionGroupSaveInfo {
+  zproto.ActionGroupInfo action_group_info = 1;
+  int32 icon_id = 2;
+  string name = 3;
+  uint64 save_time = 4;
+}
+

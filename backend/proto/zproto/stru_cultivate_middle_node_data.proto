@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message CultivateMiddleNodeData {
+  int32 item_id = 1;
+}
+

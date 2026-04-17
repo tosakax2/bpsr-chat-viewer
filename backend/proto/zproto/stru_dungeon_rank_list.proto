@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package zproto;
+
+import "stru_dungeon_rank_info.proto";
+
+message DungeonRankList {
+  map<int32, zproto.DungeonRankInfo> dungeon_rank_map = 1;
+}
+

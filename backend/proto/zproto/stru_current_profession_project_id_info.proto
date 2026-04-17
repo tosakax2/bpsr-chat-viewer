@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package zproto;
+
+
+message CurrentProfessionProjectIdInfo {
+  int32 current_profession_project_id = 1;
+}
+
