@@ -141,7 +141,7 @@ def on_bpsr_message(payload: Message):
 def start_sniffing():
     logger.info("Starting packet sniffer...")
     sniffer = BPSRChatSniffer(on_bpsr_message)
-    sniff(prn=sniffer.handle_packet, store=False)
+    sniff(filter="tcp", prn=sniffer.handle_packet, store=False)
 
 
 @app.websocket("/ws")
