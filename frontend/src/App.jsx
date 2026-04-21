@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Settings, Wifi, WifiOff, MessageSquare, Filter, Trash2, Bell, BellOff, ExternalLink, Volume2 } from 'lucide-react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
+import { Settings, Wifi, WifiOff, MessageSquare, Filter, Trash2, Bell, BellOff, ExternalLink, Volume2, ShieldAlert, X, Plus } from 'lucide-react';
 
 const CHANNEL_CONFIG = {
   world: { label: 'World', color: '#a855f7', bg: 'rgba(168, 85, 247, 0.15)' },
@@ -15,14 +15,39 @@ function App() {
   const channelParam = searchParams.get('channel');
   const isPopout = !!channelParam && !!CHANNEL_CONFIG[channelParam];
 
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState(() => {
+    // Popout: inherit already-received messages from the main window via localStorage
+    if (isPopout) {
+      try {
+        const saved = localStorage.getItem('bpsr_messages');
+        if (saved) {
+          return JSON.parse(saved).filter(m => m.channel === channelParam);
+        }
+      } catch (e) { /* ignore parse errors */ }
+    }
+    return [];
+  });
   const [status, setStatus] = useState('connecting');
   const [showSettings, setShowSettings] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
+  const [showBlocklist, setShowBlocklist] = useState(false);
   const [volume, setVolume] = useState(() => {
     const saved = localStorage.getItem('bpsr_volume');
     return saved ? parseFloat(saved) : 0.4; // Default to 40%
   });
+  
+  const [blockList, setBlockList] = useState(() => {
+    const saved = localStorage.getItem('bpsr_blocklist');
+    return saved ? JSON.parse(saved) : [];
+  });
+  
+  const [wordFilter, setWordFilter] = useState(() => {
+    const saved = localStorage.getItem('bpsr_wordfilter');
+    return saved ? JSON.parse(saved) : [];
+  });
+  
+  const [blockInput, setBlockInput] = useState("");
+  const [wordInput, setWordInput] = useState("");
   
   const [filters, setFilters] = useState(() => {
     if (isPopout) {
@@ -34,8 +59,13 @@ function App() {
   });
   
   const [useSound, setUseSound] = useState(true);
+  const [isAtBottom, setIsAtBottom] = useState(true);
   const useSoundRef = useRef(useSound);
   const volumeRef = useRef(volume);
+  const blockListRef = useRef(blockList);
+  const wordFilterRef = useRef(wordFilter);
+  const filtersRef = useRef(filters);
+  const isAtBottomRef = useRef(true);
   const scrollRef = useRef(null);
   const ws = useRef(null);
   const reconnectTimeout = useRef(null);
@@ -52,6 +82,20 @@ function App() {
   }, [volume]);
 
   useEffect(() => {
+    blockListRef.current = blockList;
+    localStorage.setItem('bpsr_blocklist', JSON.stringify(blockList));
+  }, [blockList]);
+
+  useEffect(() => {
+    wordFilterRef.current = wordFilter;
+    localStorage.setItem('bpsr_wordfilter', JSON.stringify(wordFilter));
+  }, [wordFilter]);
+
+  useEffect(() => {
+    filtersRef.current = filters;
+  }, [filters]);
+
+  useEffect(() => {
     connect();
     return () => {
       if (ws.current) {
@@ -62,8 +106,16 @@ function App() {
     };
   }, []);
 
+  // Persist messages to localStorage so pop-out windows can inherit them
   useEffect(() => {
-    if (scrollRef.current) {
+    if (!isPopout) {
+      localStorage.setItem('bpsr_messages', JSON.stringify(messages.slice(-200)));
+    }
+  }, [messages]);
+
+  // Auto-scroll only when the user is already at the bottom
+  useEffect(() => {
+    if (isAtBottomRef.current && scrollRef.current) {
       scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
     }
   }, [messages]);
@@ -92,7 +144,17 @@ function App() {
         // Only trigger message addition if it's either not popout mode or matches the channel
         if (!isPopout || data.channel === channelParam) {
           setMessages((prev) => [...prev.slice(-199), { ...data, id: Date.now() + Math.random() }]);
-          playNotification(data.channel);
+
+          // Only play notification if the message would actually be visible:
+          // 1. Channel filter is enabled for this channel
+          // 2. Sender is not in the block list
+          // 3. Content does not match any word filter
+          const isChannelVisible = filtersRef.current[data.channel];
+          const isSenderBlocked = blockListRef.current.includes(data.sender);
+          const isWordFiltered = wordFilterRef.current.some(word => data.content.includes(word));
+          if (isChannelVisible && !isSenderBlocked && !isWordFiltered) {
+            playNotification(data.channel);
+          }
         }
       };
 
@@ -181,16 +243,71 @@ function App() {
 
   const clearMessages = () => setMessages([]);
 
-  const filteredMessages = messages.filter(m => filters[m.channel]);
+  const filteredMessages = useMemo(() =>
+    messages.filter(m => {
+      if (!filters[m.channel]) return false;
+      if (blockList.includes(m.sender)) return false;
+      if (wordFilter.some(word => m.content.includes(word))) return false;
+      return true;
+    }),
+    [messages, filters, blockList, wordFilter]
+  );
+
+  const handleScroll = () => {
+    const el = scrollRef.current;
+    if (!el) return;
+    // Consider "at bottom" when within 60px of the bottom
+    const atBottom = el.scrollHeight - el.scrollTop - el.clientHeight < 60;
+    setIsAtBottom(atBottom);
+    isAtBottomRef.current = atBottom;
+  };
+
+  const scrollToBottom = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    }
+    setIsAtBottom(true);
+    isAtBottomRef.current = true;
+  };
 
   const toggleFilters = () => {
     setShowFilters(!showFilters);
     if (showSettings) setShowSettings(false);
+    if (showBlocklist) setShowBlocklist(false);
   };
 
   const toggleSettings = () => {
     setShowSettings(!showSettings);
     if (showFilters) setShowFilters(false);
+    if (showBlocklist) setShowBlocklist(false);
+  };
+
+  const toggleBlocklist = () => {
+    setShowBlocklist(!showBlocklist);
+    if (showFilters) setShowFilters(false);
+    if (showSettings) setShowSettings(false);
+  };
+
+  const addBlockUser = () => {
+    if (blockInput.trim() && !blockList.includes(blockInput.trim())) {
+      setBlockList([...blockList, blockInput.trim()]);
+      setBlockInput("");
+    }
+  };
+
+  const removeBlockUser = (user) => {
+    setBlockList(blockList.filter(u => u !== user));
+  };
+
+  const addWordFilter = () => {
+    if (wordInput.trim() && !wordFilter.includes(wordInput.trim())) {
+      setWordFilter([...wordFilter, wordInput.trim()]);
+      setWordInput("");
+    }
+  };
+
+  const removeWordFilter = (word) => {
+    setWordFilter(wordFilter.filter(w => w !== word));
   };
 
   const toggleFilter = (channel) => {
@@ -248,6 +365,71 @@ function App() {
                         </button>
                       </div>
                     ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Block/Filter Panel */}
+            <div className="settings-wrapper">
+              <button 
+                onClick={toggleBlocklist} 
+                className={`icon-button ${showBlocklist ? 'active' : ''}`} 
+                title="Block & Filter"
+              >
+                <ShieldAlert size={18} />
+              </button>
+              
+              {showBlocklist && (
+                <div className="settings-panel glass-panel blocklist-panel">
+                  <div className="settings-group">
+                    <div className="panel-title">Muted Users</div>
+                    <div className="input-row">
+                      <input 
+                        type="text" 
+                        placeholder="Username to block" 
+                        value={blockInput}
+                        onChange={(e) => setBlockInput(e.target.value)}
+                        onKeyDown={(e) => e.key === 'Enter' && addBlockUser()}
+                        className="text-input"
+                      />
+                      <button onClick={addBlockUser} className="icon-button add-btn"><Plus size={16} /></button>
+                    </div>
+                    <div className="chips-container">
+                      {blockList.length === 0 ? <span className="empty-text">No blocked users</span> : 
+                        blockList.map(user => (
+                          <div key={user} className="chip">
+                            <span className="chip-text">{user}</span>
+                            <button onClick={() => removeBlockUser(user)} className="chip-delete"><X size={12} /></button>
+                          </div>
+                        ))
+                      }
+                    </div>
+                    
+                    <div className="settings-divider" />
+                    
+                    <div className="panel-title">Filtered Words</div>
+                    <div className="input-row">
+                      <input 
+                        type="text" 
+                        placeholder="Keyword to hide" 
+                        value={wordInput}
+                        onChange={(e) => setWordInput(e.target.value)}
+                        onKeyDown={(e) => e.key === 'Enter' && addWordFilter()}
+                        className="text-input"
+                      />
+                      <button onClick={addWordFilter} className="icon-button add-btn"><Plus size={16} /></button>
+                    </div>
+                    <div className="chips-container">
+                      {wordFilter.length === 0 ? <span className="empty-text">No filtered words</span> : 
+                        wordFilter.map(word => (
+                          <div key={word} className="chip">
+                            <span className="chip-text">{word}</span>
+                            <button onClick={() => removeWordFilter(word)} className="chip-delete"><X size={12} /></button>
+                          </div>
+                        ))
+                      }
+                    </div>
                   </div>
                 </div>
               )}
@@ -314,26 +496,33 @@ function App() {
 
 
       {/* Chat Messages */}
-      <main className="chat-area" ref={scrollRef}>
-        <div className="message-list">
-          {filteredMessages.length === 0 ? (
-            <div className="empty-state">No messages yet. Start chatting in-game.</div>
-          ) : (
-            filteredMessages.map((msg) => (
-              <div key={msg.id} className="message-item animate-in" style={{ '--channel-color': CHANNEL_CONFIG[msg.channel]?.color }}>
-                <div className="message-header">
-                  <span className="channel-tag" style={{ color: CHANNEL_CONFIG[msg.channel]?.color, backgroundColor: CHANNEL_CONFIG[msg.channel]?.bg }}>
-                    {CHANNEL_CONFIG[msg.channel]?.label}
-                  </span>
-                  <span className="sender">{msg.sender}</span>
-                  <span className="time">{new Date(msg.timestamp * 1000).toLocaleTimeString()}</span>
+      <div className="chat-wrapper">
+        <main className="chat-area" ref={scrollRef} onScroll={handleScroll}>
+          <div className="message-list">
+            {filteredMessages.length === 0 ? (
+              <div className="empty-state">No messages yet. Start chatting in-game.</div>
+            ) : (
+              filteredMessages.map((msg) => (
+                <div key={msg.id} className="message-item animate-in" style={{ '--channel-color': CHANNEL_CONFIG[msg.channel]?.color }}>
+                  <div className="message-header">
+                    <span className="channel-tag" style={{ color: CHANNEL_CONFIG[msg.channel]?.color, backgroundColor: CHANNEL_CONFIG[msg.channel]?.bg }}>
+                      {CHANNEL_CONFIG[msg.channel]?.label}
+                    </span>
+                    <span className="sender">{msg.sender}</span>
+                    <span className="time">{new Date(msg.timestamp * 1000).toLocaleTimeString()}</span>
+                  </div>
+                  <div className="message-content">{msg.content}</div>
                 </div>
-                <div className="message-content">{msg.content}</div>
-              </div>
-            ))
-          )}
-        </div>
-      </main>
+              ))
+            )}
+          </div>
+        </main>
+        {!isAtBottom && (
+          <button className="scroll-to-bottom-btn" onClick={scrollToBottom}>
+            ↓ New messages
+          </button>
+        )}
+      </div>
 
     </div>
   );
