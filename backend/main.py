@@ -124,7 +124,7 @@ def on_bpsr_message(payload: Message):
         "timestamp": req.chat_msg.timestamp
     }
     
-    logger.info(f"Broadcast: {chat_data}")
+    logger.debug(f"Broadcast: {chat_data}")
     
     # Broadcast to all connected clients
     if main_loop:

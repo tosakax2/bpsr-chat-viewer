@@ -70,9 +70,8 @@ class Sniffer:
             # for frame in self._reassembler.pop_frames():
             for frame in self._processor.process_frame(tcp_payload):
                 logger.debug(f"Found {frame}")
-                try:
-                    message = self._processor.decode_payload(frame)
-                except NotImplementedError:
+                message = self._processor.decode_payload(frame)
+                if message is None:
                     continue
                 self._callback(message)
         except Exception:
@@ -129,4 +128,11 @@ class BPSRChatSniffer(Sniffer):
 
     @override
     def _is_server(self, payload: bytes) -> bool:
-        return payload.startswith(self.SIGNATURE) or self.SIGNATURE_2 in payload
+        length = len(payload)
+        # SIGNATURE is 14 bytes; quick length check first
+        if length < len(self.SIGNATURE):
+            return False
+        if payload[:len(self.SIGNATURE)] == self.SIGNATURE:
+            return True
+        # Limit SIGNATURE_2 scan to the first 256 bytes to avoid full-payload scan
+        return self.SIGNATURE_2 in payload[:256]

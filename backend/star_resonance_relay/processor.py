@@ -1,7 +1,7 @@
 import logging
 from dataclasses import dataclass
 from enum import Enum
-from typing import Iterator
+from typing import Iterator, Optional
 
 import zstandard as zstd  # Optional, used for compressed fragments
 from google.protobuf.message import Message
@@ -72,9 +72,10 @@ class BPSRPacketProcessor:
                 0x00000001: ChitChatNtf.NotifyNewestChitChatMsgs
             }
         }
+        # Reuse a single decompressor instance to avoid per-packet allocation
+        self._dctx = zstd.ZstdDecompressor() if zstd else None
 
-    @staticmethod
-    def _parse_notify(body: bytes, is_zstd: bool) -> NotifyFrame | None:
+    def _parse_notify(self, body: bytes, is_zstd: bool) -> NotifyFrame | None:
         """Parse a Notify frame body into a NotifyFrame object.
 
         Extracts the service UID, stub ID, method ID, and payload from a
@@ -99,13 +100,11 @@ class BPSRPacketProcessor:
         stub_id = reader.read_u32()
         method_id = reader.read_u32()
         payload = reader.read_remaining()
+        dctx = self._dctx
 
-        # Decompress payload if needed
-        if is_zstd and zstd:
+        # Decompress payload if needed (decompressor is passed in to avoid re-allocation)
+        if is_zstd and dctx is not None:
             try:
-                # Use a decompressor that can handle frames without size headers
-                # 1MB is more than enough for BPSR notify payloads
-                dctx = zstd.ZstdDecompressor()
                 payload = dctx.decompress(payload, max_output_size=1024*1024)
             except Exception as e:
                 logger.debug(f"Decompression failed in _parse_notify: {e}")
@@ -145,15 +144,16 @@ class BPSRPacketProcessor:
 
             match frag_type:
                 case FragmentType.NOTIFY:
-                    yield self._parse_notify(fragment.read_remaining(), is_compressed)
+                    result = self._parse_notify(fragment.read_remaining(), is_compressed)
+                    if result is not None:
+                        yield result
                 case FragmentType.FRAME_DOWN:
                     # nested frame; read server sequence id and recurse
                     _server_seq = fragment.read_u32()
                     nested = fragment.read_remaining()
-                    if is_compressed and zstd:
+                    if is_compressed and self._dctx is not None:
                         try:
-                            dctx = zstd.ZstdDecompressor()
-                            nested = dctx.decompress(nested, max_output_size=1024*1024)
+                            nested = self._dctx.decompress(nested, max_output_size=1024*1024)
                         except Exception:
                             continue
                     # Recursively process nested frames
@@ -178,20 +178,23 @@ class BPSRPacketProcessor:
         for frame in frames:
             yield from self.process_frame(frame)
 
-    def decode_payload(self, frame: NotifyFrame) -> Message:
+    def decode_payload(self, frame: NotifyFrame) -> Optional[Message]:
         """Decode a raw payload into a protobuf message if possible.
+
+        Returns None if the frame's service/method is not registered or
+        decoding fails, instead of raising an exception.
         """
         method_map = self.proto_map.get(frame.service_uid)
         if method_map is None:
-            raise NotImplementedError
+            return None
 
         decoder = method_map.get(frame.method_id)
         if decoder is None:
-            raise NotImplementedError
+            return None
 
         try:
             # All compiled protobuf messages support ``FromString``
             return decoder.FromString(frame.payload)  # type: ignore[attr-defined]
         except Exception as exc:  # pragma: no cover
             logger.warning("Failed to decode %s: %s", frame, exc)
-            raise
+            return None

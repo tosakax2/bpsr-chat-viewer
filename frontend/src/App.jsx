@@ -69,6 +69,10 @@ function App() {
   const scrollRef = useRef(null);
   const ws = useRef(null);
   const reconnectTimeout = useRef(null);
+  // Singleton AudioContext — reuse across all notification plays
+  const audioCtxRef = useRef(null);
+  // Debounce timer for localStorage writes
+  const localStorageDebounceRef = useRef(null);
 
   // Sync sound setting to ref to avoid stale closures in WS handler
   useEffect(() => {
@@ -107,9 +111,13 @@ function App() {
   }, []);
 
   // Persist messages to localStorage so pop-out windows can inherit them
+  // Debounced to avoid serializing 200 messages on every single incoming message
   useEffect(() => {
     if (!isPopout) {
-      localStorage.setItem('bpsr_messages', JSON.stringify(messages.slice(-200)));
+      if (localStorageDebounceRef.current) clearTimeout(localStorageDebounceRef.current);
+      localStorageDebounceRef.current = setTimeout(() => {
+        localStorage.setItem('bpsr_messages', JSON.stringify(messages.slice(-200)));
+      }, 500);
     }
   }, [messages]);
 
@@ -143,7 +151,7 @@ function App() {
         const data = JSON.parse(event.data);
         // Only trigger message addition if it's either not popout mode or matches the channel
         if (!isPopout || data.channel === channelParam) {
-          setMessages((prev) => [...prev.slice(-199), { ...data, id: Date.now() + Math.random() }]);
+          setMessages((prev) => [...prev.slice(-199), { ...data, id: crypto.randomUUID() }]);
 
           // Only play notification if the message would actually be visible:
           // 1. Channel filter is enabled for this channel
@@ -187,8 +195,14 @@ function App() {
   const playNotification = (channel) => {
     if (!useSoundRef.current) return;
     try {
-      const AudioContext = window.AudioContext || window.webkitAudioContext;
-      const ctx = new AudioContext();
+      // Reuse a single AudioContext instance for the lifetime of the app
+      if (!audioCtxRef.current) {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        audioCtxRef.current = new AudioContext();
+      }
+      const ctx = audioCtxRef.current;
+      // Resume context if it was suspended (browser autoplay policy)
+      if (ctx.state === 'suspended') ctx.resume();
       
       const playNote = (freq, startTime, duration) => {
         const osc = ctx.createOscillator();
