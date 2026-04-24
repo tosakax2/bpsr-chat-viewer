@@ -1,4 +1,6 @@
 import logging
+import queue
+import threading
 from dataclasses import dataclass
 from typing import Self, override, Callable
 
@@ -34,48 +36,103 @@ class Endpoints:
 
 
 class Sniffer:
+    # Maximum number of raw payloads buffered between sniffer and worker.
+    # If the worker falls behind, older packets are dropped rather than
+    # blocking the sniffer thread (and by extension the Npcap driver).
+    _QUEUE_MAXSIZE = 256
+
     def __init__(self, callback: Callable[[Message], None]):
         self._callback = callback
         self._known_server: Endpoints | None = None
-        # self._reassembler = TCPReassembler()
         self._processor = BPSRPacketProcessor()
+        # Queue that decouples packet reception from packet processing.
+        # The sniffer thread only enqueues raw bytes; the worker thread does
+        # all the heavy lifting (frame parsing, protobuf decoding, broadcast).
+        self._pkt_queue: queue.Queue[bytes | None] = queue.Queue(maxsize=self._QUEUE_MAXSIZE)
+        # Start the worker thread immediately so it is ready when packets arrive.
+        self._worker_thread = threading.Thread(
+            target=self._worker,
+            name="sniffer-worker",
+            daemon=True
+        )
+        self._worker_thread.start()
 
     def _is_server(self, payload: bytes) -> bool:
         raise NotImplementedError
 
+    # ------------------------------------------------------------------
+    # Sniffer thread — keep this as short as possible
+    # ------------------------------------------------------------------
     def handle_packet(self, packet: Packet) -> None:
+        """Called by scapy for every captured packet.
+
+        The goal here is to return to the Npcap driver as quickly as
+        possible.  We only extract the raw bytes and the endpoint pair,
+        do the cheap server-discovery check, and then hand work off to
+        the worker thread via a non-blocking queue put.
+        """
         if TCP not in packet or IP not in packet or Raw not in packet:
             return
 
         try:
             tcp_payload = bytes(packet[Raw])
-            # tcp_seq = packet[TCP].seq
             endpoints = Endpoints.from_packet(packet)
-            # del packet
 
-            # 1) Discover/lock server flow
+            # 1) Server discovery — cheap byte comparison, done on sniffer thread
             if self._known_server != endpoints:
                 if self._is_server(tcp_payload):
                     logger.info(f"Locking to flow {endpoints.source} <-> {endpoints.destination}")
                     self._known_server = endpoints
-                    # Reset reassembler from next expected seq
-                    # Use TCP header's sequence number; pydivert exposes it as packet.tcp.seq_num
-                    # self._reassembler.clear(tcp_seq + len(tcp_payload))
                 else:
-                    return  # don’t process the discovery packet’s payload again
+                    return  # unknown flow, skip
 
-            # 2) Reassemble by TCP sequence number & parse frames for the locked flow
-            logger.debug(f"Reading {packet}")
-            # self._reassembler.push(tcp_seq, tcp_payload)
-            # for frame in self._reassembler.pop_frames():
-            for frame in self._processor.process_frame(tcp_payload):
-                logger.debug(f"Found {frame}")
-                message = self._processor.decode_payload(frame)
-                if message is None:
-                    continue
-                self._callback(message)
+            # 2) Enqueue raw bytes for the worker thread — non-blocking
+            try:
+                self._pkt_queue.put_nowait(tcp_payload)
+            except queue.Full:
+                # Drop the oldest item and enqueue the new one to keep latency low
+                try:
+                    self._pkt_queue.get_nowait()
+                except queue.Empty:
+                    pass
+                try:
+                    self._pkt_queue.put_nowait(tcp_payload)
+                except queue.Full:
+                    pass
         except Exception:
-            logger.exception(packet)
+            logger.exception("handle_packet error")
+
+    # ------------------------------------------------------------------
+    # Worker thread — does all the heavy processing
+    # ------------------------------------------------------------------
+    def _worker(self) -> None:
+        """Consume raw payloads from the queue and decode them.
+
+        Runs in a dedicated daemon thread so that all CPU-intensive work
+        (frame parsing, zstd decompression, protobuf decoding) is isolated
+        from the Npcap driver callback thread.
+        """
+        while True:
+            try:
+                tcp_payload = self._pkt_queue.get(timeout=1)
+            except queue.Empty:
+                continue
+
+            # None is the sentinel value used to stop the worker
+            if tcp_payload is None:
+                break
+
+            try:
+                for frame in self._processor.process_frame(tcp_payload):
+                    logger.debug(f"Found {frame}")
+                    message = self._processor.decode_payload(frame)
+                    if message is None:
+                        continue
+                    self._callback(message)
+            except Exception:
+                logger.exception("worker processing error")
+            finally:
+                self._pkt_queue.task_done()
 
 
 class BPSRDefaultSniffer(Sniffer):
