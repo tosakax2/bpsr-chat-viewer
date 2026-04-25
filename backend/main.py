@@ -139,9 +139,75 @@ def on_bpsr_message(payload: Message):
         logger.warning("Main event loop is not initialized")
 
 def start_sniffing():
-    logger.info("Starting packet sniffer...")
+    """Two-phase packet sniffer to minimise Npcap driver contention.
+
+    Phase 1 – Discovery:
+        Uses a broad 'tcp' BPF filter for only as long as it takes to find
+        the game server's IP address (typically a few seconds at startup or
+        after a scene change).  scapy stops the capture the moment the server
+        signature is detected.
+
+    Phase 2 – Locked:
+        Restarts scapy with a precise 'tcp and host <ip>' filter.  The Npcap
+        driver evaluates this filter *in-kernel* before any data reaches
+        Python, so the application sees only game-server packets.  This
+        eliminates almost all contention with other Npcap-based tools such as
+        DPS checkers.
+
+        Phase 2 runs for PHASE2_TIMEOUT seconds before cycling back to
+        Phase 1, so that a server IP change after a scene transition is
+        eventually detected.
+    """
+    import time
+
+    # How long (seconds) to stay in Phase 2 before re-running discovery.
+    # Shorter = faster reconnect after scene change; longer = less overhead.
+    PHASE2_TIMEOUT = 60
+
+    logger.info("Starting packet sniffer (two-phase mode)...")
     sniffer = BPSRChatSniffer(on_bpsr_message)
-    sniff(filter="tcp", prn=sniffer.handle_packet, store=False)
+
+    while True:
+        # ── Phase 1: broad discovery ──────────────────────────────────────
+        if sniffer._known_server is None:
+            logger.info("Sniffer Phase 1: broad discovery (filter='tcp')")
+            sniff(
+                filter="tcp",
+                prn=sniffer.handle_packet,
+                store=False,
+                # stop_filter runs on the capture thread – safe because
+                # handle_packet also runs there (no race).
+                stop_filter=lambda _: sniffer._known_server is not None,
+            )
+
+        server = sniffer._known_server
+        if server is None:
+            # Interrupted before server was found; wait briefly and retry.
+            time.sleep(0.5)
+            continue
+
+        # ── Phase 2: locked to server IP ─────────────────────────────────
+        locked_ip = server.source.ip
+        bpf = f"tcp and host {locked_ip}"
+        logger.info(f"Sniffer Phase 2: locked (filter='{bpf}')")
+
+        sniff(
+            filter=bpf,
+            prn=sniffer.handle_packet,
+            store=False,
+            timeout=PHASE2_TIMEOUT,
+        )
+
+        # After the timeout check whether the server IP is still the same.
+        current = sniffer._known_server
+        if current is None or current.source.ip != locked_ip:
+            # Server IP changed (scene change to a different host) or
+            # connection was lost – return to Phase 1 for rediscovery.
+            logger.info("Sniffer: server IP changed or lost, restarting discovery.")
+            sniffer._known_server = None
+        else:
+            # Same IP still active; simply restart Phase 2 without discovery.
+            logger.info(f"Sniffer Phase 2: timeout, re-locking to {locked_ip}")
 
 
 @app.websocket("/ws")
