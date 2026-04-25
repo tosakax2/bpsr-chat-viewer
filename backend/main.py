@@ -235,6 +235,36 @@ else:
     logger.warning("Built frontend not found. Fallback to dev server.")
 
 class Api:
+    def __init__(self):
+        # Settings file is located in the same directory as the executable
+        if getattr(sys, 'frozen', False):
+            # If the application is run as a bundle (PyInstaller)
+            base_dir = os.path.dirname(sys.executable)
+        else:
+            base_dir = os.path.dirname(os.path.abspath(__file__))
+            
+        # If in dev, we might want it in the project root instead of backend folder
+        if base_dir.endswith('backend'):
+            base_dir = os.path.dirname(base_dir)
+            
+        self.settings_path = os.path.join(base_dir, "settings.json")
+
+    def load_settings(self):
+        try:
+            if os.path.exists(self.settings_path):
+                with open(self.settings_path, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+        except Exception as e:
+            logger.error(f"Error loading settings: {e}")
+        return {}
+
+    def save_settings(self, settings_dict):
+        try:
+            with open(self.settings_path, 'w', encoding='utf-8') as f:
+                json.dump(settings_dict, f, ensure_ascii=False, indent=4)
+        except Exception as e:
+            logger.error(f"Error saving settings: {e}")
+
     def open_popout(self, channel: str):
         logger.info(f"Opening native pop-out for channel: {channel}")
         
@@ -293,4 +323,7 @@ if __name__ == "__main__":
         
     window.events.closed += on_closed
     
-    webview.start()
+    # Store webview data (localStorage, cookies) in a dedicated folder in AppData
+    app_data_dir = os.path.join(os.environ.get('APPDATA', ''), 'bpsr-chat-viewer')
+    os.makedirs(app_data_dir, exist_ok=True)
+    webview.start(private_mode=False, storage_path=app_data_dir)

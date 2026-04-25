@@ -31,20 +31,9 @@ function App() {
   const [showSettings, setShowSettings] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
   const [showBlocklist, setShowBlocklist] = useState(false);
-  const [volume, setVolume] = useState(() => {
-    const saved = localStorage.getItem('bpsr_volume');
-    return saved ? parseFloat(saved) : 0.4; // Default to 40%
-  });
-  
-  const [blockList, setBlockList] = useState(() => {
-    const saved = localStorage.getItem('bpsr_blocklist');
-    return saved ? JSON.parse(saved) : [];
-  });
-  
-  const [wordFilter, setWordFilter] = useState(() => {
-    const saved = localStorage.getItem('bpsr_wordfilter');
-    return saved ? JSON.parse(saved) : [];
-  });
+  const [volume, setVolume] = useState(0.4); // Default to 40%
+  const [blockList, setBlockList] = useState([]);
+  const [wordFilter, setWordFilter] = useState([]);
   
   const [blockInput, setBlockInput] = useState("");
   const [wordInput, setWordInput] = useState("");
@@ -79,21 +68,37 @@ function App() {
     useSoundRef.current = useSound;
   }, [useSound]);
 
-  // Sync volume to ref and localStorage
+  // Load settings on mount
+  useEffect(() => {
+    if (window.pywebview && window.pywebview.api && window.pywebview.api.load_settings) {
+      window.pywebview.api.load_settings().then(settings => {
+        if (settings) {
+          if (settings.volume !== undefined) setVolume(settings.volume);
+          if (settings.blockList !== undefined) setBlockList(settings.blockList);
+          if (settings.wordFilter !== undefined) setWordFilter(settings.wordFilter);
+          if (settings.useSound !== undefined) setUseSound(settings.useSound);
+        }
+      }).catch(console.error);
+    }
+  }, []);
+
+  // Sync settings to refs and backend JSON file when they change
   useEffect(() => {
     volumeRef.current = volume;
-    localStorage.setItem('bpsr_volume', volume.toString());
-  }, [volume]);
-
-  useEffect(() => {
     blockListRef.current = blockList;
-    localStorage.setItem('bpsr_blocklist', JSON.stringify(blockList));
-  }, [blockList]);
-
-  useEffect(() => {
     wordFilterRef.current = wordFilter;
-    localStorage.setItem('bpsr_wordfilter', JSON.stringify(wordFilter));
-  }, [wordFilter]);
+
+    // Only save to backend if running in pywebview
+    if (window.pywebview && window.pywebview.api && window.pywebview.api.save_settings) {
+      const settingsToSave = {
+        volume,
+        blockList,
+        wordFilter,
+        useSound
+      };
+      window.pywebview.api.save_settings(settingsToSave).catch(console.error);
+    }
+  }, [volume, blockList, wordFilter, useSound]);
 
   useEffect(() => {
     filtersRef.current = filters;
